@@ -17,6 +17,7 @@ import Link from "next/link";
 // // import { FloatingWhatsApp } from "react-floating-whatsapp";
 // import { AiOutlineDown } from "react-icons/ai";
 // import { AiOutlineUp } from "react-icons/ai";
+import { IoIosMenu } from "react-icons/io";
 
 const Header = (color: any) => {
   const [bgColor, setBgColor] = useState("[#ffffff]");
@@ -97,6 +98,8 @@ const Header = (color: any) => {
         <div className="h-[150px] w-[150px]  relative z-10">
           <Image src={logo} alt="" className="h-full w-full" />
         </div>
+        <p className="text-3xl text-white"><IoIosMenu/></p>
+
       </div>
       <div className="fixed bottom-[20px] right-[100px] z-50">
         {/* <FloatingWhatsApp

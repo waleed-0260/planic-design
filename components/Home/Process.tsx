@@ -40,10 +40,10 @@ const Process = () => {
           Our Process Work
         </h1>
 
-        <div className='flex lg:flex-row flex-col items-center justify-around w-full mt-12'>
+        <div className='flex lg:flex-row flex-col md:items-center items-start justify-around w-full mt-12'>
 
         {/* Left Side: Toggle for Questions & Answers */}
-        <div className="flex flex-col w-1/2 space-y-4 " data-aos="fade-left" data-aos-delay="300">
+        <div className="flex flex-col md:w-1/2 space-y-4 " data-aos="fade-left" data-aos-delay="300">
               <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger className='text-3xl font-bold'>Survey & Quotes</AccordionTrigger>
@@ -52,7 +52,7 @@ const Process = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2" className='mt-5'>
-        <AccordionTrigger className='text-3xl font-bold'>Design & Performance</AccordionTrigger>
+        <AccordionTrigger className='text-3xl font-bold text-left'>Design & Performance</AccordionTrigger>
         <AccordionContent className='textColor'>
         After surveying and obtaining the necessary information, we will create a preliminary design including technical drawings, 3D images of the interior and provide a 3D VR experience to help customers get a visual view of their project.
         </AccordionContent>
@@ -67,7 +67,7 @@ const Process = () => {
         </div>
 
         {/* Right Side: Image */}
-        <div className="w-1/2 flex justify-center items-center" data-aos="fade-left" data-aos-delay="300">
+        <div className="w-1/2 flex justify-center items-center md:mt-0 mt-6" data-aos="fade-left" data-aos-delay="300">
           <Image
             src={process}
             alt="Process Illustration"
