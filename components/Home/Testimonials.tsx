@@ -25,7 +25,7 @@ const Testimonials = () => {
   return (
     <div className="flex h-full mt-[100px] w-[90%] flex md:flex-row flex-col">
       {/* Left Section */}
-      <div className="w-2/5 flex flex-col justify-start items-start p-4">
+      <div className="md:w-2/5 flex flex-col justify-start items-start p-4">
         <h3 className="text-lg font-semibold mb-4 ">What Clients Say About Us</h3>
         <LuQuote className="text-8xl text-red-700" />
       </div>

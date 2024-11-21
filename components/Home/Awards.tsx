@@ -52,7 +52,7 @@ const Awards = () => {
     ]
   return (
     <div className='bg-[#262929] w-full my-[50px] py-[50px] rounded-t-2xl flex flex-col items-center'>
-        <h1 className='text-white text-4xl font-bold mt-[100px]'>Awards & Recognitions</h1>
+        <h1 className='text-white text-4xl font-bold mt-[100px] text-center'>Awards & Recognitions</h1>
         <div className="flex flex-col md:items-center items-start justify-center w-[90%] mt-4 gap-4">
   {awards.map((item, index) => {
     return (
@@ -61,13 +61,13 @@ const Awards = () => {
         key={index}
       >
         {/* Date */}
-        <p className="w-[20%] text-left">{item.date}</p>
+        <p className="md:w-[20%] text-left">{item.date}</p>
 
         {/* Award */}
-        <p className="w-[40%] text-left">{item.award}</p>
+        <p className="md:w-[40%] text-left">{item.award}</p>
 
         {/* Location */}
-        <p className="w-[30%] text-left">{item.location}</p>
+        <p className="md:w-[30%] text-left">{item.location}</p>
 
         {/* Icon */}
         <span className="w-[10%] text-right">

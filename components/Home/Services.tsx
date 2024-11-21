@@ -30,7 +30,7 @@ const Services = () => {
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
             </div>
 
-            <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-l-[1px] border-[#b3b2af] mt-[100px]'>
+            <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-l-[1px] border-[#b3b2af] md:mt-[100px]'>
                 <p className='text-3xl text-red-700'>
                 <CiBezier/>
                 </p>
@@ -54,7 +54,7 @@ const Services = () => {
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
             </div>
 
-            <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-l-[1px] border-[#b3b2af] mt-[100px]'>
+            <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-l-[1px] border-[#b3b2af] md:mt-[100px]'>
                 <p className='text-3xl text-red-700'>
                 <FaRegComments/>
                 </p>

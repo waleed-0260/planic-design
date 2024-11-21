@@ -38,7 +38,7 @@ const Hero = () => {
                 <h1 className="sm:text-4xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" >Time</h1>
                 <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
             </div>
-            <div className="flex flex-col md:w-[40%]">
+            <div className="flex flex-col md:w-[40%] w-[90%]">
               <p className="text-left ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum. Molestias minima possimus tenetur ducimus!</p>
               <button className="bg-transparent sm:block hidden border-white border-2 w-[150px] h-[50px] text-white rounded-full">
                 Our Services
@@ -58,7 +58,7 @@ const Hero = () => {
                 <h1 className="sm:text-4xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" >Time</h1>
                 <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
             </div>
-            <div className="flex flex-col md:w-[40%]">
+            <div className="flex flex-col md:w-[40%] w-[90%]">
               <p className="text-left ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum. Molestias minima possimus tenetur ducimus!</p>
               <button className="bg-transparent sm:block hidden border-white border-2 w-[150px] h-[50px] text-white rounded-full">
                 Our Services
@@ -78,7 +78,7 @@ const Hero = () => {
                 <h1 className="sm:text-4xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" >Time</h1>
                 <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
             </div>
-            <div className="flex flex-col md:w-[40%]">
+            <div className="flex flex-col md:w-[40%] w-[90%]">
               <p className="text-left ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum. Molestias minima possimus tenetur ducimus!</p>
               <button className="bg-transparent sm:block hidden border-white border-2 w-[150px] h-[50px] text-white rounded-full">
                 Our Services
