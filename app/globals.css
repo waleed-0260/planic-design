@@ -81,6 +81,7 @@ body, html{
 
 
 .name{
+  display: inline-block;
   animation: nameAnimation 12s linear infinite;
 }
 
@@ -91,5 +92,19 @@ body, html{
     }
   100% {
     position: relative;
-    left: 1300px;  }
+    left: 1300px;  
+  }
+}
+
+@media screen and (max-width:768px) {
+  @keyframes nameAnimation {
+    0% {
+      position: relative;
+      left: -800px;
+      }
+    100% {
+      position: relative;
+      left: 1000px;  
+    }
+  }
 }

@@ -73,7 +73,7 @@ const FeaturedProjects = () => {
         {projects.map((project) => (
           <SwiperSlide key={project.id} className="flex flex-col w-full">
             {/* Image Section */}
-            <div className="h-[600px] w-[100%] mx-auto">
+            <div className="md:h-[600px] h-[400px] w-[100%] mx-auto">
               <Image
                 src={project.image}
                 alt={project.title}

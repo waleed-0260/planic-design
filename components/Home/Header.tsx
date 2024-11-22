@@ -82,11 +82,11 @@ const Header = (color: any) => {
 
       </div>
 
-      <div className="flex lg:hidden flex-row justify-between p-2 items-center w-full h-[100px] bg-[#0D2137]">
+      <div className="flex lg:hidden flex-row justify-between p-2 items-center w-full h-[100px] bg-[#333333]">
         <div className="h-[150px] w-[150px]  relative z-10">
           <Image src={logo} alt="" className="h-full w-full" />
         </div>
-        <p className="text-3xl text-white"><IoIosMenu/></p>
+        <p className="text-3xl text-white border-[1px] border-[#b3b2af] p-1 rounded-md"><IoIosMenu/></p>
 
       </div>
       <div className="fixed bottom-[20px] right-[100px] z-50">

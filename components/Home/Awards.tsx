@@ -57,7 +57,7 @@ const Awards = () => {
   {awards.map((item, index) => {
     return (
       <div
-        className="w-full py-4 flex md:flex-row flex-col justify-between md:items-center items-start md:hover:bg-[#FF4814] bg-[#706e68] md:bg-transparent transition-all text-white p-4 md:rounded-full  rounded-lg md:gap-0 gap-4"
+        className="w-full py-4 flex md:flex-row flex-col justify-between md:items-center items-start md:hover:bg-[#FF4814] bg-[#4a4946] md:bg-transparent transition-all text-white p-4 md:rounded-full  rounded-lg md:gap-0 gap-4"
         key={index}
       >
         {/* Date */}

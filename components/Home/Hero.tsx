@@ -32,11 +32,11 @@ const Hero = () => {
           style={{ backgroundImage: `url('/images/slide1.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-center justify-around h-full text-center text-white ">
-            <div className="flex flex-col md:w-[50%]">
+          <div className="relative z-10 flex lg:flex-row flex-col items-center md:justify-around h-full text-center text-white  md:mt-0 mt-[90px]">
+            <div className="flex flex-col md:w-[50%] w-[90%] items-start md:items-center">
 
-                <h1 className="sm:text-9xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" >Time</h1>
-                <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
+                <h1 className="sm:text-5xl text-2xl md:text-8xl font-bold heading leading-tight " >Time</h1>
+                <button className="btn md:p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
             </div>
             <div className="flex flex-col md:w-[40%] w-[90%]">
               <p className="text-left w-[50%] leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum. Molestias minima possimus tenetur ducimus!</p>
@@ -52,11 +52,11 @@ const Hero = () => {
           style={{ backgroundImage: `url('/images/slide2.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-center justify-around h-full text-center text-white ">
-            <div className="flex flex-col md:w-[50%]">
+          <div className="relative z-10 flex lg:flex-row flex-col items-center md:justify-around h-full text-center text-white  md:mt-0 mt-[90px]">
+            <div className="flex flex-col md:w-[50%] w-[90%] items-start md:items-center">
 
-                <h1 className="sm:text-9xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" >Time</h1>
-                <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
+                <h1 className="sm:text-5xl text-2xl md:text-8xl font-bold heading leading-tight " >Time</h1>
+                <button className="btn md:p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
             </div>
             <div className="flex flex-col md:w-[40%] w-[90%]">
               <p className="text-left w-[50%] leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum. Molestias minima possimus tenetur ducimus!</p>
@@ -72,11 +72,11 @@ const Hero = () => {
           style={{ backgroundImage: `url('/images/slide3.jpg')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-center justify-around h-full text-center text-white ">
-            <div className="flex flex-col md:w-[50%]">
+          <div className="relative z-10 flex lg:flex-row flex-col items-center md:justify-around h-full text-center text-white  md:mt-0 mt-[90px]">
+            <div className="flex flex-col md:w-[50%] w-[90%] items-start md:items-center">
 
-                <h1 className="sm:text-9xl text-2xl md:text-5xl font-bold heading leading-tight w-[80%]" >Time</h1>
-                <button className="btn p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
+                <h1 className="sm:text-5xl text-2xl md:text-8xl font-bold heading leading-tight " >Time</h1>
+                <button className="btn md:p-3 text-white rounded-[100px] mt-3 transition-all"><Link href={"/contact"}>Sustainable material resources</Link></button>
             </div>
             <div className="flex flex-col md:w-[40%] w-[90%]">
               <p className="text-left w-[50%] leading-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptatum. Molestias minima possimus tenetur ducimus!</p>

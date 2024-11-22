@@ -43,7 +43,7 @@ const Process = () => {
         <div className='flex lg:flex-row flex-col md:items-center items-start justify-around w-full mt-12'>
 
         {/* Left Side: Toggle for Questions & Answers */}
-        <div className="flex flex-col md:w-1/2 space-y-4 " data-aos="fade-left" data-aos-delay="300">
+        <div className="flex flex-col md:w-1/2 space-y-4 w-full" data-aos="fade-left" data-aos-delay="300">
               <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
         <AccordionTrigger className='text-3xl font-bold'>Survey & Quotes</AccordionTrigger>
@@ -67,7 +67,7 @@ const Process = () => {
         </div>
 
         {/* Right Side: Image */}
-        <div className="md:w-1/2 flex justify-center items-center md:mt-0 mt-[50px]" data-aos="fade-left" data-aos-delay="300">
+        <div className="md:w-1/2 w-full flex justify-center items-center md:mt-0 mt-[50px]" data-aos="fade-left" data-aos-delay="300">
           <Image
             src={process}
             alt="Process Illustration"
