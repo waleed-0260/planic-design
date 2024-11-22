@@ -57,7 +57,7 @@ const Awards = () => {
   {awards.map((item, index) => {
     return (
       <div
-        className="w-full py-4 flex md:flex-row flex-col justify-between md:items-center items-start md:hover:bg-[#FF4814] bg-[#4a4946] md:bg-transparent transition-all text-white p-4 md:rounded-full  rounded-lg md:gap-0 gap-4"
+        className="w-full py-8 flex md:flex-row flex-col justify-between md:items-center items-start md:hover:bg-[#FF4814] bg-[#4a4946] md:bg-transparent transition-all text-white p-4 md:rounded-lg  rounded-lg md:gap-0 gap-4"
         key={index}
       >
         {/* Date */}
@@ -67,7 +67,7 @@ const Awards = () => {
         <p className="md:w-[40%] text-left">{item.award}</p>
 
         {/* Location */}
-        <p className="md:w-[30%] text-left">{item.location}</p>
+        <p className="md:w-[30%] text-left flex flex-row items-center gap-2"><CiLocationOn/> {item.location}</p>
 
         {/* Icon */}
         <span className="w-[10%] text-right">

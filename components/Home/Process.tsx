@@ -9,6 +9,7 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+  import { GoArrowUpRight } from "react-icons/go";
 
 const Process = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -29,41 +30,42 @@ const Process = () => {
         <Image
           src={processBg}
           alt="Process Background"
-          className="w-full h-auto object-cover"
+          className="h-full scale-110"
         />
       </div>
 
       {/* Section overlapping the image */}
-      <div className="bg-[#f1eee9] relative -mt-4 rounded-t-2xl  p-6 flex flex-col justify-between items-center" data-aos="fade-up">
+      <div className="bg-[#f1eee9] relative rounded-t-2xl  p-6 flex flex-col justify-between items-center" data-aos="fade-up">
         {/* Middle Heading */}
-        <h1 className="text-4xl font-bold text-center mt-[100px]">
+        <h1 className="sm:text-4xl text-2xl font-bold text-center mt-[100px]">
           Our Process Work
         </h1>
 
-        <div className='flex lg:flex-row flex-col md:items-center items-start justify-around w-full mt-12'>
+        <div className='flex lg:flex-row flex-col md:items-start items-start justify-between w-[90%] mt-[90px]'>
 
         {/* Left Side: Toggle for Questions & Answers */}
-        <div className="flex flex-col md:w-1/2 space-y-4 w-full" data-aos="fade-left" data-aos-delay="300">
-              <Accordion type="single" collapsible className="w-full">
-      <AccordionItem value="item-1">
-        <AccordionTrigger className='text-3xl font-bold'>Survey & Quotes</AccordionTrigger>
+        <div className="flex flex-col md:w-1/2 space-y-4 w-full" data-aos="fade-right" data-aos-delay="300">
+              <Accordion type="single" collapsible className="md:w-[80%]">
+      <AccordionItem value="item-1" className=''>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Survey & Quotes</AccordionTrigger>
         <AccordionContent className='textColor'>
         After surveying and obtaining the necessary information, we will create a preliminary design including technical drawings, 3D images of the interior and provide a 3D VR experience to help customers get a visual view of their project.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2" className='mt-5'>
-        <AccordionTrigger className='text-3xl font-bold text-left'>Design & Performance</AccordionTrigger>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Design & Performance</AccordionTrigger>
         <AccordionContent className='textColor'>
         After surveying and obtaining the necessary information, we will create a preliminary design including technical drawings, 3D images of the interior and provide a 3D VR experience to help customers get a visual view of their project.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3" className='mt-5'>
-        <AccordionTrigger className='text-3xl font-bold'>Hand over</AccordionTrigger>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Hand over</AccordionTrigger>
         <AccordionContent className='textColor'>
         After surveying and obtaining the necessary information, we will create a preliminary design including technical drawings, 3D images of the interior and provide a 3D VR experience to help customers get a visual view of their project.
         </AccordionContent>
       </AccordionItem>
     </Accordion>
+    <button className='w-[200px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3'>Our Projects <GoArrowUpRight/></button>
         </div>
 
         {/* Right Side: Image */}

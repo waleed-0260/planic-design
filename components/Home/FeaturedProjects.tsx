@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import 'swiper/css/effect-fade';
 // import { Autoplay} from "swiper/modules";
+import { GoArrowUpRight } from "react-icons/go";
 
 const FeaturedProjects = () => {
     const projects = [
@@ -48,8 +49,8 @@ const FeaturedProjects = () => {
 
   return (
     <div className='w-[90%] flex flex-col items-start'>
-        <h1 className='text-4xl font-bold'>Featured Projects</h1>
-        <div className='flex md:flex-row flex-col justify-between md:items-center w-full mt-2'>
+        <h1 className='md:text-5xl text-2xl font-bold'>Featured Projects</h1>
+        <div className='flex md:flex-row flex-col justify-between md:items-center w-full my-[50px]'>
             <ul className='flex md:flex-row flex-col gap-5'>
                 <li>Featured</li>
                 <li>Architecture</li>
@@ -58,7 +59,7 @@ const FeaturedProjects = () => {
                 <li>Furniture</li>
             </ul>
 
-            <button className='w-[250px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white'>SEE ALL PROJECTS</button>
+            <button className='w-[200px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3'>Featured Projects <GoArrowUpRight/></button>
             </div>
 
             <div className="w-[90vw] h-full mt-4">
@@ -81,19 +82,19 @@ const FeaturedProjects = () => {
               />
             </div>
             {/* Tags */}
-            <div className="flex flex-row gap-3 items-start mt-4">
+            <div className="flex flex-row gap-3 items-start mt-10">
               {project.tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="rounded-full p-2 border-[#000000] border-2"
+                  className="rounded-full py-1 px-3 border-[#aeb1b5] border-[1px] text-sm"
                 >
                   {tag}
                 </span>
               ))}
             </div>
             {/* Title and Description */}
-            <h1 className="text-4xl mt-4 font-bold">{project.title}</h1>
-            <p className="mt-2 text-gray-600">{project.description}</p>
+            <h1 className="text-4xl mt-4 font-bold mt-[40px]">{project.title}</h1>
+            <p className="mt-2 text-gray-600 mt-[20px]">{project.description}</p>
           </SwiperSlide>
         ))}
       </Swiper>

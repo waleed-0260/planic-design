@@ -14,25 +14,25 @@ const Footer = () => {
         <div className="flex gap-4 md:mt-0 mt-4">
           <a
             href="#"
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-gray-600 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] transition-all"
           >
             <FaFacebookF />
           </a>
           <a
             href="#"
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-gray-600 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] transition-all"
           >
             <FaTwitter />
           </a>
           <a
             href="#"
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-gray-600 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] transition-all"
           >
             <FaInstagram />
           </a>
           <a
             href="#"
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-gray-600 transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] transition-all"
           >
             <FaLinkedinIn />
           </a>

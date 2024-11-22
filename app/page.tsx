@@ -15,8 +15,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import TextAnimation from "@/components/Home/TextAnimation";
 import Loader from "@/components/Loader";
+import CalltoForn from "@/components/Home/CalltoForn";
 export default function Home() {
   const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     AOS.init({
@@ -30,7 +32,7 @@ export default function Home() {
   }, []);
   return (
     <>
-    {loading ? <Loader/>: (
+    {loading ? <Loader onComplete={() => setLoading(false)}/>: (
       <>
       <Hero/>
     <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
@@ -42,6 +44,7 @@ export default function Home() {
       <TextAnimation/>
       <Awards/>
       <Blogs/>
+      <CalltoForn/>
     </div>
     <Footer/>
     </>

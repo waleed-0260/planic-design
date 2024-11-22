@@ -10,36 +10,16 @@ import { TbMenu } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
 
 const Header = (color: any) => {
-  const [bgColor, setBgColor] = useState("[#ffffff]");
-  const [btnColor, setBtnColor] = useState("[#0D2137]");
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 1) {
-        setBgColor("[#0D2137]");
-        setBtnColor("white");
-      } else {
-        setBgColor("[#ffffff]");
-        setBtnColor("[#0D2137]");
-      }
-    };
+  console.log("color", color)
+  // const [bgColor, setBgColor] = useState("[#ffffff]");
+  // const [btnColor, setBtnColor] = useState("[#0D2137]");
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const handleArrowClick = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
 
   return (
     <>
       <div
-        className={`lg:flex hidden flex-row items-center justify-evenly w-full transition-all h-[80px] z-50 bg-transparent absolute`}
+        className={`lg:flex hidden flex-row items-center justify-evenly w-full transition-all h-[80px] z-50 bg-transparent absolute text-white`}
       >
         <div className=" flex flex-row items-center justify-between w-[80%]">
 
@@ -48,33 +28,33 @@ const Header = (color: any) => {
         </Link>
         <div>
           <ul className={`flex flex-row gap-4 relative z-10`}>
-            <li className="list-none mid-heading text-white hover:text-[#FF8E2B] transition-all">
+            <li className="list-none mid-heading transition-all">
               <Link href={"/"}>Home</Link>
             </li>
-            <li className="list-none mid-heading relative group transition-all text-white hover:text-[#FF8E2B] transition-all">
-              <Link href={"/services"}>Services</Link>
+            <li className="list-none mid-heading relative group transition-all">
+              <Link href={"/service"}>Services</Link>
             </li>
-            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all text-white">
+            <li className="list-none mid-heading  transition-all ">
               <Link href={"/about"}>Portfolio</Link>
             </li>
-            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all text-white">
+            <li className="list-none mid-heading  transition-all ">
               <Link href={"/contact"}>About Us</Link>
             </li>{" "}
-            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all text-white">
-              <Link href={"/contact"}>Our Blogs</Link>
+            <li className="list-none mid-heading  transition-all ">
+              <Link href={"/contact"}>Blogs</Link>
             </li>{" "}
-            <li className="list-none mid-heading hover:text-[#FF8E2B] transition-all text-white">
+            <li className="list-none mid-heading  transition-all ">
               <Link href={"/contact"}>Contact</Link>
             </li>{" "}
           </ul>
         </div>
-        <div className="relative z-10 flex flex-row text-white space-x-4">
+        <div className="relative z-10 flex flex-row  space-x-4">
           <span>EN</span>
           <span>FR</span>
-          <p className="text-2xl text-white">
+          <p className="text-2xl  ml-[40px]">
           <MdSearch/>
           </p>
-          <p className="text-2xl text-white">
+          <p className="text-2xl ">
             <TbMenu/>
           </p>
         </div>
@@ -82,24 +62,46 @@ const Header = (color: any) => {
 
       </div>
 
+      <div>
+      {/* Navbar */}
       <div className="flex lg:hidden flex-row justify-between p-2 items-center w-full h-[100px] bg-[#333333]">
-        <div className="h-[150px] w-[150px]  relative z-10">
-          <Image src={logo} alt="" className="h-full w-full" />
+        <div className="h-[150px] w-[150px] relative z-10">
+          <Image src={logo} alt="Logo" className="h-full w-full" />
         </div>
-        <p className="text-3xl text-white border-[1px] border-[#b3b2af] p-1 rounded-md"><IoIosMenu/></p>
+        <p
+          className="text-3xl border-[1px] border-[#b3b2af] p-1 rounded-md text-white cursor-pointer"
+          onClick={() => setMenuOpen(!menuOpen)} // Toggle menu
+        >
+          <IoIosMenu />
+        </p>
+      </div>
 
-      </div>
-      <div className="fixed bottom-[20px] right-[100px] z-50">
-        {/* <FloatingWhatsApp
-          phoneNumber="+923392073100"
-          accountName="SpearingSystem"
-          statusMessage="Replies within 15 minutes"
-          chatMessage="Hello there! How can I help you ?"
-          avatar="/images/logoAvatar.png"
-          chatboxHeight={350}
-          buttonClassName="floating-whatsapp-button"
-        /> */}
-      </div>
+      {/* Menu */}
+      <ul
+        className={`${
+          menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pl-4 text-white`}
+      >
+        <li className="list-none mid-heading transition-all">
+          <Link href={"/"}>Home</Link>
+        </li>
+        <li className="list-none mid-heading relative group transition-all">
+          <Link href={"/service"}>Services</Link>
+        </li>
+        <li className="list-none mid-heading transition-all">
+          <Link href={"/about"}>Portfolio</Link>
+        </li>
+        <li className="list-none mid-heading transition-all">
+          <Link href={"/contact"}>About Us</Link>
+        </li>
+        <li className="list-none mid-heading transition-all">
+          <Link href={"/contact"}>Blogs</Link>
+        </li>
+        <li className="list-none mid-heading transition-all">
+          <Link href={"/contact"}>Contact</Link>
+        </li>
+      </ul>
+    </div>
     </>
   );
 };
