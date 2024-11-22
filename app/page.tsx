@@ -32,7 +32,7 @@ export default function Home() {
   }, []);
   return (
     <>
-    {loading ? <Loader onComplete={() => setLoading(false)}/>: (
+    {loading ? <Loader/>: (
       <>
       <Hero/>
     <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
