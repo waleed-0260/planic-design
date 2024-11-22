@@ -7,6 +7,10 @@ const Footer = () => {
       <div className="flex md:flex-row flex-col justify-between items-center max-w-6xl mx-auto">
         {/* Left Side: Copyright Info */}
         <div className="text-left">
+
+
+
+          
           <p>&copy; 2024 Planic Design. All rights reserved.</p>
         </div>
 
