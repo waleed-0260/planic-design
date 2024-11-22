@@ -58,7 +58,7 @@ const FeaturedProjects = () => {
                 <li>Furniture</li>
             </ul>
 
-            <button className='w-[250px] h-[50px] bg-transparent border-2 hover:bg-red-700 border-red-700 rounded-full mt-3'>SEE ALL PROJECTS</button>
+            <button className='w-[250px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white'>SEE ALL PROJECTS</button>
             </div>
 
             <div className="w-[90vw] h-full mt-4">

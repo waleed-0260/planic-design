@@ -67,7 +67,7 @@ const Process = () => {
         </div>
 
         {/* Right Side: Image */}
-        <div className="w-1/2 flex justify-center items-center md:mt-0 mt-6" data-aos="fade-left" data-aos-delay="300">
+        <div className="md:w-1/2 flex justify-center items-center md:mt-0 mt-[50px]" data-aos="fade-left" data-aos-delay="300">
           <Image
             src={process}
             alt="Process Illustration"

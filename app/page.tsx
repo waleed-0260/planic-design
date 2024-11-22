@@ -8,30 +8,44 @@ import Hero from "@/components/Home/Hero";
 import Process from "@/components/Home/Process";
 import Services from "@/components/Home/Services";
 import Testimonials from "@/components/Home/Testimonials";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 // import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TextAnimation from "@/components/Home/TextAnimation";
+import Loader from "@/components/Loader";
 export default function Home() {
-  useEffect(()=>{
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
     AOS.init({
-      duration: 900, // Animation duration
+      duration: 1200, // Animation duration
       once: true, // Whether animation should happen only once - while scrolling down
     });
-  }, [])
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-    <Hero/>
+    {loading ? <Loader/>: (
+      <>
+      <Hero/>
     <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
       <About/>
       <Services/>
       <Process/>
       <FeaturedProjects/>
       <Testimonials/>
+      <TextAnimation/>
       <Awards/>
       <Blogs/>
     </div>
     <Footer/>
+    </>
+    )}
     </>
   );
 }

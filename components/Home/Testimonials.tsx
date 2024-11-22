@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { LuQuote } from "react-icons/lu";
+import { FaChevronLeft } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
 
 const Testimonials = () => {
   const testimonials = [
@@ -15,7 +17,7 @@ const Testimonials = () => {
       image: "https://via.placeholder.com/80",
     },
     {
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis doloremque dignissimos, blanditiis eaque ullam suscipit aut exercitationem, accusantium quaerat voluptatem commodi. Libero fugiat tempore nulla eos iure veritatis, quam dignissimos harum molestias. Incidunt at quam voluptatem corrupti ipsum, quo molestias reiciendis asperiores nostrum iusto, vero quod, nisi dignissimos voluptate quibusdam!",
+      text: "The entire team tactfully delivered a project of exceptional quality while staying on schedule and under budget. More than what i'm expected. I’m really satisfied and recommended!.",
       name: "John Smith",
       position: "CEO, TechCorp",
       image: "https://via.placeholder.com/80",
@@ -27,29 +29,33 @@ const Testimonials = () => {
       {/* Left Section */}
       <div className="md:w-2/5 flex flex-col justify-start items-start p-4">
         <h3 className="text-lg font-semibold mb-4 ">What Clients Say About Us</h3>
-        <LuQuote className="text-8xl text-red-700" />
+        <LuQuote className="text-8xl text-[#FF4814]" />
       </div>
 
       {/* Right Section */}
-      <div className="md:w-3/5">
+      <div className="md:w-3/5 relative">
         <Swiper
           spaceBetween={30}
           // navigation
-          // modules={[Navigation]}
+          modules={[Navigation]}
+          navigation={{
+            prevEl: ".custom-prev", // Link to custom previous button
+            nextEl: ".custom-next", // Link to custom next button
+          }}
           className="h-full"
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index} className="flex flex-col items-center ">
-              <p className="text-lg font-semibold leading-10 mb-4">
+              <p className="text-4xl font-semibold leading-10 mb-4">
               “{testimonial.text}”
               </p>
-              <div className="flex flex-row items-center gap-4">
+              <div className="flex flex-row items-center gap-4 mt-[100px] w-full pt-[50px] border-t-[1px] border-[#b3b2af]">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-20 h-20 rounded-full mb-2"
+                  className="w-16 h-16 rounded-full mb-2"
                 />
-                <span className="flex flex-col">
+                <span className="flex flex-col ">
 
                 <strong className="text-lg">{testimonial.name}</strong>
                 <span className="textColor">{testimonial.position}</span>
@@ -58,6 +64,17 @@ const Testimonials = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="rounded-full border-[#b3b2af] border-[1px] text-black w-[120px] h-[40px] flex flex-row items-center justify-around absolute right-0 bottom-[20px] bg-white z-50">
+          <p className="cursor-pointer custom-prev">
+            <FaChevronLeft/>
+          </p>
+          <p>
+          1/3
+          </p>
+          <p className="cursor-pointer custom-next">
+            <FaChevronRight/>
+          </p>
+        </div>
       </div>
     </div>
   );

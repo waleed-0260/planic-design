@@ -7,15 +7,15 @@ const About = () => {
         <div className='flex md:flex-row flex-col items-center justify-center gap-3 md:w-[50%]'>
             <div className='flex flex-col'>
                 <p className='w-[150px] font-semibold'>Years of experience</p>
-                <h1 className='text-6xl font-bold' data-aos="zoom-in">15</h1>
+                <h1 className='text-9xl font-bold' data-aos="zoom-in">15</h1>
             </div>
-                <div className='h-[500px] w-[250px] rounded-md rotate-[-20deg]' data-aos="zoom-in" data-aos-delay="300">
-            <Image src={experience} alt="" className='object-cover h-full w-full rounded-xl'/>
+                <div className='h-[550px] w-[250px] rounded-md ' data-aos="zoom-in" data-aos-delay="300">
+            <Image src={experience} alt="" className='object-cover h-full w-full rounded-2xl rotate-[-20deg]'/>
                 </div>
         </div>
             <div className='flex flex-col space-y-3 md:w-[40%] md:mt-0 mt-4' data-aos="fade-left">
                 <h1 className='text-2xl font-bold'>Est. 1986</h1>
-                <p className='textColor'>Archin Studio is an archiectural practice based in Boston. We cut ourteeth on designing and creating buildings that are both beautiful and sustainable.                </p>
+                <p className='textColor md:w-[50%] leading-8'>Archin Studio is an archiectural practice based in Boston. We cut ourteeth on designing and creating buildings that are both beautiful and sustainable.                </p>
                 <button className='bg-white rounded-full text-black w-[130px] h-[50px] hover:bg-black hover:text-white transition'>Our Studio</button>
             </div>
     </div>

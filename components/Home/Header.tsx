@@ -5,18 +5,8 @@ import { Button } from "../ui/button";
 // import logo from "../../public/images/logo.enc";
 import logo from "../../public/images/logo.png"
 import Link from "next/link";
-// import {
-//   Sheet,
-//   SheetContent,
-//   SheetDescription,
-//   SheetHeader,
-//   SheetTitle,
-//   SheetTrigger,
-// } from "@/components/ui/sheet";
-// import { IoMenu } from "react-icons/io5";
-// // import { FloatingWhatsApp } from "react-floating-whatsapp";
-// import { AiOutlineDown } from "react-icons/ai";
-// import { AiOutlineUp } from "react-icons/ai";
+import { MdSearch } from "react-icons/md";
+import { TbMenu } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
 
 const Header = (color: any) => {
@@ -78,17 +68,15 @@ const Header = (color: any) => {
             </li>{" "}
           </ul>
         </div>
-        <div className="relative z-10">
-          <Button
-            className={`bg-${btnColor} hover:bg-[#FF8E2B] ${
-              btnColor === "white" ? "text-black" : ""
-            }`}
-          >
-            {" "}
-            <Link href={"https://calendly.com/spearingsystems"} target="blank">
-              FREE CONSULTATION
-            </Link>{" "}
-          </Button>
+        <div className="relative z-10 flex flex-row text-white space-x-4">
+          <span>EN</span>
+          <span>FR</span>
+          <p className="text-2xl text-white">
+          <MdSearch/>
+          </p>
+          <p className="text-2xl text-white">
+            <TbMenu/>
+          </p>
         </div>
         </div>
 

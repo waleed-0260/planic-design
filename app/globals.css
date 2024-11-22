@@ -71,7 +71,25 @@ body {
   }
 }
 
+body, html{
+  overflow-x: hidden;
+}
 
 .textColor{
   color: #6b6666;
+}
+
+
+.name{
+  animation: nameAnimation 12s linear infinite;
+}
+
+@keyframes nameAnimation {
+  0% {
+    position: relative;
+    left: -900px;
+    }
+  100% {
+    position: relative;
+    left: 1300px;  }
 }

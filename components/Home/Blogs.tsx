@@ -51,7 +51,7 @@ const Blogs = () => {
 <div className='w-[90%] flex flex-col items-start'>
     <div className='flex flex-row items-center justify-between w-full'>
         <h1 className='text-4xl font-bold'>Latest Posts</h1>
-        <button className='w-[250px] h-[50px] bg-transparent border-2 hover:bg-red-700 border-red-700 rounded-full'>SEE ALL POSTS</button>
+        <button className='w-[250px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full mt-3 transition-all hover:shadow-lg hover:text-white'>SEE ALL PROJECTS</button>
     </div>
 
             <div className="w-[90vw] h-full mt-4">
@@ -74,12 +74,13 @@ const Blogs = () => {
               />
             </div>
             {/* Title and Description */}
-            <div className='flex flex-row items-center justify-around'>
+            <div className='flex flex-row '>
             <span className='flex flex-col'>
                 <p className='text-4xl'>16</p>
-                <p>December 2023</p>
+                <p className='text-sm textColor'>December</p>
+                <p className='text-sm textColor'>2023</p>
             </span>
-            <h1 className="text-4xl ">{project.title}</h1>
+            <h1 className="text-4xl ml-3">{project.title}</h1>
             </div>
             {/* <p className="mt-2 text-gray-600">{project.description}</p> */}
           </SwiperSlide>
