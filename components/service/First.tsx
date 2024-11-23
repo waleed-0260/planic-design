@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Hero = () => {
+const First = () => {
   return (
-    <div className='flex flex-row items-center justify-around h-[500px] w-full'>
+    <div className='flex md:flex-row flex-col items-center justify-around h-[500px] w-full'>
         <div className='flex flex-col space-y-6'>
             <h1 className='font-bold text-4xl'>Our Services</h1>
             <span className='h-[40px] w-[300px] border-[1px] border-black rounded-full flex flex-row items-center justify-around'>
@@ -25,4 +25,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default First

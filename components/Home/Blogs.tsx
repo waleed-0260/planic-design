@@ -51,7 +51,10 @@ const Blogs = () => {
   return (
 <div className='w-[90%] flex flex-col items-start'>
     <div className='flex flex-row items-center justify-between w-full'>
-        <h1 className='text-4xl font-bold'>Latest Posts</h1>
+      <div className='flex flex-col space-y-3'>
+        <h1 className='text-4xl font-bold'>Stay Inspired with Our Insights</h1>
+        <p className='textColor'>Discover design trends, project highlights, and expert tips on creating extraordinary spaces.</p>
+      </div>
         <button className='w-[200px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full transition-all hover:shadow-lg hover:text-white text-sm flex flex-row items-center justify-center'>All Articles <GoArrowUpRight/></button>
     </div>
 

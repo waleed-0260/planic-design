@@ -44,7 +44,7 @@ export default function Home() {
       <TextAnimation/>
       <Awards/>
       <Blogs/>
-      <CalltoForn/>
+      <CalltoForn  heading="Stay Inspired, Stay Informed" desc="Join the Planic Design community to get the latest design trends, project highlights, and expert tips delivered straight to your inbox. Be the first to know about our exclusive insights and updates." btn="Subscribe Now"/>
     </div>
     <Footer/>
     </>

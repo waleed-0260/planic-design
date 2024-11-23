@@ -1,7 +1,7 @@
 "use client"
 import React, {useState} from 'react'
 import processBg from "../../public/images/processBg.jpg"
-import process from "../../public/images/process.jpg"
+import process from "../../public/images/process.png"
 import Image from 'next/image'
 import {
     Accordion,
@@ -38,7 +38,7 @@ const Process = () => {
       <div className="bg-[#f1eee9] relative rounded-t-2xl  p-6 flex flex-col justify-between items-center" data-aos="fade-up">
         {/* Middle Heading */}
         <h1 className="sm:text-4xl text-2xl font-bold text-center mt-[100px]">
-          Our Process Work
+        Your Vision, Our Proven Process
         </h1>
 
         <div className='flex lg:flex-row flex-col md:items-start items-start justify-between w-[90%] mt-[90px]'>
@@ -46,26 +46,26 @@ const Process = () => {
         {/* Left Side: Toggle for Questions & Answers */}
         <div className="flex flex-col md:w-1/2 space-y-4 w-full" data-aos="fade-right" data-aos-delay="300">
               <Accordion type="single" collapsible className="md:w-[80%]">
-      <AccordionItem value="item-1" className=''>
-        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Survey & Quotes</AccordionTrigger>
+      <AccordionItem value="item-1" className=' rounded-lg'>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Conceptualization</AccordionTrigger>
         <AccordionContent className='textColor'>
-        After surveying and obtaining the necessary information, we will create a preliminary design including technical drawings, 3D images of the interior and provide a 3D VR experience to help customers get a visual view of their project.
+        We collaborate closely to understand your needs, preferences, and aspirations, laying the foundation for a bespoke design journey.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-2" className='mt-5'>
-        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Design & Performance</AccordionTrigger>
+      <AccordionItem value="item-2" className='mt-5 rounded-lg'>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Design & Development</AccordionTrigger>
         <AccordionContent className='textColor'>
-        After surveying and obtaining the necessary information, we will create a preliminary design including technical drawings, 3D images of the interior and provide a 3D VR experience to help customers get a visual view of their project.
+        Our creative team brings your vision to life with innovative designs and meticulous attention to detail.
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3" className='mt-5'>
-        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Hand over</AccordionTrigger>
+      <AccordionItem value="item-3" className='mt-5 rounded-lg'>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>Execution & Delivery</AccordionTrigger>
         <AccordionContent className='textColor'>
-        After surveying and obtaining the necessary information, we will create a preliminary design including technical drawings, 3D images of the interior and provide a 3D VR experience to help customers get a visual view of their project.
+        From project management to the final reveal, we ensure a seamless process that transforms your dream into reality.
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-    <button className='w-[200px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3'>Our Projects <GoArrowUpRight/></button>
+    <button className='w-[280px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 px-3'>Let's Begin Your Transformation <GoArrowUpRight/></button>
         </div>
 
         {/* Right Side: Image */}

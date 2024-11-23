@@ -35,13 +35,13 @@ const Header = (color: any) => {
               <Link href={"/service"}>Services</Link>
             </li>
             <li className="list-none mid-heading  transition-all ">
-              <Link href={"/about"}>Portfolio</Link>
+              <Link href={"/portfolio"}>Portfolio</Link>
             </li>
             <li className="list-none mid-heading  transition-all ">
-              <Link href={"/contact"}>About Us</Link>
+              <Link href={"/about"}>About Us</Link>
             </li>{" "}
             <li className="list-none mid-heading  transition-all ">
-              <Link href={"/contact"}>Blogs</Link>
+              <Link href={"/blogs"}>Blogs</Link>
             </li>{" "}
             <li className="list-none mid-heading  transition-all ">
               <Link href={"/contact"}>Contact</Link>
@@ -64,12 +64,12 @@ const Header = (color: any) => {
 
       <div>
       {/* Navbar */}
-      <div className="flex lg:hidden flex-row justify-between p-2 items-center w-full h-[100px] bg-[#333333]">
+      <div className="flex lg:hidden flex-row justify-between p-1 items-center w-full h-[100px] bg-[#333333]">
         <div className="h-[150px] w-[150px] relative z-10">
           <Image src={logo} alt="Logo" className="h-full w-full" />
         </div>
         <p
-          className="text-3xl border-[1px] border-[#b3b2af] p-1 rounded-md text-white cursor-pointer"
+          className="text-3xl border-[1px] border-[#b3b2af] p-1 z-50 rounded-md text-white cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)} // Toggle menu
         >
           <IoIosMenu />
@@ -92,10 +92,10 @@ const Header = (color: any) => {
           <Link href={"/about"}>Portfolio</Link>
         </li>
         <li className="list-none mid-heading transition-all">
-          <Link href={"/contact"}>About Us</Link>
+          <Link href={"/about"}>About Us</Link>
         </li>
         <li className="list-none mid-heading transition-all">
-          <Link href={"/contact"}>Blogs</Link>
+          <Link href={"/blogs"}>Blogs</Link>
         </li>
         <li className="list-none mid-heading transition-all">
           <Link href={"/contact"}>Contact</Link>

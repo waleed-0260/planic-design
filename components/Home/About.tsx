@@ -57,14 +57,12 @@ const About = () => {
         className="flex flex-col space-y-9 md:w-[40%] md:mt-0 mt-4"
         data-aos="fade-left"
       >
-        <h1 className="sm:text-4xl text-2xl font-medium">Est. 1986</h1>
+        <h1 className="sm:text-4xl text-2xl font-medium">Designing Excellence, Building Dreams</h1>
         <p className="textColor md:w-[60%] leading-6 text-sm">
-          Archin Studio is an archiectural practice based in Boston. We cut our
-          teeth on designing and creating buildings that are both beautiful and
-          sustainable.
+        With 15 years of expertise, Planic Design is your partner in creating inspiring spaces that reflect your unique style. From conceptual design to project completion, we deliver innovation, functionality, and artistry at every step.
         </p>
-        <button className="bg-white rounded-full text-black w-[180px] h-[50px] hover:bg-black hover:text-white transition flex flex-row items-center justify-center gap-2 font-light">
-          Our Studio <GoArrowUpRight />
+        <button className="bg-white rounded-full text-black w-[240px] h-[50px] hover:bg-black hover:text-white transition flex flex-row items-center justify-center gap-2 font-light">
+          Learn More About Us <GoArrowUpRight />
         </button>
       </div>
     </div>

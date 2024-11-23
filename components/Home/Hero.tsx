@@ -31,32 +31,35 @@ const Hero = () => {
           nextEl: ".custom-next", // Link to custom next button
         }}
         loop={true}
-        className="sm:h-[35rem] h-[35rem] w-full "
+        className="md:h-[38rem] h-[50rem] w-full "
       >
         <SwiperSlide
           className="relative w-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('/images/slide1.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-center md:justify-between h-full text-center text-white  md:mt-[80px] mt-[0px] md:ml-[120px] ml-0">
-            <div className="flex flex-col md:w-[60%] w-[90%] items-start md:items-start md:ml-[200px] justify-start mt-[100px]">
+          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  md:mt-[120px] mt-[50px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
+            <div className="flex flex-col md:w-[40%] w-[90%]  items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
               <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
-                time
+                Inspire
               </h1>
-              <button className="btn md:p-3 text-white rounded-[100px] mt-3 sm:text-2xl text-xl transition-all text-left">
-                <Link href={"/contact"}>Substainable material Resource</Link>
+              <p className="text-left md:w-[65%] w-[90%] leading-8 text-md">
+                {" "}
+                Transforming visions into breathtaking realities with expert architecture and interior design.
+              </p>
+              <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm">
+              Discover Your Dream Space <GoArrowUpRight/>
               </button>
             </div>
-            <div className="flex flex-col md:w-[40%] w-[90%]">
-              <p className="text-left md:w-[55%] w-[90%] leading-8 text-md">
-                {" "}
-                We collaborate with clients to create buildings and environments
-                in dialogue with culture and place. And become one of the
-                country's leading architectural practices
-              </p>
-              <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[190px] h-[50px] text-white rounded-full mt-[50px]">
-                Our Services <GoArrowUpRight/>
-              </button>
+            <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
+              <h1 className="md:text-4xl text-xl font-bold">CONTACT FORM</h1>
+              <form className="px-3 py-4 rounded-md  flex flex-col space-y-5">
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Name"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="email" name="" id="" placeholder="Email"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="phone" name="" id="" placeholder="Phone Number"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Project Details"/>
+                <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">SUBMIT</button>
+              </form>
             </div>
           </div>
         </SwiperSlide>
@@ -66,25 +69,28 @@ const Hero = () => {
           style={{ backgroundImage: `url('/images/slide2.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-center md:justify-between h-full text-center text-white  md:mt-[80px] mt-[0px] md:ml-[120px] ml-0">
-            <div className="flex flex-col md:w-[60%] w-[90%] items-start md:items-start md:ml-[200px] justify-start mt-[100px]">
+          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  md:mt-[120px] mt-[50px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
+            <div className="flex flex-col md:w-[40%] w-[90%]  items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
               <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
-                Shape
+                Innvoate
               </h1>
-              <button className="btn md:p-3 text-white rounded-[100px] mt-3 sm:text-2xl text-xl transition-all text-left">
-                <Link href={"/contact"}>Architecture language signature</Link>
+              <p className="text-left md:w-[65%] w-[90%] leading-8 text-md">
+                {" "}
+                Blending creativity and functionality to craft spaces that define excellence.
+              </p>
+              <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm">
+                Explore our creations <GoArrowUpRight/>
               </button>
             </div>
-            <div className="flex flex-col md:w-[40%] w-[90%]">
-              <p className="text-left md:w-[55%] w-[90%] leading-8 text-md">
-                {" "}
-                We collaborate with clients to create buildings and environments
-                in dialogue with culture and place. And become one of the
-                country's leading architectural practices
-              </p>
-              <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[190px] h-[50px] text-white rounded-full mt-[50px]">
-                Our Services <GoArrowUpRight/>
-              </button>
+            <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
+              <h1 className="md:text-4xl text-xl font-bold">CONTACT FORM</h1>
+              <form className="px-3 py-4 rounded-md  flex flex-col space-y-5">
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Name"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="email" name="" id="" placeholder="Email"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="phone" name="" id="" placeholder="Phone Number"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Project Details"/>
+                <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">SUBMIT</button>
+              </form>
             </div>
           </div>
         </SwiperSlide>
@@ -94,30 +100,33 @@ const Hero = () => {
           style={{ backgroundImage: `url('/images/slide3.jpg')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-center md:justify-between h-full text-center text-white  md:mt-[80px] mt-[0px] md:ml-[120px] ml-0">
-            <div className="flex flex-col md:w-[60%] w-[90%] items-start md:items-start md:ml-[200px] justify-start mt-[100px]">
+          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  md:mt-[120px] mt-[50px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
+            <div className="flex flex-col md:w-[40%] w-[90%]  items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
               <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
-                archin
+                Elevate
               </h1>
-              <button className="btn md:p-3 text-white rounded-[100px] mt-3 sm:text-2xl text-xl transition-all text-left">
-                <Link href={"/contact"}>architecture design studio</Link>
+              <p className="text-left md:w-[65%] w-[90%] leading-8 text-md">
+                {" "}
+                Redefining environments with timeless designs tailored to your lifestyle.
+              </p>
+              <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm ">
+              Start Your Journey <GoArrowUpRight/>
               </button>
             </div>
-            <div className="flex flex-col md:w-[40%] w-[90%]">
-              <p className="text-left md:w-[55%] w-[90%] leading-8 text-md">
-                {" "}
-                We collaborate with clients to create buildings and environments
-                in dialogue with culture and place. And become one of the
-                country's leading architectural practices
-              </p>
-              <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[190px] h-[50px] text-white rounded-full mt-[50px] flex flex-row text-center">
-                Our Services <GoArrowUpRight/>
-              </button>
+            <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
+              <h1 className="md:text-4xl text-xl font-bold pt-4">CONTACT FORM</h1>
+              <form className="px-3 py-4 rounded-md  flex flex-col space-y-5">
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Name"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="email" name="" id="" placeholder="Email"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="phone" name="" id="" placeholder="Phone Number"/>
+                <input className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Project Details"/>
+                <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">SUBMIT</button>
+              </form>
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="absolute right-[40px] sm:bottom-[40px] bottom-[100px] flex flex-row items-center space-x-2  z-50">
+      <div className="absolute right-[40px] sm:bottom-[40px] bottom-[70px] flex flex-row items-center space-x-2  z-50">
         <p className="sm:text-6xl text-3xl text-white custom-prev cursor-pointer">
           <GoChevronLeft />
         </p>

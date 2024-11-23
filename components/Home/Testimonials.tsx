@@ -11,14 +11,20 @@ import { FaChevronRight } from "react-icons/fa6";
 const Testimonials = () => {
   const testimonials = [
     {
-      text: "The entire team tactfully delivered a project of exceptional quality while staying on schedule and under budget. More than what i'm expected. I’m really satisfied and recommended!.",
-      name: "Jane Doe",
+      text: "Planic Design turned our vision into a stunning reality. Every detail was handled with precision and care",
+      name: "Sarah M",
       position: "Marketing Manager",
       image: "https://via.placeholder.com/80",
     },
     {
-      text: "The entire team tactfully delivered a project of exceptional quality while staying on schedule and under budget. More than what i'm expected. I’m really satisfied and recommended!.",
-      name: "John Smith",
+      text: "Exceptional creativity and professionalism. They made our home feel like a masterpiece.",
+      name: "Omar R",
+      position: "CEO, TechCorp",
+      image: "https://via.placeholder.com/80",
+    },
+    {
+      text: "From concept to completion, the team exceeded our expectations at every step.",
+      name: "Emily T",
       position: "CEO, TechCorp",
       image: "https://via.placeholder.com/80",
     },
