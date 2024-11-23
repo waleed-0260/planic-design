@@ -31,14 +31,14 @@ const Hero = () => {
           nextEl: ".custom-next", // Link to custom next button
         }}
         loop={true}
-        className="md:h-[38rem] h-[50rem] w-full "
+        className="lg:h-[38rem] h-[57rem] w-full "
       >
         <SwiperSlide
           className="relative w-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url('/images/slide1.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  md:mt-[120px] mt-[50px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
+          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  lg:mt-[120px] mt-[160px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
             <div className="flex flex-col md:w-[40%] w-[90%]  items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
               <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
                 Inspire
@@ -69,7 +69,7 @@ const Hero = () => {
           style={{ backgroundImage: `url('/images/slide2.png')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  md:mt-[120px] mt-[50px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
+          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  lg:mt-[120px] mt-[160px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
             <div className="flex flex-col md:w-[40%] w-[90%]  items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
               <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
                 Innvoate
@@ -100,7 +100,7 @@ const Hero = () => {
           style={{ backgroundImage: `url('/images/slide3.jpg')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  md:mt-[120px] mt-[50px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
+          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  lg:mt-[120px] mt-[160px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
             <div className="flex flex-col md:w-[40%] w-[90%]  items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
               <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
                 Elevate

@@ -64,7 +64,7 @@ const Header = (color: any) => {
 
       <div>
       {/* Navbar */}
-      <div className="flex lg:hidden flex-row justify-between p-1 items-center w-full h-[100px] bg-[#333333]">
+      <div className="flex lg:hidden flex-row justify-between p-1 items-center w-full h-[100px] bg-transparent absolute">
         <div className="h-[150px] w-[150px] relative z-10">
           <Image src={logo} alt="Logo" className="h-full w-full" />
         </div>
