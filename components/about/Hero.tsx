@@ -44,7 +44,7 @@ const Hero = ({heading}:any) => {
           style={{ backgroundImage: `url('/images/aboutHero.jpg')` }}
         >
           <div className="absolute inset-0 bg-black opacity-40 lg:h-[44rem] h-[50rem]"></div>
-          <div className="flex md:flex-row flex-col items-center justify-between p-4 w-full text-white z-50 mt-[90px]">
+          <div className="flex md:flex-row flex-col items-center justify-between p-4 w-full text-white z-10 mt-[150px]">
             <div className="flex md:flex-row flex-col gap-4 justify-around md:w-[50%] w-full">
               <div className="flex md:flex-col flex-row md:space-y-4 space-x-4 md:space-x-0 z-50 md:mt-0 mt-[150px]">
                 {icons.map((icon, index) => (
