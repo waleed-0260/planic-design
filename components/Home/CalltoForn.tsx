@@ -2,7 +2,7 @@ import React from 'react'
 
 const CalltoForn = ({heading, desc, btn}:any) => {
   return (
-<div className="w-full flex flex-col items-center justify-center space-y-4 p-6 border-t-[1px] borer-[#b3b2af] mt-[100px]">
+<div className="w-full flex flex-col items-center justify-center space-y-4 p-6 border-t-[1px] borer-[#b3b2af] mt-[100px]" data-aos="zoom-in">
   <h1 className="text-3xl font-bold text-center text-gray-800">
   {heading}
   </h1>

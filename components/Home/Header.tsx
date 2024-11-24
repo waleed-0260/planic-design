@@ -8,6 +8,7 @@ import Link from "next/link";
 import { MdSearch } from "react-icons/md";
 import { TbMenu } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
+import { RxCross2 } from "react-icons/rx";
 
 const Header = (color: any) => {
   console.log("color", color)
@@ -72,7 +73,11 @@ const Header = (color: any) => {
           className="text-3xl border-[1px] border-[#b3b2af] p-1 z-50 rounded-md text-white cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)} // Toggle menu
         >
+          {menuOpen ?
+          <RxCross2/>
+          : 
           <IoIosMenu />
+          }
         </p>
       </div>
 

@@ -48,7 +48,7 @@ const FeaturedProjects = () => {
     ];
 
   return (
-    <div className='w-[90%] flex flex-col items-start'>
+    <div className='w-[90%] flex flex-col items-start my-[50px]' data-aos="fade-up">
         <h1 className='md:text-5xl text-2xl font-bold'>Featured Projects</h1>
         <div className='flex md:flex-row flex-col justify-between md:items-center w-full my-[50px]'>
             <ul className='flex md:flex-row flex-col gap-5'>
@@ -70,7 +70,7 @@ const FeaturedProjects = () => {
     768: {
       slidesPerView: 2, // For screens >= 768px
     },
-  }} className="p-4">
+  }} className="p-4" data-aos="zoom-in" data-aos-delay="300">
         {projects.map((project) => (
           <SwiperSlide key={project.id} className="flex flex-col w-full">
             {/* Image Section */}

@@ -10,7 +10,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-    <Hero heading="About US"/>
+    <Hero heading="About US" desc="Architecture & Interior Design Company "/>
     <div className='flex flex-col items-center justify-center w-full bg-[#f1eee9]'>
       <About/>
       <Process/>

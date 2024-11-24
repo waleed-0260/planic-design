@@ -15,8 +15,8 @@ const Process = () => {
   return (
     <div className='flex flex-col items-center justify-center bg-cover w-full my-[100px] py-[100px]' style={{backgroundImage:`url('/images/aboutProcess.png')`}}>
         <h1 className='text-5xl font-bold'>Our Values</h1>
-        <div className='flex md:flex-row flex-col w-[90%] justify-between items-start mt-[50px]'>
-            <div className='md:w-[40%] w-full flex flex-col '>
+        <div className='flex md:flex-row flex-col w-[90%] justify-between items-start mt-[50px]' >
+            <div className='md:w-[40%] w-full flex flex-col ' data-aos="fade-right">
             <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1" className='rounded-2xl'>
         <AccordionTrigger >
@@ -72,7 +72,7 @@ const Process = () => {
     <button className='w-[330px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 px-3 mt-[50px]'>See How Our Values Shape Our Work <GoArrowUpRight/></button>
             </div>
 
-            <div className='md:w-[50%] relative lg:block hidden'>
+            <div className='md:w-[50%] relative lg:block hidden' data-aos="fade-left">
 
                 <div className='h-[350px] w-[320px] absolute top-[20px] left-[180px]'>
                     <Image src={proc1} alt="aasd" className='object-cover rounded-full h-[320px]'/>

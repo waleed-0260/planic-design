@@ -49,7 +49,7 @@ const Blogs = () => {
         ];
 
   return (
-<div className='w-[90%] flex flex-col items-start'>
+<div className='w-[90%] flex flex-col items-start' data-aos="fade-up">
     <div className='flex flex-row items-center justify-between w-full'>
       <div className='flex flex-col space-y-3'>
         <h1 className='text-4xl font-bold'>Stay Inspired with Our Insights</h1>
@@ -66,7 +66,7 @@ const Blogs = () => {
     768: {
       slidesPerView: 2, // For screens >= 768px
     },
-  }} className="p-4">
+  }} className="p-4" data-aos="zoom-in" data-aos-delay="300">
         {projects.map((project) => (
           <SwiperSlide key={project.id} className="flex flex-col w-full">
             {/* Image Section */}

@@ -6,7 +6,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const About = () => {
   return (
     <div className='flex md:flex-row flex-col md:items-center items-start justify-between space-x-4 gap-4 w-[90%] my-[100px]'>
-      <div className="relative text-black md:w-[15%] h-[165px] rounded-full flex items-center justify-center">
+      <div className="relative text-black md:w-[15%] h-[165px] rounded-full flex items-center justify-center" data-aos="fade-right">
   {/* Center Image */}
   <div className="w-[100px] h-[100px] rounded-full overflow-hidden">
     <Image src={aboutSection} alt="" className="object-cover w-full h-full" />
@@ -17,6 +17,7 @@ const About = () => {
     className="absolute inset-0 w-full h-full"
     viewBox="0 0 150 150"
     xmlns="http://www.w3.org/2000/svg"
+    
   >
     <defs>
       <path
@@ -32,7 +33,7 @@ const About = () => {
   </svg>
 </div>
 
-<div className='flex flex-col md:w-[45%]'>
+<div className='flex flex-col md:w-[45%]' data-aos="fade-up">
   <h1 className='text-3xl font-semibold '>From Concept to Creation: A Journey of <span className='text-[#FF4814]'>Excellence</span></h1>
       <p className='leading-10 text-2xl'>
       Planic Design started with a mission to transform ordinary spaces into extraordinary environments. Over the years, we have grown into a full-service architecture and interior design firm, renowned for our innovative solutions and meticulous attention to detail.
@@ -44,7 +45,7 @@ Our work is driven by a passion for design and a commitment to delivering person
       
 </div>
 
-      <div className='flex flex-col md:w-[20%]'>
+      <div className='flex flex-col md:w-[20%]' data-aos="fade-left">
         <h1 className='text-6xl text-[#FF4814]'>95%</h1>
         <p className='textColor mt-3'>Clients Satisfied and repeating        </p>
 

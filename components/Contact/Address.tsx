@@ -1,20 +1,25 @@
-import React from "react";
+import React from 'react'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-const Footer = () => {
+const Address = () => {
   return (
-    <footer className="w-full border-t-[2px] text-black p-4">
-      <div className="flex md:flex-row flex-col justify-between items-center max-w-6xl mx-auto">
-        {/* Left Side: Copyright Info */}
-        <div className="text-left">
-
-
-
-          
-          <p>&copy; 2024 Planic Design. All rights reserved.</p>
+    <div className='flex md:flex-row flex-col items-center justify-between w-[90%] my-[50px]'>
+        <div className='flex w-[50%] flex-row space-x-4'>
+            <div className='flex flex-col items-start space-y-4'>
+                <h1 className='font-bold text-3xl'>Boston, MA</h1>
+                <p className='textColor text-sm'>49 Brimmer St, Boston, MA 02108</p>
+                <p className='textColor text-sm'>hello@archin.co</p>
+                <p className='textColor text-sm'>(054) 3256 78 87</p>
+            </div>
+            <div className='flex flex-col items-start space-y-4'>
+                <h1 className='font-bold text-3xl'>Potlland Or</h1>
+                <p className='textColor text-sm'>2221 Sw Broadway Dr, Portland, OR 97201</p>
+                <p className='textColor text-sm'>hello@archin.co</p>
+                <p className='textColor text-sm'>(054) 3256 78 87</p>
+            </div>
         </div>
 
-        {/* Right Side: Social Media Icons */}
+        <div className='w-[50%] flex items-end justify-end'>
         <div className="flex gap-4 md:mt-0 mt-4">
           <a
             href="#"
@@ -41,9 +46,9 @@ const Footer = () => {
             <FaLinkedinIn />
           </a>
         </div>
-      </div>
-    </footer>
-  );
-};
+        </div>
+    </div>
+  )
+}
 
-export default Footer;
+export default Address

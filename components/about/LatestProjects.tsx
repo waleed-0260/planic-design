@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import project1 from "../../public/images/project1.jpg"
@@ -51,7 +52,7 @@ const LatestProjects = () => {
           },
         ];
   return (
-    <div className='w-[90%] flex flex-col items-start my-[100px]'>
+    <div className='w-[90%] flex flex-col items-start my-[100px]' data-aos="fade-up" >
         <h1 className='md:text-5xl text-2xl font-bold'>Latest Projects</h1>
         <div className='flex md:flex-row flex-col justify-between md:items-center w-full my-[50px]'>
             <ul className='flex md:flex-row flex-col gap-5'>
@@ -73,7 +74,7 @@ const LatestProjects = () => {
     768: {
       slidesPerView: 3, // For screens >= 768px
     },
-  }} className="p-4">
+  }} className="p-4"  data-aos="zoom-in" data-aos-delay="300">
         {projects.map((project) => {
             return(
 
