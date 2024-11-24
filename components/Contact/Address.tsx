@@ -4,20 +4,20 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 const Address = () => {
   return (
     <div className='flex md:flex-row flex-col items-center justify-between w-[90%] my-[50px]'>
-        <div className='flex w-[50%] md:flex-row flex-col space-x-4'>
-            <div className='flex flex-col items-start space-y-4'>
-                <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
+        <div className="flex justify-end md:flex-row flex-col md:w-[50%]">
+        <div className="flex flex-col items-start space-y-2">
+        <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
                 <p className='textColor text-sm w-[300px]'>Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens</p>
                 <p className='textColor text-sm'>planicdesign2@gmail.com</p>
                 <p className='textColor text-sm'>0335 5272083</p>
-            </div>
-            <div className='flex flex-col items-start space-y-4'>
-                <h1 className='font-bold text-3xl'>London</h1>
-                <p className='textColor text-sm w-[300px]'>UK: FL 3, 45 Albemarle St</p>
+        </div>
+        <div className="flex flex-col items-start space-y-2">
+        <h1 className='font-bold text-3xl'>London</h1>
+                <p className='textColor text-sm  '>UK: FL 3, 45 Albemarle St</p>
                 <p className='textColor text-sm'>planicdesign2@gmail.com</p>
                 <p className='textColor text-sm'>0335 5272083</p>
-            </div>
         </div>
+      </div>
 
         <div className='w-[50%] flex items-end justify-end'>
         <div className="flex gap-4 md:mt-0 mt-4">
