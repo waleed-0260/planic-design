@@ -58,7 +58,7 @@ const Hero = ({heading, desc}:any) => {
               </div>
 
               <div className="flex flex-col gap-3 justify-end relative top-[10px]">
-              <p className="text-lg text-white w-[350px]">
+              <p className="text-lg text-white md:w-[350px]">
                 {desc ? desc: 
                 "Architecture and interior Design Company"
                 }
