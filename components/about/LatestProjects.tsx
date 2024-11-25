@@ -64,7 +64,7 @@ const LatestProjects = () => {
                 <li>Furniture</li>
             </ul>
 
-            <button className='w-[200px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 mt-5 sm:mt-0'>See all rpojects <GoArrowUpRight/></button>
+            <Link href={"/portfolio"} className='w-[200px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 mt-5 sm:mt-0'>See all rpojects <GoArrowUpRight/></Link>
             </div>
 
             <div className="w-[90vw] h-full mt-4 relative">

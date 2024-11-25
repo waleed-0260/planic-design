@@ -4,8 +4,8 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 const Footer = () => {
   return (
     <>
-    <div className="w-[90%] flex md:flex-row flex-col items-center justify-between mt-[150px]">
-      <div className="md:w-[50%] flex flex-col">
+    <div className="w-[90%] flex md:flex-row flex-col  mt-[150px]">
+      <div className="md:w-[50%] flex flex-col ">
         <p className="text-2xl font-semibold">We believe that architecture has the power to shape lives and uplift communities. Archin‘s philosophy is passion for innovation, sustainablity and t imeless aesthetics
         </p>
 
@@ -37,24 +37,22 @@ const Footer = () => {
         </div>
 
       </div>
-
-
-      <div className='flex md:w-[50%] md:flex-row flex-col md:space-x-4 md:mt-0 mt-5'>
-            <div className='flex flex-col items-start space-y-4'>
-                <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
+      <div className="flex justify-end flex-row w-[50%]">
+        <div className="flex flex-col items-start space-y-2">
+        <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
                 <p className='textColor text-sm w-[300px]'>Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens</p>
                 <p className='textColor text-sm'>planicdesign2@gmail.com</p>
                 <p className='textColor text-sm'>0335 5272083</p>
-            </div>
-            <div className='flex flex-col items-start space-y-4'>
-                <h1 className='font-bold text-3xl'>London, UK</h1>
-                <p className='textColor text-sm w-[300px]'>UK: FL 3, 45 Albemarle St</p>
+        </div>
+        <div className="flex flex-col items-start space-y-2">
+        <h1 className='font-bold text-3xl'>London</h1>
+                <p className='textColor text-sm  '>UK: FL 3, 45 Albemarle St</p>
                 <p className='textColor text-sm'>planicdesign2@gmail.com</p>
                 <p className='textColor text-sm'>0335 5272083</p>
-            </div>
         </div>
+      </div>
     </div>
-     <footer className="w-full border-t-[2px] text-black p-4 mt-[50px]">
+     <footer className="w-full border-t-[2px] text-black py-4 mt-[50px]">
        <div className="flex md:flex-row flex-col justify-between items-center max-w-6xl mx-auto w-[90%]">
          <div className="text-left">
            <p>&copy; 2024 Planic Design. All rights reserved.</p>

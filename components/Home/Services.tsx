@@ -10,6 +10,7 @@ import { MdOutlineArchitecture } from "react-icons/md";
 import { FaCouch } from "react-icons/fa";
 import { BiCube } from "react-icons/bi";
 import { FaHardHat } from "react-icons/fa";
+import Link from 'next/link'
 
 const Services = () => {
   return (
@@ -67,9 +68,9 @@ const Services = () => {
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
             </div>
         </div>
-        <button className='bg-[#FF4814] hover:bg-black transition-all text-white rounded-full w-[240px] h-[50px] mt-[200px] hover:shadow-2xl font-thin flex flex-row items-center gap-1 justify-center'>
+        <Link href={"/contact"} className='bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] hover:text-white transition-all rounded-full w-[240px] h-[50px] mt-[200px] hover:shadow-2xl font-thin flex flex-row items-center gap-1 justify-center'>
             Get A Free Quote Now <GoArrowUpRight/>
-        </button>
+        </Link>
     </div>
   )
 }

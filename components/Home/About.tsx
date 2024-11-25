@@ -62,7 +62,7 @@ const About = () => {
         <p className="textColor md:w-[60%] leading-6 text-sm">
         With 15 years of expertise, Planic Design is your partner in creating inspiring spaces that reflect your unique style. From conceptual design to project completion, we deliver innovation, functionality, and artistry at every step.
         </p>
-        <Link href={"/about"} className="bg-white rounded-full text-black w-[240px] h-[50px] hover:bg-black hover:text-white transition flex flex-row items-center justify-center gap-2 font-light">
+        <Link href={"/about"} className="bg-border-2 rounded-full bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] hover:text-white w-[240px] h-[50px]  transition flex flex-row items-center justify-center gap-2 font-light">
           Learn More About Us <GoArrowUpRight />
         </Link>
       </div>

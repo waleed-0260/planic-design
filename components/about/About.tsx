@@ -39,7 +39,7 @@ const About = () => {
       Planic Design started with a mission to transform ordinary spaces into extraordinary environments. Over the years, we have grown into a full-service architecture and interior design firm, renowned for our innovative solutions and meticulous attention to detail.
 Our work is driven by a passion for design and a commitment to delivering personalized experiences for our clients. Whether designing a home, an office, or a retail space, we create designs that inspire, elevate, and endure.
       </p>
-      <button className="bg-white rounded-full text-black w-[280px] h-[50px] hover:bg-black hover:text-white transition flex flex-row items-center justify-center gap-2 font-light mt-4">
+      <button className="rounded-full w-[280px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] hover:text-white transition flex flex-row items-center justify-center gap-2 font-light mt-4">
           Learn More About Our Journey <GoArrowUpRight />
         </button>
       

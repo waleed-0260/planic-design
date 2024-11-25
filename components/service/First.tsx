@@ -8,7 +8,7 @@ const First = () => {
         <div className='flex flex-col space-y-6 md:w-[50%]' data-aos="fade-left">
             <h1 className='font-bold text-4xl'>Comprehensive Solutions for Every Space</h1>
             <p className='textColor text-md'>We provide end-to-end architecture and interior design services, from planning and creative design to project management and construction supervision. Whether it's a residential sanctuary or a commercial masterpiece, our team ensures every detail exceeds expectations.</p>
-            <button className='w-[250px] h-10 flex items-center justify-center gap-4 bg-transparent text-black text-center hover:bg-black hover:text-white rounded-full transition duration-300 text-sm bg-white'> Exlpore Our Services<IoIosArrowRoundDown/></button>
+            <button className='w-[250px] h-10 flex items-center justify-center gap-4 bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] hover:text-white rounded-full transition duration-300 text-sm'> Exlpore Our Services<IoIosArrowRoundDown/></button>
             {/* <span className='h-[40px] w-[300px] border-[1px] border-black rounded-full flex flex-row items-center justify-around'>
                 <p>An award winning studio</p>
                 <p>2020</p>

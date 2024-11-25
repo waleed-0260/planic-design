@@ -9,6 +9,7 @@ import { MdSearch } from "react-icons/md";
 import { TbMenu } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Header = (color: any) => {
   console.log("color", color)
@@ -99,14 +100,25 @@ const Header = (color: any) => {
         <li className="list-none mid-heading transition-all">
           <Link href={"/about"}>About Us</Link>
         </li>
-        <li className="list-none mid-heading transition-all">
+        {/* <li className="list-none mid-heading transition-all">
           <Link href={"/blogs"}>Blogs</Link>
-        </li>
+        </li> */}
         <li className="list-none mid-heading transition-all">
           <Link href={"/contact"}>Contact</Link>
         </li>
       </ul>
     </div>
+    <div className="fixed bottom-[20px] right-[100px] z-50">
+        <FloatingWhatsApp
+          phoneNumber="+923355272083"
+          accountName="Planic Design"
+          statusMessage="Replies within 15 minutes"
+          chatMessage="Hello there! How can I help you ?"
+          avatar="/images/logo.png"
+          chatboxHeight={350}
+          buttonClassName="floating-whatsapp-button"
+        />
+      </div>
     </>
   );
 };
