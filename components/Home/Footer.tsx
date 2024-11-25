@@ -3,19 +3,13 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-[2px] text-black p-4">
-      <div className="flex md:flex-row flex-col justify-between items-center max-w-6xl mx-auto">
-        {/* Left Side: Copyright Info */}
-        <div className="text-left">
+    <>
+    <div className="w-[90%] flex flex-row items-center justify-between mt-[150px]">
+      <div className="w-[50%] flex flex-col">
+        <p className="text-2xl font-semibold">We believe that architecture has the power to shape lives and uplift communities. Archin‘s philosophy is passion for innovation, sustainablity and t imeless aesthetics
+        </p>
 
-
-
-          
-          <p>&copy; 2024 Planic Design. All rights reserved.</p>
-        </div>
-
-        {/* Right Side: Social Media Icons */}
-        <div className="flex gap-4 md:mt-0 mt-4">
+        <div className="flex gap-4 md:mt-[20px] mt-4">
           <a
             href="#"
             className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
@@ -41,8 +35,44 @@ const Footer = () => {
             <FaLinkedinIn />
           </a>
         </div>
+
+      </div>
+
+
+      <div className='flex w-[50%] flex-row space-x-4'>
+            <div className='flex flex-col items-start space-y-4'>
+                <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
+                <p className='textColor text-sm w-[300px]'>Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens</p>
+                <p className='textColor text-sm'>planicdesign2@gmail.com</p>
+                <p className='textColor text-sm'>0335 5272083</p>
+            </div>
+            <div className='flex flex-col items-start space-y-4'>
+                <h1 className='font-bold text-3xl'>London, UK</h1>
+                <p className='textColor text-sm w-[300px]'>UK: FL 3, 45 Albemarle St</p>
+                <p className='textColor text-sm'>planicdesign2@gmail.com</p>
+                <p className='textColor text-sm'>0335 5272083</p>
+            </div>
+        </div>
+    </div>
+     <footer className="w-full border-t-[2px] text-black p-4 mt-[50px]">
+       <div className="flex md:flex-row flex-col justify-between items-center max-w-6xl mx-auto w-[90%]">
+         <div className="text-left">
+           <p>&copy; 2024 Planic Design. All rights reserved.</p>
+         </div>
+
+       <div className="flex gap-4 md:mt-0 mt-4">
+        <ul className="flex flex-row gap-4">
+          <li className="cursor-pointer">Home</li>
+          <li className="cursor-pointer">About</li>
+          <li className="cursor-pointer">Services</li>
+          <li className="cursor-pointer">Portfolio</li>
+          <li className="cursor-pointer">Contact</li>
+        </ul>
+        </div>
       </div>
     </footer>
+    </>
+
   );
 };
 

@@ -16,6 +16,7 @@ import "aos/dist/aos.css";
 import TextAnimation from "@/components/Home/TextAnimation";
 import Loader from "@/components/Loader";
 import CalltoForn from "@/components/Home/CalltoForn";
+import Slider from "@/components/Home/Slider";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -40,13 +41,14 @@ export default function Home() {
       <Services/>
       <Process/>
       <FeaturedProjects/>
+      <Slider/>
       <Testimonials/>
       <TextAnimation/>
-      <Awards/>
+      {/* <Awards/> */}
       <Blogs/>
       <CalltoForn  heading="Stay Inspired, Stay Informed" desc="Join the Planic Design community to get the latest design trends, project highlights, and expert tips delivered straight to your inbox. Be the first to know about our exclusive insights and updates." btn="Subscribe Now"/>
-    </div>
     <Footer/>
+    </div>
     </>
     )}
     </>

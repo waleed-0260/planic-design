@@ -1,6 +1,7 @@
 import Hero from '@/components/about/Hero'
 import Address from '@/components/Contact/Address'
 import ContactForm from '@/components/Contact/ContactForm'
+import Footer from '@/components/Home/Footer'
 import React from 'react'
 
 const page = () => {
@@ -11,6 +12,7 @@ to make your dream become reality"/>
       <div className='flex flex-col items-center justify-center w-full bg-[#f1eee9]'>
         <Address/>
         <ContactForm/>
+        <Footer/>
       </div>
     </div>
   )
