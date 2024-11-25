@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
 
-      <div className='flex md:w-[50%] md:flex-row flex-col space-x-4'>
+      <div className='flex md:w-[50%] md:flex-row flex-col md:space-x-4 md:mt-0 mt-5'>
             <div className='flex flex-col items-start space-y-4'>
                 <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
                 <p className='textColor text-sm w-[300px]'>Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens</p>

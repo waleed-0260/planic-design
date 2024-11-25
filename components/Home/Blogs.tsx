@@ -50,7 +50,7 @@ const Blogs = () => {
 
   return (
 <div className='w-[90%] flex flex-col items-start' data-aos="fade-up">
-    <div className='flex flex-row items-center justify-between w-full'>
+    <div className='flex md:flex-row flex-col items-center justify-between w-full'>
       <div className='flex flex-col space-y-3'>
         <h1 className='text-4xl font-bold'>Stay Inspired with Our Insights</h1>
         <p className='textColor'>Discover design trends, project highlights, and expert tips on creating extraordinary spaces.</p>
