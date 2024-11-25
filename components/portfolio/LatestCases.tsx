@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import project1 from "../../public/images/project1.jpg"
 import project2 from "../../public/images/project2.jpg"
+import Link from 'next/link'
 
 
 const LatestCases = () => {
@@ -76,7 +77,7 @@ const LatestCases = () => {
 
             <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 w-full mt-[60px]' >
             {projects.map((project) => (
-          <div key={project.id} className="flex flex-col w-full mt-[20px]" data-aos="zoom-in" data-aos-delay="300">
+          <Link href="/single_project/231" key={project.id} className="flex flex-col w-full mt-[20px]" data-aos="zoom-in" data-aos-delay="300">
             {/* Image Section */}
             <div className="md:h-[400px] h-[300px] w-[100%] mx-auto">
               <Image
@@ -99,7 +100,7 @@ const LatestCases = () => {
             {/* Title and Description */}
             <h1 className="md:text-4xl text-2xl mt-4 font-bold mt-[40px] ">{project.title}</h1>
             <p className="mt-2 text-gray-600 mt-[20px]">{project.description}</p>
-          </div>
+          </Link>
         ))}
             </div>
     </div>

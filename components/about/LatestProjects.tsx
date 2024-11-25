@@ -11,6 +11,7 @@ import 'swiper/css/effect-fade';
 // import { Autoplay} from "swiper/modules";
 import { GoArrowUpRight } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
+import Link from 'next/link'
 
 const LatestProjects = () => {
     const projects = [
@@ -79,6 +80,7 @@ const LatestProjects = () => {
             return(
 
           <SwiperSlide key={project.id} className="flex flex-col w-full relative">
+            <Link href={"/single_project/213"}>
             {/* Image Section */}
             <p className='bg-white text-black rounded-lg px-12 py-6 absolute top-0 left-0 '>{project.date}</p>
             <p className='h-14 w-14 text-center bg-white hover:bg-[#FF4814] hover:text-white transition duration-300 absolute top-2 right-2 rounded-full text-2xl flex items-center justify-center cursor-pointer'><GoArrowRight/></p>
@@ -93,8 +95,8 @@ const LatestProjects = () => {
             <div className="flex flex-row gap-3 items-start mt-10 absolute bottom-[100px] left-[20px]">
               {project.tags.map((tag, index) => (
                 <span
-                  key={index}
-                  className="rounded-full py-1 px-3 border-[#aeb1b5] border-[1px] bg-white text-sm"
+                key={index}
+                className="rounded-full py-1 px-3 border-[#aeb1b5] border-[1px] bg-white text-sm"
                 >
                   {tag}
                 </span>
@@ -103,6 +105,7 @@ const LatestProjects = () => {
             {/* Title and Description */}
             <h1 className="text-3xl mt-4 font-bold mt-[40px] absolute bottom-[20px] left-[20px] text-white">{project.title}</h1>
             {/* <p className="mt-2 text-gray-600 mt-[20px]">{project.description}</p> */}
+              </Link>
           </SwiperSlide>
                       )
 
