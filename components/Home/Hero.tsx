@@ -70,7 +70,7 @@ const Hero = () => {
           </div>
           <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
             <h1 className="md:text-4xl text-xl font-bold">Ready to elevate your space</h1>
-            <p className="text-sm">Get a custom interior design plan tailored to your vision.</p>
+            <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
             <form className="px-3 py-4 rounded-md flex flex-col space-y-5">
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -135,7 +135,7 @@ const Hero = () => {
             </div>
             <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
               <h1 className="md:text-4xl text-xl font-bold">Ready to elevate your space</h1>
-              <p className="text-sm">Get a custom interior design plan tailored to your vision.</p>
+              <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
               <form className="px-3 py-4 rounded-md  flex flex-col space-y-5">
                 <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Name" onFocus={handleFocus}
                 onBlur={handleBlur}/>
@@ -170,7 +170,7 @@ const Hero = () => {
             </div>
             <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
               <h1 className="md:text-4xl text-xl font-bold pt-4">Ready to elevate your space</h1>
-              <p className="text-sm">Get a custom interior design plan tailored to your vision.</p>
+              <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
               <form className="px-3 py-4 rounded-md  flex flex-col space-y-5">
                 <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Name" onFocus={handleFocus}
                 onBlur={handleBlur}/>

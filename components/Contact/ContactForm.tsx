@@ -4,13 +4,13 @@ import { GoArrowUpRight } from "react-icons/go";
 const ContactForm = () => {
   return (
     <div className='w-[90%] my-[50px] py-[50px] flex md:flex-row flex-col items-start justify-between'>
-        <div className='flex flex-col space-y-5 w-[30%]'>
-            <h1 className='text-4xl font-bold'>Let's Help Build Your Dreams</h1>
+        <div className='flex flex-col space-y-5 md:w-[30%]'>
+            <h1 className='md:text-4xl text-2xl font-bold'>Let's Help Build Your Dreams</h1>
             <p className='textColor realtive top-[70px] text-sm'>Your email address will not be published.
             Required fields are marked *</p>
         </div>
 
-        <div className='w-[50%] flex flex-col'>
+        <div className='md:w-[50%] flex flex-col'>
         <form action="" className="max-w-lg mx-auto p-4 space-y-6">
   <div className="flex gap-4">
     <div className="flex-1">

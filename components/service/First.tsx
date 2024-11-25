@@ -4,7 +4,7 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 
 const First = () => {
   return (
-    <div className='flex md:flex-row flex-col items-center justify-around h-[500px] w-full'>
+    <div className='flex md:flex-row flex-col items-center justify-around w-full'>
         <div className='flex flex-col space-y-6 w-[50%]' data-aos="fade-left">
             <h1 className='font-bold text-4xl'>Comprehensive Solutions for Every Space</h1>
             <p className='textColor text-md'>We provide end-to-end architecture and interior design services, from planning and creative design to project management and construction supervision. Whether it's a residential sanctuary or a commercial masterpiece, our team ensures every detail exceeds expectations.</p>

@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 const Footer = () => {
   return (
     <>
-    <div className="w-[90%] flex flex-row items-center justify-between mt-[150px]">
+    <div className="w-[90%] flex md:flex-row flex-col items-center justify-between mt-[150px]">
       <div className="w-[50%] flex flex-col">
         <p className="text-2xl font-semibold">We believe that architecture has the power to shape lives and uplift communities. Archin‘s philosophy is passion for innovation, sustainablity and t imeless aesthetics
         </p>

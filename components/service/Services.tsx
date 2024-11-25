@@ -16,7 +16,7 @@ const Services = () => {
         <h1 data-aos="zoom-in">OUR SERVICES</h1>
 
         <div className='mt-5 grid lg:grid-cols-2 sm:grid-cols-2 grid-cols-1  ' data-aos="fade-up" data-aos-delay="300">
-            <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-b-[1px] border-[#b3b2af]'>
+            <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 md:border-b-[1px] border-[#b3b2af]'>
                 <p className='text-3xl text-[#FF4814]'>
                 {/* <CiBezier/> */}
                 <MdOutlineArchitecture/>
@@ -31,7 +31,7 @@ const Services = () => {
                 <button className='w-[300px] h-10 flex items-center justify-center gap-4 bg-transparent text-black text-center hover:bg-black hover:text-white rounded-full transition duration-300 text-sm bg-white'> Explore Architectural Solutions<IoIosArrowRoundForward style={{rotate:"310deg"}}/></button>
             </div>
 
-            <div className='py-5 gap-5 flex flex-col items-start px-5 justify-around border-l-[1px] border-[#b3b2af] border-b-[1px] border-[#b3b2af]'>
+            <div className='py-5 gap-5 flex flex-col items-start px-5 justify-around border-l-[1px] border-[#b3b2af] md:border-b-[1px] border-[#b3b2af]'>
                 <p className='text-3xl text-[#FF4814]'>
                 {/* <CiBezier/> */}
                 <FaCouch/>

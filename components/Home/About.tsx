@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import experience from "../../public/images/experience.png";
 import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
+import Link from "next/link";
 
 const About = () => {
   const [hasScrolledTo, setHasScrolledTo] = useState(false);
@@ -61,9 +62,9 @@ const About = () => {
         <p className="textColor md:w-[60%] leading-6 text-sm">
         With 15 years of expertise, Planic Design is your partner in creating inspiring spaces that reflect your unique style. From conceptual design to project completion, we deliver innovation, functionality, and artistry at every step.
         </p>
-        <button className="bg-white rounded-full text-black w-[240px] h-[50px] hover:bg-black hover:text-white transition flex flex-row items-center justify-center gap-2 font-light">
+        <Link href={"/about"} className="bg-white rounded-full text-black w-[240px] h-[50px] hover:bg-black hover:text-white transition flex flex-row items-center justify-center gap-2 font-light">
           Learn More About Us <GoArrowUpRight />
-        </button>
+        </Link>
       </div>
     </div>
   );

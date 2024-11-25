@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import 'swiper/css/effect-fade';
 // import { Autoplay} from "swiper/modules";
 import { GoArrowUpRight } from "react-icons/go";
+import Link from 'next/link'
 
 const FeaturedProjects = () => {
     const projects = [
@@ -73,6 +74,7 @@ const FeaturedProjects = () => {
   }} className="p-4" data-aos="zoom-in" data-aos-delay="300">
         {projects.map((project) => (
           <SwiperSlide key={project.id} className="flex flex-col w-full">
+            <Link href="/single_project/112">
             {/* Image Section */}
             <div className="md:h-[600px] h-[400px] w-[100%] mx-auto">
               <Image
@@ -95,6 +97,7 @@ const FeaturedProjects = () => {
             {/* Title and Description */}
             <h1 className="text-4xl mt-4 font-bold mt-[40px]">{project.title}</h1>
             <p className="mt-2 text-gray-600 mt-[20px]">{project.description}</p>
+        </Link>
           </SwiperSlide>
         ))}
       </Swiper>
