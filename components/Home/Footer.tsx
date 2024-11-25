@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
     <div className="w-[90%] flex md:flex-row flex-col items-center justify-between mt-[150px]">
-      <div className="w-[50%] flex flex-col">
+      <div className="md:w-[50%] flex flex-col">
         <p className="text-2xl font-semibold">We believe that architecture has the power to shape lives and uplift communities. Archin‘s philosophy is passion for innovation, sustainablity and t imeless aesthetics
         </p>
 
@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
 
-      <div className='flex w-[50%] flex-row space-x-4'>
+      <div className='flex md:w-[50%] md:flex-row flex-col space-x-4'>
             <div className='flex flex-col items-start space-y-4'>
                 <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
                 <p className='textColor text-sm w-[300px]'>Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens</p>

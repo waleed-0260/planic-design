@@ -85,7 +85,7 @@ const Header = (color: any) => {
       <ul
         className={`${
           menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pl-4 text-white`}
+        } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pl-4 text-white py-4`}
       >
         <li className="list-none mid-heading transition-all">
           <Link href={"/"}>Home</Link>
