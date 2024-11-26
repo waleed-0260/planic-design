@@ -23,8 +23,8 @@ select to show or hide it"/>
         <Testimonials/>
         <FeaturedProjects/>
         <CalltoForn heading=" Let’s Design Something Extraordinary Together" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>
-      </div>
       <Footer/>
+      </div>
     </div>
   )
 }
