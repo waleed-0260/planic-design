@@ -42,9 +42,9 @@ const Header = (color: any) => {
             <li className="list-none mid-heading  transition-all ">
               <Link href={"/about"}>About Us</Link>
             </li>{" "}
-            <li className="list-none mid-heading  transition-all ">
+            {/* <li className="list-none mid-heading  transition-all ">
               <Link href={"/blogs"}>Blogs</Link>
-            </li>{" "}
+            </li>{" "} */}
             <li className="list-none mid-heading  transition-all ">
               <Link href={"/contact"}>Contact</Link>
             </li>{" "}
