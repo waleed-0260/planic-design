@@ -15,7 +15,7 @@ const page = () => {
     <div className='flex flex-col items-center justify-center w-full bg-[#f1eee9]'>
       <About/>
       <Process/>
-      <Awards/>
+      {/* <Awards/> */}
       <LatestProjects/>
       <CalltoForn heading=" Let’s Design Something Extraordinary Together" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>
       <Footer/>

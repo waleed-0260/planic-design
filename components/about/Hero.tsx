@@ -18,12 +18,12 @@ import { IoCartSharp } from "react-icons/io5";
 
 const Hero = ({heading, desc}:any) => {
   const icons = [
-    { component: <FaFacebook />, color: "#4267B2" }, // Facebook Blue
-    { component: <FaTwitter />, color: "#1DA1F2" }, // Twitter Blue
-    { component: <FaInstagram />, color: "#E1306C" }, // Instagram Pink
-    { component: <FaLinkedin />, color: "#0077B5" }, // LinkedIn Blue
+    { component: <FaFacebook />, color: "#4267B2", link:"https://www.facebook.com/theplanicdesign" }, // Facebook Blue
+    { component: <FaTwitter />, color: "#1DA1F2", link:"https://www.instagram.com/theplanicdesign/" }, // Twitter Blue
+    { component: <FaInstagram />, color: "#E1306C", link:"https://www.linkedin.com/company/theplanicdesign" }, // Instagram Pink
+    { component: <FaLinkedin />, color: "#0077B5", link:"https://www.youtube.com/@PlanicDesign" }, // LinkedIn Blue
     // { component: <FaYoutube />, color: "#FF0000" },  // YouTube Red
-    { component: <FaGithub />, color: "#333" }, // GitHub Black
+    // { component: <FaGithub />, color: "#333" }, // GitHub Black
   ];
 
   const moreIcons = [
@@ -48,17 +48,17 @@ const Hero = ({heading, desc}:any) => {
             <div className="flex md:flex-row flex-col gap-4 justify-around md:w-[50%] w-full">
               <div className="flex md:flex-col flex-row md:space-y-4 space-x-4 md:space-x-0 z-50 md:mt-0 mt-[150px]">
                 {icons.map((icon, index) => (
-                  <div
+                  <a href={icon.link}
                     key={index}
                     className={`p-3 rounded-full hover:opacity-100 transition duration-300 hover:bg-[#FF4814] bg-white bg-opacity-10`}
                   >
                     <div className="text-xl text-white">{icon.component}</div>
-                  </div>
+                  </a>
                 ))}
               </div>
 
               <div className="flex flex-col gap-3 justify-end relative top-[10px]">
-              <p className="text-lg text-white w-[350px]">
+              <p className="text-lg text-white md:w-[350px]">
                 {desc ? desc: 
                 "Architecture and interior Design Company"
                 }
