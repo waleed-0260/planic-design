@@ -14,7 +14,7 @@ const About = () => {
 
   {/* Circular Text */}
   <svg
-    className="absolute inset-0 w-full h-full"
+    className="absolute inset-0 w-full h-full rotating-box p-1"
     viewBox="0 0 150 150"
     xmlns="http://www.w3.org/2000/svg"
     

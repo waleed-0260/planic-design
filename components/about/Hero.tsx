@@ -73,10 +73,11 @@ const Hero = ({heading, desc}:any) => {
   <div className="absolute inset-0 flex items-center justify-center text-5xl font-bold">
     25
   </div>
+  {/* // mongodb+srv://spearingsystems:h1MOS9jb8VG6GBjw@cluster0.wv8zu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 */}
 
   {/* Circular Text */}
   <svg
-    className="absolute inset-0 w-full h-full p-3"
+    className="absolute inset-0 w-full h-full p-3 transform rotating-box"
     viewBox="0 0 150 150"
     xmlns="http://www.w3.org/2000/svg"
   >
