@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className="flex justify-end flex-row w-[50%]">
+      <div className="flex justify-end md:flex-row flex-col md:mt-0 mt-5 w-[50%]">
         <div className="flex flex-col items-start space-y-2">
         <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
                 <p className='textColor text-sm w-[300px]'>Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens</p>
