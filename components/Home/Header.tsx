@@ -30,7 +30,7 @@ const Header = (color: any) => {
         </Link>
         <div>
           <ul className={`flex flex-row gap-4 relative z-10`}>
-            <li className="list-none mid-heading transition-all py-3">
+            <li className="list-none mid-heading transition-all ">
               <Link href={"/"}>Home</Link>
             </li>
             <li className="list-none mid-heading relative group transition-all">
@@ -88,22 +88,22 @@ const Header = (color: any) => {
           menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pl-4 text-white`}
       >
-        <li className="list-none mid-heading transition-all py-3">
+        <li className="list-none mid-heading transition-all ">
           <Link href={"/"}>Home</Link>
         </li>
-        <li className="list-none mid-heading transition-all py-3">
+        <li className="list-none mid-heading transition-all ">
           <Link href={"/service"}>Services</Link>
         </li>
-        <li className="list-none mid-heading transition-all py-3">
+        <li className="list-none mid-heading transition-all ">
           <Link href={"/portfolio"}>Portfolio</Link>
         </li>
-        <li className="list-none mid-heading transition-all py-3">
+        <li className="list-none mid-heading transition-all ">
           <Link href={"/about"}>About Us</Link>
         </li>
-        {/* <li className="list-none mid-heading transition-all py-3">
+        {/* <li className="list-none mid-heading transition-all ">
           <Link href={"/blogs"}>Blogs</Link>
         </li> */}
-        <li className="list-none mid-heading transition-all py-3">
+        <li className="list-none mid-heading transition-all ">
           <Link href={"/contact"}>Contact</Link>
         </li>
       </ul>
