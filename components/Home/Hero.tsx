@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import Header from "./Header";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -13,8 +13,83 @@ import { GoChevronLeft } from "react-icons/go";
 import { GoChevronRight } from "react-icons/go";
 import { GoArrowUpRight } from "react-icons/go";
 import { Swiper as SwiperClass } from 'swiper';
-
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 const Hero = () => {
+
+  const [formDataSlide1, setFormDataSlide1] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    project: "",
+  });
+  
+  const [formDataSlide2, setFormDataSlide2] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    project: "",
+  });
+  
+  const [formDataSlide3, setFormDataSlide3] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    project: "",
+  });
+  
+  // Generic handleChange
+  const handleChange = (e:any, slide:any) => {
+    const { name, value } = e.target;
+    console.log("name", name)
+    console.log("value", value)
+  
+    if (slide === 1) {
+      setFormDataSlide1((prev) => ({ ...prev, [name]: value }));
+    } else if (slide === 2) {
+      setFormDataSlide2((prev) => ({ ...prev, [name]: value }));
+    } else if (slide === 3) {
+      setFormDataSlide3((prev) => ({ ...prev, [name]: value }));
+    }
+  };
+  
+  // Generic handleSubmit
+  const handleSubmit = async (e:any, slide:any) => {
+    e.preventDefault();
+  
+    const formData =
+      slide === 1
+        ? formDataSlide1
+        : slide === 2
+        ? formDataSlide2
+        : formDataSlide3;
+  
+    try {
+      const response = await fetch("https://dominobackend.vercel.app/add-contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        toast.success("Form submitted successfully!");
+        if (slide === 1) {
+          setFormDataSlide1({ name: "", email: "", phone: "", project: "" });
+        } else if (slide === 2) {
+          setFormDataSlide2({ name: "", email: "", phone: "", project: "" });
+        } else if (slide === 3) {
+          setFormDataSlide3({ name: "", email: "", phone: "", project: "" });
+        }
+      } else {
+        throw new Error("Failed to submit form");
+      }
+    } catch (error) {
+      toast.error("Error submitting form. Please try again!");
+    }
+  };
+
   const swiperRef = useRef<any>(null);
 
   // Function to pause the swiper autoplay when the user focuses on any input
@@ -71,7 +146,7 @@ const Hero = () => {
           <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
             <h1 className="md:text-4xl text-xl font-bold">Ready to elevate your space</h1>
             <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
-            <form className="px-3 py-4 rounded-md flex flex-col space-y-5">
+            <form className="px-3 py-4 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 1)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -80,6 +155,8 @@ const Hero = () => {
                 placeholder="Name"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                value={formDataSlide1.name}
+          onChange={(e)=>handleChange(e,1)}
               />
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -89,6 +166,8 @@ const Hero = () => {
                 placeholder="Email"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                value={formDataSlide1.email}
+          onChange={(e)=>handleChange(e,1)}
               />
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -96,6 +175,8 @@ const Hero = () => {
                 name="phone"
                 id="phone"
                 placeholder="Phone Number"
+                value={formDataSlide1.phone}
+                onChange={(e)=>handleChange(e,1)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
               />
@@ -105,6 +186,8 @@ const Hero = () => {
                 name="project"
                 id="project"
                 placeholder="Project Details"
+                value={formDataSlide1.project}
+                onChange={(e)=>handleChange(e,1)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
               />
@@ -136,17 +219,55 @@ const Hero = () => {
             <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
               <h1 className="md:text-4xl text-xl font-bold">Ready to elevate your space</h1>
               <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
-              <form className="px-3 py-4 rounded-md  flex flex-col space-y-5">
-                <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Name" onFocus={handleFocus}
-                onBlur={handleBlur}/>
-                <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="email" name="" id="" placeholder="Email" onFocus={handleFocus}
-                onBlur={handleBlur}/>
-                <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="phone" name="" id="" placeholder="Phone Number" onFocus={handleFocus}
-                onBlur={handleBlur}/>
-                <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Project Details" onFocus={handleFocus}
-                onBlur={handleBlur}/>
-                <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">Get Our Free Consultation</button>
-              </form>
+              <form className="px-3 py-4 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 2)}>
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide2.name}
+          onChange={(e)=>handleChange(e,2)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide2.email}
+          onChange={(e)=>handleChange(e,2)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                value={formDataSlide2.phone}
+                onChange={(e)=>handleChange(e,2)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="project"
+                id="project"
+                placeholder="Project Details"
+                value={formDataSlide2.project}
+                onChange={(e)=>handleChange(e,2)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
+                Get Our Free Consultation
+              </button>
+            </form>
             </div>
           </div>
         </SwiperSlide>
@@ -171,17 +292,55 @@ const Hero = () => {
             <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
               <h1 className="md:text-4xl text-xl font-bold pt-4">Ready to elevate your space</h1>
               <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
-              <form className="px-3 py-4 rounded-md  flex flex-col space-y-5">
-                <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Name" onFocus={handleFocus}
-                onBlur={handleBlur}/>
-                <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="email" name="" id="" placeholder="Email" onFocus={handleFocus}
-                onBlur={handleBlur}/>
-                <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="phone" name="" id="" placeholder="Phone Number" onFocus={handleFocus}
-                onBlur={handleBlur}/>
-                <input  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white" type="text" name="" id="" placeholder="Project Details" onFocus={handleFocus}
-                onBlur={handleBlur}/>
-                <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">Get Our Free Consultation</button>
-              </form>
+              <form className="px-3 py-4 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 3)}>
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide3.name}
+          onChange={(e)=>handleChange(e,3)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide3.email}
+          onChange={(e)=>handleChange(e,3)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                value={formDataSlide3.phone}
+                onChange={(e)=>handleChange(e,3)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="project"
+                id="project"
+                placeholder="Project Details"
+                value={formDataSlide3.project}
+                onChange={(e)=>handleChange(e,3)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
+                Get Our Free Consultation
+              </button>
+            </form>
             </div>
           </div>
         </SwiperSlide>
