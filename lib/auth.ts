@@ -10,7 +10,7 @@ export const authOptions: NextAuthOptions = {
           },
           async authorize(credentials) {
             // Replace with your own API request logic
-            const res = await fetch("https://dominobackend.vercel.app/admin/login", {
+            const res = await fetch("https://real-estate-backend-tan-nine.vercel.app/api/auth/login", {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({
@@ -37,7 +37,7 @@ export const authOptions: NextAuthOptions = {
           return token;
         },
       },
-      secret: process.env.NEXTAUTH_SECRET,
+      // secret: process.env.NEXTAUTH_SECRET,
       // session: {
       //   jwt: true,
       // },

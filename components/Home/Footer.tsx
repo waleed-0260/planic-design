@@ -1,6 +1,6 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 const Footer = () => {
   return (
     <>
@@ -11,25 +11,29 @@ const Footer = () => {
 
         <div className="flex gap-4 md:mt-[20px] mt-4">
           <a
-            href="#"
+            href="https://www.facebook.com/theplanicdesign"
+            target="blank"
             className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
           >
             <FaFacebookF />
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/@PlanicDesign"
+            target="blank"
             className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
           >
-            <FaTwitter />
+            <FaYoutube />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/theplanicdesign/"
+            target="blank"
             className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
           >
             <FaInstagram />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/theplanicdesign"
+            target="blank"
             className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
           >
             <FaLinkedinIn />
@@ -60,11 +64,11 @@ const Footer = () => {
 
        <div className="flex gap-4 md:mt-0 mt-4">
         <ul className="flex flex-row gap-4">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">About</li>
-          <li className="cursor-pointer">Services</li>
-          <li className="cursor-pointer">Portfolio</li>
-          <li className="cursor-pointer">Contact</li>
+          <Link href="/" className="cursor-pointer">Home</Link>
+          <Link href="/about" className="cursor-pointer">About</Link>
+          <Link href="/services" className="cursor-pointer">Services</Link>
+          <Link href="/portfolio" className="cursor-pointer">Portfolio</Link>
+          <Link href="/contact" className="cursor-pointer">Contact</Link>
         </ul>
         </div>
       </div>

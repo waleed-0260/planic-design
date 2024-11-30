@@ -10,7 +10,7 @@ import { TbMenu } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-
+import whitelogo from "../../public/images/whitelogo.png"
 const Header = (color: any) => {
   console.log("color", color)
   // const [bgColor, setBgColor] = useState("[#ffffff]");
@@ -25,8 +25,8 @@ const Header = (color: any) => {
       >
         <div className=" flex flex-row items-center justify-between w-[80%]">
 
-        <Link href={"/"} className="h-[170px] z-10">
-          <Image src={logo} alt="" className="w-full h-full " />
+        <Link href={"/"} className="h-[100px] z-10">
+          <Image src={whitelogo} alt="" className="w-full h-full " />
         </Link>
         <div>
           <ul className={`flex flex-row gap-4 relative z-10`}>
@@ -50,15 +50,8 @@ const Header = (color: any) => {
             </li>{" "}
           </ul>
         </div>
-        <div className="relative z-10 flex flex-row  space-x-4">
-          <span>EN</span>
-          <span>FR</span>
-          <p className="text-2xl  ml-[40px]">
-          <MdSearch/>
-          </p>
-          <p className="text-2xl ">
-            <TbMenu/>
-          </p>
+        <div>
+          <button className="bg-transparent border-white border-2 w-[140px] h-[40px] rounded-full hover:bg-white hover:text-black transition-all ">Contact Us</button>
         </div>
         </div>
 
@@ -66,9 +59,9 @@ const Header = (color: any) => {
 
       <div>
       {/* Navbar */}
-      <div className="flex lg:hidden flex-row justify-between p-1 items-center w-full h-[100px] bg-transparent absolute">
-        <div className="h-[150px] w-[150px] relative z-10">
-          <Image src={logo} alt="Logo" className="h-full w-full" />
+      <div className="flex lg:hidden flex-row justify-between p-1 items-center w-[95%] h-[100px] bg-transparent absolute">
+        <div className="h-[100px] w-[100px] relative z-10">
+          <Image src={whitelogo} alt="Logo" className="h-full w-full" />
         </div>
         <p
           className="text-3xl border-[1px] border-[#b3b2af] p-1 z-50 rounded-md text-white cursor-pointer"

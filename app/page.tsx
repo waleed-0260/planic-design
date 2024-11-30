@@ -20,6 +20,7 @@ import Slider from "@/components/Home/Slider";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
+  console.log("check env",process.env);
 
   useEffect(() => {
     AOS.init({
@@ -45,7 +46,7 @@ export default function Home() {
       <Testimonials/>
       <TextAnimation/>
       {/* <Awards/> */}
-      <Blogs/>
+      {/* <Blogs/> */}
       <CalltoForn  heading="Stay Inspired, Stay Informed" desc="Join the Planic Design community to get the latest design trends, project highlights, and expert tips delivered straight to your inbox. Be the first to know about our exclusive insights and updates." btn="Subscribe Now"/>
     <Footer/>
     </div>

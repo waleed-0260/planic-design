@@ -11,12 +11,14 @@ import {
   } from "@/components/ui/table"
 
 const Leads = async() => {
-    let data = await fetch('"https://dominobackend.vercel.app/get-contacts')
+    let data = await fetch('https://dominobackend.vercel.app/get-contacts')
     let posts = await data.json();
-    console.log("posts", posts);
+    // console.log("posts", posts);/
   return (
+    <div className='ml-64 p-6'>
+      <h1 className='text-4xl font-bold text-black'>Leads</h1>
         <Table>
-      <TableCaption>A list of your recent invoices.</TableCaption>
+      <TableCaption>A list of your recent contact form.</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead className="w-[100px]">Name</TableHead>
@@ -26,14 +28,14 @@ const Leads = async() => {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {/* {invoices.map((invoice) => (
-          <TableRow key={invoice.invoice}>
-            <TableCell className="font-medium">{invoice.invoice}</TableCell>
-            <TableCell>{invoice.paymentStatus}</TableCell>
-            <TableCell>{invoice.paymentMethod}</TableCell>
-            <TableCell className="text-right">{invoice.totalAmount}</TableCell>
+        {posts?.data?.map((invoice:any) => (
+          <TableRow key={invoice.id}>
+            <TableCell className="font-medium">{invoice.name}</TableCell>
+            <TableCell>{invoice.email}</TableCell>
+            <TableCell>{invoice.phone}</TableCell>
+            <TableCell className="text-right">{invoice.message}</TableCell>
           </TableRow>
-        ))} */}
+        ))}
       </TableBody>
       {/* <TableFooter>
         <TableRow>
@@ -42,6 +44,7 @@ const Leads = async() => {
         </TableRow>
       </TableFooter> */}
     </Table>
+    </div>
   )
 }
 

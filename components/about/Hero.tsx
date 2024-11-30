@@ -19,9 +19,9 @@ import { IoCartSharp } from "react-icons/io5";
 const Hero = ({heading, desc}:any) => {
   const icons = [
     { component: <FaFacebook />, color: "#4267B2", link:"https://www.facebook.com/theplanicdesign" }, // Facebook Blue
-    { component: <FaTwitter />, color: "#1DA1F2", link:"https://www.instagram.com/theplanicdesign/" }, // Twitter Blue
-    { component: <FaInstagram />, color: "#E1306C", link:"https://www.linkedin.com/company/theplanicdesign" }, // Instagram Pink
-    { component: <FaLinkedin />, color: "#0077B5", link:"https://www.youtube.com/@PlanicDesign" }, // LinkedIn Blue
+    { component: <FaInstagram />, color: "#1DA1F2", link:"https://www.instagram.com/theplanicdesign/" }, // Twitter Blue
+    { component: <FaLinkedin />, color: "#E1306C", link:"https://www.linkedin.com/company/theplanicdesign" }, // Instagram Pink
+    { component: <FaYoutube />, color: "#0077B5", link:"https://www.youtube.com/@PlanicDesign" }, // LinkedIn Blue
     // { component: <FaYoutube />, color: "#FF0000" },  // YouTube Red
     // { component: <FaGithub />, color: "#333" }, // GitHub Black
   ];
@@ -44,7 +44,7 @@ const Hero = ({heading, desc}:any) => {
           style={{ backgroundImage: `url('/images/aboutHero.jpg')` }}
         >
           <div className="absolute inset-0 bg-black opacity-30 h-[44rem]"></div>
-          <div className="flex md:flex-row flex-col items-center justify-between p-4 w-full text-white z-10 mt-[150px]">
+          <div className="flex md:flex-row flex-col items-center justify-between p-4 w-[80%] text-white z-10 mt-[150px]">
             <div className="flex md:flex-row flex-col gap-4 justify-around md:w-[50%] w-full">
               <div className="flex md:flex-col flex-row md:space-y-4 space-x-4 md:space-x-0 z-50 md:mt-0 mt-[150px]">
                 {icons.map((icon, index) => (
@@ -67,7 +67,7 @@ const Hero = ({heading, desc}:any) => {
               </div>
             </div>
 
-            <div className="flex md:flex-row flex-col md:justify-center justify-start md:ml-[50px] md:space-x-[60px] md:w-[50%] w-full md:mt-0 mt-[100px] space-x-[40px] ">
+            <div className="flex md:flex-row flex-col md:justify-end justify-start md:ml-[50px] md:space-x-[60px] md:w-[50%] w-full md:mt-0 mt-[100px] space-x-[40px] ">
             <div className="relative flex items-center justify-center w-40 h-40 bg-[#443c39] text-white rounded-full">
   {/* Center Text */}
   <div className="absolute inset-0 flex items-center justify-center text-5xl font-bold">
@@ -100,7 +100,7 @@ const Hero = ({heading, desc}:any) => {
         <span className="mx-2">•</span>
         <span className="transform -rotate-90 whitespace-nowrap">Since 1997</span> */}
 
-              <div className="flex md:flex-col flex-row md:space-y-4 space-x-4 md:space-x-0 md:ml-0 relative md:left-0 left-[-40px] md:mt-0 mt-[40px]">
+              {/* <div className="flex md:flex-col flex-row md:space-y-4 space-x-4 md:space-x-0 md:ml-0 relative md:left-0 left-[-40px] md:mt-0 mt-[40px]">
                 {moreIcons.map((icon, index) => (
                   <div
                     key={index}
@@ -109,7 +109,7 @@ const Hero = ({heading, desc}:any) => {
                     <div className="text-xl text-white">{icon.component}</div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
 

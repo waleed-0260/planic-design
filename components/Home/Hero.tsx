@@ -139,9 +139,9 @@ const Hero = () => {
             <p className="text-left md:w-[65%] w-[90%] leading-8 text-md">
               Transforming visions into breathtaking realities with expert architecture and interior design.
             </p>
-            <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm">
+            <Link href={"/contact"} className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm">
               Discover Your Dream Space <GoArrowUpRight />
-            </button>
+            </Link>
           </div>
           <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
             <h1 className="md:text-4xl text-xl font-bold">Ready to elevate your space</h1>
@@ -212,9 +212,9 @@ const Hero = () => {
                 {" "}
                 Blending creativity and functionality to craft spaces that define excellence.
               </p>
-              <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm">
+              <Link href={"/contact"} className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm">
                 Explore our creations <GoArrowUpRight/>
-              </button>
+              </Link>
             </div>
             <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
               <h1 className="md:text-4xl text-xl font-bold">Ready to elevate your space</h1>
@@ -285,9 +285,9 @@ const Hero = () => {
                 {" "}
                 Redefining environments with timeless designs tailored to your lifestyle.
               </p>
-              <button className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm ">
+              <Link href={"/contact"} className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm ">
               Start Your Journey <GoArrowUpRight/>
-              </button>
+              </Link>
             </div>
             <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
               <h1 className="md:text-4xl text-xl font-bold pt-4">Ready to elevate your space</h1>

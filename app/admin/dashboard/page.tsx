@@ -1,15 +1,10 @@
 import Leads from "@/components/admin/dashboard/Leads"
-import { useSession } from "next-auth/react"
+// import { useSession } from "next-auth/react"
+// import { authOptions } from "@/lib/auth"
+// import { getServerSession } from "next-auth"
 
-export default function Page() {
-  const { data: session } = useSession()
-
-  if (typeof window === "undefined") return null
-
-  if (session) {
-    return (
-        <Leads/>
-    )
-  }
-  return <p>Access Denied</p>
+export default async function Page() {
+  return(
+    <Leads/>
+  )
 }
