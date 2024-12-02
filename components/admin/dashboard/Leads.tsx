@@ -28,8 +28,8 @@ const Leads = async() => {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {posts?.data?.map((invoice:any) => (
-          <TableRow key={invoice.id}>
+        {posts?.data?.map((invoice:any, index:any) => (
+          <TableRow key={index}>
             <TableCell className="font-medium">{invoice.name}</TableCell>
             <TableCell>{invoice.email}</TableCell>
             <TableCell>{invoice.phone}</TableCell>

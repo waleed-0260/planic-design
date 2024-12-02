@@ -20,7 +20,7 @@ import Slider from "@/components/Home/Slider";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
-  console.log("check env",process.env);
+  // console.log("check env",process.env);
 
   useEffect(() => {
     AOS.init({

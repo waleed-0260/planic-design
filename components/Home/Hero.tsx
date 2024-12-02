@@ -21,21 +21,21 @@ const Hero = () => {
     name: "",
     email: "",
     phone: "",
-    project: "",
+    message: "",
   });
   
   const [formDataSlide2, setFormDataSlide2] = useState({
     name: "",
     email: "",
     phone: "",
-    project: "",
+    message: "",
   });
   
   const [formDataSlide3, setFormDataSlide3] = useState({
     name: "",
     email: "",
     phone: "",
-    project: "",
+    message: "",
   });
   
   // Generic handleChange
@@ -76,11 +76,11 @@ const Hero = () => {
       if (response.ok) {
         toast.success("Form submitted successfully!");
         if (slide === 1) {
-          setFormDataSlide1({ name: "", email: "", phone: "", project: "" });
+          setFormDataSlide1({ name: "", email: "", phone: "", message: "" });
         } else if (slide === 2) {
-          setFormDataSlide2({ name: "", email: "", phone: "", project: "" });
+          setFormDataSlide2({ name: "", email: "", phone: "", message: "" });
         } else if (slide === 3) {
-          setFormDataSlide3({ name: "", email: "", phone: "", project: "" });
+          setFormDataSlide3({ name: "", email: "", phone: "", message: "" });
         }
       } else {
         throw new Error("Failed to submit form");
@@ -183,10 +183,10 @@ const Hero = () => {
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
-                name="project"
-                id="project"
-                placeholder="Project Details"
-                value={formDataSlide1.project}
+                name="message"
+                id="message"
+                placeholder="message Details"
+                value={formDataSlide1.message}
                 onChange={(e)=>handleChange(e,1)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
@@ -256,10 +256,10 @@ const Hero = () => {
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
-                name="project"
-                id="project"
-                placeholder="Project Details"
-                value={formDataSlide2.project}
+                name="message"
+                id="message"
+                placeholder="message Details"
+                value={formDataSlide2.message}
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
@@ -329,10 +329,10 @@ const Hero = () => {
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
-                name="project"
-                id="project"
-                placeholder="Project Details"
-                value={formDataSlide3.project}
+                name="message"
+                id="message"
+                placeholder="message Details"
+                value={formDataSlide3.message}
                 onChange={(e)=>handleChange(e,3)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
