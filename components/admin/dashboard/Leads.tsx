@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {
     Table,
     TableBody,
@@ -10,15 +10,29 @@ import {
     TableRow,
   } from "@/components/ui/table"
 
-  async function fetchData() {
-    const res = await fetch('https://dominobackend.vercel.app/get-contacts');
-    const data = await res.json();
-    return data;
-  }
-
 const Leads = async() => {
-  // console.log("posts", posts?.posts)
-  const posts = await fetchData();
+  const [posts, setPosts] = useState<any>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch('https://dominobackend.vercel.app/get-contacts');
+        const data = await res.json();
+        setPosts(data); // Update state with fetched data
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      } finally {
+        setLoading(false); // Update loading state
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array ensures the effect runs once
+
+  if (loading) {
+    return <p>Loading...</p>; // Show a loading indicator while fetching
+  }
 
     return (
     <div className='ml-64 p-6'>
