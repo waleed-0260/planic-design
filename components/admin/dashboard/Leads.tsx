@@ -11,7 +11,7 @@ import {
     TableRow,
   } from "@/components/ui/table"
 
-const Leads = async() => {
+const Leads = () => {
   const [posts, setPosts] = useState<any>([]);
   const [loading, setLoading] = useState(true);
 
