@@ -10,11 +10,10 @@ import {
     TableRow,
   } from "@/components/ui/table"
 
-const Leads = async() => {
-    let data = await fetch('https://dominobackend.vercel.app/get-contacts')
-    let posts = await data.json();
-    // console.log("posts", posts);/
-  return (
+const Leads = (posts:any) => {
+  // console.log("posts", posts?.posts)
+
+    return (
     <div className='ml-64 p-6'>
       <h1 className='text-4xl font-bold text-black'>Leads</h1>
         <Table>
@@ -28,7 +27,7 @@ const Leads = async() => {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {posts?.data?.map((invoice:any, index:any) => (
+        {posts?.posts?.data?.map((invoice:any, index:any) => (
           <TableRow key={index}>
             <TableCell className="font-medium">{invoice.name}</TableCell>
             <TableCell>{invoice.email}</TableCell>

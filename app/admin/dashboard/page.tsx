@@ -4,7 +4,9 @@ import Leads from "@/components/admin/dashboard/Leads"
 // import { getServerSession } from "next-auth"
 
 export default async function Page() {
+  let data = await fetch('https://dominobackend.vercel.app/get-contacts')
+  let posts = await data.json();
   return(
-    <Leads/>
+    <Leads posts={posts}/>
   )
 }
