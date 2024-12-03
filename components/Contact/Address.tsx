@@ -1,7 +1,7 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaTwitter,
+  FaYoutube,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
@@ -23,32 +23,32 @@ const Address = () => {
             <h1 className="font-bold text-3xl">London</h1>
             <p className="textColor text-sm  ">UK: FL 3, 45 Albemarle St</p>
             <p className="textColor text-sm">planicdesign2@gmail.com</p>
-            <p className="textColor text-sm">0335 5272083</p>
+            <p className="textColor text-sm">+44 7532813089</p>
           </div>
         </div>
 
         <div className="w-[50%] flex items-start justify-start">
           <div className="flex gap-4 md:mt-0 mt-4">
             <a
-              href="#"
+              href="https://www.facebook.com/theplanicdesign"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/@PlanicDesign"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
             >
-              <FaTwitter />
+              <FaYoutube />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/theplanicdesign/"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/theplanicdesign"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
             >
               <FaLinkedinIn />

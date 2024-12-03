@@ -6,6 +6,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion";
   import { GoArrowUpRight } from "react-icons/go";
+import Link from 'next/link';
 
 const Faq = () => {
   return (
@@ -72,7 +73,7 @@ const Faq = () => {
   </AccordionItem>
 </Accordion>
 
-<button className='w-[340px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 sm:mt-0 mt-5'>Have more questions? Contact Us Today <GoArrowUpRight/></button>
+<Link href={"/contact"} className='w-[340px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 sm:mt-0 mt-5'>Have more questions? Contact Us Today <GoArrowUpRight/></Link>
     </div>
   )
 }

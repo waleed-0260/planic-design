@@ -51,7 +51,7 @@ const Header = (color: any) => {
           </ul>
         </div>
         <div>
-          <button className="bg-transparent border-white border-2 w-[140px] h-[40px] rounded-full hover:bg-white hover:text-black transition-all ">Contact Us</button>
+          <Link href={"/contact"} className="bg-transparent border-white border-2 px-4 py-3 rounded-full hover:bg-white hover:text-black transition-all ">Contact Us</Link>
         </div>
         </div>
 

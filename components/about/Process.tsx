@@ -11,6 +11,7 @@ import proc3 from "../../public/images/proc3.jpg"
 import proc4 from "../../public/images/proc4.jpg"
 import Image from 'next/image';
 import aboutProcess from "../../public/images/aboutProcess.png"
+import Link from 'next/link';
 const Process = () => {
   return (
     <div className='flex flex-col items-center justify-center bg-cover w-full my-[100px] py-[100px]' style={{backgroundImage:`url('/images/aboutProcess.png')`}}>
@@ -69,7 +70,7 @@ const Process = () => {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-    <button className='w-[330px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 px-3 mt-[50px]'>See How Our Values Shape Our Work <GoArrowUpRight/></button>
+    <Link href={"/portfolio"} className='w-[330px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 px-3 mt-[50px]'>See How Our Values Shape Our Work <GoArrowUpRight/></Link>
             </div>
 
             <div className='md:w-[50%] relative lg:block hidden' data-aos="fade-left">

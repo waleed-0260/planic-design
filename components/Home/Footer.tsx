@@ -52,7 +52,7 @@ const Footer = () => {
         <h1 className='font-bold text-3xl'>London</h1>
                 <p className='textColor text-sm  '>UK: FL 3, 45 Albemarle St</p>
                 <p className='textColor text-sm'>planicdesign2@gmail.com</p>
-                <p className='textColor text-sm'>0335 5272083</p>
+                <p className='textColor text-sm'>+44 7532813089</p>
         </div>
       </div>
     </div>
