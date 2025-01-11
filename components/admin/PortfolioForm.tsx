@@ -53,7 +53,7 @@ const PortfolioForm = () => {
   };
 
   return (
-    <div className='ml-64 w-full p-5'>
+    <div className='w-[80%] absolute right-0 p-5'>
 
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div>
