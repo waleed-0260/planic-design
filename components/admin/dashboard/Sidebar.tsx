@@ -12,15 +12,15 @@ const Sidebar = () => {
       <h2 className="text-2xl font-bold  pt-[20px]">Dashboard</h2>
       </span>
       <ul className="mt-6 space-y-4">
-        <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
-          <Link href="/admin/dashboard">Contact Leads</Link>
-        </li>
+        <Link  href="/admin/dashboard" className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
+          <p>Contact Leads</p>
+        </Link>
         <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
           <a href="/">Blogs</a>
         </li>
-        <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
-          <Link href="/admin/dashboard/portfolio">Portfolio</Link>
-        </li>
+        <Link href="/admin/dashboard/portfolio" className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
+          <p>Portfolio</p>
+        </Link>
         <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
           <a href="/">Testimonials</a>
         </li>
