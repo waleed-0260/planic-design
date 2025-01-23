@@ -10,6 +10,7 @@ import React from 'react'
 import Services from '@/components/service/Services'
 import Faq from '@/components/service/Faq'
 import CalltoForn from '@/components/Home/CalltoForn'
+import Sectors from '@/components/about/Sectors'
 const page = () => {
   return (
     <>
@@ -18,10 +19,11 @@ const page = () => {
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
         <First/>
         <Services/>
+        <Sectors/>
         <Faq/>
-        <Process/>
+        {/* <Process/> */}
         <Testimonials/>
-        <TextAnimation/>
+        {/* <TextAnimation/> */}
         <CalltoForn heading="Start Your Interior Transformation Today!" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>
     <Footer/>
     </div>

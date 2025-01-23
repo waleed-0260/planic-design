@@ -17,6 +17,10 @@ import TextAnimation from "@/components/Home/TextAnimation";
 import Loader from "@/components/Loader";
 import CalltoForn from "@/components/Home/CalltoForn";
 import Slider from "@/components/Home/Slider";
+import CountDown from "@/components/Home/CountDown";
+import ScrollColorText from "@/components/Home/ScrollColorText";
+import Designer from "@/components/Home/Designer";
+import Team from "@/components/Home/Team";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -38,13 +42,17 @@ export default function Home() {
       <>
       <Hero/>
     <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-      <About/>
+      {/* <About/> */}
+      <ScrollColorText/>
       <Services/>
       <Process/>
+      <CountDown/>
       <FeaturedProjects/>
       <Slider/>
       <Testimonials/>
-      <TextAnimation/>
+      <Designer/>
+      <Team/>
+      {/* <TextAnimation/> */}
       {/* <Awards/> */}
       {/* <Blogs/> */}
       <CalltoForn  heading="Stay Inspired, Stay Informed" desc="Join the Planic Design community to get the latest design trends, project highlights, and expert tips delivered straight to your inbox. Be the first to know about our exclusive insights and updates." btn="Subscribe Now"/>

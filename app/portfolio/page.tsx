@@ -12,7 +12,7 @@ const page = () => {
 speak for themselves"/>
     <div className='w-full flex items-center justify-center flex-col'>
 
-    <FeaturedProjects/>
+    {/* <FeaturedProjects/> */}
     <LatestCases/>
     <CalltoForn heading=" Let’s Design Something Extraordinary Together" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>
     <Footer/>

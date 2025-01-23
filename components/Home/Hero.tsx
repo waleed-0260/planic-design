@@ -15,6 +15,8 @@ import { GoArrowUpRight } from "react-icons/go";
 import { Swiper as SwiperClass } from 'swiper';
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import whitelogo from "../../public/images/whitelogo.png"
+import Image from "next/image";
 const Hero = () => {
 
   const [formDataSlide1, setFormDataSlide1] = useState({
@@ -109,7 +111,19 @@ const Hero = () => {
   return (
     <div className="w-full relative">
       <Header />
-      <Swiper
+
+      <div className="lg:h-[36rem] h-[57rem] lg:relative fixed w-full bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('/images/slide2.png')` }}>
+            <div className="w-[90%] flex flex-row justify-between h-[90%]">
+              <div className="flex items-start justify-start">
+                <Image src={whitelogo} alt="logo" width={300} height={300}/>
+              </div>
+              <div className="flex items-end justify-end text-white">
+                Project: name of project
+              </div>
+            </div>
+          </div>
+      {/* <Swiper
       ref={swiperRef}
       spaceBetween={0}
       slidesPerView={1}
@@ -124,7 +138,7 @@ const Hero = () => {
         nextEl: ".custom-next", // Link to custom next button
       }}
       loop={true}
-      className="lg:h-[45rem] h-[57rem] w-full"
+      className="lg:h-[45rem] h-[57rem] w-full lg:relative fixed"
     >
       <SwiperSlide
         className="relative w-full bg-cover bg-center bg-no-repeat"
@@ -344,15 +358,15 @@ const Hero = () => {
             </div>
           </div>
         </SwiperSlide>
-      </Swiper>
-      <div className="absolute right-[40px] sm:bottom-[40px] bottom-[70px] flex flex-row items-center space-x-2  z-50">
+      </Swiper> */}
+      {/* <div className="absolute right-[40px] sm:bottom-[40px] bottom-[70px] flex flex-row items-center space-x-2  z-50">
         <p className="sm:text-6xl text-3xl text-white custom-prev cursor-pointer">
           <GoChevronLeft />
         </p>
         <p className="sm:text-6xl text-3xl text-white custom-next cursor-pointer">
           <GoChevronRight />
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

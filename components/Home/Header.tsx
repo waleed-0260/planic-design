@@ -1,4 +1,5 @@
-"use client";
+"use client"
+import { ChevronDown, ChevronUp } from "lucide-react"
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { Button } from "../ui/button";
@@ -11,60 +12,105 @@ import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import whitelogo from "../../public/images/whitelogo.png"
-const Header = (color: any) => {
-  console.log("color", color)
-  // const [bgColor, setBgColor] = useState("[#ffffff]");
-  // const [btnColor, setBtnColor] = useState("[#0D2137]");
-  const [menuOpen, setMenuOpen] = useState(false);
+const menuItems = [
+  { name: "Home", subItems: [], link: "/" },
+  { 
+    name: "Services", 
+    subItems: [
+      { name: "Construction Site Supervision", id: "construction" },
+      { name: "Interior Design", id: "interior" },
+      { name: "Architecture", id: "architecture" },
+      { name: "3D Visulization", id: "visulization" }
+    ], 
+    link: "/service" 
+  },
+  { 
+    name: "Our Projects", 
+    subItems: [
+      // { name: "Team", id: "team" },
+      // { name: "Careers", id: "careers" }
+    ], 
+    link: "/portfolio" 
+  },
+  { 
+    name: "About Us", 
+    subItems: [
+      { name: "Our Story", id: "story" },
+      { name: "Leaders", id: "leaders" },
+      { name: "Our Sectors", id: "sectors" }
+    ], 
+    link: "/about" 
+  },
+  { name: "Contact", subItems: [], link: "/contact" }
+];
 
+
+export default function Header() {
+  const [hoveredItem, setHoveredItem] = useState<boolean | null>(null)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <div
-        className={`lg:flex hidden flex-row items-center justify-evenly w-full transition-all h-[80px] z-50 bg-transparent absolute text-white`}
-      >
-        <div className=" flex flex-row items-center justify-between w-[80%]">
+    <header
+      className={`w-full lg:block hidden transition-all duration-300 ease-in-out ${
+        hoveredItem ? "h-[60vh] bg-[#FF4814]" : "h-16 bg-transparent"
+      }  z-10 absolute top-[0px] text-white`}
+      onMouseEnter={() => setHoveredItem(true)}
+      onMouseLeave={() => setHoveredItem(null)}
+    >
+      <nav className="h-16 flex items-center justify-center px-4">
+        <ul className="flex space-x-16 flex-row justify-between">
 
-        <Link href={"/"} className="h-[100px] z-10">
-          <Image src={whitelogo} alt="" className="w-full h-full " />
-        </Link>
-        <div>
-          <ul className={`flex flex-row gap-4 relative z-10`}>
-            <li className="list-none mid-heading transition-all ">
-              <Link href={"/"}>Home</Link>
-            </li>
-            <li className="list-none mid-heading relative group transition-all">
-              <Link href={"/service"}>Services</Link>
-            </li>
-            <li className="list-none mid-heading  transition-all ">
-              <Link href={"/portfolio"}>Portfolio</Link>
-            </li>
-            <li className="list-none mid-heading  transition-all ">
-              <Link href={"/about"}>About Us</Link>
-            </li>{" "}
-            {/* <li className="list-none mid-heading  transition-all ">
-              <Link href={"/blogs"}>Blogs</Link>
-            </li>{" "} */}
-            <li className="list-none mid-heading  transition-all ">
-              <Link href={"/contact"}>Contact</Link>
-            </li>{" "}
-          </ul>
-        </div>
-        <div>
-          <Link href={"/contact"} className="bg-transparent border-white border-2 px-4 py-3 rounded-full hover:bg-white hover:text-black transition-all ">Contact Us</Link>
-        </div>
-        </div>
+{menuItems.map((item) => (
+  <li key={item.name} className="relative cursor-pointer z-50">
+    <Link href={item.link}>
+      <p className="text-white font-semibold flex items-center cursor-pointer">
+        {item.name}
+        {item.subItems.length > 0 &&
+          (hoveredItem === true ? (
+            <ChevronUp className="ml-1 w-4 h-4" />
+          ) : (
+            <ChevronDown className="ml-1 w-4 h-4" />
+          ))}
+      </p>
+    </Link>
+    {hoveredItem === true && item.subItems.length > 0 && (
+      <ul className="absolute left-0 mt-2 w-48 rounded-md py-2 transition-all">
+        {item.subItems.map((subItem) => (
+          <li key={subItem.name}>
+            <Link href={`${item.link}#${subItem.id}`}>
+              <p className="block px-2 py-2 text-sm">{subItem.name}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    )}
+  </li>
+))}
 
-      </div>
+        </ul>
+      </nav>
+      {hoveredItem && (
+        <div className="flex justify-start items-center h-full p-8">
+          <Image
+            src={whitelogo}
+            alt="Company Logo"
+            width={200}
+            height={100}
+            className=""
+          />
+        </div>
+      )}
+    </header>
 
-      <div>
+    <div>
       {/* Navbar */}
       <div className="flex lg:hidden flex-row justify-between p-1 items-center w-[95%] h-[100px] bg-transparent absolute">
         <div className="h-[100px] w-[100px] relative z-10">
-          <Image src={whitelogo} alt="Logo" className="h-full w-full" />
+          {/* <Image src={whitelogo} alt="Logo" className="h-full w-full" /> */}
         </div>
         <p
-          className="text-3xl border-[1px] border-[#b3b2af] p-1 z-50 rounded-md text-white cursor-pointer"
+          className="text-3xl p-1 z-50 rounded-md text-white cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)} // Toggle menu
         >
           {menuOpen ?
@@ -79,8 +125,11 @@ const Header = (color: any) => {
       <ul
         className={`${
           menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pl-4 text-white`}
+        } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pl-4 text-white space-y-2`}
       >
+        <div className="h-[100px] w-[100px] relative z-10">
+          <Image src={whitelogo} alt="Logo" className="h-full w-full" />
+        </div>
         <li className="list-none mid-heading transition-all ">
           <Link href={"/"}>Home</Link>
         </li>
@@ -93,10 +142,7 @@ const Header = (color: any) => {
         <li className="list-none mid-heading transition-all ">
           <Link href={"/about"}>About Us</Link>
         </li>
-        {/* <li className="list-none mid-heading transition-all ">
-          <Link href={"/blogs"}>Blogs</Link>
-        </li> */}
-        <li className="list-none mid-heading transition-all ">
+        <li className="list-none mid-heading transition-all mb-2">
           <Link href={"/contact"}>Contact</Link>
         </li>
       </ul>
@@ -112,8 +158,10 @@ const Header = (color: any) => {
           buttonClassName="floating-whatsapp-button"
         />
       </div>
-    </>
-  );
-};
 
-export default Header;
+
+    </>
+
+  )
+}
+

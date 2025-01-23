@@ -6,16 +6,20 @@ import "react-quill/dist/quill.snow.css";
 interface FormData {
   heading: string;
   tagline: string;
-  tags: string;
+  // tags: string;
   description: string;
+  solution: string,
+  value: string,
   masterFloorImage: FileList;
   panelFloorImage: FileList;
   challenge: string;
   mapImage: FileList;
   renderingImage: FileList;
   additionalImage: FileList;
-  solution: string;
-  solutionImage: FileList;
+  clientName: string;
+  date: string;
+  location: string;
+  role: string;
 }
 
 const PortfolioForm = () => {
@@ -32,18 +36,22 @@ const PortfolioForm = () => {
     // Append text fields
     formData.append("heading", data.heading);
     formData.append("tagline", data.tagline);
-    formData.append("tags", data.tags);
+    // formData.append("tags", data.tags);
     formData.append("description", data.description);
     formData.append("challenge", data.challenge);
     formData.append("solution", data.solution);
+    formData.append("value", data.value);
+    formData.append("clientName", data.clientName);
+    formData.append("date", data.date);
+    formData.append("location", data.location);
+    formData.append("role", data.role);
 
     // Append file fields
     formData.append("masterFloorImage", data.masterFloorImage[0]);
-    formData.append("panelFloorImage", data.panelFloorImage[0]);
-    formData.append("mapImage", data.mapImage[0]);
-    formData.append("renderingImage", data.renderingImage[0]);
-    formData.append("additionalImage", data.additionalImage[0]);
-    formData.append("solutionImage", data.solutionImage[0]);
+    if (data.panelFloorImage) formData.append("panelFloorImage", data.panelFloorImage[0]);
+    if (data.mapImage) formData.append("mapImage", data.mapImage[0]);
+    if (data.renderingImage) formData.append("renderingImage", data.renderingImage[0]);
+    if (data.additionalImage) formData.append("additionalImage", data.additionalImage[0]);
 
     try {
       const response = await fetch("https://dominobackend.vercel.app/add-portfolio", {
@@ -70,7 +78,7 @@ const PortfolioForm = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* Text fields */}
         <div>
-          <label className="block font-medium">Heading</label>
+          <label className="block font-medium">Heading *</label>
           <input
             type="text"
             {...register("heading", { required: true })}
@@ -80,7 +88,7 @@ const PortfolioForm = () => {
         </div>
 
         <div>
-          <label className="block font-medium">Tagline</label>
+          <label className="block font-medium">Tagline *</label>
           <input
             type="text"
             {...register("tagline", { required: true })}
@@ -89,19 +97,18 @@ const PortfolioForm = () => {
           {errors.tagline && <p className="text-red-500">Tagline is required.</p>}
         </div>
 
-        <div>
+        {/* <div>
           <label className="block font-medium">Tags</label>
           <input
             type="text"
-            {...register("tags", { required: true })}
+            {...register("tags")}
             placeholder="Enter comma-separated tags"
             className="w-full border rounded px-3 py-2"
           />
-          {errors.tags && <p className="text-red-500">Tags are required.</p>}
-        </div>
+        </div> */}
 
         <div>
-          <label className="block font-medium">Description</label>
+          <label className="block font-medium">Description *</label>
           <textarea
             {...register("description", { required: true })}
             className="w-full border rounded px-3 py-2"
@@ -112,35 +119,77 @@ const PortfolioForm = () => {
         <div>
           <label className="block font-medium">Challenge</label>
           <textarea
-            {...register("challenge", { required: true })}
+            {...register("challenge")}
             className="w-full border rounded px-3 py-2"
           ></textarea>
-          {errors.challenge && <p className="text-red-500">Challenge is required.</p>}
         </div>
-
         <div>
           <label className="block font-medium">Solution</label>
           <textarea
-            {...register("solution", { required: true })}
+            {...register("solution")}
             className="w-full border rounded px-3 py-2"
           ></textarea>
-          {errors.solution && <p className="text-red-500">Solution is required.</p>}
+        </div>
+        <div>
+          <label className="block font-medium">Value</label>
+          <textarea
+            {...register("challenge")}
+            className="w-full border rounded px-3 py-2"
+          ></textarea>
+        </div>
+
+        <div>
+          <label className="block font-medium">Client Name *</label>
+          <input
+            type="text"
+            {...register("clientName", { required: true })}
+            className="w-full border rounded px-3 py-2"
+          />
+          {errors.clientName && <p className="text-red-500">Client Name is required.</p>}
+        </div>
+
+        <div>
+          <label className="block font-medium">Date *</label>
+          <input
+            type="date"
+            {...register("date", { required: true })}
+            className="w-full border rounded px-3 py-2"
+          />
+          {errors.date && <p className="text-red-500">Date is required.</p>}
+        </div>
+
+        <div>
+          <label className="block font-medium">Location *</label>
+          <input
+            type="text"
+            {...register("location", { required: true })}
+            className="w-full border rounded px-3 py-2"
+          />
+          {errors.location && <p className="text-red-500">Location is required.</p>}
+        </div>
+
+        <div>
+          <label className="block font-medium">Role</label>
+          <input
+            type="text"
+            {...register("role")}
+            className="w-full border rounded px-3 py-2"
+          />
         </div>
 
         {/* File upload fields */}
-        {[
+        {[ 
           { name: "masterFloorImage", label: "Master Floor Image" },
           { name: "panelFloorImage", label: "Panel Floor Image" },
           { name: "mapImage", label: "Map Image" },
           { name: "renderingImage", label: "Rendering Image" },
           { name: "additionalImage", label: "Additional Image" },
-          { name: "solutionImage", label: "Solution Image" },
         ].map(({ name, label }) => (
           <div key={name}>
             <label className="block font-medium">{label}</label>
             <input
               type="file"
-              {...register(name as keyof FormData, { required: true })}
+              {...register(name as keyof FormData, name === "masterFloorImage" ? { required: true } : {})}
               className="w-full"
               accept="image/*"
             />

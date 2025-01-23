@@ -71,7 +71,7 @@ const Hero = ({heading, desc}:any) => {
             <div className="relative flex items-center justify-center w-40 h-40 bg-[#443c39] text-white rounded-full">
   {/* Center Text */}
   <div className="absolute inset-0 flex items-center justify-center text-5xl font-bold">
-    25
+    65
   </div>
   {/* // mongodb+srv://spearingsystems:h1MOS9jb8VG6GBjw@cluster0.wv8zu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 */}
 
