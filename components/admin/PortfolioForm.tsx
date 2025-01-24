@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import "react-quill/dist/quill.snow.css";
 
@@ -23,6 +23,7 @@ interface FormData {
 }
 
 const PortfolioForm = () => {
+  const[disable, setDisabled] = useState(false);
   const {
     register,
     handleSubmit,
@@ -58,6 +59,7 @@ const PortfolioForm = () => {
         method: "POST",
         body: formData,
       });
+      setDisabled(true);
 
       if (!response.ok) {
         throw new Error(`Failed to submit: ${response.statusText}`);
@@ -70,6 +72,7 @@ const PortfolioForm = () => {
     } catch (error) {
       console.error("Error:", error);
       alert("Failed to add portfolio. Please try again.");
+      setDisabled(false)
     }
   };
 
@@ -202,8 +205,9 @@ const PortfolioForm = () => {
         <button
           type="submit"
           className="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          disabled={disable}
         >
-          Submit
+          {disable ? "Submitting..." : "Submit"}
         </button>
       </form>
     </div>
