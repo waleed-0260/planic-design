@@ -31,25 +31,25 @@ const Address = () => {
           <div className="flex gap-4 md:mt-0 mt-4">
             <a
               href="https://www.facebook.com/theplanicdesign"
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
             >
               <FaFacebookF />
             </a>
             <a
               href="https://www.youtube.com/@PlanicDesign"
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
             >
               <FaYoutube />
             </a>
             <a
               href="https://www.instagram.com/theplanicdesign/"
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
             >
               <FaInstagram />
             </a>
             <a
               href="https://www.linkedin.com/company/theplanicdesign"
-              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
             >
               <FaLinkedinIn />
             </a>

@@ -32,8 +32,8 @@ const PortfolioForm = () => {
   } = useForm<FormData>();
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
+    setDisabled(true);
     const formData = new FormData();
-
     // Append text fields
     formData.append("heading", data.heading);
     formData.append("tagline", data.tagline);
@@ -59,7 +59,6 @@ const PortfolioForm = () => {
         method: "POST",
         body: formData,
       });
-      setDisabled(true);
 
       if (!response.ok) {
         throw new Error(`Failed to submit: ${response.statusText}`);
@@ -72,6 +71,8 @@ const PortfolioForm = () => {
     } catch (error) {
       console.error("Error:", error);
       alert("Failed to add portfolio. Please try again.");
+      setDisabled(false)
+    } finally {
       setDisabled(false)
     }
   };
