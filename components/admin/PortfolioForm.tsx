@@ -133,7 +133,7 @@ const PortfolioForm = () => {
         <div>
           <label className="block font-medium">Value</label>
           <textarea
-            {...register("challenge")}
+            {...register("value")}
             className="w-full border rounded px-3 py-2"
           ></textarea>
         </div>

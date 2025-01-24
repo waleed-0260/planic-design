@@ -14,9 +14,9 @@ const Designer = () => {
             className='object-cover w-auto h-auto'
             />
         </div>
-        <div className='w-[50%] flex flex-col items-start justify-center  '>
-            <b className='text-5xl text-[#FF4814]'>MEET OUR DESIGNER</b>
-            <p className='text-3xl mt-8'>Ar. Muhammad Ramish Shakeel</p>
+        <div className='md:w-[50%] flex flex-col items-start justify-center  '>
+            <b className='md:text-5xl text-2xl'>MEET OUR DESIGNER</b>
+            <p className='md:text-3xl text-xl mt-8'>Ar. Muhammad Ramish Shakeel</p>
             <p className='mt-3 text-lg textColor'>Founder Planic Design</p>
             <p className='text-sm mt-[40px]'> creative and detail-oriented architect with 6 years of extensive experience of designing innovative and functional spaces. Skilled in all phases of architectural design, from conceptualization and drafting to project management and construction oversight. 
                 <br />

@@ -112,13 +112,63 @@ const Hero = () => {
     <div className="w-full relative">
       <Header />
 
-      <div className="lg:h-[36rem] h-[57rem] lg:relative fixed w-full bg-cover bg-center bg-no-repeat"
+      <div className="lg:h-[36rem] h-[57rem] relative w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
           style={{ backgroundImage: `url('/images/slide2.png')` }}>
-            <div className="w-[90%] flex flex-row justify-between h-[90%]">
-              <div className="flex items-start justify-start">
+            <div className="w-[80%] flex flex-row justify-between h-[90%]">
+              <div className="flex items-start justify-start flex-col justify-between">
                 <Image src={whitelogo} alt="logo" width={300} height={300}/>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, libero!</p>
               </div>
-              <div className="flex items-end justify-end text-white">
+              <div className="flex items-end justify-between flex-col text-white">
+              <form className="w-[100%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 2)}>
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide2.name}
+          onChange={(e)=>handleChange(e,2)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide2.email}
+          onChange={(e)=>handleChange(e,2)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                value={formDataSlide2.phone}
+                onChange={(e)=>handleChange(e,2)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="message"
+                id="message"
+                placeholder="message Details"
+                value={formDataSlide2.message}
+                onChange={(e)=>handleChange(e,2)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
+                Get Our Free Consultation
+              </button>
+            </form>
                 Project: name of project
               </div>
             </div>
