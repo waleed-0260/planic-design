@@ -16,9 +16,9 @@ import Images from '@/components/SingleProject/Images'
 export default async function Page({
   params,
 }: {
-  params: { ID: string }
+  params: Promise<{ ID: string }>
 }) {
-  const { ID } = params;
+  const { ID } = await params;
   console.log("id", ID)
   // const post = await getPost(id)
   const data = await fetch(`https://dominobackend.vercel.app/get-portfolio/${ID}`)
