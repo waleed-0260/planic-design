@@ -9,7 +9,7 @@ import {
 const MainSinglePortfolio = ({heading, description, challenge, solution, value, name, location, date, role}:any) => {
   return (
     <div className='w-[90%] flex md:flex-row flex-col items-start justify-around my-[100px]'>
-        <div className='md:w-[30%] flex flex-col '>
+        <div className='md:w-[30%] w-[100%] flex flex-col '>
             <div className='flex flex-row items-start justify-between py-[20px] border-t-[2px] border-t-[#000000]'>
                 <p>Client</p>
                 <p className='textColor'>{name}</p>
@@ -29,7 +29,15 @@ const MainSinglePortfolio = ({heading, description, challenge, solution, value, 
         </div>
         <div className='md:w-[50%] flex flex-col items-start'>
             <p className='text-3xl'>{heading}</p>
-            <p className='mt-[20px] textColor'>{description}</p>
+            {/* <p className='mt-[20px] textColor'>{description}</p> */}
+            <div className="mt-[20px] textColor">
+    {description.split('<br/>').map((line:any, index:any) => (
+      <React.Fragment key={index}>
+        {line}
+        {index < description.split('<br/>').length - 1 && <br />}
+      </React.Fragment>
+    ))}
+  </div>
 
  <Accordion type="single" collapsible className="md:w-[80%] my-[20px]">
       <AccordionItem value="item-1" className=' rounded-lg'>

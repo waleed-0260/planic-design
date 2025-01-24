@@ -44,7 +44,7 @@ const FeaturedProjects = () => {
               src={project.masterFloorImage} // Ensure the image URL is valid
               alt={`Project ${index + 1}`}
               layout="responsive"
-              width={500}
+              width={300}
               height={300}
               className="rounded-lg"
             />

@@ -125,7 +125,7 @@ export default function Header() {
       <ul
         className={`${
           menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-        } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pl-4 text-white space-y-2`}
+        } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pb-0 pl-4 text-white space-y-2`}
       >
         <div className="h-[100px] w-[100px] relative z-10">
           <Image src={whitelogo} alt="Logo" className="h-full w-full" />
@@ -142,7 +142,7 @@ export default function Header() {
         <li className="list-none mid-heading transition-all ">
           <Link href={"/about"}>About Us</Link>
         </li>
-        <li className="list-none mid-heading transition-all mb-2">
+        <li className="list-none mid-heading transition-all pb-4">
           <Link href={"/contact"}>Contact</Link>
         </li>
       </ul>

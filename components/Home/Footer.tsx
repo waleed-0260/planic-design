@@ -57,13 +57,13 @@ const Footer = () => {
       </div>
     </div>
      <footer className="w-full border-t-[2px] text-black py-4 mt-[50px]">
-       <div className="flex md:flex-row flex-col justify-between items-center max-w-6xl mx-auto w-[90%]">
+       <div className="flex md:flex-row flex-col justify-between sm:items-center items-start max-w-6xl mx-auto w-[90%]">
          <div className="text-left">
            <p>&copy; 2024 Planic Design. All rights reserved.</p>
          </div>
 
        <div className="flex gap-4 md:mt-0 mt-4">
-        <ul className="flex flex-row gap-4">
+        <ul className="flex sm:flex-row flex-col gap-4">
           <Link href="/" className="cursor-pointer">Home</Link>
           <Link href="/about" className="cursor-pointer">About</Link>
           <Link href="/services" className="cursor-pointer">Services</Link>

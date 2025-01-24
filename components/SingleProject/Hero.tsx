@@ -14,9 +14,9 @@ const Hero = ({img, tagline}:any) => {
       <div className="absolute bottom-0 w-full text-center bg-gray-700 bg-opacity-30">
       <div className="group overflow-hidden w-full">
   <h1
-    className="text-7xl font-bold name transition-all duration-300 group-hover:text-black my-[50px] whitespace-nowrap"
+    className="text-7xl font-bold name transition-all duration-300 group-hover:text-white my-[50px] whitespace-nowrap"
     style={{
-      WebkitTextStroke: "1px black",
+      WebkitTextStroke: "1px white",
       color: "transparent",
       WebkitTextFillColor: "transparent",
     }}

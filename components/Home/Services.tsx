@@ -1,8 +1,8 @@
 import React from 'react'
-import service1 from "../../public/images/service1.png"
+import Architect from "../../public/images/Architect.png"
+import Visulization from "../../public/images/Visulization.png"
+import interior from "../../public/images/interior.png"
 import service2 from "../../public/images/service2.png"
-import service3 from "../../public/images/service3.png"
-import service4 from "../../public/images/service4.png"
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Image from 'next/image';
 import { GoArrowUpRight } from "react-icons/go";
@@ -26,7 +26,7 @@ const Services = () => {
                 </p>
                 <h1 className='font-semibold sm:text-2xl text-xl'>Architecture</h1>
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
-                    <Image src={service1} alt="building" className='object-cover rounded-md h-full w-full'/>
+                    <Image src={Architect} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
                 <p className='text-sm textColor'>At Planic Design, we create architectural designs that blend functionality with aesthetic appeal. From concept development to final blueprints, our team delivers innovative solutions tailored to your needs.</p>
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
@@ -38,7 +38,7 @@ const Services = () => {
                 </p>
                 <h1 className='font-semibold sm:text-2xl text-xl'> Interior Design</h1>
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
-                    <Image src={service4} alt="building" className='object-cover rounded-md h-full w-full'/>
+                    <Image src={interior} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
                 <p className='text-sm textColor'>Transform your spaces into stunning, functional environments. Our bespoke interior design services focus on blending your style with modern trends to create spaces that inspire.</p>
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
@@ -50,7 +50,7 @@ const Services = () => {
                 </p>
                 <h1 className='font-semibold sm:text-2xl text-xl'>3D Visulization</h1>
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
-                    <Image src={service3} alt="building" className='object-cover rounded-md h-full w-full'/>
+                    <Image src={Visulization} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
                 <p className='text-sm textColor'>Bring your ideas to life with cutting-edge 3D visualization. Our photorealistic renderings help you preview designs before execution, ensuring every detail is perfect.</p>
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>

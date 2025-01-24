@@ -15,7 +15,7 @@ const First = () => {
             </span> */}
         </div>
 
-        <div className='flex flex-row items-center justify-between p-[30px] border-2 border-[#000000] rounded-md w-[300px] md:w-[30%]' data-aos="fade-right">
+        <div className='flex flex-row items-center justify-between p-[30px] border-2 border-[#000000] rounded-md w-[300px] md:w-[30%] md:mt-0 mt-6' data-aos="fade-right">
             <div className='flex flex-col'>
                 <p className='font-bold text-4xl'>92%</p>
                 <p className='text-sm'>Clients satisfied</p>
