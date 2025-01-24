@@ -114,12 +114,12 @@ const Hero = () => {
 
       <div className="lg:h-[36rem] h-[57rem] relative w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
           style={{ backgroundImage: `url('/images/slide2.png')` }}>
-            <div className="w-[80%] flex flex-row justify-between h-[90%]">
-              <div className="flex items-start justify-start flex-col justify-between">
+            <div className="w-[80%] flex md:flex-row flex-col justify-between h-[90%]">
+              <div className="flex items-start justify-start flex-col md:justify-between">
                 <Image src={whitelogo} alt="logo" width={300} height={300}/>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, libero!</p>
               </div>
-              <div className="flex items-end justify-between flex-col text-white">
+              <div className="flex items-end md:justify-between flex-col text-white">
               <form className="w-[100%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 2)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"

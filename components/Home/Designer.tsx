@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Designer = () => {
   return (
-    <div className='w-[90%] flex md:flex-row flex-col justify-between items-center my-[100px]'>
+    <div className='w-[90%] flex md:flex-row flex-col justify-between md:items-center items-start my-[100px]'>
         <div className=''>
             <Image
             src={Ramish}
