@@ -13,28 +13,28 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/theplanicdesign"
             target="blank"
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
           >
             <FaFacebookF />
           </a>
           <a
             href="https://www.youtube.com/@PlanicDesign"
             target="blank"
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
           >
             <FaYoutube />
           </a>
           <a
             href="https://www.instagram.com/theplanicdesign/"
             target="blank"
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
           >
             <FaInstagram />
           </a>
           <a
             href="https://www.linkedin.com/company/theplanicdesign"
             target="blank"
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#FF4814] hover:bg-[#FF4814] hover:text-white transition-all"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
           >
             <FaLinkedinIn />
           </a>

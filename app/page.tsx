@@ -47,7 +47,7 @@ export default function Home() {
       <Services/>
       <Process/>
       <CountDown/>
-      {/* <FeaturedProjects/> */}
+      <FeaturedProjects/>
       <Slider/>
       <Testimonials/>
       {/* <Designer/> */}

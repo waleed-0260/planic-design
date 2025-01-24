@@ -1,0 +1,59 @@
+import React from 'react'
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "@/components/ui/accordion"
+
+const MainSinglePortfolio = ({heading, description, challenge, solution, value, name, location, date, role}:any) => {
+  return (
+    <div className='w-[90%] flex md:flex-row flex-col items-start justify-around my-[100px]'>
+        <div className='md:w-[30%] flex flex-col '>
+            <div className='flex flex-row items-start justify-between py-[20px] border-t-[2px] border-t-[#000000]'>
+                <p>Client</p>
+                <p className='textColor'>{name}</p>
+            </div>
+            <div className='flex flex-row items-start justify-between py-[20px] border-t-[2px] border-t-[#000000]'>
+                <p>Location</p>
+                <p className='textColor'>{location}</p>
+            </div>
+            <div className='flex flex-row items-start justify-between py-[20px] border-t-[2px] border-t-[#000000]'>
+                <p>Date</p>
+                <p className='textColor'>{date}</p>
+            </div>
+            <div className='flex flex-row items-start justify-between py-[20px] border-t-[2px] border-t-[#000000]'>
+                <p>Role</p>
+                <p className='textColor'>role</p>
+            </div>
+        </div>
+        <div className='md:w-[50%] flex flex-col items-start'>
+            <p className='text-3xl'>{heading}</p>
+            <p className='mt-[20px] textColor'>{description}</p>
+
+ <Accordion type="single" collapsible className="md:w-[80%] my-[20px]">
+      <AccordionItem value="item-1" className=' rounded-lg'>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>What were the Challenges</AccordionTrigger>
+        <AccordionContent className='textColor'>
+            {challenge}
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2" className='mt-5 rounded-lg'>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>What were the Solutions</AccordionTrigger>
+        <AccordionContent className='textColor'>
+        {solution}
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3" className='mt-5 rounded-lg'>
+        <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>How did we add value</AccordionTrigger>
+        <AccordionContent className='textColor'>
+        {value}
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+        </div>
+    </div>
+  )
+}
+
+export default MainSinglePortfolio
