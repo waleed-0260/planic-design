@@ -35,22 +35,22 @@ const About = () => {
 </div>
 
 <div className='flex flex-col md:w-[45%]' data-aos="fade-up">
-  <h1 className='text-3xl font-semibold '>From Concept to Creation: A Journey of <span className='text-[#FF4814]'>Excellence</span></h1>
+  <h1 className='text-3xl font-semibold '>From Concept to Creation: A Journey of <span className='text-[#231f20]'>Excellence</span></h1>
       <p className='leading-10 text-2xl'>
       Planic Design started with a mission to transform ordinary spaces into extraordinary environments. Over the years, we have grown into a full-service architecture and interior design firm, renowned for our innovative solutions and meticulous attention to detail.
 Our work is driven by a passion for design and a commitment to delivering personalized experiences for our clients. Whether designing a home, an office, or a retail space, we create designs that inspire, elevate, and endure.
       </p>
-      <Link href={"/portfolio"} className="rounded-full w-[280px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] hover:text-white transition flex flex-row items-center justify-center gap-2 font-light mt-4">
+      <Link href={"/portfolio"} className="rounded-full w-[280px] h-[50px] bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] text-[#231f20] hover:text-white transition flex flex-row items-center justify-center gap-2 font-light mt-4">
           Learn More About Our Journey <GoArrowUpRight />
         </Link>
       
 </div>
 
       <div className='flex flex-col md:w-[20%]' data-aos="fade-left">
-        <h1 className='text-6xl text-[#FF4814]'>95%</h1>
+        <h1 className='text-6xl text-[#231f20]'>95%</h1>
         <p className='textColor mt-3'>Clients Satisfied and repeating        </p>
 
-        <h1 className='text-6xl text-[#FF4814] mt-[50px]'>125%</h1>
+        <h1 className='text-6xl text-[#231f20] mt-[50px]'>125%</h1>
         <p className='textColor mt-3'>Project Done</p>
       </div>
     </div>

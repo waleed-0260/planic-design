@@ -19,7 +19,7 @@ const Services = () => {
 
         <div className='mt-5 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-4' data-aos="fade-up" data-aos-delay="300">
             <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-l-[1px] border-[#b3b2af]'>
-                <p className='text-3xl text-[#FF4814]'>
+                <p className='text-3xl primaryColor'>
                 {/* <CiBezier/> */}
                 <MdOutlineArchitecture/>
 
@@ -33,7 +33,7 @@ const Services = () => {
             </div>
 
             <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-l-[1px] border-[#b3b2af] md:relative top-[100px]'>
-                <p className='text-3xl text-[#FF4814]'>
+                <p className='text-3xl primaryColor'>
                 <FaCouch/>
                 </p>
                 <h1 className='font-semibold sm:text-2xl text-xl'> Interior Design</h1>
@@ -45,7 +45,7 @@ const Services = () => {
             </div>
 
             <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-l-[1px] border-[#b3b2af]'>
-                <p className='text-3xl text-[#FF4814]'>
+                <p className='text-3xl primaryColor'>
                 <BiCube/>
                 </p>
                 <h1 className='font-semibold sm:text-2xl text-xl'>3D Visulization</h1>
@@ -57,7 +57,7 @@ const Services = () => {
             </div>
 
             <div className='py-5 gap-5 flex flex-col items-start justify-around px-5 border-l-[1px] border-[#b3b2af] md:relative top-[100px]'>
-                <p className='text-3xl text-[#FF4814]'>
+                <p className='text-3xl primaryColor'>
                 <FaHardHat/>
                 </p>
                 <h1 className='font-semibold sm:text-2xl text-xl'>Construct Supervision</h1>
@@ -68,7 +68,7 @@ const Services = () => {
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
             </div>
         </div>
-        <Link href={"/contact"} className='bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] hover:text-white transition-all rounded-full w-[240px] h-[50px] mt-[200px] hover:shadow-2xl font-thin flex flex-row items-center gap-1 justify-center'>
+        <Link href={"/contact"} className='bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] primaryColor hover:text-white transition-all rounded-full w-[240px] h-[50px] mt-[200px] hover:shadow-2xl flex flex-row items-center gap-1 justify-center'>
             Get A Free Quote Now <GoArrowUpRight/>
         </Link>
     </div>

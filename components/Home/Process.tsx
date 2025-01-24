@@ -66,7 +66,7 @@ const Process = () => {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-    <Link href={"/contact"} className='w-[280px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 px-3'>Let's Begin Your Transformation <GoArrowUpRight/></Link>
+    <Link href={"/contact"} className='w-[280px] h-[50px] bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] primaryColor rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 px-3'>Let's Begin Your Transformation <GoArrowUpRight/></Link>
         </div>
 
         {/* Right Side: Image */}

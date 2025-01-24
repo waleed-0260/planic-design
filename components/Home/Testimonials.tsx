@@ -35,7 +35,7 @@ const Testimonials = () => {
       {/* Left Section */}
       <div className="md:w-2/5 flex flex-col justify-start items-start p-4" data-aos="fade-left">
         <h3 className="text-lg font-semibold mb-4 ">What Clients Say About Us</h3>
-        <LuQuote className="text-8xl text-[#FF4814]" />
+        <LuQuote className="text-8xl primaryColor" />
       </div>
 
       {/* Right Section */}
@@ -52,7 +52,7 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index} className="flex flex-col items-center ">
-              <p className="text-4xl font-semibold leading-10 mb-4">
+              <p className="text-3xl font-semibold leading-10 mb-4">
               “{testimonial.text}”
               </p>
               <div className="flex flex-row items-center gap-4 mt-[100px] w-full pt-[50px] border-t-[1px] border-[#b3b2af]">

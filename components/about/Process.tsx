@@ -70,7 +70,7 @@ const Process = () => {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-    <Link href={"/portfolio"} className='w-[330px] h-[50px] bg-transparent border-[1px] hover:bg-[#FF4814] border-[#FF4814] text-[#FF4814] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 px-3 mt-[50px]'>See How Our Values Shape Our Work <GoArrowUpRight/></Link>
+    <Link href={"/portfolio"} className='w-[330px] h-[50px] bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] text-[#231f20] rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 px-3 mt-[50px]'>See How Our Values Shape Our Work <GoArrowUpRight/></Link>
             </div>
 
             <div className='md:w-[50%] relative lg:block hidden' data-aos="fade-left">

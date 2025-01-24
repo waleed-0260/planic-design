@@ -68,7 +68,7 @@ const Hero = ({heading, desc}:any) => {
             </div>
 
             <div className="flex md:flex-row flex-col md:justify-end justify-start md:ml-[50px] md:space-x-[60px] md:w-[50%] w-full md:mt-0 mt-[100px] space-x-[40px] ">
-            <div className="relative flex items-center justify-center w-40 h-40 bg-[#443c39] text-white rounded-full">
+            <div className="relative flex items-center justify-center w-40 h-40 bg-[#231f20] text-white rounded-full">
   {/* Center Text */}
   <div className="absolute inset-0 flex items-center justify-center text-5xl font-bold">
     65

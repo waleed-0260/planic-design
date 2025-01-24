@@ -53,7 +53,7 @@ export default function Header() {
     <>
     <header
       className={`w-full lg:block hidden transition-all duration-300 ease-in-out ${
-        hoveredItem ? "h-[60vh] bg-[#FF4814]" : "h-16 bg-transparent"
+        hoveredItem ? "h-[60vh] bg-[#231f20]" : "h-16 bg-transparent"
       }  z-10 absolute top-[0px] text-white`}
       onMouseEnter={() => setHoveredItem(true)}
       onMouseLeave={() => setHoveredItem(null)}

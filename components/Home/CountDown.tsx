@@ -24,7 +24,7 @@ const CountDown = () => {
       ref={ref} // Attach ref to this section
     >
       <div className="flex flex-col items-start w-[90%]">
-        <h1 className="font-bold md:text-5xl text-2xl text-white w-[50%]">
+        <h1 className="font-bold md:text-4xl text-2xl text-white w-[50%]">
           We are city making design leader
         </h1>
 
