@@ -113,7 +113,7 @@ const Hero = () => {
       <Header />
 
       <div className="lg:h-[36rem] h-[57rem] relative w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
-          style={{ backgroundImage: `url('/images/slide2.png')` }}>
+          style={{ backgroundImage: `url('/images/Banner.png')` }}>
             <div className="w-[80%] flex md:flex-row flex-col justify-between h-[90%]">
               <div className="flex items-start justify-start flex-col md:justify-between w-[40%]">
                 <Image src={whitelogo} alt="logo" width={300} height={300}/>

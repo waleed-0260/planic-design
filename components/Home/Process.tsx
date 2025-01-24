@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from 'react'
-import processBg from "../../public/images/processBg.jpg"
+import processBg from "../../public/images/processBg.png"
 import process from "../../public/images/process.png"
 import Image from 'next/image'
 import {
