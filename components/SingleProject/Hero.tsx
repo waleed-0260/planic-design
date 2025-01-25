@@ -3,13 +3,15 @@ import Header from '../Home/Header'
 
 const Hero = ({img, tagline}:any) => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col relative">
     <Header />
-    <div className="w-full flex flex-col items-center justify-center bg-cover h-[36rem] overflow-hidden relative">
+    <div className="w-full flex flex-col items-center justify-center bg-cover h-[45rem] bg-top overflow-hidden relative">
       <div
-        className="w-full h-full flex flex-col items-center justify-center bg-cover hero-animation bg-center"
+        className=" relative w-full h-full flex flex-col items-center justify-center bg-cover bg-top hero-animation"
         style={{ backgroundImage: `url(${img})` }}
-      ></div>
+      >
+        <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
+      </div>
       {/* Text Overlay */}
       {/* <div className="absolute bottom-0 w-full text-center bg-gray-700 bg-opacity-30">
       <div className="group overflow-hidden w-full">

@@ -33,7 +33,7 @@ select to show or hide it"/> */}
 
       <div className='flex flex-col items-center justify-center rounded-t-2xl w-full'>
         <MainSinglePortfolio heading={singlePost?.heading} description={singlePost?.description} challenge={singlePost?.challenge} solution={singlePost?.solution} value={singlePost?.value} name={singlePost?.clientName} location={singlePost?.location} date={singlePost?.date} role={singlePost?.date}/>
-        <Images panel={singlePost?.panelFloorImage} master={singlePost?.masterFloorImage} rendering={singlePost?.renderingImage} additional={singlePost?.additionalImage}/>
+        <Images panel={singlePost?.panelFloorImage} master={singlePost?.masterFloorImage} mapImage={singlePost.mapImage} rendering={singlePost?.renderingImage} additional={singlePost?.additionalImage}/>
         {/* <Testimonials/> */}
         {/* <FeaturedProjects/> */}
         <CalltoForn heading=" Let’s Design Something Extraordinary Together" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>

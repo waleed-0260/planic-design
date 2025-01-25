@@ -30,7 +30,7 @@ const FeaturedProjects = () => {
     <div className="flex flex-col items-start w-[90%] my-[40px]">
       <p className="font-bold md:text-4xl text-2xl">Featured Projects</p>
     <div className="grid grid-cols-2 gap-4 py-4">
-    {projects?.slice(0,5).map((project:any, index) => (
+    {projects?.map((project:any, index) => (
           <Link
             key={index}
             className={`relative ${
@@ -40,6 +40,7 @@ const FeaturedProjects = () => {
             }`}
             href={`/single_project/${project._id}`}
           >
+            <div className="flex flex-col items-start">
             <Image
               src={project.masterFloorImage} // Ensure the image URL is valid
               alt={`Project ${index + 1}`}
@@ -47,7 +48,9 @@ const FeaturedProjects = () => {
               width={300}
               height={300}
               className="rounded-lg"
-            />
+              />
+              <p>{project.heading}</p>
+              </div>
           </Link>
         ))}
     </div>
