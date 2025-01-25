@@ -112,7 +112,7 @@ const Hero = () => {
     <div className="w-full relative">
       <Header />
 
-      <div className="lg:h-[36rem] h-[57rem] relative w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
+      <div className="lg:h-[40rem] h-[57rem] relative w-full bg-cover md:bg-top bg-center bg-no-repeat flex items-center justify-center text-white"
           style={{ backgroundImage: `url('/images/Banner.png')` }}>
             <div className="md:w-[80%] w-[95%] flex md:flex-row flex-col justify-between h-[90%]">
               <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%]">

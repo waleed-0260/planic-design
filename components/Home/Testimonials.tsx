@@ -52,7 +52,7 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index} className="flex flex-col items-center ">
-              <p className="text-3xl font-semibold leading-10 mb-4">
+              <p className="md:text-3xl text-xl font-semibold leading-10 mb-4">
               “{testimonial.text}”
               </p>
               <div className="flex flex-row items-center gap-4 mt-[100px] w-full pt-[50px] border-t-[1px] border-[#b3b2af]">

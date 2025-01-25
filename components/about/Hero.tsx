@@ -38,13 +38,13 @@ const Hero = ({heading, desc}:any) => {
   return (
     <div className="w-full flex flex-col">
       <Header />
-      <div className="w-full flex flex-col items-center justify-center bg-cover h-[44rem] overflow-hidden">
+      <div className="w-full flex flex-col items-center justify-center bg-cover h-[45rem] overflow-hidden">
         <div
-          className="w-full h-full flex flex-col items-center justify-center bg-cover hero-animation bg-center"
+          className="w-full h-full flex flex-col items-center justify-center bg-cover hero-animation bg-top"
           style={{ backgroundImage: `url('/images/aboutHero.png')` }}
         >
-          <div className="absolute inset-0 bg-black opacity-10 h-[44rem]"></div>
-          <div className="flex md:flex-row flex-col items-center justify-between p-4 w-[80%] text-white z-10 mt-[150px]">
+          <div className="absolute inset-0 bg-black opacity-10 h-[45rem]"></div>
+          <div className="flex md:flex-row flex-col items-center justify-between p-4 w-[80%] text-white z-10 mt-[50px]">
             <div className="flex md:flex-row flex-col gap-4 justify-around md:w-[50%] w-full">
               <div className="flex md:flex-col flex-row md:space-y-4 space-x-4 md:space-x-0 z-50 md:mt-0 mt-[150px]">
                 {icons.map((icon, index) => (
@@ -57,7 +57,7 @@ const Hero = ({heading, desc}:any) => {
                 ))}
               </div>
 
-              <div className="flex flex-col gap-3 justify-end relative top-[10px]">
+              <div className="flex flex-col gap-3  relative top-[10px]">
               <p className="text-lg text-white md:w-[350px]">
                 {desc ? desc: 
                 "Architecture and interior Design Company"
@@ -112,7 +112,7 @@ const Hero = ({heading, desc}:any) => {
               </div> */}
             </div>
           </div>
-
+{/* 
           <ul className="flex md:flex-row flex-col items-center justify-around gap-8 text-white z-50 relative top-[160px]">
             <li>Architecture Studio</li>
             <li>Interior Design</li>
@@ -120,7 +120,7 @@ const Hero = ({heading, desc}:any) => {
             <li>Decoration & Furniture</li>
             <li>High performance</li>
 
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>
