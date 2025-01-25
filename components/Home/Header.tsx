@@ -17,10 +17,10 @@ const menuItems = [
   { 
     name: "Services", 
     subItems: [
-      { name: "Construction Site Supervision", id: "construction" },
+      { name: "Architectural Design", id: "architecture" },
       { name: "Interior Design", id: "interior" },
-      { name: "Architecture", id: "architecture" },
-      { name: "3D Visulization", id: "visulization" }
+      { name: "Construction Site Supervision", id: "construction" },
+      { name: "Innovative Solutions", id: "visulization" }
     ], 
     link: "/service" 
   },
@@ -36,8 +36,8 @@ const menuItems = [
     name: "About Us", 
     subItems: [
       { name: "Our Story", id: "story" },
-      { name: "Leaders", id: "leaders" },
-      { name: "Our Sectors", id: "sectors" }
+      { name: "Values", id: "values" },
+      { name: "Teams", id: "teams" }
     ], 
     link: "/about" 
   },

@@ -11,7 +11,7 @@ const Hero = ({img, tagline}:any) => {
         style={{ backgroundImage: `url(${img})` }}
       ></div>
       {/* Text Overlay */}
-      <div className="absolute bottom-0 w-full text-center bg-gray-700 bg-opacity-30">
+      {/* <div className="absolute bottom-0 w-full text-center bg-gray-700 bg-opacity-30">
       <div className="group overflow-hidden w-full">
   <h1
     className="text-7xl font-bold name transition-all duration-300 group-hover:text-white my-[50px] whitespace-nowrap"
@@ -24,7 +24,7 @@ const Hero = ({img, tagline}:any) => {
     {tagline}
   </h1>
 </div>
-      </div>
+      </div> */}
     </div>
   </div>
   )

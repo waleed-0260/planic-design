@@ -23,7 +23,7 @@ const Services = () => {
                 <MdOutlineArchitecture/>
 
                 </p>
-                <h1 className='font-semibold sm:text-2xl text-xl'>Architecture</h1>
+                <h1 className='font-semibold sm:text-2xl text-xl'>Architectural Desig</h1>
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={Architect} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
@@ -52,7 +52,7 @@ const Services = () => {
                 <BiCube/>
 
                 </p>
-                <h1 className='font-semibold sm:text-2xl text-xl'>3D Visulaization</h1>
+                <h1 className='font-semibold sm:text-2xl text-xl'>Innovative Solutions</h1>
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={Visulization} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
@@ -67,7 +67,7 @@ const Services = () => {
                 <FaHardHat/>
 
                 </p>
-                <h1 className='font-semibold sm:text-2xl text-xl'>Construction Supervision</h1>
+                <h1 className='font-semibold sm:text-2xl text-xl'>Construction Onsite Supervision</h1>
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={service2} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>

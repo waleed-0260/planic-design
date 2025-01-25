@@ -50,7 +50,7 @@ const Hero = ({heading, desc}:any) => {
                 {icons.map((icon, index) => (
                   <a href={icon.link}
                     key={index}
-                    className={`p-3 rounded-full hover:opacity-100 transition duration-300 hover:bg-[#FF4814] bg-white bg-opacity-10`}
+                    className={`p-3 rounded-full hover:opacity-100 transition duration-300 hover:bg-orange-600 bg-white bg-opacity-10`}
                   >
                     <div className="text-xl text-white">{icon.component}</div>
                   </a>
@@ -71,7 +71,7 @@ const Hero = ({heading, desc}:any) => {
             <div className="relative flex items-center justify-center w-40 h-40 bg-[#231f20] text-white rounded-full">
   {/* Center Text */}
   <div className="absolute inset-0 flex items-center justify-center text-5xl font-bold">
-    65
+    7+
   </div>
   {/* // mongodb+srv://spearingsystems:h1MOS9jb8VG6GBjw@cluster0.wv8zu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 */}
 
@@ -88,8 +88,8 @@ const Hero = ({heading, desc}:any) => {
       />
     </defs>
     <text fill="white" fontSize="25" textAnchor="middle">
-      <textPath href="#circlePath" startOffset="50%">
-      Years of Experience since 1991 •
+      <textPath href="#circlePath" startOffset="60%">
+      Years of Experience since 2018 •
       </textPath>
     </text>
   </svg>
