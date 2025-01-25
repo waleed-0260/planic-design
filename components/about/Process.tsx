@@ -14,7 +14,7 @@ import aboutProcess from "../../public/images/aboutProcess.png"
 import Link from 'next/link';
 const Process = () => {
   return (
-    <div className='flex flex-col items-center justify-center bg-cover w-full my-[100px] py-[100px]' style={{backgroundImage:`url('/images/aboutProcess.png')`}}>
+    <div id='values' className='flex flex-col items-center justify-center bg-cover w-full my-[100px] py-[100px]' style={{backgroundImage:`url('/images/aboutProcess.png')`}}>
         <h1 className='text-5xl font-bold'>Our Values</h1>
         <div className='flex md:flex-row flex-col w-[90%] justify-between items-start mt-[50px]' >
             <div className='md:w-[40%] w-full flex flex-col ' data-aos="fade-right">

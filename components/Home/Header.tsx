@@ -20,7 +20,7 @@ const menuItems = [
       { name: "Architectural Design", id: "architecture" },
       { name: "Interior Design", id: "interior" },
       { name: "Construction Site Supervision", id: "construction" },
-      { name: "Innovative Solutions", id: "visulization" }
+      { name: "Innovative Solutions", id: "innovative" }
     ], 
     link: "/service" 
   },

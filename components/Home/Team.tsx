@@ -4,7 +4,7 @@ import Ramish from "../../public/images/Ramish.png"
 import Hiba from "../../public/images/Hiba.png"
 const Team = () => {
   return (
-    <div className='w-[90%] flex flex-col items-center justify-center my-[50px]'>
+    <div className='w-[90%] flex flex-col items-center justify-center my-[50px]' id='team'>
         <p className='md:text-4xl text-2xl font-bold text-[#231f20]'>MEET OUR TEAM</p>
         <div className='flex md:flex-row flex-col items-center justify-around w-full mt-8'>
             <div className='flex flex-col items-start justify-start space-y-3'>

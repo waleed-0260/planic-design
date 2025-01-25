@@ -112,15 +112,15 @@ const Hero = () => {
     <div className="w-full relative">
       <Header />
 
-      <div className="lg:h-[40rem] h-[57rem] relative w-full bg-cover md:bg-top bg-center bg-no-repeat flex items-center justify-center text-white"
+      {/* <div className="lg:h-[40rem] h-[57rem] relative w-full bg-cover md:bg-top bg-center bg-no-repeat flex items-center justify-center text-white"
           style={{ backgroundImage: `url('/images/Banner.png')` }}>
-            <div className="md:w-[80%] w-[95%] flex md:flex-row flex-col justify-between h-[90%]">
-              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%]">
+            <div className="md:w-[80%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] bg-blue-700">
+              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
                 <Image src={whitelogo} alt="logo" width={300} height={300}/>
-                <p>Aura Grande Is a modern and Baroque style mix marquee.</p>
+                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
               </div>
               <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 2)}>
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -169,11 +169,11 @@ const Hero = () => {
                 Get Our Free Consultation
               </button>
             </form>
-                Project: Aura Grande
+                // Project: Aura Grande
               </div>
             </div>
-          </div>
-      {/* <Swiper
+          </div> */}
+      <Swiper
       ref={swiperRef}
       spaceBetween={0}
       slidesPerView={1}
@@ -188,102 +188,20 @@ const Hero = () => {
         nextEl: ".custom-next", // Link to custom next button
       }}
       loop={true}
-      className="lg:h-[45rem] h-[57rem] w-full lg:relative fixed"
+      className="lg:h-[45rem] h-[57rem] w-full relative"
     >
       <SwiperSlide
-        className="relative w-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/images/slide1.png')` }}
+        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top bg-center bg-no-repeat text-white"
+        style={{ backgroundImage: `url('/images/Slide1.png')` }}
       >
-        <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-        <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white lg:mt-[120px] mt-[160px] ml-5 md:ml-0 md:space-y-0 space-y-6">
-          <div className="flex flex-col md:w-[40%] w-[90%] items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
-            <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
-              Inspire
-            </h1>
-            <p className="text-left md:w-[65%] w-[90%] leading-8 text-md">
-              Transforming visions into breathtaking realities with expert architecture and interior design.
-            </p>
-            <Link href={"/contact"} className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm">
-              Discover Your Dream Space <GoArrowUpRight />
-            </Link>
-          </div>
-          <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
-            <h1 className="md:text-4xl text-xl font-bold">Ready to elevate your space</h1>
-            <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
-            <form className="px-3 py-4 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 1)}>
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                value={formDataSlide1.name}
-          onChange={(e)=>handleChange(e,1)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                value={formDataSlide1.email}
-          onChange={(e)=>handleChange(e,1)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="phone"
-                name="phone"
-                id="phone"
-                placeholder="Phone Number"
-                value={formDataSlide1.phone}
-                onChange={(e)=>handleChange(e,1)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="message"
-                id="message"
-                placeholder="message Details"
-                value={formDataSlide1.message}
-                onChange={(e)=>handleChange(e,1)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-              />
-              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
-                Get Our Free Consultation
-              </button>
-            </form>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide
-          className="relative w-full bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('/images/slide2.png')` }}
-        >
-          <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  lg:mt-[120px] mt-[160px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
-            <div className="flex flex-col md:w-[40%] w-[90%]  items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
-              <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
-                Innvoate
-              </h1>
-              <p className="text-left md:w-[65%] w-[90%] leading-8 text-md">
-                {" "}
-                Blending creativity and functionality to craft spaces that define excellence.
-              </p>
-              <Link href={"/contact"} className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm">
-                Explore our creations <GoArrowUpRight/>
-              </Link>
-            </div>
-            <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
-              <h1 className="md:text-4xl text-xl font-bold">Ready to elevate your space</h1>
-              <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
-              <form className="px-3 py-4 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 2)}>
+       <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
+        <div className="md:w-[80%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[100px] ml-[20px] z-50">
+              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
+                <Image src={whitelogo} alt="logo" width={300} height={300}/>
+                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
+              </div>
+              <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -332,31 +250,22 @@ const Hero = () => {
                 Get Our Free Consultation
               </button>
             </form>
+                {/* Project: Aura Grande */}
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-          className="relative w-full bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('/images/slide3.jpg')` }}
-        >
-          <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
-          <div className="relative z-10 flex lg:flex-row flex-col items-start md:justify-around h-full text-center text-white  lg:mt-[120px] mt-[160px]  ml-5 md:ml-0 md:space-y-0 space-y-6">
-            <div className="flex flex-col md:w-[40%] w-[90%]  items-start md:items-start md:ml-[80px] justify-start space-y-2 md:mt-[100px]">
-              <h1 className="text-5xl md:text-9xl drop-shadow-2xl shadow-[#000000] font-bold heading leading-tight ">
-                Elevate
-              </h1>
-              <p className="text-left md:w-[65%] w-[90%] leading-8 text-md">
-                {" "}
-                Redefining environments with timeless designs tailored to your lifestyle.
-              </p>
-              <Link href={"/contact"} className="bg-transparent hover:bg-white hover:text-black transition duration-300 hover:shadow-lg flex flex-row items-center justify-center gap-2 border-white border-[1px] w-[230px] h-[50px] text-white rounded-full mt-[50px] text-sm ">
-              Start Your Journey <GoArrowUpRight/>
-              </Link>
-            </div>
-            <div className="md:w-[30%] w-[90%] flex flex-col bg-white bg-opacity-30 rounded-md">
-              <h1 className="md:text-4xl text-xl font-bold pt-4">Ready to elevate your space</h1>
-              <p className="text-sm px-2">Get a custom interior design plan tailored to your vision.</p>
-              <form className="px-3 py-4 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 3)}>
+      </SwiperSlide>
+      <SwiperSlide
+        className="relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top bg-center bg-no-repeat text-white"
+        style={{ backgroundImage: `url('/images/Slide2.png')` }}
+      >
+        <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
+        <div className="md:w-[80%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[100px] ml-[20px] z-50">
+              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
+                <Image src={whitelogo} alt="logo" width={300} height={300}/>
+                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
+              </div>
+              <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -365,8 +274,8 @@ const Hero = () => {
                 placeholder="Name"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
-                value={formDataSlide3.name}
-          onChange={(e)=>handleChange(e,3)}
+                value={formDataSlide2.name}
+          onChange={(e)=>handleChange(e,2)}
               />
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -376,8 +285,8 @@ const Hero = () => {
                 placeholder="Email"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
-                value={formDataSlide3.email}
-          onChange={(e)=>handleChange(e,3)}
+                value={formDataSlide2.email}
+          onChange={(e)=>handleChange(e,2)}
               />
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -385,8 +294,8 @@ const Hero = () => {
                 name="phone"
                 id="phone"
                 placeholder="Phone Number"
-                value={formDataSlide3.phone}
-                onChange={(e)=>handleChange(e,3)}
+                value={formDataSlide2.phone}
+                onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
               />
@@ -396,8 +305,8 @@ const Hero = () => {
                 name="message"
                 id="message"
                 placeholder="message Details"
-                value={formDataSlide3.message}
-                onChange={(e)=>handleChange(e,3)}
+                value={formDataSlide2.message}
+                onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
               />
@@ -405,10 +314,139 @@ const Hero = () => {
                 Get Our Free Consultation
               </button>
             </form>
+                {/* Project: Aura Grande */}
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      </Swiper> */}
+      </SwiperSlide>
+      <SwiperSlide
+        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top bg-center bg-no-repeat text-white"
+        style={{ backgroundImage: `url('/images/Slide4.png')` }}
+      >
+       <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
+        <div className="md:w-[80%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[100px] ml-[20px] z-50">
+              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
+                <Image src={whitelogo} alt="logo" width={300} height={300}/>
+                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
+              </div>
+              <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide2.name}
+          onChange={(e)=>handleChange(e,2)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide2.email}
+          onChange={(e)=>handleChange(e,2)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                value={formDataSlide2.phone}
+                onChange={(e)=>handleChange(e,2)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="message"
+                id="message"
+                placeholder="message Details"
+                value={formDataSlide2.message}
+                onChange={(e)=>handleChange(e,2)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
+                Get Our Free Consultation
+              </button>
+            </form>
+                {/* Project: Aura Grande */}
+              </div>
+            </div>
+      </SwiperSlide>
+      <SwiperSlide
+        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top bg-center bg-no-repeat text-white"
+        style={{ backgroundImage: `url('/images/Slide5.png')` }}
+      >
+       <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
+        <div className="md:w-[80%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[100px] ml-[20px] z-50">
+              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
+                <Image src={whitelogo} alt="logo" width={300} height={300}/>
+                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
+              </div>
+              <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide2.name}
+          onChange={(e)=>handleChange(e,2)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                value={formDataSlide2.email}
+          onChange={(e)=>handleChange(e,2)}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                value={formDataSlide2.phone}
+                onChange={(e)=>handleChange(e,2)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <input 
+                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+                type="text"
+                name="message"
+                id="message"
+                placeholder="message Details"
+                value={formDataSlide2.message}
+                onChange={(e)=>handleChange(e,2)}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              />
+              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
+                Get Our Free Consultation
+              </button>
+            </form>
+                {/* Project: Aura Grande */}
+              </div>
+            </div>
+      </SwiperSlide>
+      </Swiper>
       {/* <div className="absolute right-[40px] sm:bottom-[40px] bottom-[70px] flex flex-row items-center space-x-2  z-50">
         <p className="sm:text-6xl text-3xl text-white custom-prev cursor-pointer">
           <GoChevronLeft />

@@ -28,7 +28,7 @@ const Services = () => {
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={Architect} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
-                <p className='text-sm textColor'>At Planic Design, we create architectural designs that blend functionality with aesthetic appeal. From concept development to final blueprints, our team delivers innovative solutions tailored to your needs.</p>
+                <p className='text-sm textColor'>Transforming visions into structures, our architectural designing service combines innovation and functionality. We craft unique, sustainable designs tailored to your needs, ensuring every project harmonizes aesthetics and practicality.</p>
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
             </div>
 
@@ -36,11 +36,11 @@ const Services = () => {
                 <p className='text-3xl primaryColor'>
                 <FaCouch/>
                 </p>
-                <h1 className='font-semibold sm:text-2xl text-xl'> Interior Design</h1>
+                <h1 className='font-semibold sm:text-2xl text-xl'> Interior Designing</h1>
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={interior} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
-                <p className='text-sm textColor'>Transform your spaces into stunning, functional environments. Our bespoke interior design services focus on blending your style with modern trends to create spaces that inspire.</p>
+                <p className='text-sm textColor'>Redefine your spaces with our interior designing expertise. From concept to completion, we create personalized, stylish interiors that reflect your personality while maximizing comfort and functionality.</p>
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
             </div>
 
@@ -52,7 +52,7 @@ const Services = () => {
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={Visulization} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
-                <p className='text-sm textColor'>Bring your ideas to life with cutting-edge 3D visualization. Our photorealistic renderings help you preview designs before execution, ensuring every detail is perfect.</p>
+                <p className='text-sm textColor'>At Planic Design, we embrace creativity and advanced technology to deliver innovative solutions across all our services. Whether it’s groundbreaking designs, bespoke interiors, or seamless construction processes, we ensure exceptional outcomes for every project.</p>
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
             </div>
 
@@ -64,7 +64,7 @@ const Services = () => {
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={service2} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
-                <p className='text-sm textColor'>Our construction supervision services ensure every aspect of your project is executed flawlessly. We oversee the process with a meticulous eye, delivering results that exceed expectations.</p>
+                <p className='text-sm textColor'>Ensure your project is executed flawlessly with our construction onsite supervision. Our experienced team oversees every detail, ensuring quality, efficiency, and compliance with your vision and standards.</p>
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>
             </div>
         </div>
