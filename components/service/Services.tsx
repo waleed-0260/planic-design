@@ -27,7 +27,7 @@ const Services = () => {
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={Architect} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
-                <h1 className='font-bold text-2xl'>Crafting Structures with Purpose and Precision</h1>
+                <h1 className='font-bold md:text-2xl text-xl'>Crafting Structures with Purpose and Precision</h1>
                 <p className='text-sm textColor'>At Planic Design, we create architectural designs that blend functionality with aesthetic appeal. From concept development to final blueprints, our team delivers innovative solutions tailored to your needs.</p>
                 <Link href={"/portfolio"} className='w-[300px] h-10 sm:flex hidden items-center justify-center gap-4 bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] primaryColor hover:text-white rounded-full transition duration-300 text-sm '> Explore Architectural Solutions<IoIosArrowRoundForward style={{rotate:"310deg"}}/></Link>
             </div>
@@ -42,7 +42,7 @@ const Services = () => {
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={interior} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
-                <h1 className='font-bold text-2xl'>Designing Interiors That Define You</h1>
+                <h1 className='font-bold md:text-2xl text-xl'>Designing Interiors That Define You</h1>
                 <p className='text-sm textColor'>Transform your spaces into stunning, functional environments. Our bespoke interior design services focus on blending your style with modern trends to create spaces that inspire.</p>
                 <Link href={"/portfolio"} className='w-[300px] h-10 sm:flex hidden items-center justify-center gap-4 bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] primaryColor hover:text-white rounded-full transition duration-300 text-sm '> Start Your Interior Transformation <IoIosArrowRoundForward style={{rotate:"310deg"}}/></Link>
             </div>
@@ -56,7 +56,7 @@ const Services = () => {
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={Visulization} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
-                <h1 className='font-bold text-2xl'>Viuslize your vision</h1>
+                <h1 className='font-bold md:text-2xl text-xl'>Viuslize your vision</h1>
                 <p className='text-sm textColor'>Bring your ideas to life with cutting-edge 3D visualization. Our photorealistic renderings help you preview designs before execution, ensuring every detail is perfect.</p>
                 <Link href={"/portfolio"} className='w-[300px] h-10 sm:flex hidden items-center justify-center gap-4 bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] primaryColor hover:text-white rounded-full transition duration-300 text-sm '> See your design in 3D<IoIosArrowRoundForward style={{rotate:"310deg"}}/></Link>
             </div>
@@ -71,7 +71,7 @@ const Services = () => {
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
                     <Image src={service2} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
-                <h1 className='font-bold text-2xl'>Building with Care, Precision, and Expertise</h1>
+                <h1 className='font-bold md:text-2xl text-xl'>Building with Care, Precision, and Expertise</h1>
                 <p className='text-sm textColor'>Our construction supervision services ensure every aspect of your project is executed flawlessly. We oversee the process with a meticulous eye, delivering results that exceed expectations.</p>
                 <Link href={"/portfolio"} className='w-[300px] h-10 sm:flex hidden items-center justify-center gap-4 bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] primaryColor hover:text-white rounded-full transition duration-300 text-sm '> Ensuring Excellence in Execution<IoIosArrowRoundForward style={{rotate:"310deg"}}/></Link>
             </div>

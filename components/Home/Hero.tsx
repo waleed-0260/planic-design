@@ -120,7 +120,7 @@ const Hero = () => {
                 <p>Aura Grande Is a modern and Baroque style mix marquee.</p>
               </div>
               <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 2)}>
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5" onSubmit={(e) => handleSubmit(e, 2)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"

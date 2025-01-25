@@ -14,9 +14,9 @@ const CalltoForn = ({heading, desc, btn}:any) => {
     <input
       type="text"
       placeholder="Email address"
-      className="sm:w-80 h-12 px-4 text-lg border border-[#231f20] rounded-md focus:outline-none focus:ring-1 focus:ring-[#231f20]"
+      className="sm:w-80 h-12 px-4 text-lg border border-[#231f20] rounded-md focus:outline-none focus:ring-1 focus:ring-[#231f20] w-[80%]"
     />
-    <button className="bg-[#231f20] text-white sm:w-[210px] sm:mt-0 mt-8 w-full h-12 text-lg rounded-md  transition duration-300">
+    <button className="bg-[#231f20] text-white sm:w-[210px] sm:mt-0 mt-8 w-[80%] h-12 text-lg rounded-md  transition duration-300">
       {btn}
     </button>
   </form>

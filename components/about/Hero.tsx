@@ -41,9 +41,9 @@ const Hero = ({heading, desc}:any) => {
       <div className="w-full flex flex-col items-center justify-center bg-cover h-[44rem] overflow-hidden">
         <div
           className="w-full h-full flex flex-col items-center justify-center bg-cover hero-animation bg-center"
-          style={{ backgroundImage: `url('/images/aboutHero.jpg')` }}
+          style={{ backgroundImage: `url('/images/aboutHero.png')` }}
         >
-          <div className="absolute inset-0 bg-black opacity-30 h-[44rem]"></div>
+          <div className="absolute inset-0 bg-black opacity-10 h-[44rem]"></div>
           <div className="flex md:flex-row flex-col items-center justify-between p-4 w-[80%] text-white z-10 mt-[150px]">
             <div className="flex md:flex-row flex-col gap-4 justify-around md:w-[50%] w-full">
               <div className="flex md:flex-col flex-row md:space-y-4 space-x-4 md:space-x-0 z-50 md:mt-0 mt-[150px]">
@@ -63,7 +63,7 @@ const Hero = ({heading, desc}:any) => {
                 "Architecture and interior Design Company"
                 }
               </p>
-              <h1 className="text-6xl font-bold ">{heading}</h1>
+              <h1 className="md:text-6xl text-3xl font-bold ">{heading}</h1>
               </div>
             </div>
 

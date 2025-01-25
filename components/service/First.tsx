@@ -6,7 +6,7 @@ const First = () => {
   return (
     <div className='flex md:flex-row flex-col items-center justify-around w-[90%] my-[100px]'>
         <div className='flex flex-col space-y-6 md:w-[50%]' data-aos="fade-left">
-            <h1 className='font-bold text-4xl'>Comprehensive Solutions for Every Space</h1>
+            <h1 className='font-bold md:text-4xl text-2xl'>Comprehensive Solutions for Every Space</h1>
             <p className='textColor text-md'>We provide end-to-end architecture and interior design services, from planning and creative design to project management and construction supervision. Whether it's a residential sanctuary or a commercial masterpiece, our team ensures every detail exceeds expectations.</p>
             <Link href={"/contact"} className='w-[250px] h-10 flex items-center justify-center gap-4 bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] textColor hover:text-white rounded-full transition duration-300 text-sm'> Contact Us<IoIosArrowRoundDown/></Link>
             {/* <span className='h-[40px] w-[300px] border-[1px] border-black rounded-full flex flex-row items-center justify-around'>

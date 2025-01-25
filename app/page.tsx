@@ -45,7 +45,7 @@ export default function Home() {
       {/* <About/> */}
       <ScrollColorText/>
       <Services/>
-      <Process/>
+      {/* <Process/> */}
       <CountDown/>
       <FeaturedProjects/>
       <Slider/>

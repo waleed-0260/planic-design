@@ -6,7 +6,7 @@ const Footer = () => {
     <>
     <div className="w-[90%] flex md:flex-row flex-col  mt-[150px]">
       <div className="md:w-[50%] flex flex-col ">
-        <p className="text-2xl font-semibold">We believe that architecture has the power to shape lives and uplift communities. Archin‘s philosophy is passion for innovation, sustainablity and t imeless aesthetics
+        <p className="md:text-2xl text-xl font-semibold">We believe that architecture has the power to shape lives and uplift communities. Archin‘s philosophy is passion for innovation, sustainablity and t imeless aesthetics
         </p>
 
         <div className="flex gap-4 md:mt-[20px] mt-4">
@@ -41,15 +41,15 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className="flex justify-end md:flex-row flex-col md:mt-0 mt-5 w-[50%]">
+      <div className="flex justify-end md:flex-row flex-col space-x-3 md:mt-0 mt-5 w-[50%]">
         <div className="flex flex-col items-start space-y-2">
-        <h1 className='font-bold text-3xl'>Islamabad, Pakistan</h1>
+        <h1 className='font-bold text-3xl'>Islamabad, PK</h1>
                 <p className='textColor text-sm w-[300px]'>Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens</p>
                 <p className='textColor text-sm'>planicdesign2@gmail.com</p>
                 <p className='textColor text-sm'>0335 5272083</p>
         </div>
         <div className="flex flex-col items-start space-y-2">
-        <h1 className='font-bold text-3xl'>London</h1>
+        <h1 className='font-bold text-3xl'>London, UK</h1>
                 <p className='textColor text-sm  '>UK: FL 3, 45 Albemarle St</p>
                 <p className='textColor text-sm'>planicdesign2@gmail.com</p>
                 <p className='textColor text-sm'>+44 7532813089</p>
