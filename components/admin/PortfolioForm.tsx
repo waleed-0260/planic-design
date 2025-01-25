@@ -156,10 +156,10 @@ const PortfolioForm = () => {
           <label className="block font-medium">Date *</label>
           <input
             type="date"
-            {...register("date", { required: true })}
+            {...register("date")}
             className="w-full border rounded px-3 py-2"
           />
-          {errors.date && <p className="text-red-500">Date is required.</p>}
+          {/* {errors.date && <p className="text-red-500">Date is required.</p>} */}
         </div>
 
         <div>
