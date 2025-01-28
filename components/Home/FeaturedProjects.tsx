@@ -27,7 +27,7 @@ const FeaturedProjects = () => {
 
   
   return (
-    <div className="flex flex-col items-start w-[90%] my-[40px] bg-yellow-700">
+    <div className="flex flex-col items-start w-[90%] my-[40px]">
       <p className="font-bold md:text-4xl text-2xl">Featured Projects</p>
     <div className="grid md:grid-cols-2 grid-cols-1 gap-4 py-4 w-full">
     {projects?.map((project:any, index) => (
