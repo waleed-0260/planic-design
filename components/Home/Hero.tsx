@@ -112,7 +112,7 @@ const Hero = () => {
     <div className="w-full relative">
       <Header />
 
-      {/* <div className="lg:h-[40rem] h-[57rem] relative w-full bg-cover md:bg-top bg-center bg-no-repeat flex items-center justify-center text-white"
+      {/* <div className="lg:h-[40rem] h-[57rem] relative w-full bg-cover md:bg-top 2xl:bg-center bg-center bg-no-repeat flex items-center justify-center text-white"
           style={{ backgroundImage: `url('/images/Banner.png')` }}>
             <div className="md:w-[80%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] bg-blue-700">
               <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
@@ -191,7 +191,7 @@ const Hero = () => {
       className="lg:h-[45rem] h-[57rem] w-full relative"
     >
       <SwiperSlide
-        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top bg-center bg-no-repeat text-white"
+        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top 2xl:bg-center bg-center bg-no-repeat text-white"
         style={{ backgroundImage: `url('/images/Slide1.png')` }}
       >
        <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
@@ -255,7 +255,7 @@ const Hero = () => {
             </div>
       </SwiperSlide>
       <SwiperSlide
-        className="relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top bg-center bg-no-repeat text-white"
+        className="relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top 2xl:bg-center bg-center bg-no-repeat text-white"
         style={{ backgroundImage: `url('/images/Slide2.png')` }}
       >
         <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
@@ -319,7 +319,7 @@ const Hero = () => {
             </div>
       </SwiperSlide>
       <SwiperSlide
-        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top bg-center bg-no-repeat text-white"
+        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top 2xl:bg-center bg-center bg-no-repeat text-white"
         style={{ backgroundImage: `url('/images/Slide4.png')` }}
       >
        <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
@@ -383,7 +383,7 @@ const Hero = () => {
             </div>
       </SwiperSlide>
       <SwiperSlide
-        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top bg-center bg-no-repeat text-white"
+        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-top 2xl:bg-center bg-center bg-no-repeat text-white"
         style={{ backgroundImage: `url('/images/Slide5.png')` }}
       >
        <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
