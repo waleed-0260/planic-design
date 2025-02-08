@@ -25,6 +25,7 @@ import ContactForm from "@/components/Contact/ContactForm";
 import Sectors from "@/components/about/Sectors";
 import TextRevealSection from "@/components/Home/TextRevealSection";
 import SecondSection from "@/components/Home/SecondSection";
+import Video from "@/components/Home/Video";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -45,13 +46,12 @@ export default function Home() {
     {loading ? <Loader/>: (
       <>
       <Hero/>
-    <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-      {/* <About/> */}
-      {/* <ScrollColorText/> */}
+    <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative ">
+
       <TextRevealSection/>
-      {/* <SecondSection/> */}
+      <Video/>
+      <div className="bg-[#f1eee9] flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
       <Services/>
-      {/* <Process/> */}
       <CountDown/>
       <FeaturedProjects/>
       <Sectors/>
@@ -60,6 +60,7 @@ export default function Home() {
       <CalltoForn  heading="Stay Inspired, Stay Informed" desc="Join the Planic Design community to get the latest design trends, project highlights, and expert tips delivered straight to your inbox. Be the first to know about our exclusive insights and updates." btn="Subscribe Now"/>
       <ContactForm/>
     <Footer/>
+      </div>
     </div>
     </>
     )}

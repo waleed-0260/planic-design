@@ -16,7 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Planic Design",
   description: "Planic design",
-};
+  icons: {
+    icon: "/favicon.png", // Correct path
+  },};
 
 export default function RootLayout({
   children,

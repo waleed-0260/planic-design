@@ -111,74 +111,12 @@ const Hero = () => {
   return (
     <div className="w-full relative">
       <Header />
-
-      {/* <div className="lg:h-[40rem] h-[57rem] relative w-full bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat flex items-center justify-center text-white"
-          style={{ backgroundImage: `url('/images/Banner.png')` }}>
-            <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] bg-blue-700">
-              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
-                <Image src={whitelogo} alt="logo" width={300} height={300}/>
-                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
-              </div>
-              <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                value={formDataSlide2.name}
-          onChange={(e)=>handleChange(e,2)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                value={formDataSlide2.email}
-          onChange={(e)=>handleChange(e,2)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="phone"
-                name="phone"
-                id="phone"
-                placeholder="Phone Number"
-                value={formDataSlide2.phone}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="message"
-                id="message"
-                placeholder="message Details"
-                value={formDataSlide2.message}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-              />
-              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
-                Get Our Free Consultation
-              </button>
-            </form>
-                // Project: Aura Grande
-              </div>
-            </div>
-          </div> */}
       <Swiper
       ref={swiperRef}
       spaceBetween={0}
       slidesPerView={1}
       autoplay={{
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
       }}
       speed={1000}
@@ -188,10 +126,24 @@ const Hero = () => {
         nextEl: ".custom-next", // Link to custom next button
       }}
       loop={true}
-      className="lg:h-[45rem] h-[57rem] w-full relative"
+      className="lg:h-[45rem] h-[57rem] w-full relative "
+      breakpoints={{
+        600: {
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          loop: true,
+        },
+        0: {
+          autoplay: false,
+          loop: false,
+          initialSlide: 1, // Freezes the second slide
+        },
+      }}
     >
       <SwiperSlide
-        className="relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat text-white"
+        className="relative hidden items-center justify-center w-full h-[45rem] bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat text-white"
         style={{ backgroundImage: `url('/images/Slide2.png')` }}
       >
         <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
@@ -201,7 +153,7 @@ const Hero = () => {
                 <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
               </div>
               <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -240,7 +192,7 @@ const Hero = () => {
                 type="text"
                 name="message"
                 id="message"
-                placeholder="message Details"
+                placeholder="Message Details"
                 value={formDataSlide2.message}
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
@@ -261,11 +213,11 @@ const Hero = () => {
        <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
         <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[50px] ml-[20px] z-50">
               <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
-                <Image src={whitelogo} alt="logo" width={300} height={300}/>
+                <Image src={whitelogo} alt="logo" width={300} height={300} />
                 <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
               </div>
               <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -304,7 +256,7 @@ const Hero = () => {
                 type="text"
                 name="message"
                 id="message"
-                placeholder="message Details"
+                placeholder="Message Details"
                 value={formDataSlide2.message}
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
@@ -319,7 +271,7 @@ const Hero = () => {
             </div>
       </SwiperSlide>
       <SwiperSlide
-        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat text-white"
+        className=" relative sm:flex hidden items-center justify-center w-full h-[45rem] bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat text-white"
         style={{ backgroundImage: `url('/images/Slide5.png')` }}
       >
        <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
@@ -329,7 +281,7 @@ const Hero = () => {
                 <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
               </div>
               <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
+              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -368,7 +320,7 @@ const Hero = () => {
                 type="text"
                 name="message"
                 id="message"
-                placeholder="message Details"
+                placeholder="Message Details"
                 value={formDataSlide2.message}
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}

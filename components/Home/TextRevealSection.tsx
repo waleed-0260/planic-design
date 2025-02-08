@@ -46,7 +46,9 @@ export default function TextRevealSection() {
   }, [wordIndex]);
 
   return (
-    <section ref={sectionRef} className="h-screen flex items-center justify-center  p-10">
+    <div className="w-full bg-[#f1eee9] h-full">
+
+    <section ref={sectionRef} className=" flex items-center justify-center  p-10 py-[20px] z-50 relative bg-[#f1eee9]">
       <div className="max-w-3xl text-center text-2xl font-medium leading-relaxed">
         {words.map((word, index) => (
           <span
@@ -54,11 +56,12 @@ export default function TextRevealSection() {
             className={`transition-colors duration-200 ${
               index < wordIndex ? "text-black " : "text-gray-400"
             }`}
-          >
+            >
             {word}{" "}
           </span>
         ))}
       </div>
     </section>
+            </div>
   );
 }
