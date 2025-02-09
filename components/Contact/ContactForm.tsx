@@ -59,7 +59,7 @@ const ContactForm = () => {
     <div className="flex flex-col">
       <p className=" text-xl">Main Office</p>
       <p >Islamabad, Pakistan</p>
-      <p className="text-sm textColor leading-relaxed">
+      <p className="text-sm textColor leading-relaxed sm:w-full w-[150px]">
         Office No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens, Islamabad
       </p>
       <p className="mt-2">London, UK</p>
