@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-     <footer className="w-full border-t-[2px] text-black py-4 mt-[50px]">
+     <footer className="w-full border-t-[2px] text-black py-4 mt-[50px] textColor text-sm">
        <div className="flex md:flex-row flex-col justify-between sm:items-center items-start max-w-6xl mx-auto w-[90%]">
          <div className="text-left">
            <p>&copy; 2024 Planic Design. All rights reserved.</p>

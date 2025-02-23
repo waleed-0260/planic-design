@@ -1,5 +1,6 @@
 import React from 'react'
-
+import images from "../../public/images/images.jpg"
+import Image from 'next/image';
 const Values = () => {
     const value = [
         {
@@ -42,7 +43,7 @@ const Values = () => {
   return (
     <div className='w-[90%] flex flex-col items-start justify-center my-[80px] space-y-5' id="values">
         <h1 className='md:text-[72px] text-2xl py-9 md:text-[72px] text-2xl py-9 border-t-[1px] border-b-[1px] border-black w-full mb-[50px]'>Our Values</h1>
-
+        {/* <Image src={images} alt="asad" className='object-cover'/> */}
         <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mt-[150px] w-full'>
             {value.map((item, index)=>{
                 return(

@@ -76,7 +76,9 @@ const Hero = () => {
       });
   
       if (response.ok) {
-        toast.success("Form submitted successfully!");
+        // toast.success("Form submitted successfully!");
+        alert("Message sent successfully!");
+        // e.target.reset();
         if (slide === 1) {
           setFormDataSlide1({ name: "", email: "", phone: "", message: "" });
         } else if (slide === 2) {
@@ -162,6 +164,7 @@ const Hero = () => {
                 placeholder="Name"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
                 value={formDataSlide2.name}
           onChange={(e)=>handleChange(e,2)}
               />
@@ -173,6 +176,7 @@ const Hero = () => {
                 placeholder="Email"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
                 value={formDataSlide2.email}
           onChange={(e)=>handleChange(e,2)}
               />
@@ -186,6 +190,7 @@ const Hero = () => {
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
               />
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -197,6 +202,7 @@ const Hero = () => {
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
               />
               <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
                 Get Our Free Consultation
@@ -226,6 +232,7 @@ const Hero = () => {
                 placeholder="Name"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
                 value={formDataSlide2.name}
           onChange={(e)=>handleChange(e,2)}
               />
@@ -237,6 +244,7 @@ const Hero = () => {
                 placeholder="Email"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
                 value={formDataSlide2.email}
           onChange={(e)=>handleChange(e,2)}
               />
@@ -250,6 +258,7 @@ const Hero = () => {
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
               />
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -261,6 +270,7 @@ const Hero = () => {
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
               />
               <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
                 Get Our Free Consultation
@@ -290,6 +300,7 @@ const Hero = () => {
                 placeholder="Name"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
                 value={formDataSlide2.name}
           onChange={(e)=>handleChange(e,2)}
               />
@@ -301,6 +312,7 @@ const Hero = () => {
                 placeholder="Email"
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
                 value={formDataSlide2.email}
           onChange={(e)=>handleChange(e,2)}
               />
@@ -314,6 +326,7 @@ const Hero = () => {
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
               />
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -325,6 +338,7 @@ const Hero = () => {
                 onChange={(e)=>handleChange(e,2)}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                required
               />
               <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
                 Get Our Free Consultation
