@@ -17,6 +17,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/smallaccordion";
+import images from "../../public/images/images.jpg"
 const Services = () => {
   return (
     <div className="flex flex-col w-[90%] items-left justify-left space-y-9 my-[80px] z-10 relative">
@@ -33,10 +34,10 @@ const Services = () => {
         spaces that inspire and endure.
       </p>
       <div className="flex md:flex-row flex-col items-start justify-between mt-[50px] w-full">
-        <div className="">
-          <Image src={service2} alt="services" className="h-auto w-auto" />
+        <div className="md:w-[40%] w-full">
+          <Image src={images} alt="services" className="w-full h-full" />
         </div>
-        <div className="flex flex-col  md:w-[50%] w-full">
+        <div className="flex flex-col  md:w-[50%] w-full md:mt-0 mt-5">
           <p className="text-xl ">Expertise</p>
           <Accordion
             type="single"

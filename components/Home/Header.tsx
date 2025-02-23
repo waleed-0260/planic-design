@@ -32,6 +32,7 @@ const menuItems = [
     subItems: [
       { name: "Our Story", id: "story" },
       { name: "Values", id: "values" },
+      { name: "Process", id: "process" },
       { name: "Teams", id: "teams" }
     ], 
     link: "/about" 
