@@ -53,7 +53,7 @@ const FeaturedProjects = () => {
               height={300}
               className="rounded-lg w-full object-cover h-[400px]"
               />
-              <p>{project.heading}</p>
+              <p className="text-3xl">{project.heading}</p>
               </div>
           </Link>
         ))}
