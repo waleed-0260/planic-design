@@ -25,7 +25,7 @@ const Services = () => {
         {" "}
         Our Services
       </h1>
-      <p className="md:w-[50%] text-lg textColor">
+      <p className="md:w-[50%] text-md textColor">
         At Planic Design, we transform visions into reality through innovative
         architectural and interior designs that blend aesthetics, functionality,
         and sustainability. Our expert team ensures flawless execution with
@@ -47,10 +47,10 @@ const Services = () => {
             
             
             <AccordionItem value="item-1" className=" rounded-none">
-              <AccordionTrigger className=" text-sm font-normal text-left">
+              <AccordionTrigger className=" text-md font-normal text-left">
                 Architectural Designing
               </AccordionTrigger>
-              <AccordionContent className="textColor">
+              <AccordionContent className="textColor text-[16px]">
                 <ul className="list-disc pl-5">
                   <li>Site testing, Topography survey and Soil test</li>
                   <li>Feasibility study and business cases</li>
@@ -72,10 +72,10 @@ const Services = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" className="mt-5 rounded-none">
-              <AccordionTrigger className=" text-sm font-normal text-left">
+              <AccordionTrigger className=" text-md font-normal text-left">
                 Interior Designing
               </AccordionTrigger>
-              <AccordionContent className="textColor">
+              <AccordionContent className="textColor text-[16px]">
                 <ul className="list-disc pl-5">
                   <li>Full Interior Design including furniture details.</li>
                   <li>Providing finishes specifications.</li>
@@ -90,10 +90,10 @@ const Services = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5" className="mt-5 rounded-none">
-              <AccordionTrigger className=" text-sm font-normal text-left">
+              <AccordionTrigger className=" text-md font-normal text-left">
                 Turn-Key Solution
               </AccordionTrigger>
-              <AccordionContent className="textColor">
+              <AccordionContent className="textColor text-[16px]">
                 <ul className="list-disc pl-5">
                   <li>Site testing, Topography survey and Soil test</li>
                   <li>Feasibility study and business cases</li>
@@ -121,10 +121,10 @@ const Services = () => {
             </AccordionItem>
             
             <AccordionItem value="item-4" className="mt-5 rounded-none">
-              <AccordionTrigger className=" text-sm font-normal text-left">
+              <AccordionTrigger className=" text-md font-normal text-left">
                 Innovative Solutions
               </AccordionTrigger>
-              <AccordionContent className="textColor">
+              <AccordionContent className="textColor text-[16px]">
                 <ul className="list-disc pl-5">
                   <li>Facade Uplifting Detail Design</li>
                   <li>Interior Revamping Detail Design</li>
@@ -140,10 +140,10 @@ const Services = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="mt-5 rounded-none">
-              <AccordionTrigger className=" text-sm font-normal text-left">
+              <AccordionTrigger className=" text-md font-normal text-left">
                 Construction OnSite Supervision
               </AccordionTrigger>
-              <AccordionContent className="textColor">
+              <AccordionContent className="textColor text-[16px]">
                 <ul className="list-disc pl-5">
                   <li>Site Visits</li>
                   <li>Documentation and reporting on site</li>
@@ -162,19 +162,19 @@ const Services = () => {
           {/* <p className='text-xl mt-[50px]'>Supporting Services</p>
                 <Accordion type="single" collapsible className="md:w-[80%] w-full mt-[20px]">
       <AccordionItem value="item-1" className=' rounded-none'>
-        <AccordionTrigger className=' text-sm font-normal text-left'>Strategic Planning + Communication</AccordionTrigger>
+        <AccordionTrigger className=' text-md font-normal text-left'>Strategic Planning + Communication</AccordionTrigger>
         <AccordionContent className='textColor'>
         Transforming visions into structures, our architectural designing service combines innovation and functionality. We craft unique, sustainable designs tailored to your needs, ensuring every project harmonizes aesthetics and practicality.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2" className='mt-5 rounded-none'>
-        <AccordionTrigger className=' text-sm font-normal text-left'>Consultation + Engagement</AccordionTrigger>
+        <AccordionTrigger className=' text-md font-normal text-left'>Consultation + Engagement</AccordionTrigger>
         <AccordionContent className='textColor'>
         Redefine your spaces with our interior designing expertise. From concept to completion, we create personalized, stylish interiors that reflect your personality while maximizing comfort and functionality.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3" className='mt-5 rounded-none'>
-        <AccordionTrigger className=' text-sm font-normal text-left'>Design Review</AccordionTrigger>
+        <AccordionTrigger className=' text-md font-normal text-left'>Design Review</AccordionTrigger>
         <AccordionContent className='textColor'>
         Ensure your project is executed flawlessly with our construction onsite supervision. Our experienced team oversees every detail, ensuring quality, efficiency, and compliance with your vision and standards.
         </AccordionContent>
