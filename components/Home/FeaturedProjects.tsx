@@ -34,13 +34,11 @@ const FeaturedProjects = () => {
       {/* <p className="md:w-[40%] text-sm">Showcasing Excellence: Explore Our Featured Projects That Redefine Architectural Innovation, Blend Timeless Design with Modern Functionality, and Inspire a New Standard of Creativity</p>
       <Link href={"/portfolio"} className="py-2 border-b-[1px] border-b-black flex flex-row items-center gap-4">View All Projects <FaArrowRight className="ml-[20px]"/></Link> */}
     <div className="grid md:grid-cols-2 grid-cols-1 gap-4 py-4 w-full">
-    {projects?.slice(0,5).map((project:any, index) => (
+    {projects?.map((project:any, index) => (
           <Link
             key={index}
             className={`relative ${
-              index === 2
-                ? "md:col-span-2" // Make the third item span two columns
-                : "md:col-span-1"
+              (index + 1) % 3 === 0 ? "md:col-span-2" : "md:col-span-1"
             }`}
             href={`/single_project/${project._id}`}
           >

@@ -15,9 +15,7 @@ const Projects = ({products}:any) => {
         <Link
           key={index}
           className={`relative ${
-            index === 2
-              ? "md:col-span-2" // Make the third item span two columns
-              : "md:col-span-1"
+            (index + 1) % 3 === 0 ? "md:col-span-2" : "md:col-span-1"
           }`}
           href={`/single_project/${project._id}`}
         >
