@@ -25,7 +25,7 @@ const Services = () => {
         {" "}
         Our Services
       </h1>
-      <p className="md:w-[50%] text-sm textColor">
+      <p className="md:w-[50%] text-lg textColor">
         At Planic Design, we transform visions into reality through innovative
         architectural and interior designs that blend aesthetics, functionality,
         and sustainability. Our expert team ensures flawless execution with
