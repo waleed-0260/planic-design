@@ -45,14 +45,14 @@ const Footer = () => {
         <div className="flex flex-col items-start space-y-2">
         <h1 className='font-bold text-3xl'>Islamabad, PK</h1>
                 <p className='textColor text-sm w-[300px]'>Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens</p>
-                <p className='textColor text-sm'>planicdesign2@gmail.com</p>
+                <p className='textColor text-sm'>planicdesignisb@gmail.com</p>
                 <p className='textColor text-sm'>0335 5272083</p>
         </div>
         <div className="flex flex-col items-start space-y-2">
         <h1 className='font-bold text-3xl'>London, UK</h1>
                 <p className='textColor text-sm  '>UK: FL 3, 45 Albemarle St</p>
-                <p className='textColor text-sm'>planicdesign2@gmail.com</p>
-                <p className='textColor text-sm'>+44 7532813089</p>
+                <p className='textColor text-sm'>planicdesignisb@gmail.com</p>
+                <p className='textColor text-sm'>051-5912675</p>
         </div>
       </div>
     </div>
