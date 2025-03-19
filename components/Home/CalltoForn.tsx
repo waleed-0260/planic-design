@@ -43,7 +43,7 @@ const CalltoForn = ({heading, desc, btn}:any) => {
   <h1 className="text-3xl font-bold text-center text-gray-800">
   {heading}
   </h1>
-  <p className="text-lg text-center text-gray-600 max-w-2xl">
+  <p className=" text-center textColor max-w-2xl">
     {desc}
   </p>
 
