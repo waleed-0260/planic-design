@@ -49,7 +49,7 @@ const Values = () => {
                 return(
                 <div className='flex flex-col items-start space-y-5' key={index}>
                     <h1 className='md:text-2xl text-md'>{item.heading}</h1>
-                    <p className='text-sm textColor'>{item.text}</p>
+                    <p className=' textColor'>{item.text}</p>
                 </div>
                 )
             })}
