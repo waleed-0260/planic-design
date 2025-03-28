@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
-
+// import portfolio from "../../public/images/portfolio.pdf"
 const FeaturedProjects = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -56,9 +56,11 @@ const FeaturedProjects = () => {
           </Link>
         ))}
     </div>
-    <div className="flex items-end justify-end w-full">
+    <div className="flex md:items-end items-center justify-center md:justify-end flex-col gap-4 w-full">
 
     <Link href={"/portfolio"} className="py-2 border-b-[1px] border-b-black flex flex-row items-center justify-end gap-4">View All Projects <FaArrowRight className="ml-[40px]"/></Link>
+    <a  href="/images/portfolio.pdf" 
+  download="portfolio.pdf" className="bg-[#231f20] text-white  sm:mt-0 mt-8 px-[20px] py-[10px] text-lg rounded-md transition duration-300 cursor-pointer">Download Portfolio</a>
     </div>
             </div>
   );
