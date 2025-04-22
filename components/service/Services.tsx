@@ -1,24 +1,24 @@
 import React from "react";
-import Architect from "../../public/images/Architect.png";
-import Visulization from "../../public/images/Visulization.png";
-import interior from "../../public/images/interior.png";
-import service2 from "../../public/images/service2.png";
-import serviceNew from "../../public/images/serviceNew.jpg"
-import { IoIosArrowRoundForward } from "react-icons/io";
+// import Architect from "../../public/images/Architect.png";
+// import Visulization from "../../public/images/Visulization.png";
+// import interior from "../../public/images/interior.png";
+// import service2 from "../../public/images/service2.png";
+import serviceNew from "../../public/images/serviceNew.png"
+// import { IoIosArrowRoundForward } from "react-icons/io";
 import Image from "next/image";
 // import { GoArrowUpRight } from "react-icons/go";
-import Link from "next/link";
-import { MdOutlineArchitecture } from "react-icons/md";
-import { FaCouch } from "react-icons/fa";
-import { BiCube } from "react-icons/bi";
-import { FaHardHat } from "react-icons/fa";
+// import Link from "next/link";
+// import { MdOutlineArchitecture } from "react-icons/md";
+// import { FaCouch } from "react-icons/fa";
+// import { BiCube } from "react-icons/bi";
+// import { FaHardHat } from "react-icons/fa";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/smallaccordion";
-import images from "../../public/images/images.jpg"
+// import images from "../../public/images/images.jpg"
 const Services = () => {
   return (
     <div className="flex flex-col w-[90%] items-left justify-left space-y-9 my-[80px] z-10 relative">
