@@ -3,6 +3,7 @@ import Architect from "../../public/images/Architect.png";
 import Visulization from "../../public/images/Visulization.png";
 import interior from "../../public/images/interior.png";
 import service2 from "../../public/images/service2.png";
+import serviceNew from "../../public/images/serviceNew.jpg"
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Image from "next/image";
 // import { GoArrowUpRight } from "react-icons/go";
@@ -35,7 +36,7 @@ const Services = () => {
       </p>
       <div className="flex md:flex-row flex-col items-start justify-between mt-[50px] w-full">
         <div className="md:w-[40%] w-full">
-          <Image src={images} alt="services" className="w-full h-full" />
+          <Image src={serviceNew} alt="services" className="w-full h-full" />
         </div>
         <div className="flex flex-col  md:w-[50%] w-full md:mt-0 mt-5">
           <p className="text-xl ">Expertise</p>
