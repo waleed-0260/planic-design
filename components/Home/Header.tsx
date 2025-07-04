@@ -16,7 +16,13 @@ const menuItems = [
   { name: "Home", subItems: [], link: "/" },
   { 
     name: "Services", 
-    subItems: [], 
+    subItems: [
+      { name: "Architectural Designing", id: "architecture" },
+      { name: "Interior Design", id: "interior" },
+      { name: "Turn-key Solutions", id: "turnkey" },
+      { name: "Innovative Solutions", id: "innovative" },
+      { name: "Construction OnSite Supervision", id: "construction" }
+    ], 
     link: "/service" 
   },
   { 
@@ -145,7 +151,7 @@ export default function Header() {
     </div>
     <div className="fixed bottom-[20px] right-[100px] z-50">
         <FloatingWhatsApp
-          phoneNumber="+923355272083"
+          phoneNumber="+923489755702"
           accountName="Planic Design"
           statusMessage="Replies within 15 minutes"
           chatMessage="Hello there! How can I help you ?"

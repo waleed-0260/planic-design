@@ -55,7 +55,7 @@ const PortfolioForm = () => {
     if (data.additionalImage) formData.append("additionalImage", data.additionalImage[0]);
 
     try {
-      const response = await fetch("https://dominobackend.vercel.app/add-portfolio", {
+      const response = await fetch("https://planicbackend.vercel.app/add-portfolio", {
         method: "POST",
         body: formData,
       });

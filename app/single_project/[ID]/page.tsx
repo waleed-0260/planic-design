@@ -21,7 +21,7 @@ export default async function Page({
   const { ID } = await params;
   // console.log("id", ID)
   // const post = await getPost(id)
-  const data = await fetch(`https://dominobackend.vercel.app/get-portfolio/${ID}`)
+  const data = await fetch(`https://planicbackend.vercel.app/get-portfolio/${ID}`)
   const singlePost = await data.json();
   // console.log("post", singlePost)
   return (

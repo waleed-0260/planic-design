@@ -3,11 +3,7 @@ import { useEffect, useRef, useState } from "react";
 export default function TextRevealSection() {
   const sectionRef = useRef(null);
   const [wordIndex, setWordIndex] = useState(0);
-  const words = `Planic Design is a prominent architectural firm based in Islamabad, 
-  established in 2018. The firm has undertaken projects throughout Pakistan 
-  and in London. Its headquarters are located in Gulberg Green, Islamabad. 
-  “We craft spaces that not only meet the needs but inspire and enrich the daily lives of those 
-  who inhabit them. We design with purpose. Creating an innovative design leaving a timeless impact”.`.split(" ");
+  const words = `Planic Design is a leading architectural firm in Pakistan, established in 2018. Specializing in modern architectural design, interior design, and residential and commercial architecture, the firm has successfully completed diverse projects across Pakistan and internationally. With a focus on innovative architecture, functional design, and timeless aesthetics, we design with purpose — delivering high-quality architectural solutions that leave a lasting impact.”`.split(" ");
 
   useEffect(() => {
     const handleScroll = (event:any) => {

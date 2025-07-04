@@ -18,7 +18,7 @@ const Leads = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('https://dominobackend.vercel.app/get-contacts');
+        const res = await fetch('https://planicbackend.vercel.app/get-contacts');
         const data = await res.json();
         setPosts(data); // Update state with fetched data
       } catch (error) {

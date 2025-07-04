@@ -8,7 +8,7 @@ import Footer from '@/components/Home/Footer'
 import Projects from '@/components/portfolio/Projects'
 import Testimonials from '@/components/Home/Testimonials'
 const page = async() => {
-  const data = await fetch(`https://dominobackend.vercel.app/get-portfolio`)
+  const data = await fetch(`https://planicbackend.vercel.app/get-portfolio`)
   const projects = await data.json();
 
   return (

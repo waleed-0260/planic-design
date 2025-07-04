@@ -8,12 +8,15 @@ const FeaturedProjects = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
+
+
+  
   useEffect(() => {
     // Fetch the API data
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://dominobackend.vercel.app/get-portfolio"
+          "https://planicbackend.vercel.app/get-portfolio"
         );
         const data = await response.json();
         setProjects(data); // Save the fetched data to the state

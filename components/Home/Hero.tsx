@@ -1,20 +1,20 @@
 "use client";
 import React, { useRef, useState } from "react";
 import Header from "./Header";
-import { Button } from "../ui/button";
-import Link from "next/link";
+// import { Button } from "../ui/button";
+// import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Autoplay, Navigation } from "swiper/modules";
-import { GoChevronLeft } from "react-icons/go";
-import { GoChevronRight } from "react-icons/go";
-import { GoArrowUpRight } from "react-icons/go";
-import { Swiper as SwiperClass } from 'swiper';
-import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+// import { GoChevronLeft } from "react-icons/go";
+// import { GoChevronRight } from "react-icons/go";
+// import { GoArrowUpRight } from "react-icons/go";
+// import { Swiper as SwiperClass } from 'swiper';
+// import { toast, ToastContainer } from "react-toastify";
+// import 'react-toastify/dist/ReactToastify.css';
 import whitelogo from "../../public/images/whitelogo.png"
 import Image from "next/image";
 const Hero = () => {
@@ -43,8 +43,6 @@ const Hero = () => {
   // Generic handleChange
   const handleChange = (e:any, slide:any) => {
     const { name, value } = e.target;
-    console.log("name", name)
-    console.log("value", value)
   
     if (slide === 1) {
       setFormDataSlide1((prev) => ({ ...prev, [name]: value }));
@@ -67,7 +65,7 @@ const Hero = () => {
         : formDataSlide3;
   
     try {
-      const response = await fetch("https://dominobackend.vercel.app/add-contact", {
+      const response = await fetch("https://planicbackend.vercel.app/add-contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +88,7 @@ const Hero = () => {
         throw new Error("Failed to submit form");
       }
     } catch (error) {
-      toast.error("Error submitting form. Please try again!");
+      // toast.error("Error submitting form. Please try again!");
     }
   };
 

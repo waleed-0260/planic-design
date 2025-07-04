@@ -14,14 +14,14 @@ const Address = () => {
           <div className="flex flex-col items-start space-y-2 md:w-[40%] w-full">
             <h1 className="font-bold text-3xl">Islamabad, PK</h1>
             <p className="textColor text-sm w-[300px]">
-              Suite No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens
+              Office 207, second floor, vista plaza, i8 markaz
             </p>
-            <p className="textColor text-sm">planicdesign2@gmail.com</p>
-            <p className="textColor text-sm">0335 5272083</p>
+            <p className="textColor text-sm">planicdesignisb@gmail.com</p>
+            <p className="textColor text-sm">03489755702</p>
           </div>
           <div className="md:w-[60%] w-full">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.783582606692!2d73.16892042695312!3d33.610919300000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfebc35c4d576b%3A0xe9af22788204c522!2sPlanic%20Design!5e0!3m2!1sen!2s!4v1732562858080!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.595838971164!2d73.07435319999999!3d33.6676327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95001be2413d%3A0xf8e49099c598cb57!2sVista!5e0!3m2!1sen!2s!4v1751664191461!5m2!1sen!2s"
             className="w-full border-2 border-black"
             height="250"
             // style={{ border: 0 }}

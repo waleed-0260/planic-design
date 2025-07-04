@@ -4,7 +4,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import { FaRegBuilding } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { FaInstagram } from "react-icons/fa";
+// import { FaInstagram } from "react-icons/fa";
 
 const ContactForm = () => {
 
@@ -19,7 +19,7 @@ const ContactForm = () => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://dominobackend.vercel.app/add-contact", {
+      const response = await fetch("https://planicbackend.vercel.app/add-contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
