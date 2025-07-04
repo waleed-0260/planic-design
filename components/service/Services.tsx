@@ -1,16 +1,37 @@
+<<<<<<< HEAD
 "use client";
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+=======
+import React from "react";
+// import Architect from "../../public/images/Architect.png";
+// import Visulization from "../../public/images/Visulization.png";
+// import interior from "../../public/images/interior.png";
+// import service2 from "../../public/images/service2.png";
+import serviceNew from "../../public/images/serviceNew.png"
+// import { IoIosArrowRoundForward } from "react-icons/io";
+import Image from "next/image";
+// import { GoArrowUpRight } from "react-icons/go";
+// import Link from "next/link";
+// import { MdOutlineArchitecture } from "react-icons/md";
+// import { FaCouch } from "react-icons/fa";
+// import { BiCube } from "react-icons/bi";
+// import { FaHardHat } from "react-icons/fa";
+>>>>>>> f4e573f7f0ff160b444331d55f82924ebe17dfbf
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/smallaccordion";
+<<<<<<< HEAD
 import serviceNew from "../../public/images/serviceNew.png";
 
+=======
+// import images from "../../public/images/images.jpg"
+>>>>>>> f4e573f7f0ff160b444331d55f82924ebe17dfbf
 const Services = () => {
   const router = useRouter();
   const [openItem, setOpenItem] = useState<string | undefined>(undefined);
