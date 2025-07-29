@@ -44,7 +44,9 @@ const ContactForm = () => {
     <div className="w-[90%] my-[50px] py-[50px] flex md:flex-row flex-col items-start justify-between">
       <div className="flex flex-col space-y-5 md:w-[50%]">
         <h1 className="md:text-[55px] text-2xl md:leading-[60px]">
-          Let's work together to turn your dreams into reality
+          {/* Let's work together to turn your dreams into reality */}
+          Let’s Talk About Your Space
+
         </h1>
         <p className="textColor realtive md:top-[40px] text-sm">
           Your email address will not be published. Required fields are marked *

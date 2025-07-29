@@ -1,17 +1,21 @@
-"use client"
 import About from '@/components/about/About'
 import Hero from '@/components/about/Hero'
-import LatestProjects from '@/components/about/LatestProjects'
+// import LatestProjects from '@/components/about/LatestProjects'
 import Process from '@/components/about/Process'
-import Sectors from '@/components/about/Sectors'
+// import Sectors from '@/components/about/Sectors'
 import Values from '@/components/about/Values'
-import Awards from '@/components/Home/Awards'
+// import Awards from '@/components/Home/Awards'
 import CalltoForn from '@/components/Home/CalltoForn'
 import Footer from '@/components/Home/Footer'
 import Team from '@/components/Home/Team'
-import Testimonials from '@/components/Home/Testimonials'
+// import Testimonials from '@/components/Home/Testimonials'
 import React from 'react'
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "About Planic Design – Interior Architects in Pakistan",
+  description: "Meet the creative minds behind Planic Design. Learn about our values, process, and passion for elevating interiors across Pakistan.",
+};
 const page = () => {
   return (
     <>

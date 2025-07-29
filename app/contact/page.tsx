@@ -3,6 +3,13 @@ import Address from '@/components/Contact/Address'
 import ContactForm from '@/components/Contact/ContactForm'
 import Footer from '@/components/Home/Footer'
 import React from 'react'
+import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Contact Planic Design – Interior Architects in Pakistan",
+  description: "Get in touch with Planic Design for residential and commercial interior architecture services in Pakistan. Start your project today.",
+};
 
 const page = () => {
   return (

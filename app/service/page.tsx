@@ -12,6 +12,13 @@ import Faq from '@/components/service/Faq'
 import CalltoForn from '@/components/Home/CalltoForn'
 import Sectors from '@/components/about/Sectors'
 import FeaturedProjects from '@/components/Home/FeaturedProjects'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Services – Interior Design & Architecture | Planic Design",
+  description: "Explore the full range of interior design, architectural planning, 3D renderings, and renovation services offered by Planic Design in Pakistan.",
+};
+
 const page = () => {
   return (
     <>
@@ -26,7 +33,7 @@ const page = () => {
         {/* <Process/> */}
         {/* <Testimonials/> */}
         {/* <TextAnimation/> */}
-        <CalltoForn heading="Start Your Interior Transformation Today!" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>
+        <CalltoForn heading="Ready to Transform Your Space?" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get Started with a Free Quote"/>
     <Footer/>
     </div>
 </>

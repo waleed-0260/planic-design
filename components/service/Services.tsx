@@ -16,17 +16,26 @@ const Services = () => {
   const [openItem, setOpenItem] = useState<string | undefined>(undefined);
   const [refreshKey, setRefreshKey] = useState(0); // 🔧 Force refresh
 
-  const handleHashChange = () => {
-    const hash = window.location.hash.replace("#", "");
-    if (hash) {
-      setOpenItem(hash);
-      setRefreshKey((prev) => prev + 1); // 🔧 Trigger re-render
-    }
-  };
+  // const handleHashChange = () => {
+  //   // const hash = window.location.hash.replace("#", "");
+  //   // if (hash) {
+  //   //   setOpenItem(hash);
+  //   //   setRefreshKey((prev) => prev + 1); // 🔧 Trigger re-render
+  //   // }
+  //   console.log("asad")
+  // };
 
   useEffect(() => {
-    handleHashChange(); // handle initial load
-    window.addEventListener("hashchange", handleHashChange); // 🔧 Listen to hash changes
+    // handleHashChange(); // handle initial load
+    // window.addEventListener("hashchange", function(){
+    //   console.log("adasdasdfnasfnk")      
+    // }); // 🔧 Listen to hash changes
+
+      const handleHashChange = () => {
+    console.log("Hash changed to:", window.location.hash);
+  };
+
+  window.addEventListener("hashchange", handleHashChange);
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
     };
@@ -39,9 +48,11 @@ const Services = () => {
       </h1>
 
       <p className="md:w-[50%] text-md textColor">
-        At Planic Design, we transform visions into reality through innovative
+        {/* At Planic Design, we transform visions into reality through innovative
         architectural and interior designs that blend aesthetics, functionality,
-        and sustainability.
+        and sustainability. */}
+        We offer end-to-end solutions, from design consultation to construction drawings. Here’s what we do best:
+
       </p>
 
       <div className="flex md:flex-row flex-col items-start justify-between mt-[50px] w-full">
@@ -53,8 +64,8 @@ const Services = () => {
           <p className="text-xl ">Expertise</p>
 
           {/* 🔧 Key added for force-re-render on repeated value */}
-          <Accordion
-            key={refreshKey}
+         <Accordion
+            key={openItem} // 🔧 Re-render when value changes
             type="single"
             collapsible
             value={openItem}
@@ -63,10 +74,10 @@ const Services = () => {
           >
             <AccordionItem value="architecture" id="architecture" className="rounded-none">
               <AccordionTrigger className="text-md font-normal text-left">
-                Architectural Designing
+                Personalized Interior Design for Every Space
               </AccordionTrigger>
               <AccordionContent className="textColor text-[16px]">
-                <ul className="list-disc pl-5">
+                {/* <ul className="list-disc pl-5">
                   <li>Site testing, Topography survey and Soil test</li>
                   <li>Feasibility study and business cases</li>
                   <li>Full Architectural Design</li>
@@ -77,32 +88,38 @@ const Services = () => {
                   <li>Graphic Communication - Illustrative Diagrammatic Sketching and Mood Board</li>
                   <li>Approval from relative authorities</li>
                   <li>Detailed Drawings documentation services (MEP, BOQ, Structure)</li>
-                </ul>
+                </ul> */}
+                We design interiors that reflect your personality and support your lifestyle. Whether you're
+furnishing a home or styling a cafe, we ensure every detail speaks to your vision.
+
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="interior" id="interior" className="mt-5 rounded-none">
               <AccordionTrigger className="text-md font-normal text-left">
-                Interior Designing
+                Architectural Layouts That Work
               </AccordionTrigger>
               <AccordionContent className="textColor text-[16px]">
-                <ul className="list-disc pl-5">
+                {/* <ul className="list-disc pl-5">
                   <li>Full Interior Design including furniture details.</li>
                   <li>Providing finishes specifications.</li>
                   <li>Research and Development.</li>
                   <li>Graphic Design</li>
                   <li>3D Modelling, fly-throughs + renders + visualisation</li>
                   <li>Graphic Communication - Illustrative Diagrammatic Sketching and Mood Board</li>
-                </ul>
+                </ul> */}
+                Our architecture services include detailed layout plans, space optimization, and technical
+drawings. From concept to construction. We handle every stage with precision.
+
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="turnkey" id="turnkey" className="mt-5 rounded-none">
               <AccordionTrigger className="text-md font-normal text-left">
-                Turn-Key Solution
+Photo-Realistic 3D Renderings
               </AccordionTrigger>
               <AccordionContent className="textColor text-[16px]">
-                <ul className="list-disc pl-5">
+                {/* <ul className="list-disc pl-5">
                   <li>Site testing, Topography survey and Soil test</li>
                   <li>Feasibility study and business cases</li>
                   <li>Full Architectural and Interior Design</li>
@@ -110,22 +127,28 @@ const Services = () => {
                   <li>Design, engineering, and installation of structures</li>
                   <li>3D Modelling, renders, visualisation</li>
                   <li>Final touches like finishes or coatings</li>
-                </ul>
+                </ul> */}
+                See your space before it’s built. Our 3D visualizations help you make design decisions
+confidently — from furniture layouts to lighting mood.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="innovative" id="innovative" className="mt-5 rounded-none">
               <AccordionTrigger className="text-md font-normal text-left">
-                Innovative Solutions
+               Complete Renovation & Fit-Out Services
               </AccordionTrigger>
               <AccordionContent className="textColor text-[16px]">
-                <ul className="list-disc pl-5">
+                {/* <ul className="list-disc pl-5">
                   <li>Facade Uplifting Detail Design</li>
                   <li>Interior Revamping Detail Design</li>
                   <li>Innovative Interior Solutions</li>
                   <li>3D Modelling, visualisation</li>
                   <li>Graphic Communication and Mood Boards</li>
                 </ul>
+                 */}
+                 We handle everything from site assessment to final execution. Whether you’re upgrading a
+space or starting fresh, we bring your vision to life with quality and speed.
+
               </AccordionContent>
             </AccordionItem>
 

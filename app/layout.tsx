@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Planic Design",
-  description: "Planic design",
+  title: "Planic Design – Interior Architecture Studio in Pakistan",
+  description: "Discover creative and functional interior architecture with Planic Design. We specialize in residential, commercial, and hospitality design solutions across Pakistan",
   icons: {
     icon: "/favicon.png", // Correct path
   },};
