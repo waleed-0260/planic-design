@@ -6,8 +6,7 @@ const Footer = () => {
     <>
     <div className="w-[90%] flex md:flex-row flex-col  mt-[150px]">
       <div className="md:w-[50%] flex flex-col ">
-        <p className="md:text-2xl text-xl font-semibold">We believe that architecture has the power to shape lives and uplift communities. Planic Design's philosophy is built on a passion for innovation, sustainability, and timeless aesthetics.
-        </p>
+        <p className="md:text-2xl text-xl font-semibold">We believe that architecture has the power to shape lives and uplift communities. Planic Design's philosophy is built on a passion for innovation, sustainability, and timeless aesthetics.</p>
 
         <div className="flex gap-4 md:mt-[20px] mt-4">
           <a

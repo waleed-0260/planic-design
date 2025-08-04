@@ -73,7 +73,7 @@ const Faq = () => {
   </AccordionItem>
 </Accordion>
 
-<Link href={"/contact"} className='md:w-[340px] w-[300px] h-[50px] bg-transparent border-[1px] hover:bg-[#231f20] border-[#231f20] primaryColor rounded-full  transition-all hover:shadow-lg hover:text-white flex flex-row items-center justify-center text-sm gap-3 sm:mt-0 mt-5'>Have more questions? Contact Us Today <GoArrowUpRight className='hidden sm:flex'/></Link>
+<Link href={"/contact"} className='button primaryColor rounded-full  transition-all  flex flex-row items-center justify-center text-sm gap-3 sm:mt-0 mt-5'>Have more questions? Contact Us Today <GoArrowUpRight className='hidden sm:flex'/></Link>
     </div>
   )
 }

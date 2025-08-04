@@ -26,6 +26,7 @@ import Sectors from "@/components/about/Sectors";
 import TextRevealSection from "@/components/Home/TextRevealSection";
 import SecondSection from "@/components/Home/SecondSection";
 import Video from "@/components/Home/Video";
+import Expertise from "@/components/Home/Expertise";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -52,7 +53,8 @@ export default function Home() {
       <TextRevealSection/>
       {/* <Video/> */}
       <div className="bg-[#f1eee9] flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-      <Services/>
+      {/* <Services/> */}
+      <Expertise/>
       <CountDown/>
       <FeaturedProjects heading="Featured Projects"/>
       <Sectors/>

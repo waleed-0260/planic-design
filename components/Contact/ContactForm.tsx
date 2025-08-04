@@ -147,7 +147,7 @@ const ContactForm = () => {
             ></textarea>
           </div>
           {/* <div className="text-center"> */}
-          <button type="submit" className="bg-white rounded-full text-black w-[200px] h-[50px] hover:bg-black hover:text-white transition flex flex-row items-center justify-center gap-2 font-light" disabled={loading}>
+          <button type="submit" className="button flex flex-row items-center justify-center gap-2 font-light" disabled={loading}>
           {loading ? "Sending..." : "Send your message"} <GoArrowUpRight />
           </button>
           <p className="textColor text-sm">

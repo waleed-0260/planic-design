@@ -6,7 +6,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-        <Hero heading="Services" text="Interior Design"/>
+        <Hero heading="Interior Design"/>
          <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
             <Explanation/>
             <FeaturedProjects heading="Related Projects"/>

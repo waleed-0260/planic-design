@@ -34,27 +34,34 @@ const FeaturedProjects = ({heading}:any) => {
       </p>
 
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 py-4 w-full">
-        {displayedProjects.map((project: any, index) => (
-          <Link
-            key={index}
-            className={`relative ${
-              (index + 1) % 3 === 0 ? "md:col-span-2" : "md:col-span-1"
-            }`}
-            href={`/single_project/${project._id}`}
-          >
-            <div className="flex flex-col items-start">
-              <Image
-                src={project.masterFloorImage}
-                alt={`Project ${index + 1}`}
-                layout="responsive"
-                width={300}
-                height={300}
-                className="rounded-lg w-full object-cover h-[400px]"
-              />
-              <p className="text-3xl">{project.heading}</p>
-            </div>
-          </Link>
-        ))}
+       {displayedProjects.map((project: any, index) => (
+  <Link
+    key={index}
+    className={`relative group overflow-hidden ${
+      (index + 1) % 3 === 0 ? "md:col-span-2" : "md:col-span-1"
+    }`}
+    href={`/single_project/${project._id}`}
+  >
+    <div className="flex flex-col items-start">
+      <div className="relative w-full h-[400px]">
+        <Image
+          src={project.masterFloorImage}
+          alt={`Project ${index + 1}`}
+          layout="fill"
+          className="rounded-lg object-cover transition-transform duration-300 "
+        />
+        
+        {/* Overlay on hover */}
+        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 rounded-lg">
+          <p className="absolute top-3 left-3 hidden group-hover:block text-white text-lg font-semibold transition-all duration-300">
+            {project.heading}
+          </p>
+        </div>
+      </div>
+    </div>
+  </Link>
+))}
+
       </div>
 
       {/* Load More Button */}
@@ -62,7 +69,7 @@ const FeaturedProjects = ({heading}:any) => {
         <div className="flex w-full justify-center">
           <button
             onClick={() => setShowAll(true)}
-            className="bg-[#231f20] text-white px-6 py-3 rounded-md transition duration-300 hover:bg-[#3b393a]"
+            className="button"
           >
             Load More Projects
           </button>
@@ -80,7 +87,7 @@ const FeaturedProjects = ({heading}:any) => {
         <a
           href="/images/portfolio.pdf"
           download="portfolio.pdf"
-          className="bg-[#231f20] text-white sm:mt-0 mt-8 px-[20px] py-[10px] text-lg rounded-md transition duration-300 cursor-pointer"
+          className="button bg-[#231f20] text-white sm:mt-0 mt-8 px-[20px] py-[10px] text-lg rounded-md transition duration-300 cursor-pointer"
         >
           Download Portfolio
         </a>
