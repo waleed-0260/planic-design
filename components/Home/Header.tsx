@@ -4,10 +4,10 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 // import logo from "../../public/images/logo.enc";
-import logo from "../../public/images/logo.png"
+// import logo from "../../public/images/logo.png"
 import Link from "next/link";
-import { MdSearch } from "react-icons/md";
-import { TbMenu } from "react-icons/tb";
+// import { MdSearch } from "react-icons/md";
+// import { TbMenu } from "react-icons/tb";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
@@ -48,25 +48,38 @@ const menuItems = [
 
 
 export default function Header() {
-  const [hoveredItem, setHoveredItem] = useState<boolean | null>(null)
+  const [hoveredItem, setHoveredItem] = useState<boolean | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Detect scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-    <header
-      className={`w-full lg:block hidden transition-all duration-300 ease-in-out ${
-        hoveredItem ? "h-[400px] bg-[#231f20]" : "h-16 bg-transparent"
-      }  z-30 absolute top-[0px] text-white`}
-      onMouseEnter={() => setHoveredItem(true)}
-      onMouseLeave={() => setHoveredItem(null)}
-    >
+   <header
+  className={`w-full lg:block hidden transition-all duration-300 ease-in-out z-50
+    ${scrolled ? "bg-[#231f20] text-white shadow-md fixed top-0"
+              : hoveredItem ? "bg-[#231f20] text-white absolute top-0 h-[400px]"
+              : "bg-transparent text-white absolute top-0 h-16"}
+  `}
+  onMouseEnter={() => setHoveredItem(true)}
+  onMouseLeave={() => setHoveredItem(null)}
+>
       <nav className="h-16 flex items-center justify-center px-4">
         <ul className="flex space-x-16 flex-row justify-between">
 
 {menuItems.map((item) => (
   <li key={item.name} className="relative cursor-pointer z-50">
     <Link href={item.link}>
-      <p className="text-white font-semibold flex items-center cursor-pointer">
+      <p className=" font-semibold flex items-center cursor-pointer">
         {item.name}
         {item.subItems.length > 0 &&
           (hoveredItem === true ? (

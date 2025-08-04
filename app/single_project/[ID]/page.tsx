@@ -1,16 +1,11 @@
 // import Hero from '@/components/about/Hero'
-import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import Footer from '@/components/Home/Footer'
-import Testimonials from '@/components/Home/Testimonials'
-import Challenge from '@/components/SingleProject/Challenge'
-import CoverImage from '@/components/SingleProject/CoverImage'
-import Description from '@/components/SingleProject/Description'
-import Solution from '@/components/SingleProject/Solution'
 import React from 'react'
 import CalltoForn from '@/components/Home/CalltoForn'
 import MainSinglePortfolio from '@/components/SingleProject/MainSinglePortfolio'
 import Hero from '@/components/SingleProject/Hero'
 import Images from '@/components/SingleProject/Images'
+import FeaturedProjects from '@/components/Home/FeaturedProjects'
 
 
 export default async function Page({
@@ -23,7 +18,7 @@ export default async function Page({
   // const post = await getPost(id)
   const data = await fetch(`https://planicbackend.vercel.app/get-portfolio/${ID}`)
   const singlePost = await data.json();
-  // console.log("post", singlePost)
+
   return (
     <div>
       {/* <Hero heading="Gordan's Villa" desc="This area will is short description of project, you can
@@ -36,7 +31,8 @@ select to show or hide it"/> */}
         <Images panel={singlePost?.panelFloorImage} master={singlePost?.masterFloorImage} mapImage={singlePost.mapImage} rendering={singlePost?.renderingImage} additional={singlePost?.additionalImage}/>
         {/* <Testimonials/> */}
         {/* <FeaturedProjects/> */}
-        <CalltoForn heading=" Let’s Design Something Extraordinary Together" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>
+        {/* <CalltoForn heading=" Let’s Design Something Extraordinary Together" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/> */}
+        <FeaturedProjects heading="Related Projects"/>
       <Footer/>
       </div>
     </div>

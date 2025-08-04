@@ -47,17 +47,17 @@ export default function Home() {
       <>
       <Hero/>
     <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative ">
+      <Slider/>
 
       <TextRevealSection/>
-      <Video/>
+      {/* <Video/> */}
       <div className="bg-[#f1eee9] flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
       <Services/>
       <CountDown/>
-      <FeaturedProjects/>
+      <FeaturedProjects heading="Featured Projects"/>
       <Sectors/>
-      <Slider/>
       <Team/>
-      <CalltoForn  heading="Stay Inspired, Stay Informed" desc="Join the Planic Design community to get the latest design trends, project highlights, and expert tips delivered straight to your inbox. Be the first to know about our exclusive insights and updates." btn="Subscribe Now"/>
+      {/* <CalltoForn  heading="Stay Inspired, Stay Informed" desc="Join the Planic Design community to get the latest design trends, project highlights, and expert tips delivered straight to your inbox. Be the first to know about our exclusive insights and updates." btn="Subscribe Now"/> */}
       <ContactForm/>
     <Footer/>
       </div>
