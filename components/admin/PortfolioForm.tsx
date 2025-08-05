@@ -104,7 +104,7 @@ const PortfolioForm = () => {
         <div>
           <label className="block font-medium">Category *</label>
           <input
-          type="hidden"
+          type="text"
           {...register("category", { required: true })}
           value={tags.join(",")} // react-hook-form will still validate
         />
