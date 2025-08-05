@@ -43,16 +43,16 @@ const FeaturedProjects = ({heading}:any) => {
     href={`/single_project/${project._id}`}
   >
     <div className="flex flex-col items-start">
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full h-[450px]">
         <Image
           src={project.masterFloorImage}
           alt={`Project ${index + 1}`}
           layout="fill"
-          className="rounded-lg object-cover transition-transform duration-300 "
+          className=" object-cover transition-transform duration-300 "
         />
         
         {/* Overlay on hover */}
-        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 rounded-lg">
+        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
           <p className="absolute top-3 left-3 hidden group-hover:block text-white text-lg font-semibold transition-all duration-300">
             {project.heading}
           </p>

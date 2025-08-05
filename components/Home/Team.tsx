@@ -23,7 +23,7 @@ const Team = () => {
   return (
     <section className=" py-16 px-6">
       <div className="max-w-6xl mx-auto text-left">
-        <h2 className="md:text-[72px] text-2xl py-6 border-t-[1px] border-b-[1px] border-black w-full">Meet Our Team</h2>
+        <h2 className="md:text-[72px] text-2xl py-9 border-t-[1px] border-b-[1px] border-black w-full">Our Leadership</h2>
         <p className="text-lg text-gray-600 mb-12">
           A team of visionaries shaping innovative, functional, and timeless designs.
         </p>

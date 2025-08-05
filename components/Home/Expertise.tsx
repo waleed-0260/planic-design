@@ -1,62 +1,80 @@
 import React from "react";
-
+import Link from "next/link";
 const images = [
-  { src: "/images/Architect.png", text: "Personalized Interior Design for Every Space" },
-  { src: "/images/interior.jpg", text: "Architectural Layouts That Work" },
-  { src: "/images/proc3.jpg", text: "Photo-Realistic 3D Renderings" },
-  { src: "/images/project1.jpg", text: "Photo-Realistic 3D Renderings" },
-  { src: "/images/Visulization.png", text: "Construction OnSite Supervision" },
+  { src: "/images/expertise3.jpg", text: "Architectural Planning", link:"arcitecture" },
+  { src: "/images/expertise1.jpg", text: "3D Visulization", link:"visulization" },
+  { src: "/images/expertise2.jpg", text: "Renovation & Fit Out", link:"Renvation" },
+  { src: "/images/expertise4.jpg", text: "Interior Design", link:"interior" },
+  // { src: "/images/Visulization.png", text: "Construction OnSite Supervision" },
 ];
 
 const Expertise = () => {
   return (
-    <section className="px-4 py-10 max-w-7xl mx-auto">
+    <section className=" py-10 w-[90%] mx-auto">
       <h2 className="md:text-[72px] text-2xl py-9 border-t-[1px] border-b-[1px] border-black w-full">Expertise</h2>
 
       {/* First Row */}
       <div className="flex gap-4 mb-4 my-[50px]">
         {/* First Image - double width */}
-        <div className="flex-2 w-2/3 relative group overflow-hidden h-[300px] rounded-lg">
+        <Link href={`/service/${images[0].link}`} className="flex-2 w-2/3 relative group overflow-hidden h-[300px] ">
           <img
             src={images[0].src}
             alt={images[0].text}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
           />
-          <div className="absolute bottom-4 left-4 text-white text-lg font-semibold drop-shadow">
+          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
+          <p className="absolute top-3 left-3 hidden group-hover:block text-white text-lg font-semibold transition-all duration-300">
             {images[0].text}
-          </div>
+          </p>
         </div>
+        </Link>
+
 
         {/* Second Image - normal width */}
-        <div className="flex-1 w-1/3 relative group overflow-hidden h-[300px] rounded-lg">
+        <Link href={`/service/${images[1].link}`} className="flex-1 w-1/3 relative group overflow-hidden h-[300px] ">
           <img
             src={images[1].src}
             alt={images[1].text}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
           />
-          <div className="absolute bottom-4 left-4 text-white text-lg font-semibold drop-shadow">
+          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
+          <p className="absolute top-3 left-3 hidden group-hover:block text-white text-lg font-semibold transition-all duration-300">
             {images[1].text}
-          </div>
+          </p>
         </div>
+        </Link>
       </div>
 
-      {/* Second Row */}
-      <div className="flex gap-4">
-        {[images[2], images[3], images[4]].map((img, index) => (
-          <div
-            key={index}
-            className="w-1/3 relative group overflow-hidden h-[300px] rounded-lg"
-          >
-            <img
-              src={img.src}
-              alt={img.text}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 rounded-lg"
-            />
-            <div className="absolute bottom-4 left-4 text-white text-lg font-semibold drop-shadow">
-              {img.text}
-            </div>
-          </div>
-        ))}
+
+   <div className="flex gap-4 mb-4">
+
+        {/* Second Image - normal width */}
+
+        <Link href={`/service/${images[2].link}`} className="flex-1 w-1/3 relative group overflow-hidden h-[300px] ">
+          <img
+            src={images[2].src}
+            alt={images[2].text}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
+          <p className="absolute top-3 left-3 hidden group-hover:block text-white text-lg font-semibold transition-all duration-300">
+            {images[2].text}
+          </p>
+        </div>
+        </Link>
+
+        <Link href={`/service/${images[3].link}`} className="flex-2 w-2/3 relative group overflow-hidden h-[300px] ">
+          <img
+            src={images[3].src}
+            alt={images[3].text}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
+          />
+         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
+          <p className="absolute top-3 left-3 hidden group-hover:block text-white text-lg font-semibold transition-all duration-300">
+            {images[3].text}
+          </p>
+        </div>
+        </Link>
       </div>
     </section>
   );

@@ -45,7 +45,7 @@ export default function TextRevealSection() {
     <div className="w-full bg-[#f1eee9] h-full">
 
     <section ref={sectionRef} className=" flex items-center justify-center  p-10 py-[20px] z-40 relative bg-[#f1eee9]">
-      <div className="max-w-3xl text-center text-2xl font-medium leading-relaxed">
+      <div className="max-w-3xl text-left text-2xl font-medium leading-relaxed">
         {words.map((word, index) => (
           <span
             key={index}

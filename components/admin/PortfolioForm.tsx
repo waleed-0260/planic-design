@@ -5,6 +5,7 @@ import "react-quill/dist/quill.snow.css";
 
 interface FormData {
   heading: string;
+  category: string;
   tagline: string;
   // tags: string;
   description: string;
@@ -36,6 +37,7 @@ const PortfolioForm = () => {
     const formData = new FormData();
     // Append text fields
     formData.append("heading", data.heading);
+    formData.append("heading", data.category);
     formData.append("tagline", data.tagline);
     // formData.append("tags", data.tags);
     formData.append("description", data.description);
@@ -89,6 +91,16 @@ const PortfolioForm = () => {
             className="w-full border rounded px-3 py-2"
           />
           {errors.heading && <p className="text-red-500">Heading is required.</p>}
+        </div>
+
+        <div>
+          <label className="block font-medium">Category *</label>
+          <input
+            type="category"
+            {...register("category", { required: true })}
+            className="w-full border rounded px-3 py-2"
+          />
+          {errors.heading && <p className="text-red-500">Category is required.</p>}
         </div>
 
         <div>

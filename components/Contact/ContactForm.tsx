@@ -131,6 +131,41 @@ const ContactForm = () => {
               />
             </div>
           </div>
+
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Phone
+              </label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Enter your Phone Number"
+                className="w-full border-b border-gray-300 focus:border-blue-500 focus:outline-none py-1 bg-transparent"
+                required
+              />
+            </div>
+            <div className="flex-1">
+              <label
+                htmlFor="type"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Project Type
+              </label>
+              <input
+                type="text"
+                id="type"
+                name="type"
+                placeholder="Enter your Project Type"
+                className="w-full border-b border-gray-300 focus:border-blue-500 focus:outline-none py-1 bg-transparent"
+                required
+              />
+            </div>
+          </div>
           <div>
             <label
               htmlFor="message"
