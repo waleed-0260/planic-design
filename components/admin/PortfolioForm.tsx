@@ -107,6 +107,7 @@ const PortfolioForm = () => {
           type="text"
           {...register("category", { required: true })}
           value={tags.join(",")} // react-hook-form will still validate
+          className="w-full border rounded px-3 py-2"
         />
   {errors.category && <p className="text-red-500">Category is required.</p>}
         </div>

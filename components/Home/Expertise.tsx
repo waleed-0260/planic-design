@@ -3,7 +3,7 @@ import Link from "next/link";
 const images = [
   { src: "/images/expertise3.jpg", text: "Architectural Planning", link:"arcitecture" },
   { src: "/images/expertise1.jpg", text: "3D Visulization", link:"visulization" },
-  { src: "/images/expertise2.jpg", text: "Renovation & Fit Out", link:"Renvation" },
+  { src: "/images/expertise2.jpg", text: "Renovation & Fit Out", link:"Renovation" },
   { src: "/images/expertise4.jpg", text: "Interior Design", link:"interior" },
   // { src: "/images/Visulization.png", text: "Construction OnSite Supervision" },
 ];
