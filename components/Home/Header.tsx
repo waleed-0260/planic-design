@@ -17,10 +17,10 @@ const menuItems = [
   {
     name: "Services",
     subItems: [
-      { name: "Architectural Planning", id: "architecture" },
-      { name: "Interior Design", id: "interior" },
-      { name: "3D Visulization & Renderings", id: "turnkey" },
-      { name: "Renovation & Fit Out Solutions", id: "innovative" },
+      { name: "Architectural Planning", id: "/architecture" },
+      { name: "Interior Design", id: "/interior" },
+      { name: "3D Visulization & Renderings", id: "/visulization" },
+      { name: "Renovation & Fit Out Solutions", id: "/renovation" },
       // { name: "Construction OnSite Supervision", id: "construction" },
     ],
     link: "/service",
@@ -31,7 +31,7 @@ const menuItems = [
       // { name: "Team", id: "team" },
       // { name: "Careers", id: "careers" }
     ],
-    link: "/#portfolio",
+    link: "/portfolio",
   },
   {
     name: "About Us",

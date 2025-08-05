@@ -30,7 +30,7 @@ const CountDown = () => {
       ref={ref} // Attach ref to this section
     >
       <div className="flex flex-col items-start w-[90%]">
-        <h1 className="md:text-[72px] text-2xl text-white ">
+        <h1 className="md:text-[72px] text-2xl text-white leading-tight">
         Where Visionary Designs Lead.
         </h1>
         {/* <p className="text-md ">Where Visionary Designs Lead.</p> */}

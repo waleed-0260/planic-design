@@ -11,6 +11,7 @@ import Team from '@/components/Home/Team'
 // import Testimonials from '@/components/Home/Testimonials'
 import React from 'react'
 import type { Metadata } from "next";
+import Choose from '@/components/about/Choose'
 
 export const metadata: Metadata = {
   title: "About Planic Design – Interior Architects in Pakistan",
@@ -24,6 +25,7 @@ const page = () => {
       <About/>
       <Values/>
       <Process/>
+      <Choose/>,
       {/* <Awards/> */}
       {/* <Sectors/> */}
       {/* <LatestProjects/> */}

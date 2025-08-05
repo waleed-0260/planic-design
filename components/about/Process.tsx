@@ -14,36 +14,44 @@ import aboutProcess from "../../public/images/aboutProcess.png"
 import Link from 'next/link';
 const Process = () => {
 
-  const process = [
-    {
-      heading: "Initial Construction",
-      text: "",
-    },
-    {
-      heading: "Dream Project",
-      text: "We listen to your Vision about the Dream Project",
-    },
-    {
-      heading: "Schematic",
-      text: "Graphic Communication, providing Illustrative Diagrammatic Sketching ",
-    },
-    {
-      heading: "Design & Development",
-      text: "Phase of Graphic Design where we provide Designed plans, 3D Modelling, fly-throughs, renders and  visualisation",
-    },
-    {
-      heading: "Detailed Working DWGs",
-      text: "Meticulously designed Plans of you Dream Project and providing the complete set of all sorts of drawings",
-    },
-    {
-      heading: "Construction Oversight",
-      text: "We offer comprehensive site inspection services and monitor construction progress meticulously. Our team is committed to providing clients with timely updates and effectively communicating any issues encountered on-site, accompanied by appropriate solutions.",
-    },
-    {
-      heading: "Connected till the end",
-      text: "We do not leave our clients in limbo; instead, we remain engaged to ensure the successful implementation of your dream project",
-    },
-  ];
+const process = [
+  {
+    number: "01",
+    heading: "Initial Construction",
+    text: "",
+  },
+  {
+    number: "02",
+    heading: "Dream Project",
+    text: "We listen to your Vision about the Dream Project",
+  },
+  {
+    number: "03",
+    heading: "Schematic",
+    text: "Graphic Communication, providing Illustrative Diagrammatic Sketching",
+  },
+  {
+    number: "04",
+    heading: "Design & Development",
+    text: "Phase of Graphic Design where we provide Designed plans, 3D Modelling, fly-throughs, renders and visualisation",
+  },
+  {
+    number: "05",
+    heading: "Detailed Working DWGs",
+    text: "Meticulously designed Plans of your Dream Project and providing the complete set of all sorts of drawings",
+  },
+  {
+    number: "06",
+    heading: "Construction Oversight",
+    text: "We offer comprehensive site inspection services and monitor construction progress meticulously. Our team is committed to providing clients with timely updates and effectively communicating any issues encountered on-site, accompanied by appropriate solutions.",
+  },
+  {
+    number: "07",
+    heading: "Connected till the end",
+    text: "We do not leave our clients in limbo; instead, we remain engaged to ensure the successful implementation of your dream project",
+  },
+];
+
 
   return (
     <div className='w-[90%] flex flex-col items-start justify-center my-[80px] space-y-5' id="process">
@@ -53,6 +61,7 @@ const Process = () => {
             {process.map((item, index)=>{
                 return(
                 <div className='flex flex-col items-start space-y-5' key={index}>
+                  <h1 className='text-5xl'>{item.number}</h1>
                     <h1 className='md:text-2xl text-md'>{item.heading}</h1>
                     <p className=' textColor'>{item.text}</p>
                 </div>
