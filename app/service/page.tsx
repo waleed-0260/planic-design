@@ -1,3 +1,4 @@
+import React from 'react'
 import Hero from '@/components/about/Hero'
 import Footer from '@/components/Home/Footer'
 // import Header from '@/components/Home/Header'
@@ -6,12 +7,11 @@ import Footer from '@/components/Home/Footer'
 // import Testimonials from '@/components/Home/Testimonials'
 // import TextAnimation from '@/components/Home/TextAnimation'
 // import First from '@/components/service/First'
-import React from 'react'
-import Services from '@/components/service/Services'
-import Faq from '@/components/service/Faq'
-import CalltoForn from '@/components/Home/CalltoForn'
-import Sectors from '@/components/about/Sectors'
-import FeaturedProjects from '@/components/Home/FeaturedProjects'
+// import Services from '@/components/service/Services'
+// import Faq from '@/components/service/Faq'
+// import CalltoForn from '@/components/Home/CalltoForn'
+// import Sectors from '@/components/about/Sectors'
+// import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import type { Metadata } from "next";
 import Architecture from '@/components/service/Architecture'
 import Team from '@/components/Home/Team'
@@ -34,10 +34,10 @@ const page = () => {
         <FeaturedProjects/>
         <Sectors/>
         <Faq/>
-        {/* <Process/> */}
+        <Process/> */}
         {/* <Testimonials/> */}
         {/* <TextAnimation/> */}
-        {/* <CalltoForn heading="Ready to Transform Your Space?" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get Started with a Free Quote"/> */} 
+        {/* <CalltoForn heading="Ready to Transform Your Space?" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get Started with a Free Quote"/>  */}
     <Footer/>
     </div>
 </>
