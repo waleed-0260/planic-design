@@ -13,6 +13,8 @@ import CalltoForn from '@/components/Home/CalltoForn'
 import Sectors from '@/components/about/Sectors'
 import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import type { Metadata } from "next";
+import Architecture from '@/components/service/Architecture'
+import Team from '@/components/Home/Team'
 
 export const metadata: Metadata = {
   title: "Our Services – Interior Design & Architecture | Planic Design",
@@ -26,14 +28,16 @@ const page = () => {
       <Hero heading="Services" text="Our Services"/>
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
         {/* <First/> */}
-        <Services/>
+        <Architecture/>
+        <Team/>
+        {/* <Services/>
         <FeaturedProjects/>
         <Sectors/>
         <Faq/>
         {/* <Process/> */}
         {/* <Testimonials/> */}
         {/* <TextAnimation/> */}
-        <CalltoForn heading="Ready to Transform Your Space?" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get Started with a Free Quote"/>
+        {/* <CalltoForn heading="Ready to Transform Your Space?" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get Started with a Free Quote"/> */} 
     <Footer/>
     </div>
 </>

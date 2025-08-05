@@ -81,7 +81,7 @@ export default function Header() {
             {menuItems.map((item) => (
               <li key={item.name} className="relative cursor-pointer z-50">
                 <Link href={item.link}>
-                  <p className=" font-semibold flex items-center cursor-pointer">
+                  <p className="  flex items-center cursor-pointer">
                     {item.name}
                     {item.subItems.length > 0 &&
                       (hoveredItem === true ? (
