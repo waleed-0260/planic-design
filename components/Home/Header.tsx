@@ -17,11 +17,11 @@ const menuItems = [
   {
     name: "Services",
     subItems: [
-      { name: "Architectural Designing", id: "architecture" },
+      { name: "Architectural Planning", id: "architecture" },
       { name: "Interior Design", id: "interior" },
-      { name: "Turn-key Solutions", id: "turnkey" },
-      { name: "Innovative Solutions", id: "innovative" },
-      { name: "Construction OnSite Supervision", id: "construction" },
+      { name: "3D Visulization & Renderings", id: "turnkey" },
+      { name: "Renovation & Fit Out Solutions", id: "innovative" },
+      // { name: "Construction OnSite Supervision", id: "construction" },
     ],
     link: "/service",
   },
