@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import "react-quill/dist/quill.snow.css";
-
+import TagsInput from 'react-tagsinput'
+import 'react-tagsinput/react-tagsinput.css'
 interface FormData {
   heading: string;
   category: string;
@@ -37,7 +38,7 @@ const PortfolioForm = () => {
     const formData = new FormData();
     // Append text fields
     formData.append("heading", data.heading);
-    formData.append("heading", data.category);
+    formData.append("category", data.category);
     formData.append("tagline", data.tagline);
     // formData.append("tags", data.tags);
     formData.append("description", data.description);
@@ -100,7 +101,7 @@ const PortfolioForm = () => {
             {...register("category", { required: true })}
             className="w-full border rounded px-3 py-2"
           />
-          {errors.heading && <p className="text-red-500">Category is required.</p>}
+  {errors.category && <p className="text-red-500">Category is required.</p>}
         </div>
 
         <div>
