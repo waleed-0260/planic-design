@@ -12,6 +12,7 @@ import Team from '@/components/Home/Team'
 import React from 'react'
 import type { Metadata } from "next";
 import Choose from '@/components/about/Choose'
+import Main from '@/components/about/Main'
 
 export const metadata: Metadata = {
   title: "About Planic Design – Interior Architects in Pakistan",
@@ -22,6 +23,7 @@ const page = () => {
     <>
     <Hero heading="About US" desc="Architecture & Interior Design Company "/>
     <div className='flex flex-col items-center justify-center w-full bg-[#f1eee9]'>
+      <Main/>
       <About/>
       <Values/>
       <Process/>
