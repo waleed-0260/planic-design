@@ -36,10 +36,10 @@ const menuItems = [
   {
     name: "About Us",
     subItems: [
-      { name: "Our Story", id: "story" },
-      { name: "Values", id: "values" },
-      { name: "Process", id: "process" },
-      { name: "Teams", id: "teams" },
+      { name: "Our Story", id: "#story" },
+      { name: "Values", id: "#values" },
+      { name: "Process", id: "#process" },
+      { name: "Teams", id: "#teams" },
     ],
     link: "/about",
   },
@@ -95,7 +95,7 @@ export default function Header() {
                   <ul className="absolute left-0 mt-2 w-48 rounded-md py-2 transition-all">
                     {item.subItems.map((subItem) => (
                       <li key={subItem.name}>
-                        <Link href={`${item.link}#${subItem.id}`}>
+                        <Link href={`${item.link}${subItem.id}`}>
                           <p className="block px-2 py-2 text-sm">
                             {subItem.name}
                           </p>

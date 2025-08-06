@@ -15,6 +15,7 @@ import Footer from '@/components/Home/Footer'
 import type { Metadata } from "next";
 import Architecture from '@/components/service/Architecture'
 import Team from '@/components/Home/Team'
+import Explanation from '@/components/service/Explanation';
 
 export const metadata: Metadata = {
   title: "Our Services – Interior Design & Architecture | Planic Design",
@@ -27,6 +28,7 @@ const page = () => {
       {/* <Header color="#000000"/> */}
       <Hero heading="Services" text="Our Services"/>
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
+        <Explanation/>
         {/* <First/> */}
         <Architecture/>
         <Team/>

@@ -10,6 +10,7 @@ import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 import interior from "@/public/images/interior.jpg"
 import visulization from "@/public/images/visulization.jpg"
+import Footer from '@/components/Home/Footer'
 const visualizationFaqs = [
   {
     question: "What is 3D visualization, and why is it important?",
@@ -42,15 +43,20 @@ const visualizationFaqs = [
 const page = () => {
   return (
     <div>
-      <Hero heading="Interior Design" />
+      <Hero heading="3D Visulization" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={visulization} heading="Photo-Realistic 3D Renderings" text=" Our 3D Visualization service is perfect for homeowners, developers, and businesses who want to see the future — before construction begins."/>
+        <Specializing img={visulization} heading="Photo-Realistic 3D Renderings" text=" Our 3D Visualization service is perfect for homeowners, developers, and businesses who want to see the future — before construction begins."  points={[
+    "Concept-to-Model Translation",
+    "Lighting, Texturing & Styling",
+    "Design Validation & Decision-Making"
+  ]}/>
         <Video/>
         <FeaturedProjects heading="Related Projects" />
         <Slider />
         <Team />
         <Process />
         <Faq faqs={visualizationFaqs} />
+        <Footer/>
       </div>
     </div>
   )

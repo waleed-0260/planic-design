@@ -10,6 +10,7 @@ import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 // import interior from "@/public/images/interior.jpg"
 import architecture from "@/public/images/architecture.jpg"
+import Footer from '@/components/Home/Footer'
 
 const architectFaqs = [
   {
@@ -43,15 +44,20 @@ const architectFaqs = [
 const page = () => {
   return (
     <div>
-      <Hero heading="Interior Design" />
+      <Hero heading="Architectural Planning" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={architecture} heading=" Architectural Layouts That Work" text=" With a focus on housing and office spaces, our Architectural Planning service offers expert guidance from concept to construction."/>
+        <Specializing img={architecture} heading=" Architectural Layouts That Work" text=" With a focus on housing and office spaces, our Architectural Planning service offers expert guidance from concept to construction." points={[
+    "Site Analysis & Space Planning",
+    "Technical Drawings & Documentation",
+    "Project Supervision & Design Evolution"
+  ]}/>
         <Video/>
         <FeaturedProjects heading="Related Projects" />
         <Slider />
         <Team />
-        <Process />
+        {/* <Process /> */}
         <Faq faqs={architectFaqs} />
+        <Footer/>
       </div>
     </div>
   )

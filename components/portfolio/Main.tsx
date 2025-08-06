@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <div className='w-[90%] flex flex-row justify-between items-start my-[60px] space-x-9'>
         <div className='flex-1'>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro delectus repellendus quasi expedita possimus a, nam deleniti suscipit voluptatem corporis, repudiandae recusandae quos pariatur earum quibusdam numquam, molestias quaerat?</p>
+            <p className='font-semibold text-lg'>At Planic Design, we turn ideas into inspiring spaces. Our portfolio showcases a diverse range of projects across residential, commercial, and office interiors—each crafted with a focus on elegance, functionality, and client vision. Explore our work to see how we bring design concepts to life.</p>
         </div>
         <div className='flex flex-col flex-1 space-y-5 textColor text-md'>
             <p>2D Visulization</p>

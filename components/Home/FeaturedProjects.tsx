@@ -33,7 +33,7 @@ const FeaturedProjects = ({heading}:any) => {
       {heading}
       </p>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 py-4 w-full">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 py-2 w-full">
        {displayedProjects.map((project: any, index) => (
   <Link
     key={index}

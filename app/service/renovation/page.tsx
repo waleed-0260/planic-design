@@ -10,6 +10,7 @@ import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 // import interior from "@/public/images/interior.jpg"
 import renovation from "@/public/images/renovation.jpg"
+import Footer from '@/components/Home/Footer'
 const renovationFaqs = [
   {
     question: "What’s the difference between renovation and fit-out?",
@@ -41,15 +42,20 @@ const renovationFaqs = [
 const page = () => {
   return (
     <div>
-      <Hero heading="Interior Design" />
+      <Hero heading="Renovation & Fit Out" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={renovation} heading=" Complete Renovation & Fit-Out Services" text=" We offer start-to-finish renovation and fit-out services for homes, offices, and commercial spaces that need a fresh start."/>
+        <Specializing img={renovation} heading=" Complete Renovation & Fit-Out Services" text=" We offer start-to-finish renovation and fit-out services for homes, offices, and commercial spaces that need a fresh start."  points={[
+    "Site Assessment & Demolition Planning",
+    "Full Renovation & Installation Work",
+    "Finishing, Styling & Handover"
+  ]}/>
         <Video/>
         <FeaturedProjects heading="Related Projects" />
         <Slider />
         <Team />
         <Process />
         <Faq faqs={renovationFaqs} />
+        <Footer/>
       </div>
     </div>
   )

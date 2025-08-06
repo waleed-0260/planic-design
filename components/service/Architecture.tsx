@@ -12,7 +12,7 @@ const Architecture = () => {
     <div className="flex flex-col my-[30px] w-[90%]">
     <div className="flex flex-col md:flex-row justify-between items-start w-full mx-auto py-12 gap-8">
       {/* Left Content */}
-      <div className="flex-1 space-y-5">
+      <div className="flex-1 space-y-5" id="architecture">
         <h2 className="text-3xl md:text-4xl leading-tight">
           Architectural Layouts That Work
         </h2>
@@ -35,7 +35,7 @@ drawings. From concept to construction. We handle every stage with precision.   
     </div>
 
 
-        <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8">
+        <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="renovation">
       {/* Left Content */}
       <div className="flex-1 space-y-5">
         <h2 className="text-3xl md:text-4xl leading-tight">
@@ -59,7 +59,7 @@ space or starting fresh, we bring your vision to life with quality and speed.   
     </div>
 
 
-          <div className="flex flex-col md:flex-row justify-between items-start w-full mx-auto py-12 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start w-full mx-auto py-12 gap-8" id="visulization">
       {/* Left Content */}
       <div className="flex-1 space-y-5">
         <h2 className="text-3xl md:text-4xl leading-tight">
@@ -82,7 +82,7 @@ confidently — from furniture layouts to lighting mood.       </p>
       </div>
     </div>
 
-        <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8">
+        <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="interior">
       {/* Left Content */}
       <div className="flex-1 space-y-5">
         <h2 className="text-3xl md:text-4xl leading-tight">

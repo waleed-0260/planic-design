@@ -38,7 +38,11 @@ const page = () => {
     <div>
       <Hero heading="Interior Design" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={interior} heading=" Personalized Interior Design for Every Space" text=" Specializing in residential and commercial interiors, our Interior Design service blends creativity with functionality."/>
+        <Specializing img={interior} heading=" Personalized Interior Design for Every Space" text=" Specializing in residential and commercial interiors, our Interior Design service blends creativity with functionality." points={[
+    "Project Planning & Concept Development",
+    "Furniture & Material Selection",
+    "Styling & Space Optimization"
+  ]}/>
         <Video/>
         <FeaturedProjects heading="Related Projects" />
         <Slider />
