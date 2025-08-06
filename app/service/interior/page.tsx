@@ -8,7 +8,7 @@ import Explanation from '@/components/service/Explanation'
 import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
-
+import interior from "@/public/images/interior.jpg"
 const interiorFaqs = [
   {
     question: "What types of spaces do you design interiors for?",
@@ -37,7 +37,7 @@ const page = () => {
     <div>
       <Hero heading="Interior Design" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing />
+        <Specializing img={interior} heading=" Personalized Interior Design for Every Space" text=""/>
         <Video/>
         <FeaturedProjects heading="Related Projects" />
         <Slider />

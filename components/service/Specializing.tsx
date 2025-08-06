@@ -2,12 +2,12 @@ import React from 'react'
 import expertise2 from "@/public/images/expertise2.jpg"
 import Image from 'next/image'
 
-const Specializing = () => {
+const Specializing = ({img, heading, text}:any) => {
   return (
     <div className='w-[90%] mx-auto my-[50px]'>
       {/* Heading */}
       <h1 className='text-left md:text-[52px] text-2xl  mb-6 leading-tight'>
-        Specializing in housing and offices, the Arch Pro has a wide range of activities
+        {heading}
       </h1>
 
       {/* Text and Image Row */}
@@ -24,7 +24,7 @@ const Specializing = () => {
         <div className='w-[350px] h-[350px]'>
 
           <Image
-            src={expertise2}
+            src={img}
             alt='expertise'
             className=' object-cover'
             />
