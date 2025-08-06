@@ -8,7 +8,9 @@ import Explanation from '@/components/service/Explanation'
 import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
-import interior from "@/public/images/interior.jpg"
+// import interior from "@/public/images/interior.jpg"
+import architecture from "@/public/images/architecture.jpg"
+
 const architectFaqs = [
   {
     question: "What’s included in your architectural planning service?",
@@ -43,7 +45,7 @@ const page = () => {
     <div>
       <Hero heading="Interior Design" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={interior} heading=" Personalized Interior Design for Every Space" text=""/>
+        <Specializing img={architecture} heading=" Architectural Layouts That Work" text=" With a focus on housing and office spaces, our Architectural Planning service offers expert guidance from concept to construction."/>
         <Video/>
         <FeaturedProjects heading="Related Projects" />
         <Slider />

@@ -16,7 +16,7 @@ const Expertise = () => {
       {/* First Row */}
       <div className="flex gap-4 mb-4 my-[50px]">
         {/* First Image - double width */}
-        <Link href={`/service/${images[0].link}`} className="flex-2 w-2/3 relative group overflow-hidden h-[300px] ">
+        <Link href={`/service/architecture`} className="flex-2 w-2/3 relative group overflow-hidden h-[300px] ">
           <img
             src={images[0].src}
             alt={images[0].text}

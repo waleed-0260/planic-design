@@ -11,12 +11,13 @@ const Specializing = ({img, heading, text}:any) => {
       </h1>
 
       {/* Text and Image Row */}
-      <div className='flex flex-row justify-between items-start w-full'>
+      <div className='flex md:flex-row flex-col justify-between items-start w-full'>
         {/* Text on Left */}
         <div className='w-1/2 space-y-4'>
+          {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> */}
+          <p className='textColor'>{text}</p>
         </div>
 
         {/* Image on Right */}

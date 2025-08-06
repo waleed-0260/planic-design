@@ -9,6 +9,7 @@ import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 import interior from "@/public/images/interior.jpg"
+import visulization from "@/public/images/visulization.jpg"
 const visualizationFaqs = [
   {
     question: "What is 3D visualization, and why is it important?",
@@ -43,7 +44,7 @@ const page = () => {
     <div>
       <Hero heading="Interior Design" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={interior} heading=" Personalized Interior Design for Every Space" text=""/>
+        <Specializing img={visulization} heading="Photo-Realistic 3D Renderings" text=" Our 3D Visualization service is perfect for homeowners, developers, and businesses who want to see the future — before construction begins."/>
         <Video/>
         <FeaturedProjects heading="Related Projects" />
         <Slider />
