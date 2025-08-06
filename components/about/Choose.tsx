@@ -27,20 +27,23 @@ const Choose = () => {
 
       {/* Right Section */}
       <div className="w-[70%] space-y-10 relative">
-        {headings.map((item) => (
+        {headings.map((item, index) => (
           <div
             key={item.id}
             className="relative group"
             onMouseEnter={() => setActiveId(item.id)}
             onMouseLeave={() => setActiveId(null)}
           >
-            <h3 className="text-2xl font-semibold border-b-2 border-gray-300 pb-2 relative z-10">
+             <span className="absolute -top-6 left-0 text-xl font-bold text-gray-400 z-20">
+        {index + 1 < 10 ? `0${index + 1}` : index + 1}
+      </span>
+            <h3 className="text-5xl textColor border-b-2 border-gray-300 pb-8 relative z-10">
               {item.title}
             </h3>
 
             {/* Image appears on hover */}
           {activeId === item.id && (
-  <div className="absolute left-[80%] top-0 animate-fade-in z-50">
+  <div className="absolute left-[80%] top-[-60px] animate-fade-in z-50">
     <div className="h-[150px] w-[150px]">
       <Image
         src={item.image}

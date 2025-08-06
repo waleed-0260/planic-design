@@ -6,24 +6,29 @@ const Main = () => {
   return (
    <div className="flex flex-col md:flex-row justify-between items-start w-[90%] mx-auto py-12 gap-8">
       {/* Left Content */}
-      <div className="flex-1 space-y-5">
+      <div className="flex-1 flex flex-col md:h-[300px] space-y-5">
         <h2 className="text-3xl md:text-4xl leading-tight">
-          Architectural Layouts That Work
+          Designing Spaces with Impact 
         </h2>
         <p className="text-gray-600 text-base md:text-lg mb-6">
-Our architecture services include detailed layout plans, space optimization, and technical 
-drawings. From concept to construction. We handle every stage with precision.         </p>
-        <Link className="relative top-[20px] button" href="/portfolio">View Portfolio</Link>
+Founded with the goal of transforming how people experience their surroundings, Planic Design 
+blends creativity with practicality. Our team brings deep local insight, international trends, and 
+technical expertise to every project.        </p>
+         {/* <div>
+            <Link className="button inline-block" href="/portfolio">
+              View Portfolio
+            </Link>
+          </div> */}
       </div>
 
       {/* Right Image */}
-      <div className="flex-1 h-[300px] flex justify-center">
+      <div className="flex-1 h-[250px] flex justify-center">
         <Image
           src={expertise3}
           alt="Architecture"
-          className="rounded-lg object-cover"
+          className=" object-cover"
           width={400}
-          height={300}
+          height={250}
         />
       </div>
     </div>

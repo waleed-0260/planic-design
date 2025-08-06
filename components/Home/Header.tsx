@@ -12,6 +12,7 @@ import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import whitelogo from "../../public/images/whitelogo.png";
+import blacklogo from "@/public/images/blacklogo.png"
 const menuItems = [
   { name: "Home", subItems: [], link: "/" },
   {
@@ -78,7 +79,9 @@ export default function Header() {
       >
         <nav className="h-16 flex items-center justify-center px-4">
           <ul className="flex space-x-16 flex-row justify-between">
+            {/* <li className={scrolled ? "flex absolute":"hidden"}><Image src={blacklogo} alt="blacklogo" width={160} height={160}/></li> */}
             {menuItems.map((item) => (
+              <>
               <li key={item.name} className="relative cursor-pointer z-50">
                 <Link href={item.link}>
                   <p className="  flex items-center cursor-pointer">
@@ -105,6 +108,7 @@ export default function Header() {
                   </ul>
                 )}
               </li>
+                            </>
             ))}
           </ul>
         </nav>
