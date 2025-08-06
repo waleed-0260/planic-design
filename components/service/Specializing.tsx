@@ -1,7 +1,7 @@
 import React from 'react'
-import expertise2 from "@/public/images/expertise2.jpg"
+// import expertise2 from "@/public/images/expertise2.jpg"
 import Image from 'next/image'
-
+import Link from 'next/link'
 const Specializing = ({img, heading, text, points}:any) => {
   return (
     <div className='w-[90%] mx-auto my-[50px]'>
@@ -13,7 +13,7 @@ const Specializing = ({img, heading, text, points}:any) => {
       {/* Text and Image Row */}
       <div className='flex md:flex-row flex-col justify-between space-x-5 items-start w-full mt-[40px]'>
         {/* Text on Left */}
-        <div className='w-1/2 space-y-4'>
+        <div className='w-1/2 space-y-4 flex-col flex flex-1 justify-between md:h-[300px]'>
           {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> */}
@@ -23,7 +23,9 @@ const Specializing = ({img, heading, text, points}:any) => {
               <li key={index}>{point}</li>
             ))}
           </ol>
-          
+          <div>
+            <Link href={"/portfolio"} className="button">View Portfolio</Link>
+          </div>
         </div>
 
         {/* Image on Right */}

@@ -79,7 +79,7 @@ export default function Header() {
       >
         <nav className="h-16 flex items-center justify-center px-4">
           <ul className="flex space-x-16 flex-row justify-between">
-            {/* <li className={scrolled ? "flex absolute":"hidden"}><Image src={blacklogo} alt="blacklogo" width={160} height={160}/></li> */}
+            <li className={scrolled ? "flex absolute top-[-10px] left-[120px]":"hidden"}><Image src={blacklogo} alt="blacklogo" width={80} height={80}/></li>
             {menuItems.map((item) => (
               <>
               <li key={item.name} className="relative cursor-pointer z-50">

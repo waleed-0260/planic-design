@@ -14,9 +14,9 @@ const Expertise = () => {
       <h2 className="md:text-[72px] text-2xl py-9 border-t-[1px] border-b-[1px] border-black w-full">Expertise</h2>
 
       {/* First Row */}
-      <div className="flex gap-4 mb-4 my-[50px]">
+      <div className="flex md:flex-row flex-col gap-4 mb-4 my-[50px]">
         {/* First Image - double width */}
-        <Link href={`/service/architecture`} className="flex-2 w-2/3 relative group overflow-hidden h-[300px] ">
+        <Link href={`/service/architecture`} className="flex-2 md:w-2/3 relative group overflow-hidden h-[300px] ">
           <img
             src={images[0].src}
             alt={images[0].text}
@@ -31,7 +31,7 @@ const Expertise = () => {
 
 
         {/* Second Image - normal width */}
-        <Link href={`/service/${images[1].link}`} className="flex-1 w-1/3 relative group overflow-hidden h-[300px] ">
+        <Link href={`/service/${images[1].link}`} className="flex-1 md:w-1/3 relative group overflow-hidden h-[300px] ">
           <img
             src={images[1].src}
             alt={images[1].text}
@@ -46,11 +46,11 @@ const Expertise = () => {
       </div>
 
 
-   <div className="flex gap-4 mb-4">
+   <div className="flex gap-4 mb-4 md:flex-row flex-col">
 
         {/* Second Image - normal width */}
 
-        <Link href={`/service/${images[2].link}`} className="flex-1 w-1/3 relative group overflow-hidden h-[300px] ">
+        <Link href={`/service/${images[2].link}`} className="flex-1 md:w-1/3 relative group overflow-hidden h-[300px] ">
           <img
             src={images[2].src}
             alt={images[2].text}
@@ -63,7 +63,7 @@ const Expertise = () => {
         </div>
         </Link>
 
-        <Link href={`/service/${images[3].link}`} className="flex-2 w-2/3 relative group overflow-hidden h-[300px] ">
+        <Link href={`/service/${images[3].link}`} className="flex-2 md:w-2/3 relative group overflow-hidden h-[300px] ">
           <img
             src={images[3].src}
             alt={images[3].text}

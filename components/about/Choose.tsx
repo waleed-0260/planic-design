@@ -7,10 +7,10 @@ import expertise3 from "@/public/images/expertise3.jpg";
 import exoertise4 from "@/public/images/expertise4.jpg";
 
 const headings = [
-  { id: 1, title: "3D Visulization", image: expertise1 },
-  { id: 2, title: "Renovation & Fit Out", image: expertise2 },
-  { id: 3, title: "Architectural Planning", image: expertise3 },
-  { id: 4, title: "Interior Design", image: exoertise4 },
+  { id: 1, title: "Experienced in Residential & Commercial Design ", image: expertise1 },
+  { id: 2, title: "Complete Design-Build Solutions ", image: expertise2 },
+  { id: 3, title: "Transparent Pricing & Timelines ", image: expertise3 },
+  { id: 4, title: "Pakistan-Based Team with Local Know-How ", image: exoertise4 },
 ];
 
 const Choose = () => {
