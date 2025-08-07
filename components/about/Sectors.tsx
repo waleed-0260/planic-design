@@ -60,7 +60,7 @@ const Sectors = () => {
 
   {/* Health Sector */}
   <div className="flex flex-col items-start space-y-4">
-  <Image src={commercialSector} alt="" className='object-cover w-auto h-auto grayscale'/>
+  <Image src={commercialSector} alt="" className='object-cover w-auto h-auto grayscale w-[150px] h-[150px]'/>
   
     <p className="text-md">HealthCare</p>
     <p className='textColor'>

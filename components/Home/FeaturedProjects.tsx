@@ -12,9 +12,9 @@ const FeaturedProjects = ({heading}:any) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://planicbackend.vercel.app/get-portfolio");
+        const response = await fetch("/api/portfolio");
         const data = await response.json();
-        setProjects(data);
+        setProjects(data.data);
       } catch (error) {
         console.error("Error fetching projects:", error);
       } finally {
@@ -77,7 +77,7 @@ const FeaturedProjects = ({heading}:any) => {
       )}
 
       {/* View All + Download Portfolio */}
-      <div className="flex md:items-end items-center justify-center md:justify-end flex-col gap-4 w-full">
+      <div className="flex md:items-start items-center justify-center md:justify-end flex-col gap-4 w-full">
         <Link
           href={"/portfolio"}
           className="py-2 border-b-[1px] border-b-black flex flex-row items-center justify-end gap-4"

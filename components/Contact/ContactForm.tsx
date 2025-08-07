@@ -19,7 +19,7 @@ const ContactForm = () => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://planicbackend.vercel.app/add-contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -62,8 +62,7 @@ const ContactForm = () => {
       <p className=" text-xl">Main Office</p>
       <p >Islamabad, Pakistan</p>
       <p className="text-sm textColor leading-relaxed sm:w-full w-[150px]">
-        Office No. 3, 5th Floor, Gulberg Trade Center, Gulberg Greens, Islamabad
-      </p>
+ Office 207, second floor, vista plaza, i8 markaz      </p>
       <p className="mt-2">London, UK</p>
       <p className="text-sm textColor">UK: FL 3, 45 Albemarle St</p>
     </div>

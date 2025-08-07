@@ -66,7 +66,7 @@ useEffect(() => {
     if (data.additionalImage) formData.append("additionalImage", data.additionalImage[0]);
 
     try {
-      const response = await fetch("https://planicbackend.vercel.app/add-portfolio", {
+      const response = await fetch("/api/portfolo", {
         method: "POST",
         body: formData,
       });

@@ -68,7 +68,7 @@ const Hero = () => {
         : formDataSlide3;
   
     try {
-      const response = await fetch("https://planicbackend.vercel.app/add-contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -193,18 +193,22 @@ const Hero = () => {
                 onBlur={handleBlur}
                 required
               />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="type"
-                id="type"
-                placeholder="Project Type"
-                value={formDataSlide2.type}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
+               <select
+  className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white"
+  name="type"
+  id="type"
+  value={formDataSlide2.type}
+  onChange={(e) => handleChange(e, 2)}
+  onFocus={handleFocus}
+  onBlur={handleBlur}
+  required
+>
+  <option value="" disabled hidden>
+    Select Project Type
+  </option>
+  <option value="resedential">Resedential</option>
+  <option value="commercial">Commercial</option>
+</select>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -273,18 +277,22 @@ const Hero = () => {
                 onBlur={handleBlur}
                 required
               />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="type"
-                id="type"
-                placeholder="Project Type"
-                value={formDataSlide2.type}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
+              <select
+  className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white"
+  name="type"
+  id="type"
+  value={formDataSlide2.type}
+  onChange={(e) => handleChange(e, 2)}
+  onFocus={handleFocus}
+  onBlur={handleBlur}
+  required
+>
+  <option value="" disabled hidden>
+    Select Project Type
+  </option>
+  <option value="resedential">Resedential</option>
+  <option value="commercial">Commercial</option>
+</select>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
@@ -353,18 +361,22 @@ const Hero = () => {
                 onBlur={handleBlur}
                 required
               />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="type"
-                id="type"
-                placeholder="Project Type"
-                value={formDataSlide2.type}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
+                <select
+  className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white"
+  name="type"
+  id="type"
+  value={formDataSlide2.type}
+  onChange={(e) => handleChange(e, 2)}
+  onFocus={handleFocus}
+  onBlur={handleBlur}
+  required
+>
+  <option value="" disabled hidden>
+    Select Project Type
+  </option>
+  <option value="resedential">Resedential</option>
+  <option value="commercial">Commercial</option>
+</select>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
                 type="text"
