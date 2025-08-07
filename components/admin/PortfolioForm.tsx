@@ -26,6 +26,7 @@ interface FormData {
 
 const PortfolioForm = () => {
     const [tags, setTags] = useState<string[]>([]);
+      const [inputValue, setInputValue] = useState("");
   const[disable, setDisabled] = useState(false);
   const {
     register,
@@ -36,9 +37,9 @@ const PortfolioForm = () => {
   } = useForm<FormData>();
 
     // Keep tags synced with react-hook-form
-  useEffect(() => {
-    setValue("category", tags);
-  }, [tags, setValue]);
+useEffect(() => {
+  setValue("category", inputValue.split(",").map(tag => tag.trim()).filter(tag => tag));
+}, [inputValue, setValue]);
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     setDisabled(true);
@@ -88,7 +89,7 @@ const PortfolioForm = () => {
   };
 
   return (
-    <div className="w-[80%] absolute right-0 p-5">
+    <div className="w-[75%] absolute right-0 p-5">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* Text fields */}
         <div>
@@ -104,16 +105,19 @@ const PortfolioForm = () => {
         <div>
           <label className="block font-medium">Category *</label>
           <input
-          type="text"
-          {...register("category")}
-          value={tags.join(",")} // react-hook-form will still validate
-           onChange={(e) => {
-    const input = e.target.value;
-    const newTags = input.split(",").map(tag => tag.trim()).filter(tag => tag);
-    setTags(newTags);
-  }}
-          className="w-full border rounded px-3 py-2"
-        />
+    type="text"
+    value={inputValue}
+    onChange={(e) => setInputValue(e.target.value)} // ✅ allow commas
+    onBlur={() => {
+      const finalTags = inputValue
+        .split(",")
+        .map((tag) => tag.trim())
+        .filter((tag) => tag);
+      setTags(finalTags);
+    }}
+    placeholder="Type tags separated by commas"
+    className="w-full border rounded px-3 py-2"
+  />
   {errors.category && <p className="text-red-500">Category is required.</p>}
         </div>
 

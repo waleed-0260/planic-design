@@ -11,20 +11,31 @@ const Sidebar = () => {
         </span>
       <h2 className="text-2xl font-bold  pt-[20px]">Dashboard</h2>
       </span>
-      <ul className="mt-6 space-y-4">
-        <Link  href="/admin/dashboard" className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
-          <p>Contact Leads</p>
-        </Link>
-        <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
-          <a href="/">Blogs</a>
-        </li>
-        <Link href="/admin/dashboard/portfolio" className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
-          <p>Portfolio</p>
-        </Link>
-        <li className="px-4 py-2 hover:bg-gray-700 cursor-pointer">
-          <a href="/">Testimonials</a>
-        </li>
-      </ul>
+<ul className="mt-6 space-y-2">
+  <li className="hover:bg-gray-700 cursor-pointer">
+    <Link href="/admin/dashboard" className="block px-4 py-2">
+      Contact Leads
+    </Link>
+  </li>
+
+  <li className="hover:bg-gray-700 cursor-pointer">
+    <a href="/" className="block px-4 py-2">
+      Blogs
+    </a>
+  </li>
+
+  <li className="hover:bg-gray-700 cursor-pointer">
+    <Link href="/admin/dashboard/portfolio" className="block px-4 py-2">
+      Portfolio
+    </Link>
+  </li>
+
+  <li className="hover:bg-gray-700 cursor-pointer">
+    <a href="/" className="block px-4 py-2">
+      Testimonials
+    </a>
+  </li>
+</ul>
     </div>
   );
 };
