@@ -1,21 +1,23 @@
-import React from 'react'
-import Image from 'next/image'
-import expertise3 from "@/public/images/expertise3.jpg"
-import Link from 'next/link'
-import aboutImg from "@/public/images/aboutImg.png"
+import React from "react";
+import Image from "next/image";
+import expertise3 from "@/public/images/expertise3.jpg";
+import Link from "next/link";
+// import aboutImg from "@/public/images/aboutImg.png";
 const Main = () => {
   return (
-   <div className="flex flex-col md:flex-row justify-between items-start w-[90%] mx-auto py-12 gap-8">
+    <div className="flex flex-col md:flex-row justify-between items-start w-[90%] mx-auto py-12 gap-8">
       {/* Left Content */}
       <div className="flex-1 flex flex-col md:h-[300px] space-y-5">
         <h2 className="text-3xl md:text-4xl leading-tight">
-          Designing Spaces with Impact 
+          Designing Spaces with Impact
         </h2>
         <p className="text-gray-600 text-base md:text-lg mb-6">
-Founded with the goal of transforming how people experience their surroundings, Planic Design 
-blends creativity with practicality. Our team brings deep local insight, international trends, and 
-technical expertise to every project.        </p>
-         {/* <div>
+          Founded with the goal of transforming how people experience their
+          surroundings, Planic Design blends creativity with practicality. Our
+          team brings deep local insight, international trends, and technical
+          expertise to every project.
+        </p>
+        {/* <div>
             <Link className="button inline-block" href="/portfolio">
               View Portfolio
             </Link>
@@ -25,7 +27,7 @@ technical expertise to every project.        </p>
       {/* Right Image */}
       <div className="flex-1 h-[250px] flex justify-center">
         <Image
-          src={aboutImg}
+          src={expertise3}
           alt="Image about"
           className=" object-cover"
           width={400}
@@ -33,8 +35,7 @@ technical expertise to every project.        </p>
         />
       </div>
     </div>
-    
-)
-}
+  );
+};
 
-export default Main
+export default Main;
