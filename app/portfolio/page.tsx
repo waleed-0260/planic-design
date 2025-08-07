@@ -11,8 +11,9 @@ import Main from '@/components/portfolio/Main'
 import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import Slider from '@/components/Home/Slider'
 const page = async() => {
-  // const data = await fetch(`https://planicbackend.vercel.app/get-portfolio`)
-  // const projects = await data.json();
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+const res = await fetch(`${baseUrl}/api/portfolio`);
+  const data = await res.json();
 
   return (
     <>
@@ -22,7 +23,7 @@ speak for themselves"/>
       <Main/>
       <Slider/>
     {/* <Projects products={projects}/> */}
-    <FeaturedProjects heading="Featured Projects"/>
+    <FeaturedProjects heading="Featured Projects" products={data?.data}/>
     <CalltoForn heading=" Let’s Design Something Extraordinary Together" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>
     <Footer/>
     </div>

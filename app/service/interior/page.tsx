@@ -44,7 +44,7 @@ const page = () => {
     "Styling & Space Optimization"
   ]}/>
         <Video/>
-        <FeaturedProjects heading="Related Projects" />
+        {/* <FeaturedProjects heading="Related Projects" /> */}
         <Slider />
         <Team />
         <Process />

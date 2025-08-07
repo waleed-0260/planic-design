@@ -51,7 +51,7 @@ const page = () => {
     "Design Validation & Decision-Making"
   ]}/>
         <Video/>
-        <FeaturedProjects heading="Related Projects" />
+        {/* <FeaturedProjects heading="Related Projects" /> */}
         <Slider />
         <Team />
         <Process />
