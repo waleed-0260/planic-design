@@ -105,8 +105,13 @@ const PortfolioForm = () => {
           <label className="block font-medium">Category *</label>
           <input
           type="text"
-          {...register("category", { required: true })}
+          {...register("category")}
           value={tags.join(",")} // react-hook-form will still validate
+           onChange={(e) => {
+    const input = e.target.value;
+    const newTags = input.split(",").map(tag => tag.trim()).filter(tag => tag);
+    setTags(newTags);
+  }}
           className="w-full border rounded px-3 py-2"
         />
   {errors.category && <p className="text-red-500">Category is required.</p>}
