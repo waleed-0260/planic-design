@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import expertise3 from "@/public/images/expertise3.jpg";
+// import expertise3 from "@/public/images/expertise3.jpg";
 import Link from "next/link";
-// import aboutImg from "@/public/images/aboutImg.png";
+import aboutImg from "@/public/images/aboutImg.jpg";
 const Main = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-start w-[90%] mx-auto py-12 gap-8">
@@ -17,21 +17,21 @@ const Main = () => {
           team brings deep local insight, international trends, and technical
           expertise to every project.
         </p>
-        {/* <div>
+        <div>
             <Link className="button inline-block" href="/portfolio">
               View Portfolio
             </Link>
-          </div> */}
+          </div>
       </div>
 
       {/* Right Image */}
-      <div className="flex-1 h-[250px] flex justify-center">
+      <div className="flex-1 h-[300px] flex justify-center">
         <Image
-          src={expertise3}
+          src={aboutImg}
           alt="Image about"
           className=" object-cover"
-          width={400}
-          height={250}
+          width={300}
+          height={450}
         />
       </div>
     </div>

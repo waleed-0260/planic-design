@@ -14,17 +14,17 @@ const Team = () => {
     {
       name: "Hiba Khawar",
       designation: "Director, Planic Design",
-      bio: "A visionary leader dedicated to ensuring top-tier design solutions and strategic execution at Planic Design.",
+      bio: "A strategic and design-focused professional with experience in delivering creative spatial solutions. Expert in design leadership, project coordination, and ensuring seamless execution from concept to completion.",
       image: Hiba, // Replace with actual image path
     },
   ];
   
 
   return (
-    <section className=" py-16 px-6">
+    <section className=" py-16 px-6" id='teams'>
       <div className="max-w-6xl mx-auto text-left">
         <h2 className="md:text-[72px] text-2xl py-9 border-t-[1px] border-b-[1px] border-black w-full">Our Leadership</h2>
-        <p className="text-lg text-gray-600 mb-12">
+        <p className="text-lg text-gray-600 mb-12 mt-2">
           A team of visionaries shaping innovative, functional, and timeless designs.
         </p>
 

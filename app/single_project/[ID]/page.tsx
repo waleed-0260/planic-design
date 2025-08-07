@@ -18,8 +18,9 @@ export default async function Page({
   // const post = await getPost(id)
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 const res = await fetch(`${baseUrl}/api/portfolio/${ID}`);
-  const singlePost = await res.json();
+  const data = await res.json();
   // console.log("singlePost", singlePost)
+  const singlePost = data?.data
 
   return (
     <div>

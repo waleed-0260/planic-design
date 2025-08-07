@@ -81,7 +81,6 @@ export default function Header() {
           <ul className="flex space-x-16 flex-row justify-between">
             <li className={scrolled ? "flex absolute top-[-10px] left-[120px]":"hidden"}><Image src={blacklogo} alt="blacklogo" width={80} height={80}/></li>
             {menuItems.map((item) => (
-              <>
               <li key={item.name} className="relative cursor-pointer z-50">
                 <Link href={item.link}>
                   <p className="  flex items-center cursor-pointer">
@@ -108,7 +107,6 @@ export default function Header() {
                   </ul>
                 )}
               </li>
-                            </>
             ))}
           </ul>
         </nav>

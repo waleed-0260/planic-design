@@ -34,10 +34,10 @@ const Choose = () => {
             onMouseEnter={() => setActiveId(item.id)}
             onMouseLeave={() => setActiveId(null)}
           >
-             <span className="absolute -top-6 left-0 text-xl font-bold text-gray-400 z-20">
+             {/* <span className="absolute -top-6 left-0 text-xl font-bold text-gray-400 z-20">
         {index + 1 < 10 ? `0${index + 1}` : index + 1}
-      </span>
-            <h3 className="text-5xl textColor border-b-2 border-gray-300 pb-8 relative z-10">
+      </span> */}
+            <h3 className="text-3xl textColor border-b-2 border-gray-300 pb-5 relative z-10">
               {item.title}
             </h3>
 

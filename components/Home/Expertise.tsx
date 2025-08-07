@@ -14,7 +14,7 @@ const Expertise = () => {
       <h2 className="md:text-[72px] text-2xl py-9 border-t-[1px] border-b-[1px] border-black w-full">Expertise</h2>
 
       {/* First Row */}
-      <div className="flex md:flex-row flex-col gap-4 mb-4 my-[50px]">
+      <div className="flex md:flex-row flex-col gap-2 mb-2 my-[50px]">
         {/* First Image - double width */}
         <Link href={`/service/architecture`} className="flex-2 md:w-2/3 relative group overflow-hidden h-[300px] ">
           <img
@@ -46,7 +46,7 @@ const Expertise = () => {
       </div>
 
 
-   <div className="flex gap-4 mb-4 md:flex-row flex-col">
+   <div className="flex gap-2 mb-4 md:flex-row flex-col">
 
         {/* Second Image - normal width */}
 

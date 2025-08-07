@@ -4,28 +4,29 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
-const FeaturedProjects = ({heading}:any) => {
-  const [projects, setProjects] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+const FeaturedProjects = ({heading, products}:any) => {
+  // console.log("products", products)
+  // const [projects, setProjects] = useState<any[]>([]);
+  // const [loading, setLoading] = useState(true);
   const [showAll, setShowAll] = useState(false); // Track if "Load More" is clicked
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/api/portfolio");
-        const data = await response.json();
-        setProjects(data.data);
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("/api/portfolio");
+  //       const data = await response.json();
+  //       setProjects(data.data);
+  //     } catch (error) {
+  //       console.error("Error fetching projects:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
-  const displayedProjects = showAll ? projects : projects.slice(0, 5);
+  const displayedProjects = showAll ? products : products.slice(0, 5);
 
   return (
     <div className="flex flex-col items-start w-[90%] my-[40px] space-y-5" id="portfolio">
@@ -33,8 +34,8 @@ const FeaturedProjects = ({heading}:any) => {
       {heading}
       </p>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 py-2 w-full">
-       {displayedProjects.map((project: any, index) => (
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-2 py-2 w-full">
+       {displayedProjects.map((project: any, index:any) => (
   <Link
     key={index}
     className={`relative group overflow-hidden ${
@@ -65,7 +66,7 @@ const FeaturedProjects = ({heading}:any) => {
       </div>
 
       {/* Load More Button */}
-      {!showAll && projects.length > 5 && (
+      {!showAll && products.length > 5 && (
         <div className="flex w-full justify-center">
           <button
             onClick={() => setShowAll(true)}

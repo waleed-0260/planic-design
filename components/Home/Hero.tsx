@@ -194,7 +194,7 @@ const Hero = () => {
                 required
               />
                <select
-  className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white"
+  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
   name="type"
   id="type"
   value={formDataSlide2.type}
@@ -206,8 +206,13 @@ const Hero = () => {
   <option value="" disabled hidden>
     Select Project Type
   </option>
-  <option value="resedential">Resedential</option>
-  <option value="commercial">Commercial</option>
+  <option value="resedential" className="text-black">Resedential</option>
+  <option value="commercial" className="text-black">Commercial</option>
+  <option value="educational" className="text-black">Educational</option>
+  <option value="healthcare" className="text-black">Healthcare</option>
+  <option value="hospitality" className="text-black">Hospitality</option>
+  <option value="marquee" className="text-black">Marquee</option>
+  <option value="restaurant" className="text-black">Restaurant</option>
 </select>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -278,7 +283,7 @@ const Hero = () => {
                 required
               />
               <select
-  className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white"
+  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
   name="type"
   id="type"
   value={formDataSlide2.type}
@@ -290,8 +295,13 @@ const Hero = () => {
   <option value="" disabled hidden>
     Select Project Type
   </option>
-  <option value="resedential">Resedential</option>
-  <option value="commercial">Commercial</option>
+  <option value="resedential" className="text-black">Resedential</option>
+  <option value="commercial" className="text-black">Commercial</option>
+  <option value="educational" className="text-black">Educational</option>
+  <option value="healthcare" className="text-black">Healthcare</option>
+  <option value="hospitality" className="text-black">Hospitality</option>
+  <option value="marquee" className="text-black">Marquee</option>
+  <option value="restaurant" className="text-black">Restaurant</option>
 </select>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
@@ -362,7 +372,7 @@ const Hero = () => {
                 required
               />
                 <select
-  className="p-2 text-black border-b-2 border-b-white bg-transparent placeholder-white"
+  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
   name="type"
   id="type"
   value={formDataSlide2.type}
@@ -374,8 +384,13 @@ const Hero = () => {
   <option value="" disabled hidden>
     Select Project Type
   </option>
-  <option value="resedential">Resedential</option>
-  <option value="commercial">Commercial</option>
+  <option value="resedential" className="text-black">Resedential</option>
+  <option value="commercial" className="text-black">Commercial</option>
+  <option value="educational" className="text-black">Educational</option>
+  <option value="healthcare" className="text-black">Healthcare</option>
+  <option value="hospitality" className="text-black">Hospitality</option>
+  <option value="marquee" className="text-black">Marquee</option>
+  <option value="restaurant" className="text-black">Restaurant</option>
 </select>
               <input 
                 className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"

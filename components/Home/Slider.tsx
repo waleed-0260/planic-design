@@ -15,7 +15,7 @@ import logo5 from "../../public/images/logo5.png"
 const Slider = () => {
   return (
     <div className='w-full flex items-center justify-center'>
-        <div className='w-[80%] flex items-center justify-center m-6'>
+        <div className='w-full flex items-center justify-center m-6'>
         <Swiper
         spaceBetween={20}
         breakpoints={{
@@ -39,7 +39,7 @@ const Slider = () => {
         speed={1000}
         modules={[Navigation, Pagination, Autoplay]}
         loop={true}
-        className="lg:w-[90%] w-[80%] h-[120px]"
+        className="lg:w-[100%] w-[80%] h-[120px]"
       >
         <SwiperSlide>
           <div className="w-[150px] h-[110px] ">

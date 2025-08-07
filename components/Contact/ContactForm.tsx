@@ -5,6 +5,7 @@ import { FaRegBuilding } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 // import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const ContactForm = () => {
 
@@ -54,7 +55,7 @@ const ContactForm = () => {
 
         <div className="flex flex-col gap-6">
   {/* Main Office */}
-  <div className="flex items-start gap-4">
+  {/* <div className="flex items-start gap-4">
     <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#231f20] transition duration-300">
       <FaRegBuilding className="text-2xl text-white" />
     </div>
@@ -66,7 +67,7 @@ const ContactForm = () => {
       <p className="mt-2">London, UK</p>
       <p className="text-sm textColor">UK: FL 3, 45 Albemarle St</p>
     </div>
-  </div>
+  </div> */}
 
   {/* Phone */}
   <div className="flex items-start gap-4">
@@ -84,10 +85,41 @@ const ContactForm = () => {
       <IoMail className="text-2xl text-white" />
     </div>
     <div className="flex flex-col">
-      <p className=" text-xl ">Mail & Social Media</p>
+      <p className=" text-xl ">Mail</p>
       <p className="textColor text-sm">planicdesignisb@gmail.com</p>
     </div>
   </div>
+
+   <div className="flex gap-4 md:mt-[20px] mt-4">
+            <a
+              href="https://www.facebook.com/theplanicdesign"
+              target="blank"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.youtube.com/@PlanicDesign"
+              target="blank"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.instagram.com/theplanicdesign/"
+              target="blank"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/theplanicdesign"
+              target="blank"
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-[#231f20] hover:bg-[#231f20] hover:text-white transition-all"
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
 </div>
       </div>
 

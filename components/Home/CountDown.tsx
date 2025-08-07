@@ -14,8 +14,8 @@ import experience from "../../public/images/experience.png"
 import projects from "../../public/images/projects.png"
 const CountDown = () => {
   const counters = [
-    { value: 7, text: "Years of Exeprience", img: experience },
-    { value: 65, text: "Projects Done", img: boards},
+    { value: 10, text: "Years of Exeprience", img: experience },
+    { value: 100, text: "Projects Done", img: boards},
     { value: 200, text: "Satisfied Clients", img: satisfied},
     { value: 150, text: "Designed Projects", img: projects},
     // { value: 200, text: "Team members across the globe" },
@@ -37,8 +37,8 @@ const CountDown = () => {
 
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6 p-4 mt-[40px] w-full">
           {counters.map((counter, index) => (
-            <div key={index} className="flex flex-row items-center space-x-6 ">
-            <div  className="flex flex-col p-4">
+            <div key={index} className="flex flex-row items-end space-x-6 ">
+            <div  className="flex flex-col ">
               {inView && ( // Start counter animation only when in view
                   <p 
                   className="text-[70px] text-white"
@@ -53,7 +53,7 @@ const CountDown = () => {
               )}
               <p className="text-white text-xl">{counter.text}</p>
             </div>
-            <div>
+            <div className="pl-5">
             <Image src={counter.img} alt="img" className="object-cover w-[100px] h-[100px] grayscale"/>
             {/* <p><HiOutlineCalendar  /></p> */}
             </div>

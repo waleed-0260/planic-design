@@ -15,7 +15,7 @@ const Sectors = () => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full mt-[50px]">
   {/* Commercial Spaces */}
   <div className="flex flex-col items-start space-y-4">
-    <Image src={healthSector} alt="commercial" className='object-cover w-auto h-auto grayscale'/>
+    <Image src={healthSector} alt="commercial" className='object-cover w-auto h-auto grayscale w-[150px] h-[150px]'/>
     <p className="text-md">Commercial Design</p>
     <p className='textColor'>
     We create efficient and dynamic commercial spaces that balance functionality, aesthetics, and branding. From marquees and event halls to mixed-use developments like Islamabad Square and Twin City Tower, we design environments that enhance productivity and leave a lasting impact.    </p>
@@ -32,7 +32,7 @@ const Sectors = () => {
   </div> */}
   {/* Resources & Infrastructure */}
   <div className="flex flex-col items-start space-y-4">
-    <Image src={HospitalitySector} alt="commercial" className='object-cover w-auto h-auto grayscale'/>
+    <Image src={HospitalitySector} alt="commercial" className='object-cover w-auto h-auto grayscale w-[150px] h-[150px]'/>
     <p className="text-md">Resedential Design</p>
     <p className='textColor'>
     Merging function with style, our residential designs focus on smart space planning, lighting, and personalized aesthetics. Whether it's a modern home or a luxury farmhouse, we create spaces that feel uniquely yours.
@@ -41,7 +41,7 @@ const Sectors = () => {
 
   {/* Hospitality */}
   <div className="flex flex-col items-start space-y-4">
-    <Image src={resedentialSector} alt="commercial" className='object-cover w-auto h-auto grayscale'/>
+    <Image src={resedentialSector} alt="commercial" className='object-cover w-auto h-auto grayscale w-[150px] h-[150px]'/>
     <p className="text-md">Hospitality</p>
     <p className='textColor'>
     Our hospitality designs blend elegance with functionality, ensuring inviting and immersive spaces. From hotels and resorts to restaurants and event venues, we craft experiences that leave lasting impressions.
@@ -60,7 +60,7 @@ const Sectors = () => {
 
   {/* Health Sector */}
   <div className="flex flex-col items-start space-y-4">
-  <Image src={commercialSector} alt="" className='object-cover w-auto h-auto grayscale w-[150px] h-[150px]'/>
+  <Image src={commercialSector} alt="" className='object-cover grayscale w-[150px] h-[150px]'/>
   
     <p className="text-md">HealthCare</p>
     <p className='textColor'>
