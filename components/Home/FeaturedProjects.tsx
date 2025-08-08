@@ -26,6 +26,10 @@ const FeaturedProjects = ({heading, products}:any) => {
   //   fetchData();
   // }, []);
 
+  if (!products) {
+    return <div>Loading....</div>
+  }
+
   const displayedProjects = showAll ? products : products.slice(0, 5);
 
   return (

@@ -24,7 +24,7 @@ export default function HomeClientWrapper({products}:any) {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Loader />;
+  if (loading || !products) return <Loader />;
 
   return (
     <>
