@@ -4,33 +4,34 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
-const FeaturedProjects = ({heading, products}:any) => {
-  // console.log("products", products)
-  // const [projects, setProjects] = useState<any[]>([]);
-  // const [loading, setLoading] = useState(true);
+const FeaturedProjects = ({heading}:any) => {
+  // console.log("projects", projects)
+  const [projects, setProjects] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [showAll, setShowAll] = useState(false); // Track if "Load More" is clicked
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch("/api/portfolio");
-  //       const data = await response.json();
-  //       setProjects(data.data);
-  //     } catch (error) {
-  //       console.error("Error fetching projects:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api/portfolio");
+        const data = await response.json();
+        console.log("data", data)
+        setProjects(data.data);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  //   fetchData();
-  // }, []);
+    fetchData();
+  }, []);
 
-  if (!products) {
+  if (!projects) {
     return <div>Loading....</div>
   }
 
-  const displayedProjects = showAll ? products : products.slice(0, 5);
+  const displayedProjects = showAll ? projects : projects.slice(0, 5);
 
   return (
     <div className="flex flex-col items-start w-[90%] my-[40px] space-y-5" id="portfolio">
@@ -70,7 +71,7 @@ const FeaturedProjects = ({heading, products}:any) => {
       </div>
 
       {/* Load More Button */}
-      {!showAll && products.length > 5 && (
+      {!showAll && projects.length > 5 && (
         <div className="flex w-full justify-center">
           <button
             onClick={() => setShowAll(true)}
