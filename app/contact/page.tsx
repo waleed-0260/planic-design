@@ -4,6 +4,7 @@ import ContactForm from '@/components/Contact/ContactForm'
 import Footer from '@/components/Home/Footer'
 import React from 'react'
 import type { Metadata } from "next";
+import ContactSection from '@/components/Contact/ContactSection'
 
 
 export const metadata: Metadata = {
@@ -17,8 +18,9 @@ const page = () => {
       <Hero heading="Contact Us" desc="Want to chat further? We’d love to hear from you, let us oppoturnity
 to make your dream become reality"/>
       <div className='flex flex-col items-center justify-center w-full bg-[#f1eee9]'>
-        <Address/>
+        <ContactSection/>
         <ContactForm/>
+        <Address/>
         <Footer/>
       </div>
     </div>

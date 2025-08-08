@@ -49,28 +49,14 @@ const ContactForm = () => {
           Let’s Talk About Your Space
 
         </h1>
-        <p className="textColor realtive md:top-[40px] text-sm">
+        {/* <p className="textColor realtive md:top-[40px] text-sm">
           Your email address will not be published. Required fields are marked *
-        </p>
+        </p> */}
 
         <div className="flex flex-col gap-6">
-  {/* Main Office */}
-  {/* <div className="flex items-start gap-4">
-    <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#231f20] transition duration-300">
-      <FaRegBuilding className="text-2xl text-white" />
-    </div>
-    <div className="flex flex-col">
-      <p className=" text-xl">Main Office</p>
-      <p >Islamabad, Pakistan</p>
-      <p className="text-sm textColor leading-relaxed sm:w-full w-[150px]">
- Office 207, second floor, vista plaza, i8 markaz      </p>
-      <p className="mt-2">London, UK</p>
-      <p className="text-sm textColor">UK: FL 3, 45 Albemarle St</p>
-    </div>
-  </div> */}
-
+          <p className="textColor text-lg">Have a question? We’d love to hear from you. Send us a note to get the conversation started - or click on an office above and talk to us. Especially about designing something, or something we’ve designed.</p>
   {/* Phone */}
-  <div className="flex items-start gap-4">
+  {/* <div className="flex items-start gap-4">
     <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#231f20] transition duration-300">
       <FaPhoneAlt className="text-2xl text-white" />
     </div>
@@ -119,7 +105,7 @@ const ContactForm = () => {
             >
               <FaLinkedinIn />
             </a>
-          </div>
+          </div> */}
 </div>
       </div>
 
