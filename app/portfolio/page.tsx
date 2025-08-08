@@ -12,7 +12,7 @@ import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import Slider from '@/components/Home/Slider'
 const page = async() => {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-const res = await fetch(`${baseUrl}/api/portfolio`);
+const res = await fetch(`https://planicdesign.com/api/portfolio`);
   const data = await res.json();
 
   return (

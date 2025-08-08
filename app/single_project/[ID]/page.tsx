@@ -22,8 +22,8 @@ const res = await fetch(`${baseUrl}/api/portfolio/${ID}`);
   // console.log("singlePost", singlePost)
   const singlePost = data?.data
 
-const products = await fetch(`${baseUrl}/api/portfolio`);
-  const allData = await products.json();
+// const products = await fetch(`${baseUrl}/api/portfolio`);
+//   const allData = await products.json();
 
   return (
     <div>
@@ -32,7 +32,7 @@ const products = await fetch(`${baseUrl}/api/portfolio`);
       <div className='flex flex-col items-center justify-center rounded-t-2xl w-full'>
         <MainSinglePortfolio heading={singlePost?.heading} description={singlePost?.description} challenge={singlePost?.challenge} solution={singlePost?.solution} value={singlePost?.value} name={singlePost?.clientName} location={singlePost?.location} date={singlePost?.date} role={singlePost?.date}/>
         <Images panel={singlePost?.panelFloorImage} master={singlePost?.masterFloorImage} mapImage={singlePost.mapImage} rendering={singlePost?.renderingImage} additional={singlePost?.additionalImage}/>
-        <FeaturedProjects heading="Related Projects" products={allData?.data}/>
+        {/* <FeaturedProjects heading="Related Projects" products={allData?.data}/> */}
       <Footer/>
       </div>
     </div>
