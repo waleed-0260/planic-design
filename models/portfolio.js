@@ -3,12 +3,12 @@ import mongoose from "mongoose";
 
 const portfolioSchema = new mongoose.Schema(
   {
-    heading: { type: String, required: true },
-    category: [{ type: String, required: true }],
-    tagline: { type: String, required: true },
-    // tags: [{ type: String, required: true }],
-    description: { type: String, required: true },
-    masterFloorImage: { type: String, required: true },
+    heading: { type: String },
+    category: [{ type: String }],
+    tagline: { type: String },
+    // tags: [{ type: String }],
+    description: { type: String },
+    masterFloorImage: { type: String },
     panelFloorImage: { type: String  },
     mapImage: { type: String },
     renderingImage: { type: String },
@@ -16,10 +16,10 @@ const portfolioSchema = new mongoose.Schema(
     challenge: { type: String },
     solution: { type: String}, 
     value: {type: String},
-    // solutionImage: { type: String, required: true },
+    // solutionImage: { type: String },
     // CLIENT INFORMATION
-    clientName: {type:String, required: true},
-    location:{type: String, required: true},
+    clientName: {type:String},
+    location:{type: String},
     date:{type:String},
     // Value:{type:String},
     role:{type:String}

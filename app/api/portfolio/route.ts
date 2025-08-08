@@ -11,57 +11,63 @@ export async function POST(req: NextRequest) {
     await connectDB();
     const formData = await req.formData();
 
-    // 1. Handle images
-    const masterFile = formData.get("masterFloorImage") as File;
-    const panelFile = formData.get("panelFloorImage") as File | null;
-    const mapFile = formData.get("mapImage") as File | null;
-    const renderingFile = formData.get("renderingImage") as File | null;
-    const additionalFile = formData.get("additionalImage") as File | null;
-
-    const uploadImage = async (file: File | null, folder: string) => {
-      if (!file) return null;
-
-      const arrayBuffer = await file.arrayBuffer();
-      const buffer = Buffer.from(arrayBuffer);
-
-      const result = await new Promise<any>((resolve, reject) => {
-        const stream = cloudinary.uploader.upload_stream(
-          { folder },
-          (error:any, result:any) => {
-            if (error) reject(error);
-            else resolve(result);
-          }
-        );
-        stream.end(buffer);
-      });
-
-      return result.secure_url;
+    // Map of form field name -> schema field name
+    const imageFields: { [key: string]: string } = {
+      masterFloorImage: "masterFloorImage",
+      panelFloorImage: "panelFloorImage",
+      mapImage: "mapImage",
+      renderingImage: "renderingImage",
+      additionalImage: "additionalImage"
     };
 
-    const masterFloorImage = await uploadImage(masterFile, "portfolio");
-    const panelFloorImage = await uploadImage(panelFile, "portfolio");
-    const mapImage = await uploadImage(mapFile, "portfolio");
-    const renderingImage = await uploadImage(renderingFile, "portfolio");
-    const additionalImage = await uploadImage(additionalFile, "portfolio");
+    const uploadedImages: Record<string, string | null> = {};
 
-    if (!masterFloorImage) {
+    for (const [fieldName, schemaField] of Object.entries(imageFields)) {
+      const file = formData.get(fieldName) as File | null;
+
+      if (file && file.size > 0 && file.type) {
+        try {
+          const arrayBuffer = await file.arrayBuffer();
+          const buffer = Buffer.from(arrayBuffer);
+
+          const uploaded = await new Promise<any>((resolve, reject) => {
+            const stream = cloudinary.uploader.upload_stream(
+              { folder: "portfolio" },
+              (error, result) => {
+                if (error) reject(error);
+                else resolve(result);
+              }
+            );
+            stream.end(buffer);
+          });
+
+          uploadedImages[schemaField] = uploaded.secure_url;
+        } catch (uploadError) {
+          console.error(`Cloudinary upload error for ${schemaField}:`, uploadError);
+          return NextResponse.json(
+            { success: false, message: `Image upload failed for ${schemaField}.`, error: uploadError },
+            { status: 500 }
+          );
+        }
+      } else {
+        uploadedImages[schemaField] = null; // No image uploaded for this field
+      }
+    }
+
+    if (!uploadedImages.masterFloorImage) {
       return NextResponse.json(
         { success: false, message: "Master Floor Image is required." },
         { status: 400 }
       );
     }
 
-    // 2. Parse text fields
+    // Create portfolio
     const newPortfolio = await portfolio.create({
       heading: formData.get("heading"),
-      category: JSON.parse(formData.get("category") as string || "[]"), // Must be stringified array from client
+      category: JSON.parse(formData.get("category") as string || "[]"),
       tagline: formData.get("tagline"),
       description: formData.get("description"),
-      masterFloorImage,
-      panelFloorImage,
-      mapImage,
-      renderingImage,
-      additionalImage,
+      ...uploadedImages, // Spread all uploaded image URLs
       challenge: formData.get("challenge"),
       solution: formData.get("solution"),
       value: formData.get("value"),
@@ -72,6 +78,7 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ success: true, data: newPortfolio }, { status: 201 });
+
   } catch (error: any) {
     console.error("Portfolio upload error:", error);
     return NextResponse.json(
@@ -80,6 +87,7 @@ export async function POST(req: NextRequest) {
     );
   }
 }
+
 
 
 

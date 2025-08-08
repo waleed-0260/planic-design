@@ -46,7 +46,8 @@ useEffect(() => {
     const formData = new FormData();
     // Append text fields
     formData.append("heading", data.heading);
-    data.category.forEach((tag) => formData.append("category[]", tag));
+    // data.category.forEach((tag) => formData.append("category[]", tag));
+      formData.append("category", JSON.stringify(data.category));
     formData.append("tagline", data.tagline);
     // formData.append("tags", data.tags);
     formData.append("description", data.description);
@@ -66,7 +67,7 @@ useEffect(() => {
     if (data.additionalImage) formData.append("additionalImage", data.additionalImage[0]);
 
     try {
-      const response = await fetch("/api/portfolo", {
+      const response = await fetch("/api/portfolio", {
         method: "POST",
         body: formData,
       });
@@ -96,7 +97,7 @@ useEffect(() => {
           <label className="block font-medium">Heading *</label>
           <input
             type="text"
-            {...register("heading", { required: true })}
+            {...register("heading", )}
             className="w-full border rounded px-3 py-2"
           />
           {errors.heading && <p className="text-red-500">Heading is required.</p>}
@@ -125,7 +126,7 @@ useEffect(() => {
           <label className="block font-medium">Tagline *</label>
           <input
             type="text"
-            {...register("tagline", { required: true })}
+            {...register("tagline", )}
             className="w-full border rounded px-3 py-2"
           />
           {errors.tagline && <p className="text-red-500">Tagline is required.</p>}
@@ -144,7 +145,7 @@ useEffect(() => {
         <div>
           <label className="block font-medium">Description *</label>
           <textarea
-            {...register("description", { required: true })}
+            {...register("description", )}
             className="w-full border rounded px-3 py-2"
           ></textarea>
           {errors.description && <p className="text-red-500">Description is required.</p>}
@@ -176,7 +177,7 @@ useEffect(() => {
           <label className="block font-medium">Client Name *</label>
           <input
             type="text"
-            {...register("clientName", { required: true })}
+            {...register("clientName", )}
             className="w-full border rounded px-3 py-2"
           />
           {errors.clientName && <p className="text-red-500">Client Name is required.</p>}
@@ -196,7 +197,7 @@ useEffect(() => {
           <label className="block font-medium">Location *</label>
           <input
             type="text"
-            {...register("location", { required: true })}
+            {...register("location", )}
             className="w-full border rounded px-3 py-2"
           />
           {errors.location && <p className="text-red-500">Location is required.</p>}
@@ -223,7 +224,7 @@ useEffect(() => {
             <label className="block font-medium">{label}</label>
             <input
               type="file"
-              {...register(name as keyof FormData, name === "masterFloorImage" ? { required: true } : {})}
+              {...register(name as keyof FormData, name === "masterFloorImage" ? {required: true} : {})}
               className="w-full"
               accept="image/*"
             />
