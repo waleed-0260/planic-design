@@ -33,12 +33,12 @@ const Slider = () => {
           }
         }}
         autoplay={{
-          delay: 1000,
+          delay: 0,
           disableOnInteraction: false,
         }}
-        speed={1000}
-        modules={[Navigation, Pagination, Autoplay]}
+        speed={4000}
         loop={true}
+        modules={[Navigation, Pagination, Autoplay]}
         className="lg:w-[100%] w-[80%] h-[120px]"
       >
         <SwiperSlide>

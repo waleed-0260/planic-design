@@ -152,3 +152,7 @@ body, html{
   background-color: #231f20;
   color: white;
 }
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
