@@ -23,7 +23,7 @@ speak for themselves"/>
       <Main/>
       <Slider/>
     {/* <Projects products={projects}/> */}
-    <FeaturedProjects heading="Featured Projects"/>
+    {/* <FeaturedProjects heading="Featured Projects"/> */}
     <CalltoForn heading=" Let’s Design Something Extraordinary Together" desc="Whether you’re looking to build your dream home or transform a commercial space, Planic Design is here to make it happen. Let’s turn your ideas into reality with expert design solutions." btn="Get in Touch Today"/>
     <Footer/>
     </div>
