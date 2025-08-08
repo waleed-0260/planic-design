@@ -94,7 +94,7 @@ export async function POST(req: NextRequest) {
 export async function GET(req: NextRequest) {
   try {
     await connectDB();
-    const products = await portfolio.find(); // or with filters
+    const products = await portfolio.find({}).limit(10); // or with filters
     return NextResponse.json({ success: true, data: products });
   } catch (error) {
     console.error("Products fetch error:", error);

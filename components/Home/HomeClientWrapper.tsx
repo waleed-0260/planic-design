@@ -35,7 +35,7 @@ export default function HomeClientWrapper() {
         <div className="bg-[#f1eee9] flex flex-col items-center justify-center w-full rounded-t-[20px] relative py-3">
           <Expertise />
           <CountDown />
-          {/* <FeaturedProjects heading="Featured Projects" /> */}
+          <FeaturedProjects heading="Featured Projects" />
           <Sectors />
           <Team />
           <ContactForm />
