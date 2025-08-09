@@ -45,7 +45,7 @@ const Footer = () => {
         <h1 className='font-bold text-3xl'>Islamabad, PK</h1>
                 <p className='textColor text-sm w-[300px]'>Office 207, second floor, vista plaza, i8 markaz</p>
                 <p className='textColor text-sm'>planicdesignisb@gmail.com</p>
-                <p className='textColor text-sm'>0348 9755702</p>
+                <p className='textColor text-sm'>+92 348 9755702</p>
         </div>
         <div className="flex flex-col items-start space-y-2">
         <h1 className='font-bold text-3xl'>London, UK</h1>

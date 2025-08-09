@@ -6,17 +6,17 @@ export default function ContactSection() {
     {
       icon: <FaLocationDot className="text-4xl" />,
       title: "Address",
-      text: "123 Street, City, Country",
+      text: "Office 207, second floor, vista plaza, i8 markaz",
     },
     {
       icon: <FaPhone className="text-4xl" />,
       title: "Phone",
-      text: "+1 (555) 123-4567",
+      text: "+92 348 9755702",
     },
     {
       icon: <FiMail className="text-4xl" />,
       title: "Email",
-      text: "info@example.com",
+      text: "planicdesignisb@gmail.com",
     },
     {
       icon: <FiClock className="text-4xl" />,
