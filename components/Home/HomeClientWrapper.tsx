@@ -15,7 +15,7 @@ import ContactForm from "@/components/Contact/ContactForm";
 import Footer from "@/components/Home/Footer";
 import Loader from "@/components/Loader";
 
-export default function HomeClientWrapper() {
+export default function HomeClientWrapper({data}:any) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function HomeClientWrapper() {
         <div className="bg-[#f1eee9] flex flex-col items-center justify-center w-full rounded-t-[20px] relative py-3">
           <Expertise />
           <CountDown />
-          <FeaturedProjects heading="Featured Projects" />
+          <FeaturedProjects heading="Featured Projects" projects={data}/>
           <Sectors />
           <Team />
           <ContactForm />

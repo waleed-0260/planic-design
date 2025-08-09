@@ -4,28 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
-const FeaturedProjects = ({heading}:any) => {
+const FeaturedProjects = ({heading, projects}:any) => {
   // console.log("projects", projects)
-  const [projects, setProjects] = useState<any[]>([]);
+  // const [projects, setProjects] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [showAll, setShowAll] = useState(false); // Track if "Load More" is clicked
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("/api/portfolio");
-        const data = await response.json();
-        console.log("data", data)
-        setProjects(data.data);
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("/api/portfolio");
+  //       const data = await response.json();
+  //       console.log("data", data)
+  //       setProjects(data.data);
+  //     } catch (error) {
+  //       console.error("Error fetching projects:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   if (!projects) {
     return <div>Loading....</div>
