@@ -3,6 +3,9 @@ import Image from "next/image";
 import expertise3 from "@/public/images/expertise3.jpg";
 import expertise2 from "@/public/images/expertise2.jpg";
 import expertise1 from "@/public/images/expertise1.jpg";
+import interior from "@/public/images/interior.jpg"
+import architecture from "@/public/images/architecture.jpg"
+import renovation from "@/public/images/renovation.jpg"
 import expertise4 from "@/public/images/expertise4.jpg";
 import Link from "next/link";
 
@@ -35,37 +38,39 @@ const Architecture = () => {
       {/* Right Image */}
       <div className="flex-1 h-[300px] flex justify-start">
         <Image
-          src={expertise3}
+          src={architecture}
           alt="Architecture"
           className=" object-cover"
-          width={400}
+          // width={400}
           height={300}
         />
       </div>
     </div>
 
-
-        <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="renovation">
+            <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="interior">
       {/* Left Content */}
-      <div className="flex flex-col justify-between h-[300px] flex-1">
+      <div className="flex flex-1 flex-col justify-between md:h-[300px]">
         <h2 className="text-3xl md:text-4xl leading-tight">
-   Complete Renovation & Fit-Out Services      </h2>
+          Personalized Interior Design for Every Space 
+
+        </h2>
         <p className="text-gray-600 text-base md:text-lg">
-We handle everything from site assessment to final execution. Whether you’re upgrading a 
-space or starting fresh, we bring your vision to life with quality and speed.         </p>
-<div>
+We design interiors that reflect your personality and support your lifestyle. Whether you're 
+furnishing a home or styling a cafe, we ensure every detail speaks to your vision.         </p>
+        <div>
     <Link className="button inline-block" href="/portfolio">
       View Portfolio
     </Link>
-  </div>      </div>
+  </div>
+      </div>
 
       {/* Right Image */}
       <div className="flex-1 h-[300px] flex justify-start">
         <Image
-          src={expertise2}
+          src={interior}
           alt="Architecture"
           className=" object-cover"
-          width={400}
+          // width={400}
           height={300}
         />
       </div>
@@ -90,39 +95,35 @@ confidently — from furniture layouts to lighting mood.       </p>
       {/* Right Image */}
       <div className="flex-1 h-[300px] flex justify-start">
         <Image
-          src={expertise1}
+          src={expertise4}
           alt="Architecture"
           className=" object-cover"
-          width={400}
+          // width={400}
           height={300}
         />
       </div>
     </div>
-
-        <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="interior">
+            <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="renovation">
       {/* Left Content */}
-      <div className="flex flex-1 flex-col justify-between md:h-[300px]">
+      <div className="flex flex-col justify-between h-[300px] flex-1">
         <h2 className="text-3xl md:text-4xl leading-tight">
-          Personalized Interior Design for Every Space 
-
-        </h2>
+   Complete Renovation & Fit-Out Services      </h2>
         <p className="text-gray-600 text-base md:text-lg">
-We design interiors that reflect your personality and support your lifestyle. Whether you're 
-furnishing a home or styling a cafe, we ensure every detail speaks to your vision.         </p>
-        <div>
+We handle everything from site assessment to final execution. Whether you’re upgrading a 
+space or starting fresh, we bring your vision to life with quality and speed.         </p>
+<div>
     <Link className="button inline-block" href="/portfolio">
       View Portfolio
     </Link>
-  </div>
-      </div>
+  </div>      </div>
 
       {/* Right Image */}
       <div className="flex-1 h-[300px] flex justify-start">
         <Image
-          src={expertise4}
+          src={renovation}
           alt="Architecture"
           className=" object-cover"
-          width={400}
+          // width={400}
           height={300}
         />
       </div>

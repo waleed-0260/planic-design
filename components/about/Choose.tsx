@@ -17,16 +17,16 @@ const Choose = () => {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   return (
-    <div className="flex w-[90%] mx-auto py-12 relative">
+    <div className="flex md:flex-row flex-col w-[90%] mx-auto py-12 relative">
       {/* Left Section */}
-      <div className="w-[30%] pr-6">
+      <div className="md:w-[30%] pr-6">
         <h2 className="md:text-[72px] text-3xl leading-tight text-black">
           Why Choose <br /> Planic Design
         </h2>
       </div>
 
       {/* Right Section */}
-      <div className="w-[70%] space-y-10 relative">
+      <div className="md:w-[70%] space-y-10 relative md:mt-0 mt-4">
         {headings.map((item, index) => (
           <div
             key={item.id}

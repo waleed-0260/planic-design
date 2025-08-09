@@ -9,7 +9,7 @@ import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 // import interior from "@/public/images/interior.jpg"
-import architecture from "@/public/images/architecture.jpg"
+import architectureService from "@/public/images/architectureService.jpg"
 import Footer from '@/components/Home/Footer'
 
 const architectFaqs = [
@@ -46,7 +46,7 @@ const page = () => {
     <div>
       <Hero heading="Architectural Planning" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={architecture} heading=" Architectural Layouts That Work" text=" With a focus on housing and office spaces, our Architectural Planning service offers expert guidance from concept to construction." points={[
+        <Specializing img={architectureService} heading=" Architectural Layouts That Work" text="Our architectural services cover every detail—concept development, technical drawings, and space planning tailored to your needs. We ensure smart, functional designs that align with your lifestyle, project goals, and construction requirements from start to finish." points={[
     "Site Analysis & Space Planning",
     "Technical Drawings & Documentation",
     "Project Supervision & Design Evolution"

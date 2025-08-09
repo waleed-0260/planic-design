@@ -9,7 +9,7 @@ import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 // import interior from "@/public/images/interior.jpg"
-import renovation from "@/public/images/renovation.jpg"
+import renovationService from "@/public/images/renovationService.jpg"
 import Footer from '@/components/Home/Footer'
 const renovationFaqs = [
   {
@@ -44,7 +44,7 @@ const page = () => {
     <div>
       <Hero heading="Renovation & Fit Out" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={renovation} heading=" Complete Renovation & Fit-Out Services" text=" We offer start-to-finish renovation and fit-out services for homes, offices, and commercial spaces that need a fresh start."  points={[
+        <Specializing img={renovationService} heading=" Complete Renovation & Fit-Out Services" text="From initial site analysis to the final polish, our renovation and fit-out solutions are tailored to elevate your space. Whether it’s a residential refresh or a commercial overhaul, we blend design excellence with efficient execution to deliver impressive, lasting transformations."  points={[
     "Site Assessment & Demolition Planning",
     "Full Renovation & Installation Work",
     "Finishing, Styling & Handover"

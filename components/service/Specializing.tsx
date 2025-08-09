@@ -29,15 +29,15 @@ const Specializing = ({img, heading, text, points}:any) => {
         </div>
 
         {/* Image on Right */}
-        <div className='w-1/2 flex justify-start'>
-        <div className='w-[400px] h-[400px]'>
+        <div className='w-1/2 flex justify-start md:h-[300px]'>
+        {/* <div className='w-[400px] h-[400px]'> */}
 
           <Image
             src={img}
             alt='expertise'
             className=' object-cover'
             />
-            </div>
+            {/* </div> */}
         </div>
       </div>
     </div>

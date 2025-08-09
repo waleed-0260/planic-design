@@ -8,7 +8,7 @@ import Explanation from '@/components/service/Explanation'
 import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
-import interior from "@/public/images/interior.jpg"
+import interiorService from "@/public/images/interiorService.jpg"
 import Footer from '@/components/Home/Footer'
 const interiorFaqs = [
   {
@@ -38,7 +38,7 @@ const page = () => {
     <div>
       <Hero heading="Interior Design" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
-        <Specializing img={interior} heading=" Personalized Interior Design for Every Space" text=" Specializing in residential and commercial interiors, our Interior Design service blends creativity with functionality." points={[
+        <Specializing img={interiorService} heading=" Personalized Interior Design for Every Space" text="We craft interiors that blend style, comfort, and functionality. Our process is collaborative and tailored, focusing on your personality, needs, and space type—be it residential, retail, or office. Every element is selected to create a meaningful, inspiring environment." points={[
     "Project Planning & Concept Development",
     "Furniture & Material Selection",
     "Styling & Space Optimization"

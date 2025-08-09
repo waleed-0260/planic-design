@@ -56,7 +56,7 @@ const Values = () => {
     //         })}
     //     </div>
     // </div>
-        <section className="w-[90%] mx-auto my-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <section className="w-[90%] mx-auto my-16 grid grid-cols-1 md:grid-cols-3 gap-10" id="values">
       {/* First box — special styling */}
       <div className="">
         <h2 className="text-3xl font-bold mb-4">Our Values</h2>
