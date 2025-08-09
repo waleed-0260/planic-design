@@ -1,15 +1,13 @@
 import HomeClientWrapper from "@/components/Home/HomeClientWrapper";
-
+import { GetPortfolio } from "@/lib/GetPortfolio";
 
 const page = async() => {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-const res = await fetch(`https://planicdesign.com/api/portfolio`);
-console.log("res", res )
-  const data = await res.json();
+  const data = await GetPortfolio()
+  // console.log("data", data)
 // console.log("data", data.datas)
   return (
     <div>
-      <HomeClientWrapper data={data.data}/>
+      <HomeClientWrapper data={data}/>
     </div>
   )
 }
