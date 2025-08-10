@@ -44,7 +44,7 @@ const MainSinglePortfolio = ({heading, description, challenge, solution, value, 
 
     <AccordionItem value="item-1" className=' rounded-lg'>
         <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>What were the Challenges</AccordionTrigger>
-        <AccordionContent className='textColor text-right'>
+        <AccordionContent className='textColor text-left'>
             {challenge}
         </AccordionContent>
       </AccordionItem>
@@ -53,7 +53,7 @@ const MainSinglePortfolio = ({heading, description, challenge, solution, value, 
 
         <AccordionItem value="item-2" className='mt-5 rounded-lg'>
         <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>What were the Solutions</AccordionTrigger>
-        <AccordionContent className='textColor text-right'>
+        <AccordionContent className='textColor text-left'>
         {solution}
         </AccordionContent>
       </AccordionItem>
@@ -62,7 +62,7 @@ const MainSinglePortfolio = ({heading, description, challenge, solution, value, 
 
         <AccordionItem value="item-3" className='mt-5 rounded-lg'>
         <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>How did we add value</AccordionTrigger>
-        <AccordionContent className='textColor text-right'>
+        <AccordionContent className='textColor text-left'>
         {value}
         </AccordionContent>
       </AccordionItem>
