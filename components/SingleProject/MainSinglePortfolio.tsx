@@ -39,10 +39,10 @@ const MainSinglePortfolio = ({heading, description, challenge, solution, value, 
     ))}
   </div>
 
- <Accordion type="single" collapsible className="md:w-[80%] my-[20px]">
+ <Accordion type="single" collapsible className="md:w-[80%] w-full my-[20px]">
   {challenge ? (
 
-    <AccordionItem value="item-1" className=' rounded-lg'>
+    <AccordionItem value="item-1" className=''>
         <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>What were the Challenges</AccordionTrigger>
         <AccordionContent className='textColor text-left'>
             {challenge}
@@ -51,7 +51,7 @@ const MainSinglePortfolio = ({heading, description, challenge, solution, value, 
       ): null}
       {solution ? (
 
-        <AccordionItem value="item-2" className='mt-5 rounded-lg'>
+        <AccordionItem value="item-2" className='mt-5'>
         <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>What were the Solutions</AccordionTrigger>
         <AccordionContent className='textColor text-left'>
         {solution}
@@ -60,7 +60,7 @@ const MainSinglePortfolio = ({heading, description, challenge, solution, value, 
       ): null}
       {value ? (
 
-        <AccordionItem value="item-3" className='mt-5 rounded-lg'>
+        <AccordionItem value="item-3" className='mt-5'>
         <AccordionTrigger className='md:text-3xl text-xl font-bold text-left'>How did we add value</AccordionTrigger>
         <AccordionContent className='textColor text-left'>
         {value}

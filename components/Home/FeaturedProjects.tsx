@@ -49,7 +49,7 @@ const FeaturedProjects = ({heading, projects}:any) => {
     href={`/single_project/${project._id}`}
   >
     <div className="flex flex-col items-start">
-      <div className="relative w-full h-[450px]">
+      <div className="relative w-full sm:h-[450px] h-[300px]">
         <Image
           src={project.masterFloorImage}
           alt={`Project ${index + 1}`}

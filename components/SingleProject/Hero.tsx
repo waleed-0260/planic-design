@@ -5,9 +5,9 @@ const Hero = ({img, tagline}:any) => {
   return (
     <div className="w-full flex flex-col relative">
     <Header />
-    <div className="w-full flex flex-col items-center justify-center bg-cover h-[20rem] md:h-[45rem] bg-top overflow-hidden relative">
+    <div className="w-full flex flex-col items-center justify-center bg-cover h-[20rem] sm:h-[25rem] md:h-[45rem] bg-top overflow-hidden relative">
       <div
-        className=" relative w-full h-full flex flex-col items-center justify-center bg-cover bg-bottom hero-animation"
+        className=" relative w-full h-full flex flex-col items-center justify-center bg-cover md:bg-bottom bg-center hero-animation"
         style={{ backgroundImage: `url(${img})` }}
       >
         <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
