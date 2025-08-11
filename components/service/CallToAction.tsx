@@ -21,9 +21,9 @@ const CallToAction = ({heading, text, button}:any) => {
         <div className="mt-8">
           <a
     href="mailto:planicdesignisb@gmail.com?subject=Let's Talk&body=Hi, I’d like to discuss..."
-    className="bg-white text-black rounded-full px-6 py-2 flex items-center justify-center gap-2 mx-auto font-medium  transition-transform inline-block"
+    className="bg-white text-black rounded-full inline-block px-4 py-2"
   >
-    {button} <FiArrowRight className="mt-[1px]" />
+    {button} 
   </a>
         </div>
       </div>

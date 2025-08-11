@@ -14,6 +14,7 @@ import Footer from '@/components/Home/Footer'
 import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
 import Creativity from '@/components/service/Creativity'
 import CallToAction from '@/components/service/CallToAction'
+import PortfolioMain from '@/components/service/PortfolioMain'
 
 
 const renovationFaqs = [
@@ -76,12 +77,12 @@ const steps = [
 
 const images = [
   {
-    src: "/images/expertise1.jpg",
+    src: "/images/1R.jpg",
     heading: "Residential Renovations",
     text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
   },
   {
-    src: "/images/expertise2.jpg",
+    src: "/images/2R.jpg",
     heading: "Commercial Fit-Outs",
     text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
   },
@@ -91,7 +92,7 @@ const images = [
     text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
   },
   {
-    src: "/images/expertise4.jpg",
+    src: "/images/4R.jpg",
     heading: "Turnkey Solutions",
     text: "Complete, end-to-end project management with single-point accountability.",
   },
@@ -108,13 +109,14 @@ const images = [
     "Finishing, Styling & Handover"
   ]}/>
   <Creativity images={images}/>
-        <Video/>
+      <Process steps={steps}/>
+      <PortfolioMain/>
+      <CallToAction heading="Let’s Redefine Your Space" text=" Your project deserves more than a standard renovation — it deserves a transformation. Let’s bring your vision to life with precision, creativity, and care." button="Speak with Our Design Team"/>
+        {/* <Video/> */}
         {/* <FeaturedProjects heading="Related Projects" /> */}
         <Slider />
         <Team />
-      <Process steps={steps}/>
         <Faq faqs={renovationFaqs} />
-      <CallToAction heading="Let’s Redefine Your Space" text=" Your project deserves more than a standard renovation — it deserves a transformation. Let’s bring your vision to life with precision, creativity, and care." button="Speak with Our Design Team"/>
         <Footer/>
       </div>
     </div>

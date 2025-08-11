@@ -16,6 +16,7 @@ import CoreServices from '@/components/service/CoreServices'
 import Creativity from '@/components/service/Creativity'
 import CallToAction from '@/components/service/CallToAction'
 import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
+import PortfolioMain from '@/components/service/PortfolioMain'
 
 
 const visualizationFaqs = [
@@ -77,22 +78,22 @@ const steps = [
 
 const images = [
   {
-    src: "/images/expertise1.jpg",
+    src: "/images/3D1.jpg",
     heading: "Architectural Rendering",
     text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
   },
   {
-    src: "/images/expertise2.jpg",
+    src: "/images/3D2.jpg",
     heading: "3D Visual Tour",
     text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
   },
   {
-    src: "/images/expertise3.jpg",
+    src: "/images/3D3.jpg",
     heading: "Interior Design Visulization",
     text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
   },
   {
-    src: "/images/expertise4.jpg",
+    src: "/images/3D4.jpg",
     heading: "Urban Planning Models",
     text: "Complete, end-to-end project management with single-point accountability.",
   },
@@ -110,16 +111,15 @@ const page = () => {
     "Lighting, Texturing & Styling",
     "Design Validation & Decision-Making"
   ]}/>
-  {/* <CoreServices/> */}
-        <Video/>
         <Creativity images={images}/>
-        {/* <FeaturedProjects heading="Related Projects" /> */}
+        <Process steps={steps}/>
+        <PortfolioMain/>
+        <CallToAction heading="Let’s Design Your Signature Space" text=" Your dream space is just a conversation away. Discover how our expertise can turn your vision into a masterpiece." button="Book a Private Consultation"/>
         <Slider />
         <Team />
-        <Choose heading="The Edge that sets apart"/>
-        <Process steps={steps}/>
+        {/* <FeaturedProjects heading="Related Projects" /> */}
+        {/* <Choose heading="The Edge that sets apart"/> */}
         <Faq faqs={visualizationFaqs} />
-        <CallToAction heading="Let’s Design Your Signature Space" text=" Your dream space is just a conversation away. Discover how our expertise can turn your vision into a masterpiece." button="Book a Private Consultation"/>
         <Footer/>
       </div>
     </div>

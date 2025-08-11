@@ -14,6 +14,7 @@ import CoreServices from '@/components/service/CoreServices'
 import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
 import Creativity from '@/components/service/Creativity'
 import CallToAction from '@/components/service/CallToAction'
+import PortfolioMain from '@/components/service/PortfolioMain'
 
 const interiorFaqs = [
   {
@@ -41,22 +42,22 @@ const interiorFaqs = [
 
 const images = [
   {
-    src: "/images/expertise1.jpg",
+    src: "/images/1A.jpg",
     heading: "Luxury Residential Interiors",
     text: "Tailor-made designs that capture personal style and elevate daily living into an art form.",
   },
   {
-    src: "/images/expertise2.jpg",
+    src: "/images/2A.jpg",
     heading: "Commercial & Workplace Design",
     text: "Dynamic spaces that balance brand identity, productivity, and employee well-being.",
   },
   {
-    src: "/images/expertise3.jpg",
+    src: "/images/3A.jpg",
     heading: "Hospitality & Lifestyle Projects",
     text: "Immersive environments that delight guests and define memorable experiences.",
   },
   {
-    src: "/images/expertise4.jpg",
+    src: "/images/4A.jpg",
     heading: "Custom Furniture & Styling",
     text: "Bespoke furnishings and curated details that complete your space with distinction.",
   },
@@ -102,14 +103,14 @@ const page = () => {
   ]}/>
   {/* <CoreServices/> */}
   <Creativity images={images}/>
-        <Video/>
+        <Process steps={steps}/>
+        <PortfolioMain/>
+        {/* <Video/> */}
         {/* <FeaturedProjects heading="Related Projects" /> */}
+        <CallToAction heading="Let’s Design Your Signature Space" text=" Your dream space is just a conversation away. Discover how our expertise can turn your vision into a masterpiece." button="Book a Private Consultation"/>
         <Slider />
         <Team />
-        {/* <Process /> */}
-        <Process steps={steps}/>
         <Faq faqs={interiorFaqs} />
-        <CallToAction heading="Let’s Design Your Signature Space" text=" Your dream space is just a conversation away. Discover how our expertise can turn your vision into a masterpiece." button="Book a Private Consultation"/>
         <Footer/>
       </div>
     </div>

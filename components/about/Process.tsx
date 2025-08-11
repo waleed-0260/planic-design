@@ -31,7 +31,6 @@ const Process = ({ process }: { process: Array<{ number: string; heading: string
           768: { slidesPerView: 3 },
           980: { slidesPerView: 3 },
         }}
-        loop={true}
         modules={[Navigation]}
         navigation={{
           nextEl: ".custom-next",

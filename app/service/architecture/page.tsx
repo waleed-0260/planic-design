@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '@/components/about/Hero'
-import Process from '@/components/about/Process'
 import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import Slider from '@/components/Home/Slider'
 import Team from '@/components/Home/Team'
@@ -13,7 +12,10 @@ import architectureService from "@/public/images/architectureService.jpg"
 import Footer from '@/components/Home/Footer'
 import CoreServices from '@/components/service/CoreServices'
 import CallToAction from '@/components/service/CallToAction'
-
+import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
+import Creativity from '@/components/service/Creativity'
+import Process from '@/components/service/Process'
+import PortfolioMain from '@/components/service/PortfolioMain'
 const architectFaqs = [
   {
     question: "What’s included in your architectural planning service?",
@@ -42,6 +44,57 @@ const architectFaqs = [
   },
 ];
 
+const steps = [
+  {
+    icon: <FiSearch className="w-8 h-8" />,
+    title: "Site Analysies & Feasibility Study",
+    text: "Understanding your goals, style, and functional needs.",
+  },
+  {
+    icon: <FiLayout className="w-8 h-8" />,
+    title: "Concept Development & Master Planning",
+    text: "Creative proposals backed by technical feasibility.",
+  },
+  {
+    icon: <FiEdit3 className="w-8 h-8" />,
+    title: "Sustainable & Energy-Efficient Planning",
+    text: "Premium finishes and innovative solutions tailored to your vision.",
+  },
+  {
+    icon: <FiTool className="w-8 h-8" />,
+    title: "3D Visualization & Planning Documentation",
+    text: "Meticulous craftsmanship with on-site project management.",
+  },
+  {
+    icon: <FiCheckCircle className="w-8 h-8" />,
+    title: "Final Styling & Handover",
+    text: "Attention to every finishing detail, ensuring flawless delivery.",
+  },
+];
+
+const images = [
+  {
+    src: "/images/1AR.jpg",
+    heading: "Architectural drawings  ",
+    text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
+  },
+  {
+    src: "/images/2AR.jpg",
+    heading: "Structural drawings",
+    text: "Architects services means providing a number of services, including site analysis, preparing feasibility reports, making structural and submission",
+  },
+  {
+    src: "/images/3AR.jpg",
+    heading: "Master Plans",
+    text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
+  },
+  {
+    src: "/images/4AR.jpg",
+    heading: "3D Visulizations",
+    text: "Complete, end-to-end project management with single-point accountability.",
+  },
+];
+
 
 const page = () => {
   return (
@@ -53,13 +106,12 @@ const page = () => {
     "Technical Drawings & Documentation",
     "Project Supervision & Design Evolution"
   ]}/>
-  {/* <CoreServices/> */}
-        <Video/>
-        {/* <FeaturedProjects heading="Related Projects" /> */}
+  <Creativity images={images}/>
+      <Process steps={steps}/>
+      <PortfolioMain/>
         <Slider />
         <CallToAction heading="Let’s Design Your Signature Space" text=" Your dream space is just a conversation away. Discover how our expertise can turn your vision into a masterpiece." button="Book a Private Consultation"/>
         <Team />
-        {/* <Process /> */}
         <Faq faqs={architectFaqs} />
         <Footer/>
       </div>

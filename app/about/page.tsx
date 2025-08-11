@@ -38,7 +38,7 @@ const page = () => {
       <About/>
       <Values/>
       <Process process={processData}/>
-      <Choose/>,
+      <Choose heading="Why Choose Planic Design"/>,
       {/* <Awards/> */}
       {/* <Sectors/> */}
       {/* <LatestProjects/> */}

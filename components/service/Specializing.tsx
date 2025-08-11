@@ -11,9 +11,9 @@ const Specializing = ({img, heading, text, points}:any) => {
       </h1>
 
       {/* Text and Image Row */}
-      <div className='flex md:flex-row flex-col justify-between space-x-5 items-start w-full mt-[40px]'>
+      <div className='flex md:flex-row flex-col justify-between  md:space-x-5 items-start w-full md:mt-[40px]'>
         {/* Text on Left */}
-        <div className='w-1/2 space-y-4 flex-col flex flex-1 justify-between md:h-[300px]'>
+        <div className='md:w-1/2 space-y-4 flex-col flex flex-1 justify-between md:h-[300px]'>
           {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> */}
@@ -29,7 +29,7 @@ const Specializing = ({img, heading, text, points}:any) => {
         </div>
 
         {/* Image on Right */}
-        <div className='w-1/2 flex justify-start md:h-[300px]'>
+        <div className='md:w-1/2 flex justify-start md:h-[300px] md:mt-0 mt-6'>
         {/* <div className='w-[400px] h-[400px]'> */}
 
           <Image
