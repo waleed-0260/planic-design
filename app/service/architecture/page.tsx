@@ -53,11 +53,11 @@ const page = () => {
     "Technical Drawings & Documentation",
     "Project Supervision & Design Evolution"
   ]}/>
-  <CoreServices/>
+  {/* <CoreServices/> */}
         <Video/>
         {/* <FeaturedProjects heading="Related Projects" /> */}
         <Slider />
-        <CallToAction/>
+        <CallToAction heading="Let’s Design Your Signature Space" text=" Your dream space is just a conversation away. Discover how our expertise can turn your vision into a masterpiece." button="Book a Private Consultation"/>
         <Team />
         {/* <Process /> */}
         <Faq faqs={architectFaqs} />

@@ -42,25 +42,26 @@ const interiorFaqs = [
 const images = [
   {
     src: "/images/expertise1.jpg",
-    heading: "Residential Renovations",
-    text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
+    heading: "Luxury Residential Interiors",
+    text: "Tailor-made designs that capture personal style and elevate daily living into an art form.",
   },
   {
     src: "/images/expertise2.jpg",
-    heading: "Commercial Fit-Outs",
-    text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
+    heading: "Commercial & Workplace Design",
+    text: "Dynamic spaces that balance brand identity, productivity, and employee well-being.",
   },
   {
     src: "/images/expertise3.jpg",
-    heading: "Luxury Interiors",
-    text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
+    heading: "Hospitality & Lifestyle Projects",
+    text: "Immersive environments that delight guests and define memorable experiences.",
   },
   {
     src: "/images/expertise4.jpg",
-    heading: "Turnkey Solutions",
-    text: "Complete, end-to-end project management with single-point accountability.",
+    heading: "Custom Furniture & Styling",
+    text: "Bespoke furnishings and curated details that complete your space with distinction.",
   },
 ];
+
 
 const page = () => {
     const steps = [
