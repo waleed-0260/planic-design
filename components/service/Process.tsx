@@ -16,7 +16,7 @@ const Process = ({steps}:any) => {
         {steps.map((step:any, idx:any) => (
           <div
             key={idx}
-            className="flex flex-col items-start p-6 border-2 bg-white transition-all hover:bg-black hover:text-white border-gray-200 rounded-lg h-[250px] justify-start"
+            className="flex flex-col items-start p-6 border-2 bg-white transition-all hover:bg-black hover:text-white border-gray-200  h-[250px] justify-start"
           >
             {step.icon}
             <h3 className="mt-4 text-lg font-semibold">{step.title}</h3>

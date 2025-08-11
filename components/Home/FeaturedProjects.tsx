@@ -90,13 +90,13 @@ const FeaturedProjects = ({heading, projects}:any) => {
         >
           View All Projects <FaArrowRight className="ml-[40px]" />
         </Link>
-        <a
+        {/* <a
           href="/images/portfolio.pdf"
           download="portfolio.pdf"
           className="button bg-[#231f20] text-white sm:mt-0 mt-8 px-[20px] py-[10px] text-lg rounded-md transition duration-300 cursor-pointer"
         >
           Download Portfolio
-        </a>
+        </a> */}
       </div>
     </div>
   );
