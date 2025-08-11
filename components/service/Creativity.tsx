@@ -5,7 +5,7 @@ const Creativity = ({images}:any) => {
 
 
   return (
-    <div className="w-[90%] grid grid-cols-2 gap-4 my-[80px] ">
+    <div className="w-[90%] grid md:grid-cols-2 grid-cols-1 gap-4 my-[80px] ">
       {/* Left column */}
  <div className="flex flex-col gap-4 mt-[20px]"> {/* Increased top margin */}
   {images.slice(0, 2).map((img:any, i:any) => (
