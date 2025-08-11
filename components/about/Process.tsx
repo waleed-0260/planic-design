@@ -39,7 +39,7 @@ const Process = ({ process }: { process: Array<{ number: string; heading: string
         className="mt-[150px] w-full"
       >
         {process.map((item, index) => (
-          <SwiperSlide key={index} className="w-[30%] border-l-2 pl-3 border-gray-200">
+          <SwiperSlide key={index} className="w-[30%] border-l-2 md:pl-2 border-gray-200">
             <div className="flex items-center gap-4">
               <div className="border-4 border-gray-300 p-3">
                 <FiCheckCircle className="w-6 h-6 text-black" />
