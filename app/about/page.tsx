@@ -19,6 +19,17 @@ export const metadata: Metadata = {
   description: "Meet the creative minds behind Planic Design. Learn about our values, process, and passion for elevating interiors across Pakistan.",
 };
 const page = () => {
+
+  const processData = [
+  { number: "01", heading: "Initial Construction", text: "" },
+  { number: "02", heading: "Dream Project", text: "We listen to your Vision about the Dream Project" },
+  { number: "03", heading: "Schematic", text: "Graphic Communication, providing Illustrative Diagrammatic Sketching" },
+  { number: "04", heading: "Design & Development", text: "Phase of Graphic Design where we provide Designed plans, 3D Modelling, fly-throughs, renders and visualisation" },
+  { number: "05", heading: "Detailed Working DWGs", text: "Meticulously designed Plans of your Dream Project and providing the complete set of all sorts of drawings" },
+  { number: "06", heading: "Construction Oversight", text: "We offer comprehensive site inspection services and monitor construction progress meticulously. Our team is committed to providing clients with timely updates and effectively communicating any issues encountered on-site, accompanied by appropriate solutions." },
+  { number: "07", heading: "Connected till the end", text: "We do not leave our clients in limbo; instead, we remain engaged to ensure the successful implementation of your dream project" },
+];
+
   return (
     <>
     <Hero heading="About US" desc="Architecture & Interior Design Company "/>
@@ -26,7 +37,7 @@ const page = () => {
       <Main/>
       <About/>
       <Values/>
-      <Process/>
+      <Process process={processData}/>
       <Choose/>,
       {/* <Awards/> */}
       {/* <Sectors/> */}

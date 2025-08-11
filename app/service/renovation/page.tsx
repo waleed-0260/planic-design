@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '@/components/about/Hero'
-import Process from '@/components/about/Process'
+import Process from '@/components/service/Process'
 import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import Slider from '@/components/Home/Slider'
 import Team from '@/components/Home/Team'
@@ -11,6 +11,11 @@ import Video from '@/components/service/Video'
 // import interior from "@/public/images/interior.jpg"
 import renovationService from "@/public/images/renovationService.jpg"
 import Footer from '@/components/Home/Footer'
+import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
+import Creativity from '@/components/service/Creativity'
+import CallToAction from '@/components/service/CallToAction'
+
+
 const renovationFaqs = [
   {
     question: "What’s the difference between renovation and fit-out?",
@@ -40,6 +45,36 @@ const renovationFaqs = [
 ]
 
 const page = () => {
+
+const steps = [
+  {
+    icon: <FiSearch className="w-8 h-8" />,
+    title: "Consultation & Briefing",
+    text: "Understanding your goals, style, and functional needs.",
+  },
+  {
+    icon: <FiLayout className="w-8 h-8" />,
+    title: "Concept & Design Development",
+    text: "Creative proposals backed by technical feasibility.",
+  },
+  {
+    icon: <FiEdit3 className="w-8 h-8" />,
+    title: "Material Selection & Detailing",
+    text: "Premium finishes and innovative solutions tailored to your vision.",
+  },
+  {
+    icon: <FiTool className="w-8 h-8" />,
+    title: "Construction & Fit-Out Execution",
+    text: "Meticulous craftsmanship with on-site project management.",
+  },
+  {
+    icon: <FiCheckCircle className="w-8 h-8" />,
+    title: "Final Styling & Handover",
+    text: "Attention to every finishing detail, ensuring flawless delivery.",
+  },
+];
+
+
   return (
     <div>
       <Hero heading="Renovation & Fit Out" />
@@ -49,12 +84,14 @@ const page = () => {
     "Full Renovation & Installation Work",
     "Finishing, Styling & Handover"
   ]}/>
+  <Creativity/>
         <Video/>
         {/* <FeaturedProjects heading="Related Projects" /> */}
         <Slider />
         <Team />
-        <Process />
+      <Process steps={steps}/>
         <Faq faqs={renovationFaqs} />
+                <CallToAction heading="Let’s Redefine Your Space" text=" Your project deserves more than a standard renovation — it deserves a transformation. Let’s bring your vision to life with precision, creativity, and care." button="Speak with Our Design Team"/>
         <Footer/>
       </div>
     </div>

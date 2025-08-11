@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '@/components/about/Hero'
-import Process from '@/components/about/Process'
+import Process from '@/components/service/Process'
 import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import Slider from '@/components/Home/Slider'
 import Team from '@/components/Home/Team'
@@ -11,6 +11,13 @@ import Video from '@/components/service/Video'
 import interior from "@/public/images/interior.jpg"
 import visulizationService from "@/public/images/visulizationService.jpg"
 import Footer from '@/components/Home/Footer'
+import Choose from '@/components/about/Choose'
+import CoreServices from '@/components/service/CoreServices'
+import Creativity from '@/components/service/Creativity'
+import CallToAction from '@/components/service/CallToAction'
+import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
+
+
 const visualizationFaqs = [
   {
     question: "What is 3D visualization, and why is it important?",
@@ -39,6 +46,59 @@ const visualizationFaqs = [
   },
 ];
 
+const steps = [
+  {
+    icon: <FiSearch className="w-8 h-8" />,
+    title: "Briefing",
+    text: "Understanding your vision, goals, and design language.",
+  },
+  {
+    icon: <FiLayout className="w-8 h-8" />,
+    title: "Concept Development",
+    text: "Crafting initial compositions and camera angles.",
+  },
+  {
+    icon: <FiEdit3 className="w-8 h-8" />,
+    title: "Draft Rendering",
+    text: "Lighting, texturing, and refinement.",
+  },
+  {
+    icon: <FiTool className="w-8 h-8" />,
+    title: "Client Feedback",
+    text: "Iteration based on collaborative review.",
+  },
+  {
+    icon: <FiCheckCircle className="w-8 h-8" />,
+    title: "Final Delivery",
+    text: "High-resolution, market-ready visual assets.",
+  },
+];
+
+
+const images = [
+  {
+    src: "/images/expertise1.jpg",
+    heading: "Architectural Rendering",
+    text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
+  },
+  {
+    src: "/images/expertise2.jpg",
+    heading: "3D Visual Tour",
+    text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
+  },
+  {
+    src: "/images/expertise3.jpg",
+    heading: "Interior Design Visulization",
+    text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
+  },
+  {
+    src: "/images/expertise4.jpg",
+    heading: "Urban Planning Models",
+    text: "Complete, end-to-end project management with single-point accountability.",
+  },
+];
+
+
 
 const page = () => {
   return (
@@ -50,12 +110,16 @@ const page = () => {
     "Lighting, Texturing & Styling",
     "Design Validation & Decision-Making"
   ]}/>
+  {/* <CoreServices/> */}
         <Video/>
+        <Creativity images={images}/>
         {/* <FeaturedProjects heading="Related Projects" /> */}
         <Slider />
         <Team />
-        <Process />
+        <Choose heading="The Edge that sets apart"/>
+        <Process steps={steps}/>
         <Faq faqs={visualizationFaqs} />
+        <CallToAction heading="Let’s Design Your Signature Space" text=" Your dream space is just a conversation away. Discover how our expertise can turn your vision into a masterpiece." button="Book a Private Consultation"/>
         <Footer/>
       </div>
     </div>

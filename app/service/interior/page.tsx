@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '@/components/about/Hero'
-import Process from '@/components/about/Process'
 import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import Slider from '@/components/Home/Slider'
 import Team from '@/components/Home/Team'
@@ -10,6 +9,12 @@ import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 import interiorService from "@/public/images/interiorService.jpg"
 import Footer from '@/components/Home/Footer'
+import Process from '@/components/service/Process'
+import CoreServices from '@/components/service/CoreServices'
+import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
+import Creativity from '@/components/service/Creativity'
+import CallToAction from '@/components/service/CallToAction'
+
 const interiorFaqs = [
   {
     question: "What types of spaces do you design interiors for?",
@@ -33,7 +38,58 @@ const interiorFaqs = [
   },
 ]
 
+
+const images = [
+  {
+    src: "/images/expertise1.jpg",
+    heading: "Residential Renovations",
+    text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
+  },
+  {
+    src: "/images/expertise2.jpg",
+    heading: "Commercial Fit-Outs",
+    text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
+  },
+  {
+    src: "/images/expertise3.jpg",
+    heading: "Luxury Interiors",
+    text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
+  },
+  {
+    src: "/images/expertise4.jpg",
+    heading: "Turnkey Solutions",
+    text: "Complete, end-to-end project management with single-point accountability.",
+  },
+];
+
 const page = () => {
+    const steps = [
+    {
+      icon: <FiSearch className="w-8 h-8" />,
+      title: "Discovery & Consultation",
+      text: "Understanding your lifestyle, needs, and aspirations.",
+    },
+    {
+      icon: <FiLayout className="w-8 h-8" />,
+      title: "Concept Development",
+      text: "Crafting mood boards, spatial layouts, and design direction.",
+    },
+    {
+      icon: <FiEdit3 className="w-8 h-8" />,
+      title: "Detailed Planning",
+      text: "Material selection, technical drawings, and sustainability considerations.",
+    },
+    {
+      icon: <FiTool className="w-8 h-8" />,
+      title: "Execution & Styling",
+      text: "Seamless coordination, from construction oversight to final finishing touches.",
+    },
+    {
+      icon: <FiCheckCircle className="w-8 h-8" />,
+      title: "Project Handover",
+      text: "Delivering a perfected space that tells your unique story.",
+    },
+  ];
   return (
     <div>
       <Hero heading="Interior Design" />
@@ -43,12 +99,16 @@ const page = () => {
     "Furniture & Material Selection",
     "Styling & Space Optimization"
   ]}/>
+  {/* <CoreServices/> */}
+  <Creativity images={images}/>
         <Video/>
         {/* <FeaturedProjects heading="Related Projects" /> */}
         <Slider />
         <Team />
-        <Process />
+        {/* <Process /> */}
+        <Process steps={steps}/>
         <Faq faqs={interiorFaqs} />
+        <CallToAction heading="Let’s Design Your Signature Space" text=" Your dream space is just a conversation away. Discover how our expertise can turn your vision into a masterpiece." button="Book a Private Consultation"/>
         <Footer/>
       </div>
     </div>

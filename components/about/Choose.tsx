@@ -13,7 +13,7 @@ const headings = [
   { id: 4, title: "Pakistan-Based Team with Local Know-How ", image: exoertise4 },
 ];
 
-const Choose = () => {
+const Choose = ({heading}:any) => {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   return (
@@ -21,7 +21,7 @@ const Choose = () => {
       {/* Left Section */}
       <div className="md:w-[30%] pr-6">
         <h2 className="md:text-[72px] text-3xl leading-tight text-black">
-          Why Choose <br /> Planic Design
+          {heading}
         </h2>
       </div>
 

@@ -11,6 +11,8 @@ import Video from '@/components/service/Video'
 // import interior from "@/public/images/interior.jpg"
 import architectureService from "@/public/images/architectureService.jpg"
 import Footer from '@/components/Home/Footer'
+import CoreServices from '@/components/service/CoreServices'
+import CallToAction from '@/components/service/CallToAction'
 
 const architectFaqs = [
   {
@@ -51,9 +53,11 @@ const page = () => {
     "Technical Drawings & Documentation",
     "Project Supervision & Design Evolution"
   ]}/>
+  <CoreServices/>
         <Video/>
         {/* <FeaturedProjects heading="Related Projects" /> */}
         <Slider />
+        <CallToAction/>
         <Team />
         {/* <Process /> */}
         <Faq faqs={architectFaqs} />
