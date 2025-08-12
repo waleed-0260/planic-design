@@ -13,6 +13,9 @@ import { RxCross2 } from "react-icons/rx";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import whitelogo from "../../public/images/whitelogo.png";
 import blacklogo from "@/public/images/blacklogo.png"
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+
+
 const menuItems = [
   { name: "Home", subItems: [], link: "/" },
   {
@@ -48,6 +51,10 @@ const menuItems = [
 ];
 
 export default function Header() {
+
+    const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+
+
   const [hoveredItem, setHoveredItem] = useState<boolean | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -61,6 +68,12 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  
+  const toggleDropdown = (index: number) => {
+    setOpenDropdown(openDropdown === index ? null : index);
+  };
+
 
   return (
     <>
@@ -123,46 +136,98 @@ export default function Header() {
         )}
       </header>
 
-      <div>
-        {/* Navbar */}
-        <div className="flex lg:hidden flex-row justify-between p-1 items-center w-[95%] h-[100px] bg-transparent absolute">
-          <div className="h-[100px] w-[100px] relative z-10">
-            {/* <Image src={whitelogo} alt="Logo" className="h-full w-full" /> */}
-          </div>
-          <p
-            className="text-3xl p-1 z-50 rounded-md text-white cursor-pointer"
-            onClick={() => setMenuOpen(!menuOpen)} // Toggle menu
-          >
-            {menuOpen ? <RxCross2 /> : <IoIosMenu />}
-          </p>
-        </div>
+     <div
+  className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+    scrolled ? "bg-white text-black shadow-md" : "bg-transparent text-white"
+  }`}
+>
+  {/* Navbar */}
+  <div className="flex lg:hidden flex-row justify-between items-center w-[95%] h-[100px] mx-auto">
+    {/* Logo */}
+    <div className="h-[80px] w-[80px] relative z-10">
+      {scrolled ?
+      <Image src={blacklogo} alt="Logo" className="h-full w-full" />:
+      null  
+    }
+    </div>
 
-        {/* Menu */}
-        <ul
-          className={`${
-            menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-          } flex flex-col gap-4 relative z-10 overflow-hidden transition-all duration-500 ease-in-out bg-[#333333] pb-0 pl-4 text-white space-y-2`}
+    {/* Menu Icon */}
+    <div
+      className={`p-2 rounded-md cursor-pointer transition-colors duration-300 z-50 ${
+        scrolled ? "bg-brown-600 text-black" : "bg-transparent text-white"
+      }`}
+      onClick={() => setMenuOpen(!menuOpen)}
+    >
+      {menuOpen ? <RxCross2 size={28} /> : <IoIosMenu size={28} />}
+    </div>
+  </div>
+
+  {/* Menu */}
+  <ul
+    className={`fixed top-0 left-0 w-full h-screen flex flex-col gap-6 transition-all duration-500 ease-in-out overflow-hidden pt-[80px] ${
+      menuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+    } ${scrolled ? "bg-white text-black" : "bg-[#333333] text-white"}`}
+  >
+
+    {/* Menu Links */}
+
+
+      {menuItems.map((item, index) => (
+        <li
+          key={item.name}
+          className="list-none mid-heading ml-4 "
         >
-          <div className="h-[100px] w-[100px] relative z-10">
-            <Image src={whitelogo} alt="Logo" className="h-full w-full" />
+          <div className="flex justify-between items-center pr-4">
+            <Link href={item.link}>{item.name}</Link>
+
+            {item.subItems.length > 0 && (
+              <button
+                onClick={() => toggleDropdown(index)}
+                className="focus:outline-none"
+              >
+                {openDropdown === index ? (
+                  <IoIosArrowUp size={18} />
+                ) : (
+                  <IoIosArrowDown size={18} />
+                )}
+              </button>
+            )}
           </div>
-          <li className="list-none mid-heading transition-all ">
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li className="list-none mid-heading transition-all ">
-            <Link href={"/service"}>Services</Link>
-          </li>
-          <li className="list-none mid-heading transition-all ">
-            <Link href={"/portfolio"}>Portfolio</Link>
-          </li>
-          <li className="list-none mid-heading transition-all ">
-            <Link href={"/about"}>About Us</Link>
-          </li>
-          <li className="list-none mid-heading transition-all pb-4">
-            <Link href={"/contact"}>Contact</Link>
-          </li>
-        </ul>
-      </div>
+
+          {/* Submenu */}
+          {openDropdown === index && item.subItems.length > 0 && (
+            <ul className="ml-4 mt-2 space-y-1">
+              {item.subItems.map((sub) => (
+                <li key={sub.name}>
+                  <Link href={sub.id} className="text-sm">
+                    {sub.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+
+    {/* <li className="list-none mid-heading ml-4 pt-[90px]">
+      <Link href={"/"}>Home</Link>
+    </li>
+    <li className="list-none mid-heading ml-4">
+      <Link href={"/service"}>Services</Link>
+    </li>
+    <li className="list-none mid-heading ml-4">
+      <Link href={"/portfolio"}>Portfolio</Link>
+    </li>
+    <li className="list-none mid-heading ml-4">
+      <Link href={"/about"}>About Us</Link>
+    </li>
+    <li className="list-none mid-heading ml-4">
+      <Link href={"/contact"}>Contact</Link>
+    </li> */}
+  </ul>
+</div>
+
+
       <div className="fixed bottom-[20px] right-[100px] z-50">
         <FloatingWhatsApp
           phoneNumber="+923489755702"

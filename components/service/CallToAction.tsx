@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -19,12 +20,13 @@ const CallToAction = ({heading, text, button}:any) => {
 
         {/* Button */}
         <div className="mt-8">
-          <a
-    href="mailto:planicdesignisb@gmail.com?subject=Let's Talk&body=Hi, I’d like to discuss..."
+          <Link
+    // href="mailto:planicdesignisb@gmail.com?subject=Let's Talk&body=Hi, I’d like to discuss..."
+    href={"/contact"}
     className="bg-white text-black rounded-full inline-block px-4 py-2"
   >
     {button} 
-  </a>
+  </Link>
         </div>
       </div>
     </div>
