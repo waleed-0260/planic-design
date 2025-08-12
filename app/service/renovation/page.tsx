@@ -109,7 +109,7 @@ const images = [
     "Finishing, Styling & Handover"
   ]}/>
   <Creativity images={images}/>
-      <Process steps={steps}/>
+      <Process steps={steps} heading="A Seamless Journey from Concept to Completion"/>
       <PortfolioMain/>
       <CallToAction heading="Let’s Redefine Your Space" text=" Your project deserves more than a standard renovation — it deserves a transformation. Let’s bring your vision to life with precision, creativity, and care." button="Speak with Our Design Team"/>
         {/* <Video/> */}

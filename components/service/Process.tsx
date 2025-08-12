@@ -1,14 +1,14 @@
 import React from "react";
 import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
 
-const Process = ({steps}:any) => {
+const Process = ({steps, heading}:any) => {
 
 
   return (
     <div className="w-[90%] mx-auto my-[80px]">
       {/* Headline */}
       <h2 className="text-3xl md:text-[70px]  mb-12 leading-tight">
-        A Journey from Vision to Reality
+        {heading ? heading : "  A Journey from Vision to Reality"}
       </h2>
 
       {/* Boxes in 2 rows of 3 */}
