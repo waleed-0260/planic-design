@@ -16,7 +16,7 @@ const Architecture = () => {
     <div className="flex flex-col md:flex-row justify-between items-start w-full mx-auto py-12 gap-8">
       {/* Left Content */}
       <div
-  className="flex flex-col justify-between h-[300px] flex-1"
+  className="flex flex-col justify-between md:h-[300px] flex-1"
   id="architecture"
 >
   <h2 className="text-3xl md:text-4xl leading-tight">
@@ -105,7 +105,7 @@ confidently — from furniture layouts to lighting mood.       </p>
     </div>
             <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="renovation">
       {/* Left Content */}
-      <div className="flex flex-col justify-between h-[300px] flex-1">
+      <div className="flex flex-col justify-between md:h-[300px] flex-1">
         <h2 className="text-3xl md:text-4xl leading-tight">
    Complete Renovation & Fit-Out Services      </h2>
         <p className="text-gray-600 text-base md:text-lg">
