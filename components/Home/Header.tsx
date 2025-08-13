@@ -164,7 +164,7 @@ export default function Header() {
 
   {/* Menu */}
   <ul
-    className={`fixed top-0 left-0 w-full h-screen flex flex-col gap-6 transition-all duration-500 ease-in-out overflow-hidden pt-[110px] ${
+    className={`fixed top-0 left-0 w-full h-screen flex flex-col gap-6 transition-all duration-500 ease-in-out overflow-hidden pt-[90px] ${
       menuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
     } ${scrolled ? "bg-white text-black" : "bg-[#333333] text-white"}`}
   >
