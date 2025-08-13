@@ -19,7 +19,7 @@ const Architecture = () => {
   className="flex flex-col justify-between md:space-y-0 space-y-4 md:h-[300px] flex-1"
   id="architecture"
 >
-  <h2 className="text-3xl md:text-4xl leading-tight">
+  <h2 className="text-2xl md:text-4xl leading-tight">
     Architectural Layouts That Work
   </h2>
   <p className="text-gray-600 text-base md:text-lg">
@@ -50,7 +50,7 @@ const Architecture = () => {
             <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="interior">
       {/* Left Content */}
       <div className="flex flex-1 flex-col justify-between md:space-y-0 space-y-4 md:h-[300px]">
-        <h2 className="text-3xl md:text-4xl leading-tight">
+        <h2 className="text-2xl md:text-4xl leading-tight">
           Personalized Interior Design for Every Space 
 
         </h2>
@@ -80,7 +80,7 @@ furnishing a home or styling a cafe, we ensure every detail speaks to your visio
           <div className="flex flex-col md:flex-row justify-between items-start w-full mx-auto py-12 gap-8" id="visulization">
       {/* Left Content */}
       <div className="flex flex-1 flex-col justify-between md:space-y-0 space-y-4 md:h-[300px]">
-        <h2 className="text-3xl md:text-4xl leading-tight">
+        <h2 className="text-2xl md:text-4xl leading-tight">
 Photo-Realistic 3D Renderings     </h2>
         <p className="text-gray-600 text-base md:text-lg">
   See your space before it’s built. Our 3D visualizations help you make design decisions 
@@ -106,7 +106,7 @@ confidently — from furniture layouts to lighting mood.       </p>
             <div className="flex flex-col md:flex-row-reverse justify-between items-start w-full mx-auto py-12 gap-8" id="renovation">
       {/* Left Content */}
       <div className="flex flex-col justify-between md:space-y-0 space-y-4 md:h-[300px] flex-1">
-        <h2 className="text-3xl md:text-4xl leading-tight">
+        <h2 className="text-2xl md:text-4xl leading-tight">
    Complete Renovation & Fit-Out Services      </h2>
         <p className="text-gray-600 text-base md:text-lg">
 We handle everything from site assessment to final execution. Whether you’re upgrading a 
