@@ -23,7 +23,7 @@ const menuItems = [
     subItems: [
       { name: "Architectural Planning", id: "/architecture" },
       { name: "Interior Design", id: "/interior" },
-      { name: "3D Visulization & Renderings", id: "/visulization" },
+      { name: "3D Visualization  & Renderings", id: "/visualization " },
       { name: "Renovation & Fit Out Solutions", id: "/renovation" },
       // { name: "Construction OnSite Supervision", id: "construction" },
     ],

@@ -109,7 +109,7 @@ const images = [
 const page = () => {
   return (
     <div>
-      <Hero heading="3D Visulization" />
+      <Hero heading="3D Visualization" />
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative py-3">
         <Specializing img={visulizationService} heading="Photo-Realistic 3D Renderings" text="Visualize your project before it’s built with our high-quality 3D renderings. Our immersive designs showcase every element—from material textures to lighting and layout—allowing you to confidently explore design options, make decisions, and communicate your vision clearly."  points={[
     "Concept-to-Model Translation",
