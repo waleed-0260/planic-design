@@ -19,6 +19,8 @@ const ContactForm = () => {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
+    // console.log("data of the form",data)
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -167,21 +169,31 @@ const ContactForm = () => {
               />
             </div>
             <div className="flex-1">
-              <label
-                htmlFor="type"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                Project Type
-              </label>
-              <input
-                type="text"
-                id="type"
-                name="type"
-                placeholder="Enter your Project Type"
-                className="w-full border-b border-gray-300 focus:border-blue-500 focus:outline-none py-1 bg-transparent"
-                required
-              />
-            </div>
+  <label
+    htmlFor="type"
+    className="block text-sm font-medium text-gray-700 mb-1"
+  >
+    Project Type
+  </label>
+  <select
+    id="type"
+    name="type"
+    className="w-full border-b border-gray-300 focus:border-blue-500 focus:outline-none py-1 bg-transparent"
+    required
+  >
+    <option value="" disabled hidden>
+      Select Project Type
+    </option>
+    <option value="resedential">Resedential</option>
+    <option value="commercial">Commercial</option>
+    <option value="educational">Educational</option>
+    <option value="healthcare">Healthcare</option>
+    <option value="hospitality">Hospitality</option>
+    <option value="marquee">Marquee</option>
+    <option value="restaurant">Restaurant</option>
+  </select>
+</div>
+
           </div>
           <div>
             <label
