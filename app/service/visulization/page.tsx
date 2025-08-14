@@ -17,7 +17,12 @@ import Creativity from '@/components/service/Creativity'
 import CallToAction from '@/components/service/CallToAction'
 import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
 import PortfolioMain from '@/components/service/PortfolioMain'
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Our Services – Interior Design & Architecture | Planic Design",
+  description: "Explore the full range of interior design, architectural planning, 3D renderings, and renovation services offered by Planic Design in Pakistan.",
+};
 
 const visualizationFaqs = [
   {

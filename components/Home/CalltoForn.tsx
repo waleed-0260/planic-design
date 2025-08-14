@@ -16,7 +16,7 @@ const CalltoForn = ({heading, desc, btn}:any) => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://planicbackend.vercel.app/add-contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

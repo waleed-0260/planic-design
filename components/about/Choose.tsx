@@ -17,7 +17,7 @@ const Choose = ({heading}:any) => {
   const [activeId, setActiveId] = useState<number | null>(null);
 
   return (
-    <div className="flex md:flex-row flex-col w-[90%] mx-auto py-12 relative">
+    <div className="flex md:flex-row flex-col w-[90%] py-12 relative">
       {/* Left Section */}
       <div className="md:w-[30%] pr-6">
         <h2 className="md:text-[72px] text-3xl leading-tight text-black">

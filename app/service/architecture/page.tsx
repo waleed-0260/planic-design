@@ -16,6 +16,12 @@ import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/
 import Creativity from '@/components/service/Creativity'
 import Process from '@/components/service/Process'
 import PortfolioMain from '@/components/service/PortfolioMain'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Services – Interior Design & Architecture | Planic Design",
+  description: "Explore the full range of interior design, architectural planning, 3D renderings, and renovation services offered by Planic Design in Pakistan.",
+};
 const architectFaqs = [
   {
     question: "What’s included in your architectural planning service?",

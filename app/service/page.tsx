@@ -12,10 +12,10 @@ import Footer from '@/components/Home/Footer'
 // import CalltoForn from '@/components/Home/CalltoForn'
 // import Sectors from '@/components/about/Sectors'
 // import FeaturedProjects from '@/components/Home/FeaturedProjects'
-import type { Metadata } from "next";
 import Architecture from '@/components/service/Architecture'
 import Team from '@/components/Home/Team'
 import Explanation from '@/components/service/Explanation';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Services – Interior Design & Architecture | Planic Design",
