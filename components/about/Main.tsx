@@ -12,10 +12,7 @@ const Main = () => {
           Designing Spaces with Impact
         </h2>
         <p className="text-gray-600 text-base md:text-lg mb-6">
-          Founded with the goal of transforming how people experience their
-          surroundings, Planic Design blends creativity with practicality. Our
-          team brings deep local insight, international trends, and technical
-          expertise to every project.
+          Founded with the goal of transforming how people experience their surroundings, Planic Design blends creativity with practicality. Our team brings deep local insight, international trends, and technical expertise to every project. We believe every space should tell a story that reflects both functionality and beauty. By combining innovative ideas with meticulous attention to detail, we create designs that inspire and endure.
         </p>
         <div>
             <Link className="button inline-block" href="/portfolio">

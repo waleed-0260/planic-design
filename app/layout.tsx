@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Planic Design – Interior Architecture Studio in Pakistan",
   description: "Discover creative and functional interior architecture with Planic Design. We specialize in residential, commercial, and hospitality design solutions across Pakistan",
   icons: {
-    icon: "/images/logo.jpg", // Correct path
+    icon: "/images/logo.jpg", 
   },};
 
 export default function RootLayout({

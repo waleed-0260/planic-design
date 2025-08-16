@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <div id='story' className='flex md:flex-row flex-col md:items-center items-start justify-between space-x-4 gap-4 w-[90%] my-[100px]'>
+    <div id='story' className='flex md:flex-row flex-col md:items-center items-start justify-between space-x-4 gap-4 mx-auto md:w-[90%] my-[100px]'>
       <div className="relative text-black md:w-[15%] h-[165px] rounded-full flex items-center justify-center" data-aos="fade-right">
   {/* Center Image */}
   <div className="w-[100px] h-[100px] rounded-full overflow-hidden">
@@ -35,8 +35,8 @@ const About = () => {
 </div>
 
 <div className='flex flex-col md:w-[45%]' data-aos="fade-up">
-  <h1 className='text-3xl font-semibold '>Designing Spaces with Impact</h1>
-      <p className='leading-10 text-2xl'>
+  <h1 className='text-4xl'>Designing Spaces with Impact</h1>
+      <p className='leading-8 text-xl'>
       Founded with the goal of transforming how people experience their surroundings, Planic Design
 blends creativity with practicality. Our team brings deep local insight, international trends, and
 technical expertise to every project.
