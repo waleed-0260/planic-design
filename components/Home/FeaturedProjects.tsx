@@ -3,7 +3,15 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
-
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import Form from "../Contact/Form";
 const FeaturedProjects = ({heading, projects}:any) => {
   // console.log("projects", projects)
   // const [projects, setProjects] = useState<any[]>([]);
@@ -97,6 +105,22 @@ const FeaturedProjects = ({heading, projects}:any) => {
         >
           Download Portfolio
         </a> */}
+
+<Dialog>
+  <DialogTrigger className="button bg-[#231f20] text-white sm:mt-0 mt-8 px-[20px] py-[10px] text-lg rounded-md transition duration-300 cursor-pointer">
+    Download Portfolio
+  </DialogTrigger>
+  <DialogContent className="md:max-h-[400px] max-h-[300px]  overflow-y-scroll">
+    <DialogHeader>
+
+      <DialogTitle className="mt-5">Enter Your Details to Download Portfolio</DialogTitle>
+      <DialogDescription>
+      </DialogDescription>
+    </DialogHeader>
+        <Form/>
+  </DialogContent>
+</Dialog>
+
       </div>
     </div>
   );
