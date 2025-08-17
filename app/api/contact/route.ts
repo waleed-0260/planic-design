@@ -10,7 +10,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: NextRequest) {
 
-  const { name, email, message, type, phone } = await req.json();
+  const { name, email, message, type, phone, country } = await req.json();
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -30,6 +30,7 @@ export async function POST(req: NextRequest) {
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Project Type:</strong> ${type}</p>
+      <p><strong>Country:</strong> ${country}</p>
       <p><strong>Message:</strong><br/>${message}</p>
     `,
   };

@@ -6,6 +6,7 @@ const contactSchema = new mongoose.Schema({
     email:{type:String},
     phone:{type:String},
     type:{type:String},
+    country:{type:String},
     message:{type: String }
 }, { timestamps: true } );
 
