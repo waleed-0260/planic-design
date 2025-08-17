@@ -11,6 +11,13 @@ import Main from '@/components/portfolio/Main'
 import FeaturedProjects from '@/components/Home/FeaturedProjects'
 import Slider from '@/components/Home/Slider'
 import { GetPortfolio } from '@/lib/GetPortfolio'
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Planic Design Portfolio | Architectural, Interior & Fit-Out Projects",
+  description: "Explore Planic Design’s complete portfolio of architectural, interior design, renovation, and fit-out projects — innovative, sustainable, and client-focused.",
+};
+
 
 const page = async() => {
     const data = await GetPortfolio()
