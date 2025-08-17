@@ -116,6 +116,24 @@ const Form = () => {
     </div>
   </div>
 
+<div>
+      <div className="flex-1">
+      <label
+        htmlFor="country"
+        className="block text-sm font-medium text-gray-700 mb-1"
+      >
+        Country
+      </label>
+      <input
+        type="text"
+        id="country"
+        name="country"
+        placeholder="Enter your Country"
+        className="w-full border-b border-gray-300 focus:border-blue-500 focus:outline-none py-1 bg-transparent"
+        required
+      />
+    </div>
+</div>
   <div>
     <label
       htmlFor="message"

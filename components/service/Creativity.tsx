@@ -5,13 +5,13 @@ const Creativity = ({images}:any) => {
 
 
   return (
-    <div className="w-[90%] grid md:grid-cols-2 grid-cols-1 gap-4 my-[80px] ">
+    <div className="w-[90%] grid md:grid-cols-2 grid-cols-1 gap-7 my-[80px] ">
       {/* Left column */}
- <div className="flex flex-col gap-4 mt-[20px]"> {/* Increased top margin */}
+ <div className="flex flex-col gap-7"> {/* Increased top margin */}
   {images.slice(0, 2).map((img:any, i:any) => (
   <div
   key={i}
-  className="relative h-[500px] overflow-hidden rounded-lg group"
+  className="relative h-[500px] overflow-hidden group"
 >
   {/* Image */}
   <img
@@ -35,11 +35,11 @@ const Creativity = ({images}:any) => {
 
 
       {/* Right column */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-7">
         {images.slice(2).map((img:any, i:any) => (
          <div
   key={i}
-  className="relative h-[500px] overflow-hidden rounded-lg group"
+  className="relative h-[500px] overflow-hidden group"
 >
   {/* Image */}
   <img
