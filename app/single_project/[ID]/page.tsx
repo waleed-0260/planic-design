@@ -1,11 +1,11 @@
 // import Hero from '@/components/about/Hero'
 import Footer from '@/components/Home/Footer'
 import React from 'react'
-import CalltoForn from '@/components/Home/CalltoForn'
+// import CalltoForn from '@/components/Home/CalltoForn'
 import MainSinglePortfolio from '@/components/SingleProject/MainSinglePortfolio'
 import Hero from '@/components/SingleProject/Hero'
 import Images from '@/components/SingleProject/Images'
-import FeaturedProjects from '@/components/Home/FeaturedProjects'
+// import FeaturedProjects from '@/components/Home/FeaturedProjects'
 
 
 export default async function Page({
