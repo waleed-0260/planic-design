@@ -41,7 +41,7 @@ const Hero = ({heading, desc}:any) => {
       <div className="w-full flex flex-col items-center justify-center bg-cover h-[45rem] overflow-hidden">
         <div
           className="w-full h-full flex flex-col items-center justify-center bg-cover hero-animation bg-bottom"
-          style={{ backgroundImage: `url('/images/Slide3.jpg')` }}
+          style={{ backgroundImage: `url('/images/Slide3.webp')` }}
         >
           <div className="absolute inset-0 bg-black opacity-10 h-[45rem]"></div>
           <div className="flex md:flex-row flex-col items-center justify-between p-4 w-[80%] text-white z-10 mt-[50px]">
