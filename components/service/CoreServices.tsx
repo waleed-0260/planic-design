@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const CoreServices = () => {
   const items = [
     { src: "/images/service2.png", alt: "Service 1", caption: "Creative 3D Visualization Service" },
@@ -16,9 +16,11 @@ const CoreServices = () => {
         className="relative flex-1 h-[400px] overflow-hidden shadow-lg"
       >
         {/* Image */}
-        <img
+        <Image
           src={it.src}
           alt={it.alt}
+          width={500}
+          height={500}
           className="w-full h-full object-cover transform transition-transform duration-300 ease-out hover:scale-105"
         />
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
 
 const Process = ({steps, heading}:any) => {
 

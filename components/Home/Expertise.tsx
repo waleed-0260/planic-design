@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const images = [
   { src: "/images/expertise3.jpg", text: "Interior Design", link:"interior" },
   { src: "/images/expertise4.jpg", text: "3D Visulization", link:"visulization" },
@@ -17,11 +18,13 @@ const Expertise = () => {
       <div className="flex md:flex-row flex-col gap-2 mb-2 my-[50px]">
         {/* First Image - double width */}
         <Link href={`/service/architecture`} className="flex-2 md:w-2/3 relative group overflow-hidden h-[300px] ">
-          <img
-            src={images[0].src}
-            alt={images[0].text}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
-          />
+        <Image
+  src={images[0].src}
+  alt={images[0].text}
+  width={500} // set an approximate width
+  height={500} // set an approximate height
+  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+/>
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
           <p className="absolute top-3 left-3 block md:hidden group-hover:block text-white text-3xl transition-all duration-300">
             {images[0].text}
@@ -32,9 +35,11 @@ const Expertise = () => {
 
         {/* Second Image - normal width */}
         <Link href={`/service/${images[1].link}`} className="flex-1 md:w-1/3 relative group overflow-hidden h-[300px] ">
-          <img
+          <Image
             src={images[1].src}
             alt={images[1].text}
+            width={500}
+            height={500}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
@@ -51,9 +56,11 @@ const Expertise = () => {
         {/* Second Image - normal width */}
 
         <Link href={`/service/${images[2].link}`} className="flex-1 md:w-1/3 relative group overflow-hidden h-[300px] ">
-          <img
+          <Image
             src={images[2].src}
             alt={images[2].text}
+            width={500}
+            height={500}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
           />
           <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
@@ -64,9 +71,11 @@ const Expertise = () => {
         </Link>
 
         <Link href={`/service/${images[3].link}`} className="flex-2 md:w-2/3 relative group overflow-hidden h-[300px] ">
-          <img
+          <Image
             src={images[3].src}
             alt={images[3].text}
+            width={500}
+            height={500}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 "
           />
          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-25 transition-all duration-300 ">
