@@ -7,7 +7,7 @@ import healthSector from "../../public/images/healthSector.svg"
 // import InteriorSector from "../../public/images/InteriorSector.svg"
 import resedentialSector from "../../public/images/resedentialSector.svg"
 import EducationalSector from "../../public/images/EducationalSector.svg"
-import education from "../../public/images/education.png"
+import education from "../../public/images/education.webp"
 const Sectors = () => {
   return (
     <div className='w-[90%] flex flex-col items-start justify-center my-[100px]'>

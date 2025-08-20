@@ -2,16 +2,16 @@ import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import boards from "../../public/images/boards.svg"
-import goals from "../../public/images/goals.svg"
-import oriented from "../../public/images/oriented.svg"
-import years from "../../public/images/years.svg"
+// import goals from "../../public/images/goals.svg"
+// import oriented from "../../public/images/oriented.svg"
+// import years from "../../public/images/years.svg"
 import Image from "next/image";
-import { FaRegClock } from "react-icons/fa";
-import { BsFillCalendarCheckFill } from "react-icons/bs";
-import { HiOutlineCalendar } from "react-icons/hi";
-import satisfied from "../../public/images/satisfied.png"
-import experience from "../../public/images/experience.png"
-import projects from "../../public/images/projects.png"
+// import { FaRegClock } from "react-icons/fa";
+// import { BsFillCalendarCheckFill } from "react-icons/bs";
+// import { HiOutlineCalendar } from "react-icons/hi";
+import satisfied from "../../public/images/satisfied.webp"
+import experience from "../../public/images/experience.webp"
+import projects from "../../public/images/projects.webp"
 const CountDown = () => {
   const counters = [
     { value: 10, text: "Years of Exeprience", img: experience },

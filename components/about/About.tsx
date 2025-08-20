@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutSection from "../../public/images/aboutSection.png"
+import aboutSection from "../../public/images/aboutSection.webp"
 import Image from 'next/image'
 import { GoArrowUpRight } from "react-icons/go";
 import Link from 'next/link';

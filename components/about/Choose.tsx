@@ -1,10 +1,10 @@
 "use client"
 import React, { useState } from "react";
 import Image from "next/image";
-import expertise1 from "@/public/images/expertise1.jpg";
-import expertise2 from "@/public/images/expertise2.jpg";
-import expertise3 from "@/public/images/expertise3.jpg";
-import exoertise4 from "@/public/images/expertise4.jpg";
+import expertise1 from "@/public/images/expertise1.webp";
+import expertise2 from "@/public/images/expertise2.webp";
+import expertise3 from "@/public/images/expertise3.webp";
+import exoertise4 from "@/public/images/expertise4.webp";
 
 const headings = [
   { id: 1, title: "Experienced in Residential & Commercial Design ", image: expertise1 },

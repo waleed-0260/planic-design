@@ -47,22 +47,22 @@ const interiorFaqs = [
 
 const images = [
   {
-    src: "/images/1A.jpg",
+    src: "/images/1A.webp",
     heading: "Luxury Residential Interiors",
     text: "Tailor-made designs that capture personal style and elevate daily living into an art form.",
   },
   {
-    src: "/images/2A.jpg",
+    src: "/images/2A.webp",
     heading: "Commercial & Workplace Design",
     text: "Dynamic spaces that balance brand identity, productivity, and employee well-being.",
   },
   {
-    src: "/images/3A.jpg",
+    src: "/images/3A.webp",
     heading: "Hospitality & Lifestyle Projects",
     text: "Immersive environments that delight guests and define memorable experiences.",
   },
   {
-    src: "/images/4A.jpg",
+    src: "/images/4A.webp",
     heading: "Custom Furniture & Styling",
     text: "Bespoke furnishings and curated details that complete your space with distinction.",
   },

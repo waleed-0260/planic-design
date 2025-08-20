@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Autoplay, Navigation } from "swiper/modules";
-import whitelogo from "../../public/images/whitelogo.png"
+import whitelogo from "../../public/images/whitelogo.webp"
 import Image from "next/image";
 const Hero = () => {
 

@@ -9,7 +9,7 @@ import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 // import interior from "@/public/images/interior.jpg"
-import renovationService from "@/public/images/renovationService.jpg"
+import renovationService from "@/public/images/renovationService.webp"
 import Footer from '@/components/Home/Footer'
 import { FiSearch, FiLayout, FiEdit3, FiTool, FiCheckCircle } from "react-icons/fi";
 import Creativity from '@/components/service/Creativity'

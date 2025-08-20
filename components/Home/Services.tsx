@@ -1,6 +1,6 @@
 import React from 'react'
 import Architect from "../../public/images/Architect.png"
-import Visulization from "../../public/images/Visulization.png"
+import visulization from "../../public/images/visulization.webp"
 import interior from "../../public/images/interior.png"
 import service2 from "../../public/images/service2.png"
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -50,7 +50,7 @@ const Services = () => {
                 </p>
                 <h1 className='font-semibold sm:text-2xl text-xl'>Innovative Solutions</h1>
                 <div className='md:w-[160px] w-[250px] h-[140px]'> 
-                    <Image src={Visulization} alt="building" className='object-cover rounded-md h-full w-full'/>
+                    <Image src={visulization} alt="building" className='object-cover rounded-md h-full w-full'/>
                 </div>
                 <p className='text-sm textColor'>At Planic Design, we embrace creativity and advanced technology to deliver innovative solutions across all our services. Whether it’s groundbreaking designs, bespoke interiors, or seamless construction processes, we ensure exceptional outcomes for every project.</p>
                 <p className='w-8 h-8 flex items-center justify-center bg-transparent text-black text-center border-[1px] border-black hover:bg-black hover:text-white rounded-full transition duration-300'><IoIosArrowRoundForward style={{rotate:"310deg"}}/></p>

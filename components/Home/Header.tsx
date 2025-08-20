@@ -11,8 +11,8 @@ import Link from "next/link";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import whitelogo from "../../public/images/whitelogo.png";
-import blacklogo from "@/public/images/blacklogo.png"
+import whitelogo from "../../public/images/whitelogo.webp";
+import blacklogo from "@/public/images/blacklogo.webp"
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 

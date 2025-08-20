@@ -9,7 +9,7 @@ import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 import interior from "@/public/images/interior.jpg"
-import visulizationService from "@/public/images/visulizationService.jpg"
+import visulizationService from "@/public/images/visulizationService.webp"
 import Footer from '@/components/Home/Footer'
 import Choose from '@/components/about/Choose'
 import CoreServices from '@/components/service/CoreServices'

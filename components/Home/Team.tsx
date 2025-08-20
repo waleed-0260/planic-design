@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import Ramish from "../../public/images/Ramish.png"
-import Hiba from "../../public/images/Hiba.png"
+import Ramish from "../../public/images/Ramish.webp"
+import Hiba from "../../public/images/Hiba.webp"
 const Team = () => {
 
   const teamMembers = [

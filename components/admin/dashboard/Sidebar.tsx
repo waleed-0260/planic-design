@@ -1,5 +1,5 @@
 import React from 'react';
-import whitelogo from "../../../public/images/whitelogo.png"
+import whitelogo from "../../../public/images/whitelogo.webp"
 import Image from 'next/image';
 import Link from 'next/link';
 const Sidebar = () => {

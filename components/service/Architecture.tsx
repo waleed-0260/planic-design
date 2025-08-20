@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import expertise3 from "@/public/images/expertise3.jpg";
-import expertise2 from "@/public/images/expertise2.jpg";
-import expertise1 from "@/public/images/expertise1.jpg";
+// import expertise3 from "@/public/images/expertise3.jpg";
+// import expertise2 from "@/public/images/expertise2.jpg";
+// import expertise1 from "@/public/images/expertise1.jpg";
 import interior from "@/public/images/interior.jpg";
-import architecture from "@/public/images/architecture.jpg";
-import renovation from "@/public/images/renovation.jpg";
-import expertise4 from "@/public/images/expertise4.jpg";
+import architecture from "@/public/images/architecture.webp";
+import renovation from "@/public/images/renovation.webp";
+import expertise4 from "@/public/images/expertise4.webp";
 import Link from "next/link";
 
 const Architecture = () => {

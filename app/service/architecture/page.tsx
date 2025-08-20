@@ -8,7 +8,7 @@ import Faq from '@/components/service/Faq'
 import Specializing from '@/components/service/Specializing'
 import Video from '@/components/service/Video'
 // import interior from "@/public/images/interior.jpg"
-import architectureService from "@/public/images/architectureService.jpg"
+import architectureService from "@/public/images/architectureService.webp"
 import Footer from '@/components/Home/Footer'
 import CoreServices from '@/components/service/CoreServices'
 import CallToAction from '@/components/service/CallToAction'

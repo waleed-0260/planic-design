@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 // import expertise3 from "@/public/images/expertise3.jpg";
 import Link from "next/link";
-import aboutImg from "@/public/images/aboutImg.jpg";
+import aboutImg from "@/public/images/aboutImg.webp";
 const Main = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-start w-[90%] mx-auto py-12 gap-8">
