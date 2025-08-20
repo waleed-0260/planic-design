@@ -28,7 +28,7 @@ export default function HomeClientWrapper({data}:any) {
 
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <div className="flex flex-col items-center justify-center w-full rounded-t-[20px] bg-[#f1eee9] relative ">
         <Slider />
         <TextRevealSection />
