@@ -108,305 +108,123 @@ const Hero = () => {
   return (
     <div className="w-full relative">
       <Header />
-      <Swiper
-      ref={swiperRef}
-      spaceBetween={0}
-      slidesPerView={1}
-      autoplay={{
-        delay: 5000,
-        disableOnInteraction: false,
-      }}
-      speed={1000}
-      modules={[Autoplay, Navigation]}
-      navigation={{
-        prevEl: ".custom-prev", // Link to custom previous button
-        nextEl: ".custom-next", // Link to custom next button
-      }}
-      loop={true}
-      className="lg:h-[45rem] h-[57rem] w-full relative "
-      breakpoints={{
-        600: {
-          autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-          },
-          loop: true,
-        },
-        0: {
-          autoplay: false,
-          loop: false,
-          initialSlide: 1, // Freezes the second slide
-        },
-      }}
-    >
-      <SwiperSlide
-        className="relative hidden items-center justify-center w-full h-[45rem] bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat text-white"
-        style={{ backgroundImage: `url('/images/Slide1.webp')` }}
-      >
-        <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
-        <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[50px] ml-[20px] z-50">
-              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
-                <Image src={whitelogo} alt="logo" width={300} height={300}/>
-                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
-              </div>
-              <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-                value={formDataSlide2.name}
-          onChange={(e)=>handleChange(e,2)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-                value={formDataSlide2.email}
-          onChange={(e)=>handleChange(e,2)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="phone"
-                name="phone"
-                id="phone"
-                placeholder="Phone Number"
-                value={formDataSlide2.phone}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
-               <select
-  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-  name="type"
-  id="type"
-  value={formDataSlide2.type}
-  onChange={(e) => handleChange(e, 2)}
-  onFocus={handleFocus}
-  onBlur={handleBlur}
-  required
+     <div
+  className="relative flex items-center justify-center w-full lg:h-[45rem] h-[57rem] bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat text-white"
+  style={{ backgroundImage: `url('/images/Slide1.webp')` }}
 >
-  <option value="" disabled hidden>
-    Select Project Type
-  </option>
-  <option value="resedential" className="text-black">Resedential</option>
-  <option value="commercial" className="text-black">Commercial</option>
-  <option value="educational" className="text-black">Educational</option>
-  <option value="healthcare" className="text-black">Healthcare</option>
-  <option value="hospitality" className="text-black">Hospitality</option>
-  <option value="marquee" className="text-black">Marquee</option>
-  <option value="restaurant" className="text-black">Restaurant</option>
-</select>
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="message"
-                id="message"
-                placeholder="Message Details"
-                value={formDataSlide2.message}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
-              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
-                Get Our Free Consultation
-              </button>
-            </form>
-                {/* Project: Aura Grande */}
-              </div>
-            </div>
-      </SwiperSlide>
-      <SwiperSlide
-        className=" relative flex items-center justify-center w-full h-[45rem] bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat text-white"
-        style={{ backgroundImage: `url('/images/Slide2.webp')` }}
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
+
+  {/* Content */}
+  <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[50px] ml-[20px] z-50">
+    {/* Left Section */}
+    <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
+      <Image src={whitelogo} alt="logo" width={300} height={300} />
+      <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
+    </div>
+
+    {/* Right Section (Form) */}
+    <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
+      <form
+        className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px] md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50"
+        onSubmit={(e) => handleSubmit(e, 2)}
       >
-       <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
-        <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[50px] ml-[20px] z-50">
-              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
-                <Image src={whitelogo} alt="logo" width={300} height={300} />
-                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
-              </div>
-              <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-                value={formDataSlide2.name}
-          onChange={(e)=>handleChange(e,2)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-                value={formDataSlide2.email}
-          onChange={(e)=>handleChange(e,2)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="phone"
-                name="phone"
-                id="phone"
-                placeholder="Phone Number"
-                value={formDataSlide2.phone}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
-              <select
-  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-  name="type"
-  id="type"
-  value={formDataSlide2.type}
-  onChange={(e) => handleChange(e, 2)}
-  onFocus={handleFocus}
-  onBlur={handleBlur}
-  required
->
-  <option value="" disabled hidden>
-    Select Project Type
-  </option>
-  <option value="resedential" className="text-black">Resedential</option>
-  <option value="commercial" className="text-black">Commercial</option>
-  <option value="educational" className="text-black">Educational</option>
-  <option value="healthcare" className="text-black">Healthcare</option>
-  <option value="hospitality" className="text-black">Hospitality</option>
-  <option value="marquee" className="text-black">Marquee</option>
-  <option value="restaurant" className="text-black">Restaurant</option>
-</select>
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="message"
-                id="message"
-                placeholder="Message Details"
-                value={formDataSlide2.message}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
-              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
-                Get Our Free Consultation
-              </button>
-            </form>
-                {/* Project: Aura Grande */}
-              </div>
-            </div>
-      </SwiperSlide>
-      <SwiperSlide
-        className=" relative sm:flex hidden items-center justify-center w-full h-[45rem] bg-cover md:bg-bottom 2xl:bg-center bg-center bg-no-repeat text-white"
-        style={{ backgroundImage: `url('/images/Slide3.webp')` }}
-      >
-       <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
-        <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[50px] ml-[20px] z-50">
-              <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
-                <Image src={whitelogo} alt="logo" width={300} height={300}/>
-                <p>let’s Inspire, Innovate and Elavate with Planic Design!</p>
-              </div>
-              <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
-              <form className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px]  md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50" onSubmit={(e) => handleSubmit(e, 2)}>
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-                value={formDataSlide2.name}
-          onChange={(e)=>handleChange(e,2)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-                value={formDataSlide2.email}
-          onChange={(e)=>handleChange(e,2)}
-              />
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="phone"
-                name="phone"
-                id="phone"
-                placeholder="Phone Number"
-                value={formDataSlide2.phone}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
-                <select
-  className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-  name="type"
-  id="type"
-  value={formDataSlide2.type}
-  onChange={(e) => handleChange(e, 2)}
-  onFocus={handleFocus}
-  onBlur={handleBlur}
-  required
->
-  <option value="" disabled hidden>
-    Select Project Type
-  </option>
-  <option value="resedential" className="text-black">Resedential</option>
-  <option value="commercial" className="text-black">Commercial</option>
-  <option value="educational" className="text-black">Educational</option>
-  <option value="healthcare" className="text-black">Healthcare</option>
-  <option value="hospitality" className="text-black">Hospitality</option>
-  <option value="marquee" className="text-black">Marquee</option>
-  <option value="restaurant" className="text-black">Restaurant</option>
-</select>
-              <input 
-                className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
-                type="text"
-                name="message"
-                id="message"
-                placeholder="Message Details"
-                value={formDataSlide2.message}
-                onChange={(e)=>handleChange(e,2)}
-                onFocus={handleFocus}
-                onBlur={handleBlur}
-                required
-              />
-              <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
-                Get Our Free Consultation
-              </button>
-            </form>
-                {/* Project: Aura Grande */}
-              </div>
-            </div>
-      </SwiperSlide>
-      </Swiper>
+        <input
+          className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+          value={formDataSlide2.name}
+          onChange={(e) => handleChange(e, 2)}
+        />
+
+        <input
+          className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+          value={formDataSlide2.email}
+          onChange={(e) => handleChange(e, 2)}
+        />
+
+        <input
+          className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+          type="phone"
+          name="phone"
+          id="phone"
+          placeholder="Phone Number"
+          value={formDataSlide2.phone}
+          onChange={(e) => handleChange(e, 2)}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        />
+
+        <select
+          className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+          name="type"
+          id="type"
+          value={formDataSlide2.type}
+          onChange={(e) => handleChange(e, 2)}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        >
+          <option value="" disabled hidden>
+            Select Project Type
+          </option>
+          <option value="resedential" className="text-black">
+            Resedential
+          </option>
+          <option value="commercial" className="text-black">
+            Commercial
+          </option>
+          <option value="educational" className="text-black">
+            Educational
+          </option>
+          <option value="healthcare" className="text-black">
+            Healthcare
+          </option>
+          <option value="hospitality" className="text-black">
+            Hospitality
+          </option>
+          <option value="marquee" className="text-black">
+            Marquee
+          </option>
+          <option value="restaurant" className="text-black">
+            Restaurant
+          </option>
+        </select>
+
+        <input
+          className="p-2 text-white border-b-2 border-b-white bg-transparent placeholder-white"
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Message Details"
+          value={formDataSlide2.message}
+          onChange={(e) => handleChange(e, 2)}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        />
+
+        <button className="w-full py-3 bg-transparent border-2 hover:bg-white transition duration-300 rounded-md text-center text-white hover:text-black">
+          Get Our Free Consultation
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
       {/* <div className="absolute right-[40px] sm:bottom-[40px] bottom-[70px] flex flex-row items-center space-x-2  z-50">
         <p className="sm:text-6xl text-3xl text-white custom-prev cursor-pointer">
           <GoChevronLeft />
