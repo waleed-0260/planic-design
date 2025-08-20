@@ -1,9 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-import "react-quill/dist/quill.snow.css";
-import TagsInput from 'react-tagsinput'
-import 'react-tagsinput/react-tagsinput.css'
 interface FormData {
   heading: string;
   category: string[];

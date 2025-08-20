@@ -9,12 +9,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Autoplay, Navigation } from "swiper/modules";
-// import { GoChevronLeft } from "react-icons/go";
-// import { GoChevronRight } from "react-icons/go";
-// import { GoArrowUpRight } from "react-icons/go";
-// import { Swiper as SwiperClass } from 'swiper';
-// import { toast, ToastContainer } from "react-toastify";
-// import 'react-toastify/dist/ReactToastify.css';
 import whitelogo from "../../public/images/whitelogo.png"
 import Image from "next/image";
 const Hero = () => {
