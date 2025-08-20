@@ -116,7 +116,7 @@ const Hero = () => {
   <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
 
   {/* Content */}
-  <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[50px] ml-[20px] z-50">
+  <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[50px] ml-[20px] z-10">
     {/* Left Section */}
     <div className="flex items-start justify-start flex-col md:justify-between md:w-[40%] z-50">
       <Image src={whitelogo} alt="logo" width={300} height={300} />

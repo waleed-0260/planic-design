@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 const images = [
-  { src: "/images/expertise3.jpg", text: "Interior Design", link:"interior" },
-  { src: "/images/expertise4.jpg", text: "3D Visulization", link:"visulization" },
-  { src: "/images/expertise2.jpg", text: "Renovation & Fit Out", link:"renovation" },
-  { src: "/images/expertise1.jpg", text: "Architectural Planning", link:"architecture" },
+  { src: "/images/expertise3.webp", text: "Interior Design", link:"interior" },
+  { src: "/images/expertise4.webp", text: "3D Visulization", link:"visulization" },
+  { src: "/images/expertise2.webp", text: "Renovation & Fit Out", link:"renovation" },
+  { src: "/images/expertise1.webp", text: "Architectural Planning", link:"architecture" },
   // { src: "/images/Visulization.png", text: "Construction OnSite Supervision" },
 ];
 
