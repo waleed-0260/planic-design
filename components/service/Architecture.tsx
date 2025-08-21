@@ -15,7 +15,7 @@ const Architecture = () => {
       <div className="flex flex-col md:flex-row justify-between items-start w-full mx-auto py-12 gap-8">
         {/* Left Content */}
         <div
-          className="flex flex-col justify-between md:space-y-0 space-y-4 md:h-[300px] flex-1"
+          className="flex flex-col justify-between md:space-y-0 space-y-4 h-[300px] flex-1"
           id="architecture"
         >
           <h2 className="text-2xl md:text-4xl leading-tight">
@@ -34,14 +34,14 @@ const Architecture = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 h-[300px] flex justify-start relative">
-          <Image
-            src={architecture}
-            alt="Architecture"
-            fill // makes the image fill its container
+      <div className="w-full h-[300px] relative md:flex-1">
+  <Image
+    src={architecture}
+    alt="Architecture"
+    fill
     className="object-cover"
-          />
-        </div>
+  />
+</div>
       </div>
 
       <div
@@ -49,7 +49,7 @@ const Architecture = () => {
         id="interior"
       >
         {/* Left Content */}
-        <div className="flex flex-1 flex-col justify-between md:space-y-0 space-y-4 md:h-[300px]">
+        <div className="flex flex-1 flex-col justify-between md:space-y-0 space-y-4 h-[300px]">
           <h2 className="text-2xl md:text-4xl leading-tight">
             Personalized Interior Design for Every Space
           </h2>
@@ -66,7 +66,7 @@ const Architecture = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 h-[300px] flex justify-start relative">
+      <div className="w-full h-[300px] relative md:flex-1">
           <Image
             src={interior}
             alt="Architecture"
@@ -81,7 +81,7 @@ const Architecture = () => {
         id="visulization"
       >
         {/* Left Content */}
-        <div className="flex flex-1 flex-col justify-between md:space-y-0 space-y-4 md:h-[300px]">
+        <div className="flex flex-1 flex-col justify-between md:space-y-0 space-y-4 h-[300px]">
           <h2 className="text-2xl md:text-4xl leading-tight">
             Photo-Realistic 3D Renderings{" "}
           </h2>
@@ -98,7 +98,7 @@ const Architecture = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 h-[300px] flex justify-start relative">
+      <div className="w-full h-[300px] relative md:flex-1">
           <Image
             src={expertise4}
             alt="Architecture"
@@ -112,7 +112,7 @@ const Architecture = () => {
         id="renovation"
       >
         {/* Left Content */}
-        <div className="flex flex-col justify-between md:space-y-0 space-y-4 md:h-[300px] flex-1">
+        <div className="flex flex-col justify-between md:space-y-0 space-y-4 h-[300px] flex-1">
           <h2 className="text-2xl md:text-4xl leading-tight">
             Complete Renovation & Fit-Out Services{" "}
           </h2>
@@ -129,7 +129,7 @@ const Architecture = () => {
         </div>
 
         {/* Right Image */}
-        <div className="flex-1 h-[300px] flex justify-start relative">
+      <div className="w-full h-[300px] relative md:flex-1">
   <Image
     src={renovation}
     alt="Architecture"

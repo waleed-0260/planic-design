@@ -126,7 +126,7 @@ const Hero = () => {
     {/* Right Section (Form) */}
     <div className="flex md:items-end items-start md:justify-between flex-col text-white md:w-[50%]">
       <form
-        className="md:w-[70%] w-[90%] bg-white bg-opacity-30 mt-[50px] md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50"
+        className="md:w-[70%] w-[90%] bg-white bg-opacity-30 md:mt-[50px] md:px-6 py-3 rounded-md flex flex-col space-y-5 z-50 md:pb-0 pb-[20px]"
         onSubmit={(e) => handleSubmit(e, 2)}
       >
         <input
