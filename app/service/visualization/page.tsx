@@ -92,7 +92,7 @@ const images = [
     heading: "3D Visual Tour",
     text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
   },
-  {s
+  {
     src: "/images/3D3.webp",
     heading: "Interior Design Visulization",
     text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
