@@ -83,22 +83,22 @@ const steps = [
 
 const images = [
   {
-    src: "/images/3D1.jpg",
+    src: "/images/3D1.webp",
     heading: "Architectural Rendering",
     text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
   },
   {
-    src: "/images/3D2.jpg",
+    src: "/images/3D2.webp",
     heading: "3D Visual Tour",
     text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
   },
   {
-    src: "/images/3D3.jpg",
+    src: "/images/3D3.webp",
     heading: "Interior Design Visulization",
     text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
   },
   {
-    src: "/images/3D4.jpg",
+    src: "/images/3D4.webp",
     heading: "Urban Planning Models",
     text: "Complete, end-to-end project management with single-point accountability.",
   },
