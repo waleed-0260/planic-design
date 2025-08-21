@@ -113,7 +113,7 @@ const Hero = () => {
   style={{ backgroundImage: `url('/images/Slide1.webp')` }}
 >
   {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black opacity-30 z-40"></div>
+  <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
 
   {/* Content */}
   <div className="md:w-[90%] w-[95%] flex md:flex-row flex-col justify-between h-[90%] md:mt-[50px] md:ml-[50px] ml-[20px] z-10">
