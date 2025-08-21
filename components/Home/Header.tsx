@@ -199,7 +199,7 @@ export default function Header() {
             <ul className="ml-4 mt-2 space-y-1">
               {item.subItems.map((sub) => (
                 <li key={sub.name}>
-                  <Link href={sub.id} className="text-sm">
+                  <Link href={`${item.link}${sub.id}`} className="text-sm">
                     {sub.name}
                   </Link>
                 </li>

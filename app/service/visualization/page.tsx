@@ -83,7 +83,7 @@ const steps = [
 
 const images = [
   {
-    src: "/images/3D1.webp",
+    src: "/images3D1.jpg",
     heading: "Architectural Rendering",
     text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
   },
