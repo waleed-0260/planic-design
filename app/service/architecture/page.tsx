@@ -80,22 +80,22 @@ const steps = [
 
 const images = [
   {
-    src: "/images/1AR.jpg",
+    src: "/images/1AR.webp",
     heading: "Architectural drawings  ",
     text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
   },
   {
-    src: "/images/2AR.jpg",
+    src: "/images/2AR.webp",
     heading: "Structural drawings",
     text: "Architects services means providing a number of services, including site analysis, preparing feasibility reports, making structural and submission",
   },
   {
-    src: "/images/3AR.jpg",
+    src: "/images/3AR.webp",
     heading: "Master Plans",
     text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
   },
   {
-    src: "/images/4AR.jpg",
+    src: "/images/4AR.webp",
     heading: "3D Visulizations",
     text: "Complete, end-to-end project management with single-point accountability.",
   },
