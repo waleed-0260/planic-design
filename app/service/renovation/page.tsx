@@ -82,22 +82,22 @@ const steps = [
 
 const images = [
   {
-    src: "/images/1R.jpg",
+    src: "/images/1R.webp",
     heading: "Residential Renovations",
     text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
   },
   {
-    src: "/images/2R.jpg",
+    src: "/images/2R.webp",
     heading: "Commercial Fit-Outs",
     text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
   },
   {
-    src: "/images/expertise3.jpg",
+    src: "/images/expertise3.webp",
     heading: "Luxury Interiors",
     text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
   },
   {
-    src: "/images/4R.jpg",
+    src: "/images/4R.webp",
     heading: "Turnkey Solutions",
     text: "Complete, end-to-end project management with single-point accountability.",
   },
