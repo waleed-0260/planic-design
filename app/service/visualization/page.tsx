@@ -83,7 +83,7 @@ const steps = [
 
 const images = [
   {
-    src: "/images3D1.jpg",
+    src: "/images/3D1.jpg",
     heading: "Architectural Rendering",
     text: "Tailored upgrades that preserve character while enhancing modern comfort and functionality.",
   },
@@ -92,7 +92,7 @@ const images = [
     heading: "3D Visual Tour",
     text: "Bespoke spaces that reflect brand identity, improve efficiency, and elevate user experience.",
   },
-  {
+  {s
     src: "/images/3D3.webp",
     heading: "Interior Design Visulization",
     text: "High-end finishes, custom furniture, and refined details for a signature look and feel.",
