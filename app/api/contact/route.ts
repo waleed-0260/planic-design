@@ -24,6 +24,7 @@ export async function POST(req: NextRequest) {
     from: `"${name}" <${email}>`,
     to: 'planicdesignisb@gmail.com', // destination
     subject: 'New Contact Form Submission',
+    replyTo: email,
     html: `
       <h3>New Contact Message</h3>
       <p><strong>Name:</strong> ${name}</p>
